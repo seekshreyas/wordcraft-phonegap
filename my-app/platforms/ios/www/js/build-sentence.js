@@ -122,7 +122,14 @@ WORDCRAFT.build = (function(){
 		if(gameLevel ===0 && noun_0)
 		{
 			alert("gamelevel");
+			if(verb_0)
+			{
 			alert(JSON.stringify(drawImageData[noun_0.toString()]["verb"][verb_0.toString()]));
+			}	
+			else
+			{
+				alert("default for noun");
+			}
 		}
 	};
 
