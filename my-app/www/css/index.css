@@ -62,7 +62,15 @@ header{
 
 .words-list #init-nouns{
 margin-bottom:20px;
+float:left;
 }
+
+.words-list #init-verbs{
+margin-left:15px;
+margin-bottom:20px;
+float:left;
+}
+
 
 .del {
 display: inline-block;
@@ -98,7 +106,7 @@ height: 20px;
 
 .li-verb
 {
-    /*float:left;*/
+    float:left;
     margin:5px;
     border:1px solid black;
     height:auto;
