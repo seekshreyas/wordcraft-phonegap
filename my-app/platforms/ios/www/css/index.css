@@ -116,7 +116,7 @@ height: 20px;
     display: inline;
     border-radius:5px;
 }
-.sentence{
+#build-sentence .active{
   float:left;
   margin-left:10px;
   width:90px;
