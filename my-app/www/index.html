@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wordcraft Mobile Application</title>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+<link rel="stylesheet" href="css/index.css" />
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="js/vendor/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/build-sentence.js"></script>
+<script src="js/vendor/webkitdragdrop.js"></script>
+</head>
+<body>
+   <!-- begin first page -->
+<section id="page1" data-role="page">
+    <header data-role="header">
+        <h1>Creating my stories</h1>
+    </header>
+
+    <div data-role="content" class="content">
+        <div class="image-area" id="image-area">
+        </div>
+        <div class="words-list">
+            <ul id="all-words" style="display:block;" data-role="listview" id="sortable">
+            </ul>
+           <ul id="init-nouns"  style="display:none;" data-role="listview" id="sortable">
+            </ul>
+            <ul id="init-verbs" style="display:none;" data-role="listview" id="sortable">
+            </ul> 
+        </div>
+
+        <div id="build-sentence" placeholder="Drop elements here...">
+            <div id="sent-noun-1" class="sentence">
+            </div>
+            <div id="sent-verb-1" class="sentence">
+            </div>
+            <div id="sent-preposition-1" class="sentence">
+            </div>
+            <div id="sent-noun-2" class="sentence">
+            </div>
+            <div class="add-words" data-role="controlgroup" data-type="horizontal" data-inline="true">
+                <a href="#" id="btn_add_words" data-role="button" data-icon="plus" data-iconpos="left">Add New Words</a>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div data-role="content" class="content">
+        
+    </div>
+
+    <footer data-role="footer" data-position="fixed">
+        <h1>wordcraft</h1>
+    </footer>
+
+</section>
+<!-- end first page -->
+<!-- Begin second page -->
+<!-- end second page -->
+</body>
+</html>

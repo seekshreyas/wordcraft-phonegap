@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wordcraft Mobile Application</title>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+<link rel="stylesheet" href="css/index.css" />
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="js/vendor/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/build-sentence.js"></script>
+<script src="js/vendor/webkitdragdrop.js"></script>
+</head>
+<body>
+    <style>
+        .drag {width:150px; height: 150px; position: absolute;}
+        .drop {text-align:center; position: absolute; line-height: 50px; -webkit-border-radius : 15px}
+        .hd {border : 10px solid #000000 !important}
+        #space {position: absolute; top : 1700px}
+    </style>
+   <!-- begin first page -->
+<section id="page1" data-role="page">
+    <header data-role="header">
+        <h1>Creating my stories</h1>
+    </header>
+
+    <div data-role="content" class="content">
+        <div class="image-area" id="image-area">
+        </div>
+        <div class="words-list">
+            <ul id="al-words" data-role="listview" id="sortable">
+            </ul>
+            <ul id="init-nouns" data-role="listview" id="sortable">
+            </ul>
+            <ul id="init-verbs" data-role="listview" id="sortable">
+            </ul>
+        </div>
+       <div id="rblock" class="red drag" style="background:red;top:20px;left:10px"></div>
+        <div id="yblock" class="drag" style="background:yellow;top:20px;left:200px"></div>
+        <div id="gblock" class="drag" style="background:green;top:20px;left:400px"></div>
+        
+        <div id="drop1" class="drop" style="width:150px;height:150px;background:grey;position:absolute;top:500px;left:10px;">DROPPABLE <br> (ACCEPTS RED)</div>
+        <div id="drop2" class="drop" style="width:150px;height:150px;background:grey;position:absolute;top:500px;left:200px;">DROPPABLE <br> (ACCEPTS ALL)</div>
+        <div id="drop3" class="drop" style="width:150px;height:150px;background:grey;position:absolute;top:500px;left:400px;">DROPPABLE <br> (ACCEPTS ALL)</div>
+        <div id="drop4" class="drop" style="width:150px;height:150px;background:green;position:absolute;top:1300px;left:400px;">DRAG YELLOW <br> OR GREEN <br> TO ME</div>
+        
+    </div>
+
+<!-- <div id="build-sentence">
+        </div>
+    <div data-role="content" class="content">
+        <div data-role="controlgroup" data-type="horizontal" data-inline="true">
+            <a href="#" data-role="button" data-icon="plus" data-iconpos="left">Add New Words</a>
+        </div>
+    </div>-->
+
+    <footer data-role="footer" data-position="fixed">
+        <h1>wordcraft</h1>
+    </footer>
+
+</section>
+<!-- end first page -->
+<!-- Begin second page -->
+<!-- end second page -->
+</body>
+</html>
