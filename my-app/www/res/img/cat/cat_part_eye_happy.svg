@@ -42,18 +42,10 @@
 	</g>
 </g>
 <g id="pane">
-	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M84.332,133"/>
-	<g>
-		<path stroke="#020200" stroke-miterlimit="10" d="M99.665,146.997l-8.334-9.333c0,0,1.385-3.999,2.334-5
-			c0.975-1.028,3.592-2.51,5-2.667c1.008-0.112,3.104,0.192,4,0.667c0.782,0.415,2.165,1.603,2.666,2.333
-			c0.569,0.83,1.667,3.667,1.667,3.667L99.665,146.997z"/>
-		<g>
-			<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M75,170c0,0,3.365-7.732,5-10c1.033-1.434,3.35-4.367,5-5
-				c3.501-1.342,15,0,15,0l-0.335-8.003"/>
-			<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M125,170c0,0-3.509-7.636-5-10c-0.942-1.495-3.367-4.324-5-5
-				c-3.465-1.435-15,0-15,0l0.335-8.003"/>
-		</g>
-	</g>
+	<ellipse fill="#FCFCFC" stroke="#020200" stroke-miterlimit="10" cx="65.479" cy="108.001" rx="16" ry="15"/>
+	<ellipse stroke="#020200" stroke-width="0.5477" stroke-miterlimit="10" cx="65.479" cy="108.001" rx="9" ry="8"/>
+	<ellipse fill="#FCFCFC" stroke="#020200" stroke-miterlimit="10" cx="128.479" cy="107.001" rx="16" ry="15"/>
+	<ellipse fill="#020200" stroke="#020200" stroke-width="0.5477" stroke-miterlimit="10" cx="128.479" cy="107.001" rx="9" ry="8"/>
 </g>
 <g id="browserhead">
 </g>
