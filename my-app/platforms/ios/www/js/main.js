@@ -8,9 +8,9 @@ WORDCRAFT = (function(){
 		initCanvas();
 		initFabric();
 		initSVG();
-		
 
 	};
+
 
 
 	var initCanvas = function(){
@@ -79,8 +79,18 @@ WORDCRAFT = (function(){
 	};
 
 
+
+
+	//create a method of Sonali to call back from sentence
+	//changes
+
+	var handleSentChanges = function(obj){
+		alert(JSON.stringify(obj));
+	};
+
 	return {
-		'init' : init
+		'init' : init,
+		'handleSentChanges' : handleSentChanges
 	};
 
 })();
