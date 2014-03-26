@@ -1,13 +1,3 @@
-body{
-    background-color: #e3e5e7;
-}
-
-
-header{
-    width:100%;
-    border-bottom:1px solid #bfbfbf;
-    float:left;
-}
 
 
 /*section*/
@@ -26,9 +16,7 @@ header{
         margin:1em 4%;
     }
 
-ul li{
-  display: inline;
-}
+
 
 .li-noun
 {
@@ -40,7 +28,7 @@ ul li{
     background-color:#FFCCFF;
     margin-left:5px;
     padding:5px;
-	display: inline;
+    display: inline;
     border-radius:10px;
 }
 
@@ -54,22 +42,17 @@ ul li{
     background-color:#CCCCFF;
     margin-left:5px;
     padding:5px;
-	display: inline;
+    display: inline;
     border-radius:10px;
 }
 
 
-.word-list{
-    float:left;
-    height:auto;
-    width:auto;
-}
 
 #init-verbs, #init-nouns{
-	height: 40px;
-	padding-left: 0px;
-	margin-bottom: 0px;
-	width: 300px;
+    height: 40px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    /* width: 300px; */
 }
 
 .container-sentence{
@@ -81,9 +64,9 @@ ul li{
 }
 
 #built-words{
-	height: 70px;
-	padding-left: 0px;
-	margin-bottom: 0px;
+    height: 70px;
+    padding-left: 0px;
+    margin-bottom: 0px;
 }
 
 .draggable{

@@ -1,31 +1,49 @@
-body{
-    background-color: #e3e5e7;
-}
-
-
-header{
-    width:100%;
-    border-bottom:1px solid #bfbfbf;
-    float:left;
-}
-
 
 /*section*/
-.image-area{
-    height:300px;
-    width:600px;
-    background-color:#D0D0D0;
+
+
+
+
+/*div*/
+.words-list{
+  background: #dfdfdf;
+  float:left;
+  width:90%;
+  margin:2em 1%;
+  clear:both;
 }
 
+  .words-list ul>li{
+    width:auto;
+    float:left;
+    word-wrap: break-word;
+    display:inline-block;
+    margin:5px;
+  }
+
+.words-list #init-nouns{
+  margin-bottom:20px;
+  float:left;
+}
+
+.words-list #init-verbs{
+  margin-left:15px;
+  margin-bottom:20px;
+  float:left;
+}
+
+
+
+
+
+
 #build-sentence{
-  margin-top:10px;
-  padding:10px;
-  min-height:100px;
-  height:auto;
-  width:580px;
-  border-radius:5px;
-  border:1px dotted;
-  border-color:black;
+  float:left;
+  margin:1em 1%;
+  width:90%;
+  clear:both;
+  background:#dfdfdf;
+  padding:0.5em 1%;
 }
 #sent-list{
   margin-top:-100px;
@@ -38,39 +56,6 @@ header{
   display:inline;
   margin:10px;
 }
-
-.words-list{
-  word-wrap: break-word;
-  padding:20px;
-  margin-top:10px;
-  min-height:50px;
-  height:auto;
-  width:560px;
-  border-radius:5px;
-  border:1px dotted;
-  border-color:black;
-  background-color: #D0D0D0 ;
-}
-
-.words-list ul>li{
-  width:auto;
-  float:left;
-  word-wrap: break-word;
-  display:inline-block;
-  margin:5px;
-}
-
-.words-list #init-nouns{
-margin-bottom:20px;
-float:left;
-}
-
-.words-list #init-verbs{
-margin-left:15px;
-margin-bottom:20px;
-float:left;
-}
-
 
 .del {
 display: inline-block;
@@ -116,7 +101,7 @@ height: 20px;
     display: inline;
     border-radius:5px;
 }
-.sentence{
+#build-sentence .active{
   float:left;
   margin-left:10px;
   width:90px;
