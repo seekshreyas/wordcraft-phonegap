@@ -1,56 +1,128 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Wordcraft Mobile Application</title>
-<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
-<link rel="stylesheet" href="css/index.css" />
-<script src="js/vendor/jquery-1.10.2.min.js"></script>
-<script src="js/vendor/jquery.mobile-1.4.2.min.js"></script>
-<script src="js/build-sentence.js"></script>
-<script src="js/vendor/webkitdragdrop.js"></script>
-</head>
-<body>
-   <!-- begin first page -->
-<section id="page1" data-role="page">
-    <header data-role="header">
-        <h1>Creating my stories</h1>
-    </header>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <ul id="list-sentence" style:"display:none">
-    </ul>
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-    <div data-role="content" class="content">
-        <div class="image-area" id="image-area">
-        </div>
-        <div class="words-list">
-           <ul id="init-nouns"  style="display:block; " data-role="listview">
-           </ul>
-            <ul id="init-verbs" style="display:block;" data-role="listview">
-            </ul> 
-        </div>
+        <!-- removing boilerplate css -->
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> 
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/main.css">
 
-        <div id="build-sentence" placeholder="Drop elements here...">
-            <div id="sent-noun-1" class="active">
-            </div>
-            <div id="sent-verb-1" class="active">
-            </div>
-            <div id="sent-preposition-1" >
-            </div>
-            <div id="sent-noun-2">
-            </div>
-            <div class="add-words" data-role="controlgroup" data-type="horizontal" data-inline="true">
-                <a href="#" id="btn_add_words" data-role="button" data-icon="plus" data-iconpos="left">Add New Words</a>
-            </div>
-        </div>
-    </div>
 
-    <footer data-role="footer" data-position="fixed">
-        <h1>wordcraft</h1>
-    </footer>
 
-</section>
-<!-- end first page -->
-<!-- Begin second page -->
-<!-- end second page -->
-</body>
+        
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="build-sentence.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h3 class="text-muted">wordcraft</h3>
+        </header>
+
+        <section class="wrapper-main">
+            <div class="wrapper-canvas">
+                <canvas id="elem-frame-svg" width="700" height="400"></canvas>
+
+            </div>
+            
+
+            <!-- sonali's code -->
+            <div data-role="content" class="content">
+               
+                <div class="words-list">
+                   <ul id="init-nouns" data-role="listview"></ul>
+                    <ul id="init-verbs" data-role="listview"></ul> 
+                </div>
+
+                <div id="build-sentence" placeholder="Drop elements here...">
+                    <ul id="list-sentence" style:"display:none white-space: nowrap">
+                    </ul>
+                    <div id="sent-noun-1" class="active">
+                    </div>
+                    <div id="sent-verb-1" class="active">
+                    </div>
+                    <div id="sent-preposition-1" >
+                    </div>
+                    <div id="sent-noun-2">
+                    </div>
+                    <div class="add-words" data-role="controlgroup" data-type="horizontal" data-inline="true">
+                        <a href="#" id="btn_add_words" data-role="button" data-icon="plus" data-iconpos="left">Add New Words</a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </section>
+
+
+        <aside class="wrapper-left">
+            <ul class="general-list">
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+
+        </aside>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+
+
+         <!-- build:js scripts/plugins.js -->
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <script src="bower_components/fabric/dist/fabric.js"></script>
+
+        <script src="js/vendor/jquery.mobile.custom.js"></script>
+        <script src="js/vendor/webkitdragdrop.js"></script>
+        <!-- <script src="js/plugins.js"></script> -->
+        
+
+        <script src="js/main.js"></script>
+        <script src="js/build-sentence.js"></script>
+        
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
 </html>
+

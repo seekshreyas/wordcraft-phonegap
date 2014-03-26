@@ -1,6 +1,6 @@
-var WORDCRAFT = WORDCRAFT | {}
+var WORDCRAFT = WORDCRAFT || {}
 
-WORDCRAFT = (function(){
+WORDCRAFT.build = (function(){
 
 	var gameLevel = 0;
 	var drawImageData = {};
@@ -17,7 +17,7 @@ WORDCRAFT = (function(){
 			})
 			.fail(function() {
 			    console.log( "error" );
-			})
+			});
 
 		$("#btn_add_words").bind("tap",function() {
 			add_new_words();
@@ -126,11 +126,7 @@ WORDCRAFT = (function(){
 		});
 	};
 
-	var getImageParams = function(){
-
-
-
-	};
+	
 	return {
 		'init' : init,
 		'gameLevel': gameLevel
@@ -139,8 +135,3 @@ WORDCRAFT = (function(){
 
 })();
 
-
-jQuery(document).ready(function(){
-
-	WORDCRAFT.init();
-});

@@ -12,7 +12,9 @@
         <!-- removing boilerplate css -->
         <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> 
+        <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/main.css">
+
 
 
         
@@ -38,20 +40,14 @@
                 <canvas id="elem-frame-svg" width="700" height="400"></canvas>
 
             </div>
-            <div class="wrapper-sent">
-                <!-- include sonali's code here for the sentence elements -->
-                <span class="word">Nadal</span> <span class="word">kicks</span> <span class="word">ass</span>
-            </div>
+            
 
             <!-- sonali's code -->
             <div data-role="content" class="content">
-                <div class="image-area" id="image-area">
-                </div>
+               
                 <div class="words-list">
-                   <ul id="init-nouns"  style="display:block; " data-role="listview">
-                   </ul>
-                    <ul id="init-verbs" style="display:block;" data-role="listview">
-                    </ul> 
+                   <ul id="init-nouns" data-role="listview"></ul>
+                    <ul id="init-verbs" data-role="listview"></ul> 
                 </div>
 
                 <div id="build-sentence" placeholder="Drop elements here...">
@@ -110,8 +106,10 @@
         <script src="js/vendor/jquery.mobile.custom.js"></script>
         <script src="js/vendor/webkitdragdrop.js"></script>
         <!-- <script src="js/plugins.js"></script> -->
-        <script src="js/build-sentence.js"></script>
+        
+
         <script src="js/main.js"></script>
+        <script src="js/build-sentence.js"></script>
         
 
 

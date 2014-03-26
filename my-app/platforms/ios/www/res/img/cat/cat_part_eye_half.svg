@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="201.332px" height="242.865px" viewBox="0 0 201.332 242.865" enable-background="new 0 0 201.332 242.865"
+	 xml:space="preserve">
+<g id="Ext">
+</g>
+<g id="Guides">
+</g>
+<g id="_x31_2_Col_Grid_1_" display="none" enable-background="new    ">
+	<g id="Rectangle_xA0_Image_23_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_21_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_19_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_17_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_15_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_13_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_11_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_9_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_7_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_5_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_3_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_1_" display="inline" opacity="0.102">
+	</g>
+</g>
+<g id="Bg">
+</g>
+<g id="main">
+	<g id="Progress">
+	</g>
+	<g id="Text">
+	</g>
+</g>
+<g id="pane">
+	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M92.332,140.666"/>
+	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M101,142.666"/>
+	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M99.666,142.666"/>
+	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M87,142.666"/>
+	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M39.998,197.996"/>
+	<rect x="11.668" y="-16.084" fill="none" width="179" height="16.75"/>
+	<text transform="matrix(1 0 0 1 74.5537 -3.3047)" fill="#686868" font-family="'MyriadPro-Regular'" font-size="18">default</text>
+	<rect x="12.002" y="-16.084" fill="none" width="179" height="16.75"/>
+	<text transform="matrix(1 0 0 1 74.8877 -3.3047)" fill="#686868" font-family="'MyriadPro-Regular'" font-size="18">default</text>
+	<rect x="23.334" y="-16.084" fill="none" width="179" height="16.75"/>
+	<text transform="matrix(1 0 0 1 68.2939 -3.3047)" fill="#686868" font-family="'MyriadPro-Regular'" font-size="18">default -eye</text>
+	<rect x="23.668" y="-16.084" fill="none" width="179" height="16.75"/>
+	<text transform="matrix(1 0 0 1 47.458 -3.3047)" fill="#686868" font-family="'MyriadPro-Regular'" font-size="18">default - eye-shut</text>
+	<g>
+		<g>
+			<ellipse fill="none" stroke="#020200" stroke-miterlimit="10" cx="73" cy="115.666" rx="16" ry="15"/>
+			<line fill="none" stroke="#020200" stroke-miterlimit="10" x1="57" y1="115.666" x2="89" y2="115.666"/>
+			<path fill="#020000" stroke="#020200" stroke-miterlimit="10" d="M63,116.414c0,0,0.414,2.525,0.732,3.297
+				c0.463,1.127,1.971,3.1,2.932,3.711c1.299,0.826,4.385,1.455,5.863,1.236c1.35-0.201,3.965-1.268,5.129-2.061
+				c1.004-0.682,3.18-2.098,3.664-3.299c0.303-0.752,0-3.299,0-3.299L63,116.414z"/>
+		</g>
+		<g>
+			<ellipse fill="none" stroke="#020200" stroke-miterlimit="10" cx="136" cy="114.666" rx="16" ry="15"/>
+			<line fill="none" stroke="#020200" stroke-miterlimit="10" x1="119.668" y1="115.332" x2="151.668" y2="115.332"/>
+			<path fill="#020000" stroke="#020200" stroke-miterlimit="10" d="M125.668,115.746c0,0,0.414,2.525,0.732,3.297
+				c0.463,1.127,1.971,3.1,2.932,3.711c1.297,0.826,4.385,1.457,5.861,1.236c1.352-0.201,3.967-1.268,5.131-2.061
+				c1.004-0.682,3.18-2.096,3.664-3.297c0.303-0.752,0-3.299,0-3.299L125.668,115.746z"/>
+		</g>
+	</g>
+</g>
+<g id="browserhead">
+</g>
+</svg>
