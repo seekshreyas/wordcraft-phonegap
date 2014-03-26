@@ -3,7 +3,7 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT = (function(){
 
-	var init = function(){
+	var init = (function(){
 		console.log("let the crafting begin!");
 		initReadData();
 		initCanvas();
@@ -11,7 +11,7 @@ WORDCRAFT = (function(){
 		initSVG();
 		
 
-	};
+	})();
 
 	var initReadData = function()
 	{
