@@ -20,20 +20,22 @@
         <div class="image-area" id="image-area">
         </div>
         <div class="words-list">
-           <ul id="init-nouns"  style="display:block;" data-role="listview">
+           <ul id="init-nouns"  style="display:block; " data-role="listview">
            </ul>
             <ul id="init-verbs" style="display:block;" data-role="listview">
             </ul> 
         </div>
 
         <div id="build-sentence" placeholder="Drop elements here...">
-            <div id="sent-noun-1" class="sentence">
+            <ul id="list-sentence" style:"display:none white-space: nowrap">
+            </ul>
+            <div id="sent-noun-1" class="active">
             </div>
-            <div id="sent-verb-1" class="sentence">
+            <div id="sent-verb-1" class="active">
             </div>
-            <div id="sent-preposition-1" class="sentence">
+            <div id="sent-preposition-1" >
             </div>
-            <div id="sent-noun-2" class="sentence">
+            <div id="sent-noun-2">
             </div>
             <div class="add-words" data-role="controlgroup" data-type="horizontal" data-inline="true">
                 <a href="#" id="btn_add_words" data-role="button" data-icon="plus" data-iconpos="left">Add New Words</a>
