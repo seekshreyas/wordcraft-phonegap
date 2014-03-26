@@ -8,9 +8,9 @@ WORDCRAFT = (function(){
 		initCanvas();
 		initFabric();
 		initSVG();
-		
 
 	};
+
 
 
 	var initCanvas = function(){
@@ -50,7 +50,7 @@ WORDCRAFT = (function(){
 	var initSVG = function(){
 		var canvas = new fabric.Canvas('elem-frame-svg');
 
-		fabric.Image.fromURL('res/img/cat/cat_skin.svg', function(oImg){
+		fabric.Image.fromURL('res/img/animals/cat/cat_skin.svg', function(oImg){
 			oImg.width = 201;
 			oImg.height = 242;
 			oImg.top = 20;
@@ -58,7 +58,7 @@ WORDCRAFT = (function(){
 			canvas.add(oImg);
 		});
 
-		fabric.Image.fromURL('res/img/cat/cat_part_mouth.svg', function(oImg){
+		fabric.Image.fromURL('res/img/animals/cat/cat_part_mouth.svg', function(oImg){
 			oImg.width = 201;
 			oImg.height = 242;
 			oImg.top = 20;
@@ -66,7 +66,7 @@ WORDCRAFT = (function(){
 			canvas.add(oImg);
 		});
 
-		fabric.Image.fromURL('res/img/cat/cat_part_eye.svg', function(oImg){
+		fabric.Image.fromURL('res/img/animals/cat/cat_part_eye.svg', function(oImg){
 			oImg.width = 201;
 			oImg.height = 242;
 			oImg.top = 20;
@@ -79,8 +79,18 @@ WORDCRAFT = (function(){
 	};
 
 
+
+
+	//create a method of Sonali to call back from sentence
+	//changes
+
+	var handleSentChanges = function(obj){
+		console.log("passed object: ", obj);
+	};
+
 	return {
-		'init' : init
+		'init' : init,
+		'handleSentChanges' : handleSentChanges
 	};
 
 })();

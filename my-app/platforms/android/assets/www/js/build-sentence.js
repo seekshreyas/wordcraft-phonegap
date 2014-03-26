@@ -4,6 +4,7 @@ WORDCRAFT.build = (function(){
 
 	var gameLevel = 0;
 	var drawImageData = {};
+	var sentenceItems = {};
 
 	var init = function(){
 		console.log("let the crafting begin!");
@@ -50,7 +51,7 @@ WORDCRAFT.build = (function(){
 			while($("#init-nouns").children().length<2)
 			{
 				var number = 1 + Math.floor(Math.random() * d.nouns.length);
-				var htmlLi = '<li class="draggable li-noun" id="noun-' + i + '">'+ d.nouns[number] + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
+				var htmlLi = '<li class="draggable li-noun" id="noun_' + i + '">'+ d.nouns[number] + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
 				$("#init-nouns").append(htmlLi);
 				//$("#all-words").append(htmlLi);
 				i++;
@@ -66,7 +67,7 @@ WORDCRAFT.build = (function(){
 			{
 				
 				var number = 1 + Math.floor(Math.random() * Object.keys(d.verbs).length);
-				var htmlLi = '<li class="draggable li-verb" id="verb-' + i + '">'+ Object.keys(d.verbs)[number] + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
+				var htmlLi = '<li class="draggable li-verb" id="verb_' + i + '">'+ Object.keys(d.verbs)[number] + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
 				console.log(htmlLi);
 				$("#init-verbs").append(htmlLi);
 				//$("#all-words").append(htmlLi);
@@ -92,38 +93,36 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-noun-1', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
-				draw_image(obj,'noun');		
+				var value = $(obj).text();
+				var listItem = value.substr(0, value.length - 1);
+				var listItemId = $(obj).attr('id');	
+				sentenceItems[listItemId] = listItem;
+				draw_image();
+
 			}
 		});
 		webkit_drop.add('sent-verb-1', 
 		{accept : ["li-verb"], 
 			onDrop : function(obj){	
-				draw_image(obj,'verb');
-				
-					
+				var value = $(obj).text();
+				var listItem = value.substr(0, value.length - 1);
+				var listItemId = $(obj).attr('id');	
+				sentenceItems[listItemId] = listItem;
+				draw_image();
 				}
 		});
 	};
 
-	var draw_image = function(obj,type)
-	{
-		alert("Inside draw");
+	var draw_image = function()
+	{	alert("Inside draw");
+		alert(JSON.stringify(sentenceItems["noun_0"]));
 
-		var value = $(obj).text();
-		var listItem = value.substr(0, value.length - 1);
-		var listItemId = $(obj).attr('id');
-
-		alert(listItem);
-		alert(listItemId);
-
-		var newLiElem = '<li id="'+listItemId+'" data-'+type+'="'+listItem+'""></li>'
-		alert(newLiElem);
-		$('#list-sentence').append(newLiElem);
-		alert($('#list-sentence').html());
-		
-		$('#list-sentence').children().each(function(){
-			alert($(this));
-		});
+		if(gameLevel ===0)
+		{
+			alert("gamelevel");
+			var noun = sentenceItems["noun_0"];
+			alert(JSON.stringify(drawImageData[noun.toString()]["verb"]["walking"]));
+		}
 	};
 
 	
