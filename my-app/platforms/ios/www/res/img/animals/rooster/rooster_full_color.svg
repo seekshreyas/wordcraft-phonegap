@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px"
+	 height="255px" viewBox="0 0 200 255" enable-background="new 0 0 200 255" xml:space="preserve">
+<g id="Ext">
+</g>
+<g id="Guides">
+</g>
+<g id="_x31_2_Col_Grid_1_" display="none" enable-background="new    ">
+	<g id="Rectangle_xA0_Image_23_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_21_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_19_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_17_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_15_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_13_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_11_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_9_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_7_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_5_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_3_" display="inline" opacity="0.102">
+	</g>
+	<g id="Rectangle_xA0_Image_1_" display="inline" opacity="0.102">
+	</g>
+</g>
+<g id="Bg">
+</g>
+<g id="main">
+	<g id="Progress">
+	</g>
+	<g id="Text">
+	</g>
+</g>
+<g id="pane">
+</g>
+<g id="browserhead">
+	<text transform="matrix(1 0 0 1 41.8867 -3.2197)" fill="#686868" font-family="'MyriadPro-Regular'" font-size="18">default</text>
+	<text transform="matrix(1 0 0 1 42.2207 -3.2197)" fill="#686868" font-family="'MyriadPro-Regular'" font-size="18">default</text>
+	<g>
+		<path fill="#F4530C" stroke="#F4530C" stroke-miterlimit="10" d="M121.736,242.006l4.11-7.74l-2.284-10.77
+			c-0.344-1.621,0.473-3.167,1.822-3.453c1.352-0.287,2.726,0.795,3.069,2.416l2.214,10.435l6.9,6.032
+			c1.039,0.908,1.146,2.486,0.234,3.527c-0.906,1.039-2.486,1.145-3.525,0.236l-1.882-1.645l1.036,4.892
+			c0.346,1.62-0.471,3.167-1.823,3.452c-1.35,0.287-2.724-0.795-3.067-2.416l-1.078-5.09l-1.311,2.467
+			c-0.646,1.22-2.161,1.685-3.381,1.036C121.553,244.739,121.091,243.225,121.736,242.006z"/>
+		<path fill="#F4530C" stroke="#F4530C" stroke-miterlimit="10" d="M75.108,242.006L71,234.266l2.283-10.77
+			c0.343-1.621-0.473-3.167-1.823-3.453c-1.352-0.287-2.726,0.795-3.068,2.416l-2.213,10.435l-6.901,6.032
+			c-1.04,0.908-1.146,2.486-0.236,3.527c0.908,1.039,2.488,1.145,3.527,0.236l1.881-1.645l-1.036,4.892
+			c-0.345,1.62,0.472,3.167,1.823,3.452c1.35,0.287,2.724-0.795,3.066-2.416l1.08-5.09l1.31,2.467
+			c0.648,1.22,2.161,1.685,3.381,1.036C75.293,244.739,75.757,243.225,75.108,242.006z"/>
+	</g>
+	<ellipse fill="#F7E42D" stroke="#665C12" stroke-miterlimit="10" cx="98.432" cy="138.038" rx="90.009" ry="88.508"/>
+	<path fill="#F9F0D7" stroke="#F9F0D7" stroke-width="1" stroke-miterlimit="10" d="M32.664,196.637
+		c13.135,16.763,37.478,28.029,65.357,28.029c30.078,0,56.059-13.106,68.268-32.09c-11.852-14.484-36.661-24.458-65.357-24.458
+		C69.626,168.119,42.939,179.987,32.664,196.637z"/>
+	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M97.332,143.749"/>
+	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M84.666,143.749"/>
+	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M37.664,199.079"/>
+	<rect x="9.666" y="-15" fill="none" width="179" height="17"/>
+	<text transform="matrix(1 0 0 1 72.2207 -2.2227)" fill="#686868" font-family="'MyriadPro-Regular'" font-size="18">default</text>
+	<rect x="9.666" y="-15" fill="none" width="179" height="17"/>
+	<text transform="matrix(1 0 0 1 72.5547 -2.2227)" fill="#686868" font-family="'MyriadPro-Regular'" font-size="18">default</text>
+	<g>
+		<ellipse fill="#FDFDFE" stroke="#020200" stroke-miterlimit="10" cx="64.423" cy="115.998" rx="16" ry="15"/>
+		<ellipse fill="#020200" stroke="#020200" stroke-width="0.5477" stroke-miterlimit="10" cx="64.423" cy="115.998" rx="9" ry="8"/>
+		<ellipse fill="#FCFCFC" stroke="#020200" stroke-miterlimit="10" cx="129.423" cy="114.998" rx="16" ry="15"/>
+		
+			<ellipse fill="#020200" stroke="#020200" stroke-width="0.5477" stroke-miterlimit="10" cx="129.423" cy="114.998" rx="9" ry="8"/>
+	</g>
+	<g>
+		<g>
+			<polygon fill="#F4530C" points="98.642,140 112.301,140 105.472,152.499 98.642,164.998 91.812,152.499 84.98,140 			"/>
+			<path fill="#F4530C" d="M98.666,139.498l13.648,0.081l0.701,0.004l-0.343,0.616l-13.81,24.918l-0.224,0.402l-0.218-0.402
+				L84.91,140.079L84.846,140h0.135l13.686-0.002V139.498z M98.666,139.998l-13.672,0.081l0.064-0.058L98.861,165h-0.439
+				l13.512-25.142l0.381,0.589l-13.648,0.05V139.998z"/>
+		</g>
+		<g>
+			<polygon fill="#F4530C" points="98.642,140 112.301,140 105.472,134.999 98.642,129.998 91.812,134.999 84.98,140 			"/>
+			<path fill="#F4530C" d="M98.666,139.498l13.648,0.112l-0.236,0.602L98.494,130h0.295l-13.742,9.988l-0.053-0.152l13.672,0.162
+				V139.498z M98.666,139.998l-13.672,0.112l-0.348,0.002l0.271-0.205l13.578-10.111l0.144-0.108l0.149,0.108l13.742,9.888
+				l0.961,0.692l-1.178,0.01l-13.648,0.112V139.998z"/>
+		</g>
+	</g>
+	<g>
+		<path fill="#F7E42D" stroke="#665C12" stroke-miterlimit="10" d="M120.993,181.89c7.04,4.876,16.769,3.985,22.766-2.474
+			c5.996-6.458,6.164-16.226,0.778-22.885L120.993,181.89z"/>
+		<path fill="#F7E42D" stroke="#665C12" stroke-miterlimit="10" d="M80.852,181.89c-7.04,4.876-16.768,3.985-22.766-2.474
+			c-5.995-6.458-6.163-16.226-0.778-22.885L80.852,181.89z"/>
+	</g>
+	<path fill="#F90606" stroke="#700606" stroke-miterlimit="10" d="M73.494,52.744c7.817-2.179,16.067-3.345,24.595-3.345
+		c8.731,0,17.171,1.227,25.154,3.508l2.748-5.11c0.526-0.507,0.965-1.1,1.285-1.777c1.772-3.744-0.615-8.59-5.338-10.825
+		c-4.719-2.235-9.98-1.014-11.754,2.73c-0.38,0.802-0.559,1.655-0.573,2.522l-3.094,5.147l1.562-20.226h-0.031
+		c0.783-7-6.177-13.407-15.83-15.016c-9.857-1.642-18.766,2.611-19.9,9.421c-0.313,1.878,0.018,3.595,0.839,5.595H73.08l10,19.87
+		l-17.414-2.953L73.494,52.744z"/>
+</g>
+</svg>

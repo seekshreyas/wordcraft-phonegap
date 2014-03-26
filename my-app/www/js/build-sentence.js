@@ -4,7 +4,7 @@ WORDCRAFT.build = (function(){
 
 	var gameLevel = 0;
 	var drawImageData = {};
-	var sentenceItems = {};
+	var sentenceItems = {"noun":[],"verb":[],"prep":[],"adj":[]};
 
 	var init = function(){
 		console.log("let the crafting begin!");
@@ -50,7 +50,7 @@ WORDCRAFT.build = (function(){
 			var i = $("#init-nouns").children().length;
 			while($("#init-nouns").children().length<2)
 			{
-				var number = 1 + Math.floor(Math.random() * d.nouns.length);
+				var number = 1 + Math.floor(Math.random() * d.nouns.length-1);
 				var htmlLi = '<li class="draggable li-noun" id="noun_' + i + '">'+ d.nouns[number] + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
 				$("#init-nouns").append(htmlLi);
 				//$("#all-words").append(htmlLi);
@@ -66,7 +66,7 @@ WORDCRAFT.build = (function(){
 			while($("#init-verbs").children().length<3)
 			{
 				
-				var number = 1 + Math.floor(Math.random() * Object.keys(d.verbs).length);
+				var number = 1 + Math.floor(Math.random() * Object.keys(d.verbs).length-1);
 				var htmlLi = '<li class="draggable li-verb" id="verb_' + i + '">'+ Object.keys(d.verbs)[number] + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
 				console.log(htmlLi);
 				$("#init-verbs").append(htmlLi);
@@ -96,7 +96,8 @@ WORDCRAFT.build = (function(){
 				var value = $(obj).text();
 				var listItem = value.substr(0, value.length - 1);
 				var listItemId = $(obj).attr('id');	
-				sentenceItems[listItemId] = listItem;
+				//sentenceItems[listItemId] = listItem;
+				sentenceItems["noun"].push(listItem);
 				draw_image();
 
 			}
@@ -107,21 +108,39 @@ WORDCRAFT.build = (function(){
 				var value = $(obj).text();
 				var listItem = value.substr(0, value.length - 1);
 				var listItemId = $(obj).attr('id');	
-				sentenceItems[listItemId] = listItem;
+				//sentenceItems[listItemId] = listItem;
+				sentenceItems["verb"].push(listItem);
 				draw_image();
 				}
 		});
 	};
 
 	var draw_image = function()
-	{	alert("Inside draw");
-		alert(JSON.stringify(sentenceItems["noun_0"]));
+	{
+		var noun_0 = sentenceItems["noun"][0];
+		var verb_0 = sentenceItems["verb"][0];
 
-		if(gameLevel ===0)
+		if(gameLevel ===0 && noun_0)
 		{
-			alert("gamelevel");
-			var noun = sentenceItems["noun_0"];
-			alert(JSON.stringify(drawImageData[noun.toString()]["verb"]["walking"]));
+			if(verb_0)
+			{
+				var tmpVerb = verb_0.toString().split(" ");
+				if (tmpVerb.length>1)
+				{
+					verb_0 = tmpVerb[1];
+				}
+				var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
+				WORDCRAFT.handleSentChanges(jsonObj);
+				gameLevel = 1;
+			}	
+			else
+			{
+				var defaultJson = {"eyes": "resources/img/grass/grass_part_eyes_awake.svg",
+                "skin": "resources/img/grass/grass_skin.svg",
+                "mouth": "resources/img/grass/grass_part_mouth_happy.svg",
+                "ears": "resources/img/grass/grass_part_ears.svg"};
+				WORDCRAFT.handleSentChanges(defaultJson);
+			}
 		}
 	};
 

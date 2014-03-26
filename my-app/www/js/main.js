@@ -44,7 +44,7 @@ WORDCRAFT = (function(){
 	//changes
 
 	var handleSentChanges = function(obj){
-		console.log("passed object: ", obj);
+		console.log(JSON.stringify(obj));
 	};
 
 	return {
