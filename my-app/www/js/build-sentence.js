@@ -92,31 +92,38 @@ WORDCRAFT = (function(){
 		webkit_drop.add('sent-noun-1', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
-				$('#list-sentence').append(obj);
-				draw_image();
-				}
+				draw_image(obj,'noun');		
+			}
 		});
 		webkit_drop.add('sent-verb-1', 
 		{accept : ["li-verb"], 
 			onDrop : function(obj){	
-				$('#list-sentence').append(obj);
-					draw_image();
+				draw_image(obj,'verb');
+				
+					
 				}
 		});
 	};
 
-	var draw_image = function()
+	var draw_image = function(obj,type)
 	{
+		alert("Inside draw");
 
+		var value = $(obj).text();
+		var listItem = value.substr(0, value.length - 1);
+		var listItemId = $(obj).attr('id');
+
+		alert(listItem);
+		alert(listItemId);
+
+		var newLiElem = '<li id="'+listItemId+'" data-'+type+'="'+listItem+'""></li>'
+		alert(newLiElem);
+		$('#list-sentence').append(newLiElem);
+		alert($('#list-sentence').html());
+		
 		$('#list-sentence').children().each(function(){
-			alert($(this).id);
-
-
+			alert($(this));
 		});
-
-
-		alert("Inside draw image");
-		alert(("#list-sentence").html());
 	};
 
 	var getImageParams = function(){
