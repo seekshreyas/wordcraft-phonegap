@@ -10,15 +10,14 @@ WORDCRAFT = (function(){
 
 		initReadData();
 
-		var full_json = $.getJSON( "res/data/full_json.json",function(){		
-		}) 
-		.done(function(data) {
-			drawImageData = data;
-			console.log(drawImageData);	    
-		})
-		.fail(function() {
-		    console.log( "error" );
-		})
+		var full_json = $.getJSON( "res/data/full_json.json") 
+			.done(function(data) {
+				drawImageData = data;
+				console.log(drawImageData);	    
+			})
+			.fail(function() {
+			    console.log( "error" );
+			})
 
 		$("#btn_add_words").bind("tap",function() {
 			add_new_words();
