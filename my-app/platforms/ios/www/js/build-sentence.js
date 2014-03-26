@@ -117,7 +117,7 @@ WORDCRAFT = (function(){
 		alert(listItem);
 		alert(listItemId);
 
-		var newLiElem = '<li id="'+listItemId+'" data-'+type+'="'+listItem+'></li>'
+		var newLiElem = '<li id="'+listItemId+'" data-'+type+'="'+listItem+'""></li>'
 		alert(newLiElem);
 		$('#list-sentence').append(newLiElem);
 		alert($('#list-sentence').html());
