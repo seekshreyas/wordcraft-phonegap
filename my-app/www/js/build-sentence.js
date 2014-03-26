@@ -116,12 +116,20 @@ WORDCRAFT.build = (function(){
 	var draw_image = function()
 	{	alert("Inside draw");
 		alert(JSON.stringify(sentenceItems["noun_0"]));
+		var noun_0 = sentenceItems["noun_0"];
+		var verb_0 = sentenceItems["verb_0"];
 
-		if(gameLevel ===0)
+		if(gameLevel ===0 && noun_0)
 		{
 			alert("gamelevel");
-			var noun = sentenceItems["noun_0"];
-			alert(JSON.stringify(drawImageData[noun.toString()]["verb"]["walking"]));
+			if(verb_0)
+			{
+			alert(JSON.stringify(drawImageData[noun_0.toString()]["verb"][verb_0.toString()]));
+			}	
+			else
+			{
+				alert("default for noun");
+			}
 		}
 	};
 
