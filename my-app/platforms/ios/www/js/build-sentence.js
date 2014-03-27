@@ -10,25 +10,18 @@ WORDCRAFT.build = (function(){
 	var init = function(){
 		console.log("let the crafting begin!");
 
-		var parts_of_speech = $.getJSON( "res/data/full_json.json") 
-			.done(function(data) {
-				partsofSpeech = data;   
-			})
-			.fail(function() {
-			    console.log( "error" );
-		});
 
 		initReadData();
 
 		var full_json = $.getJSON( "res/data/full_json.json") 
 			.done(function(data) {
-				drawImageData = data;
-				console.log(drawImageData);	    
+				drawImageData = data;   
 			})
 			.fail(function() {
 			    console.log( "error" );
 			});
 
+		
 		$("#btn_add_words").bind("tap",function() {
 			add_new_words();
 		});
@@ -36,55 +29,69 @@ WORDCRAFT.build = (function(){
 		var add_new_words = function(){
 			initReadData();
 		};
+		
 	};
 	
 	var initReadData = function()
 	{
-		//console.log("Inside Init read data");
-		//jQuery.getJSON('res/data/parts-of-speech.json', function(data){		
-		parseData(partsofSpeech);	
-		//});	
+		console.log("Inside Init read data");
+		jQuery.getJSON('res/data/parts-of-speech.json', function(data){	
+		 	console.log("Data from init readobject",data);	
+			parseData(data);	
+		});	
 	};
 
 	var parseData = function(d){
-		console.log("Reached parserdata");
-		console.log("Length of nouns list" + $("#init-nouns").children().length);
-		console.log("Length of verbs list" + $("#init-verbs").children().length);
-		console.log(d.nouns);
+		console.log("-------------------");
+		console.log(d);
+		console.log("-------------------");
+		//console.log("Reached parserdata");
+		//console.log("Length of nouns list" + $("#init-nouns").children().length);
+		//console.log("Length of verbs list" + $("#init-verbs").children().length);
+		//console.log(d.nouns);
 		
 		if($("#init-nouns").children().length < 2)
 		{	
 			console.log("Checking init noun ");
 			console.log("length of nouns < 2");
-			var i = $("#init-nouns").children().length;
 			while($("#init-nouns").children().length<2)
 			{
 				var number = 1 + Math.floor(Math.random() * d.nouns.length-1);
-				var htmlLi = '<li class="draggable li-noun" id="noun_' + i + '">'+ d.nouns[number] + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
-				$("#init-nouns").append(htmlLi);
-				//$("#all-words").append(htmlLi);
-				i++;
+				var noun = d.nouns[number];
+				if(noun)
+				{
+					var htmlLi = '<li class="draggable li-noun" id="noun_'+noun.replace(" ","_")+'">'+ noun + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
+					$("#init-nouns").append(htmlLi);
+					//$("#all-words").append(htmlLi);
+				}
+				
 			}
 			console.log("Length of nouns list" + $("#init-nouns").children().length);
+		
 		};
 		if($("#init-verbs").children().length < 3)
 		{
 			console.log("Checking init verbs");
 			console.log("length of verbs < 3");
-			var i = $("#init-verbs").children().length;
 			while($("#init-verbs").children().length<3)
 			{
 				
 				var number = 1 + Math.floor(Math.random() * Object.keys(d.verbs).length-1);
-				var htmlLi = '<li class="draggable li-verb" id="verb_' + i + '">'+ Object.keys(d.verbs)[number] + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
-				console.log(htmlLi);
-				$("#init-verbs").append(htmlLi);
-				//$("#all-words").append(htmlLi);
-				i++;
+				var verb = Object.keys(d.verbs)[number];
+				if(verb)
+				{
+					var htmlLi = '<li class="draggable li-verb" id="verb_'+verb.replace(" ","_")+'">'+ verb + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>' ;
+					console.log(htmlLi);
+					$("#init-verbs").append(htmlLi);
+				}
+				
 			}
+		
 
 		};
 
+		console.log($('#init-verbs').html());
+		console.log($('#init-nouns').html());
 		makeDragabble();
 
 	};
@@ -96,7 +103,8 @@ WORDCRAFT.build = (function(){
 		});
 
 		$('#init-verbs').children().each(function(index,value) {
-			new webkit_draggable(value.id, {revert : true, scroll : true});
+			//alert(value.id);
+				new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
 
 		webkit_drop.add('sent-noun-1', 
@@ -104,7 +112,7 @@ WORDCRAFT.build = (function(){
 			onDrop : function(obj){
 				var value = $(obj).text();
 				var listItem = value.substr(0, value.length - 1);
-				var listItemId = $(obj).attr('id');	
+				//var listItemId = $(obj).attr('id');	
 				//sentenceItems[listItemId] = listItem;
 				sentenceItems["noun"].push(listItem);
 				draw_image();
@@ -116,7 +124,7 @@ WORDCRAFT.build = (function(){
 			onDrop : function(obj){	
 				var value = $(obj).text();
 				var listItem = value.substr(0, value.length - 1);
-				var listItemId = $(obj).attr('id');	
+				//var listItemId = $(obj).attr('id');	
 				//sentenceItems[listItemId] = listItem;
 				sentenceItems["verb"].push(listItem);
 				draw_image();
