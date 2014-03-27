@@ -10,16 +10,19 @@
     background:#fff;
 }
 
+
+  
+
     /*canvas*/
     #elem-frame-svg{
         border:1px solid #bfbfbf;
         margin:1em 4%;
+        background: url('../res/img/bg/bg_scene_green.png') top left no-repeat ;
     }
 
 
 
-.li-noun
-{
+.li-noun{
     /*float:left;*/
     width:85px;
     border:1px solid black;
