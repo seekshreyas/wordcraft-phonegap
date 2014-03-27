@@ -25,8 +25,8 @@
 	"amused" : {
 		"pos" : "VB",
 		"related" : ["animal", "farm"], //related words
-		"before" : ["is", "are"]
-		"after" : ["at", "on"]
+		"before" : ["is", "are"],
+		"after" : ["at", "on"],
 		"type" : "visual",
 		"bodypart" : {
 			"eyes" : "happier", //possible values ["sadder", "sad", default", "happy", "happier"]
