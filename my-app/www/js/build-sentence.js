@@ -3,23 +3,25 @@ var WORDCRAFT = WORDCRAFT || {}
 WORDCRAFT.build = (function(){
 
 	var gameLevel = 0;
+	var partsofSpeech = {};
 	var drawImageData = {};
 	var sentenceItems = {"noun":[],"verb":[],"prep":[],"adj":[]};
 
 	var init = function(){
 		console.log("let the crafting begin!");
 
+
 		initReadData();
 
 		var full_json = $.getJSON( "res/data/full_json.json") 
 			.done(function(data) {
-				drawImageData = data;
-				console.log(drawImageData);	    
+				drawImageData = data;   
 			})
 			.fail(function() {
 			    console.log( "error" );
 			});
 
+		
 		$("#btn_add_words").bind("tap",function() {
 			add_new_words();
 		});
@@ -27,21 +29,26 @@ WORDCRAFT.build = (function(){
 		var add_new_words = function(){
 			initReadData();
 		};
+		
 	};
 	
 	var initReadData = function()
 	{
-		console.log("Inside Init read data");
-		jQuery.getJSON('res/data/parts-of-speech.json', function(data){		
-		parseData(data);	
+		//console.log("Inside Init read data");
+		jQuery.getJSON('res/data/parts-of-speech.json', function(data){	
+		 	console.log("Data from init readobject",data);	
+			parseData(data);	
 		});	
 	};
 
 	var parseData = function(d){
-		console.log("Reached parserdata");
-		console.log("Length of nouns list" + $("#init-nouns").children().length);
-		console.log("Length of verbs list" + $("#init-verbs").children().length);
-		console.log(d.nouns);
+		console.log("-------------------");
+		console.log(d);
+		console.log("-------------------");
+		//console.log("Reached parserdata");
+		//console.log("Length of nouns list" + $("#init-nouns").children().length);
+		//console.log("Length of verbs list" + $("#init-verbs").children().length);
+		//console.log(d.nouns);
 		
 		if($("#init-nouns").children().length < 2)
 		{	
