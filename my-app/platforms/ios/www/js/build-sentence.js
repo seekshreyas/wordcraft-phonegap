@@ -3,11 +3,20 @@ var WORDCRAFT = WORDCRAFT || {}
 WORDCRAFT.build = (function(){
 
 	var gameLevel = 0;
+	var partsofSpeech = {};
 	var drawImageData = {};
 	var sentenceItems = {"noun":[],"verb":[],"prep":[],"adj":[]};
 
 	var init = function(){
 		console.log("let the crafting begin!");
+
+		var parts_of_speech = $.getJSON( "res/data/full_json.json") 
+			.done(function(data) {
+				partsofSpeech = data;   
+			})
+			.fail(function() {
+			    console.log( "error" );
+		});
 
 		initReadData();
 
@@ -31,10 +40,10 @@ WORDCRAFT.build = (function(){
 	
 	var initReadData = function()
 	{
-		console.log("Inside Init read data");
-		jQuery.getJSON('res/data/parts-of-speech.json', function(data){		
-		parseData(data);	
-		});	
+		//console.log("Inside Init read data");
+		//jQuery.getJSON('res/data/parts-of-speech.json', function(data){		
+		parseData(partsofSpeech);	
+		//});	
 	};
 
 	var parseData = function(d){
@@ -116,27 +125,22 @@ WORDCRAFT.build = (function(){
 	};
 
 	var draw_image = function()
-	{	//alert("Inside draw");
-		//alert(JSON.stringify(sentenceItems["noun_0"]));
+	{
 		var noun_0 = sentenceItems["noun"][0];
 		var verb_0 = sentenceItems["verb"][0];
 
 		if(gameLevel ===0 && noun_0)
 		{
-			//alert("gamelevel");
 			if(verb_0)
 			{
-				//alert(verb_0);
-				//alert(noun_0);
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
 					verb_0 = tmpVerb[1];
 				}
 				var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
-				//alert(JSON.stringify(jsonObj));
 				WORDCRAFT.handleSentChanges(jsonObj);
-				//alert(JSON.stringify(drawImageData[noun_0.toString()]["verb"][verb_0.toString()]));
+				gameLevel = 1;
 			}	
 			else
 			{
