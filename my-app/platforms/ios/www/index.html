@@ -24,7 +24,10 @@
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <audio id="sound">
+        </audio>
+        <audio id="winning">
+        </audio>
         <!-- Add your site or application content here -->
         <header class="header">
             <ul class="nav nav-pills pull-right">
@@ -34,6 +37,7 @@
             </ul>
             <h3 class="text-muted">wordcraft</h3>
         </header>
+
 
         <section class="wrapper-main">
             <div class="wrapper-canvas">
@@ -48,16 +52,19 @@
                 <div class="words-list">
                    <ul id="init-nouns" data-role="listview"></ul>
                     <ul id="init-verbs" data-role="listview"></ul> 
+                    <ul id="init-prep" data-role="listview"></ul> 
+                    <ul id="init-adj" data-role="listview"></ul>
+                    <ul id="init-adv" data-role="listview"></ul>  
                 </div>
 
                 <div id="build-sentence" placeholder="Drop elements here...">
-                    <ul id="list-sentence" style:"display:none white-space: nowrap">
-                    </ul>
+                    <div id="sent-det-1">
+                    </div>
                     <div id="sent-noun-1" class="active">
                     </div>
                     <div id="sent-verb-1" class="active">
                     </div>
-                    <div id="sent-preposition-1" >
+                    <div id="sent-prep-1" >
                     </div>
                     <div id="sent-noun-2">
                     </div>
