@@ -149,6 +149,13 @@ height: 20px;
     text-align:center;
 }
 
+#overlay-del{
+  cursor: pointer; 
+  position:relative; 
+  float:right; 
+  margin-right:10px; 
+  font-size:20px;"
+}
 
 /*
 #sent-noun-1::before{

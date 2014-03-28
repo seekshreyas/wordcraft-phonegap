@@ -32,8 +32,6 @@ WORDCRAFT.build = (function(){
 			    console.log( "error" );
 			});
 
-
-
 		
 		$("#btn_add_words").bind("tap",function() {
 			add_new_words(gameLevel);
@@ -42,6 +40,15 @@ WORDCRAFT.build = (function(){
 		var add_new_words = function(){
 			initReadData(gameLevel);
 		};
+		$(document).on("click","#overlay #overlay-del", function(){
+			$(this).parent().remove();
+			initReadData(gameLevel);
+
+			$("#winning").append('<source src="res/sound/winning.wav"></source><source src="res/sound/winning.ogg"></source>');
+			var audio = $("#winning")[0];
+			audio.play();	
+
+		});
 		
 	};
 	
@@ -141,7 +148,7 @@ WORDCRAFT.build = (function(){
 
 		};
 
-
+		
 		console.log($('#init-verbs').html());
 		console.log($('#init-nouns').html());
 
@@ -247,20 +254,13 @@ WORDCRAFT.build = (function(){
 		var audio = $("#sound")[0];
 		audio.play();
 
-		levelChange();
-		
+		levelChange();		
 	};
 
 	var levelChange = function(){
 
-		var overlay = jQuery('<div id="overlay"><p style="float:left">Level Complete!!!</p><div style="cursor: pointer; position:relative; float:right; margin-right:10px; font-size:20px;" onclick="$(this).parent().remove();"><b>x</b></div> </div>');
+		var overlay = jQuery('<div id="overlay"><p style="float:left">Level Complete!!!</p><div id="overlay-del"><b>x</b></div> </div>');
 		overlay.appendTo(document.body);
-		initReadData(gameLevel);
-
-		$("#winning").append('<source src="res/sound/winning.wav"></source><source src="res/sound/winning.ogg"></source>');
-		var audio = $("#winning")[0];
-		audio.play();
-		
 	
 	}
 
