@@ -2,7 +2,7 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT.build = (function(){
 
-	var gameLevel = 2;
+	var gameLevel = 0;
 	var partsofSpeech = {};
 	var drawImageData = {};
 	var sentenceItems = {"noun":[],"verb":[],"prep":[],"adj":[],"det":[]};
@@ -99,12 +99,12 @@ WORDCRAFT.build = (function(){
 				
 				var number = 1 + Math.floor(Math.random() * Object.keys(d.det).length-1);
 				var det = d.det[number];
-				if(jQuery.inArray(det,tmpDet) == -1)
-				{
+				//if(jQuery.inArray(det,tmpDet) == -1)
+				//{
 					tmpDet.push(det);
 					var htmlLi = '<li class="draggable li-det" id="det_'+det.replace(" ","_")+'">'+ det + '<div class="del" style="cursor: pointer;">x</div></li>' ;
 					$("#init-det").append(htmlLi);
-				}
+				//}
 				
 			}
 		}
@@ -133,26 +133,27 @@ WORDCRAFT.build = (function(){
 		{	
 			console.log("Checking init noun ");
 			console.log("length of nouns < 2");
+			var tmpNouns = [];
 			while($("#init-nouns").children().length < levelPOSCnt[level].noun)
 			{
 				var number = 1 + Math.floor(Math.random() * d.nouns.length-1);
 				var noun = d.nouns[number];
-				
-				if(noun)
+				if (noun && $.inArray(noun, tmpNouns) == -1)
 				{
-					if(gameLevel === 2)
-					{
-						var htmlLi = '<li class="draggable li-noun" id="noun_'+noun.split(" ")[1]+'">'+ noun + '<div class="del" style="cursor: pointer;">x</div></li>' ;
-						$("#init-nouns").append(htmlLi);
-					}
-					else
-					{
-						var htmlLi = '<li class="draggable li-noun" id="noun_'+noun.replace(" ","_")+'">'+ noun + '<div class="del" style="cursor: pointer;">x</div></li>' ;
-						$("#init-nouns").append(htmlLi);	
-					}
-					//$("#all-words").append(htmlLi);
-				}
-				
+						tmpNouns.push(noun);
+						if(gameLevel == 2)
+						{
+							
+							var htmlLi = '<li class="draggable li-noun" id="noun_'+noun.split(" ")[1]+'">'+ noun.split(" ")[1] + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+							$("#init-nouns").append(htmlLi);
+						}
+						else
+						{
+							var htmlLi = '<li class="draggable li-noun" id="noun_'+noun.replace(" ","_")+'">'+ noun + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+							$("#init-nouns").append(htmlLi);	
+						}
+						//$("#all-words").append(htmlLi);
+				}				
 			}
 		}
 
@@ -202,14 +203,10 @@ WORDCRAFT.build = (function(){
 	};
 
 	var populateOnDrop = function(obj,type,form){
-			//alert(obj.html());
 			var value = $(obj).text();
 			if(($("#sent-"+type.toString()+"-"+form.toString()).html().length) == 21)
 			{
 				var listItem = value.substr(0, value.length - 1);
-				//alert(listItem);
-				//var listItemId = $(obj).attr('id');	
-				//sentenceItems[listItemId] = listItem;
 				var color = $(obj).css("background-color");
 				$(obj).remove();
 				sentenceItems[type.toString()].push(listItem);
@@ -246,6 +243,12 @@ WORDCRAFT.build = (function(){
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
 
+		webkit_drop.add('sent-det-1', 
+		{ accept : ["li-det"], 
+			onDrop : function(obj){	
+				populateOnDrop($(obj),'det','1');
+			}
+		});
 
 		webkit_drop.add('sent-adj-1', 
 		{ accept : ["li-adj"], 
@@ -286,6 +289,22 @@ WORDCRAFT.build = (function(){
 		});
 
 	};
+	var createDefaultJson = function(type,pos){
+		
+		var json_elem = {
+			"eyes": "res/img/animals/"+type+"/"+type+"_part_eye.svg",
+			"skin": "res/img/animals/"+type+"/"+type+"_skin.svg",
+			"mouth": "res/img/animals/"+type+"/"+type+"+_part_mouth_happy.svg",
+			"pos": {
+					"ground" : pos.toString(), 
+					"sky" : "none",
+					"relative" : "none"
+					}  
+			};
+
+		return json_elem;
+
+	};
 
 
 	var draw_image = function()
@@ -294,132 +313,79 @@ WORDCRAFT.build = (function(){
 		var verb_0 = sentenceItems["verb"][0];
 		var prep_0 = sentenceItems["prep"][0];
 		var noun_1 = sentenceItems["noun"][1];
+		var adj_1  = sentenceItems["adj"][0];
+		var det_1 = sentenceItems["det"][0];
+
 
 		if(gameLevel === 0 && noun_0)
 		{
 			if(verb_0)
 			{
-
-				alert("gameLevel 1");
+				alert("game level1");
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
 					verb_0 = tmpVerb[1];
 				}
-				//var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
-				var jsonObj = {
-					"eyes": "res/img/animals/cat/cat_part_eye.svg",
-					"skin": "res/img/animals/cat/cat_skin.svg",
-					"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
-					"pos": {
+				var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
+				jsonObj["pos"]={
 							"ground" : "right_back", 
 							"sky" : "none", //other values ["none"]
 							"relative" : "none" //other values ["none", "top", "bottom"]
-							}  
-					};
-				/*var jsonObj = {
-					"eyes": "res/img/animals/cat/cat_part_eye_sadder.svg",
-                	"skin": "res/img/animals/cat/cat_skin.svg",
-                	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
-                };*/
+							}  ;
 
+				alert(JSON.stringify(jsonObj));
 				WORDCRAFT.handleSentChanges(jsonObj);
 				gameLevel = 1;
-				
 				playSound();
-
 			}	
 			else
 			{
-				alert("gameLevel 2");
-				var defaultJson = {
-					"eyes": "res/img/animals/cat/cat_part_eye.svg",
-					"skin": "res/img/animals/cat/cat_skin.svg",
-					"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
-					"pos": {
-							"ground" : "right_back", 
-							"sky" : "none", //other values ["none"]
-							"relative" : "none" //other values ["none", "top", "bottom"]
-							}  
-					};
-				WORDCRAFT.handleSentChanges(defaultJson);
+				alert("game level2");
+				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0));
 			}
 		};
 
 		if(gameLevel === 1 && noun_0 )
-		{
+		{ 
+			var jsonObj = [];
 			if(verb_0)
 			{
-				alert("gameLevel 3");
+				alert("game level3");
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
 					verb_0 = tmpVerb[1];
 				}
-				//var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
-				var jsonObj = {
-					"eyes": "res/img/animals/cat/cat_part_eye.svg",
-					"skin": "res/img/animals/cat/cat_skin.svg",
-					"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
-					"pos": {
-							"ground" : "right_back", 
-							"sky" : "none", //other values ["none"]
-							"relative" : "none" //other values ["none", "top", "bottom"]
-							}  
-					};
-				WORDCRAFT.handleSentChanges(jsonObj);
-
-
-			}	
-			else
-			{
+				jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
+				alert(JSON.stringify(jsonObj));
 				if(prep_0 && noun_1 )
 				{
-					alert("gameLevel 4");
-					var defaultJson = {
-					"eyes": "res/img/animals/cat/cat_part_eye.svg",
-					"skin": "res/img/animals/cat/cat_skin.svg",
-					"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
-					"pos": {
-							"ground" : "right_back", 
-							"sky" : "none", //other values ["none"]
-							"relative" : "none" //other values ["none", "top", "bottom"]
-							}  
-					};
-
-					WORDCRAFT.handleSentChanges(defaultJson);
+					alert("game level4");
+					alert(JSON.stringify(jsonObj));
+					//jsonObj.push(defaultJson_noun1);
+					WORDCRAFT.handleSentChanges(jsonObj);
 					gameLevel = 2;
-				
 					playSound();
 
 				}
+			}	
+			else
+			{
+
+				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0));
 			}
 
 		}
 
-		if(gameLevel == 2){
-			alert("gameLevel 5");
-			var defaultJson = {
-					"eyes": "res/img/animals/cat/cat_part_eye.svg",
-					"skin": "res/img/animals/cat/cat_skin.svg",
-					"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
-					"pos": {
-							"ground" : "right_back", 
-							"sky" : "none", //other values ["none"]
-							"relative" : "none" //other values ["none", "top", "bottom"]
-							}  
-					};
-
-			WORDCRAFT.handleSentChanges(defaultJson);
-			gameLevel = 2;
+		if(gameLevel === 2 && noun_0){
+			var jsonObj = [];
+			alert("game level6");
+			alert(JSON.stringify(createDefaultJson(noun_0)));
+			WORDCRAFT.handleSentChanges(createDefaultJson(noun_0));
 		
 			playSound();
 		}
-	};
-
-	var createImageJson = function(noun_first,adj,verb,prep,noun_sec){
-
-
 	};
 
 	var playSound = function()
