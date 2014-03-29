@@ -65,7 +65,7 @@
   margin:10px;
 }
 
-.droppable-del .del {
+.droppable-del, .del {
 display: inline-block;
 margin-left: 3px;
 right: 0px;

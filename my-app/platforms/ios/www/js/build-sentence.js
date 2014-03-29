@@ -2,7 +2,7 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT.build = (function(){
 
-	var gameLevel = 2;
+	var gameLevel = 0;
 	var partsofSpeech = {};
 	var drawImageData = {};
 	var sentenceItems = {"noun":[],"verb":[],"prep":[],"adj":[],"det":[]};
@@ -45,13 +45,14 @@ WORDCRAFT.build = (function(){
 			$(this).parent().remove();
 			initReadData(gameLevel);
 
-			$("#winning").append('<source src="res/sound/winning.wav"></source><source src="res/sound/winning.ogg"></source>');
+			/*$("#winning").append('<source src="res/sound/winning.wav"></source><source src="res/sound/winning.ogg"></source>');
 			var audio = $("#winning")[0];
-			audio.play();	
+			audio.play();	*/
 
 		});
 
 		$(document).on("click",".droppable-del", function(){
+			alert("Clicked on droppable del");
 			$(this).parent().remove();
 			$(this).parent().parent().css("background-color", "");
 			draw_image();
@@ -106,7 +107,7 @@ WORDCRAFT.build = (function(){
 				}
 				
 			}
-		};
+		}
 
 		if($("#init-adj").children().length < levelPOSCnt[level].adj)
 		{
@@ -118,15 +119,15 @@ WORDCRAFT.build = (function(){
 				
 				var number = 1 + Math.floor(Math.random() * Object.keys(d.adj).length-1);
 				var adj = d.adj[number];
-				if(jQuery.inArray(adj,tmpDet) == -1)
+				if(jQuery.inArray(adj,tmpAdj) == -1)
 				{
-					tmpDet.push(det);
+					tmpAdj.push(det);
 					var htmlLi = '<li class="draggable li-adj" id="adj_'+adj.replace(" ","_")+'">'+ adj + '<div class="del" style="cursor: pointer;">x</div></li>' ;
 					$("#init-adj").append(htmlLi);
 				}
 				
 			}
-		};
+		}
 		
 		if($("#init-nouns").children().length < levelPOSCnt[level].noun)
 		{	
@@ -153,8 +154,7 @@ WORDCRAFT.build = (function(){
 				}
 				
 			}
-			console.log("Length of nouns list" + $("#init-nouns").children().length);
-		};
+		}
 
 		if($("#init-verbs").children().length < levelPOSCnt[level].verb)
 		{
@@ -174,7 +174,8 @@ WORDCRAFT.build = (function(){
 				}
 				
 			}
-		};
+
+		}
 
 		if($("#init-prep").children().length < levelPOSCnt[level].prep)
 		{
@@ -197,17 +198,16 @@ WORDCRAFT.build = (function(){
 								if(jQuery.inArray(tmpPrep[i],tmpVerbs) === -1)
 								{
 									tmpVerbs.push(tmpPrep[i])
-									console.log("Looping");
 									var htmlLi =  '<li class="draggable li-prep" id="prep_'+tmpPrep[i].replace(" ","_")+'">'+ tmpPrep[i] + '<div class="del" style="cursor: pointer;">x</div></li>' ;
 									$("#init-prep").append(htmlLi);
+									console.log("Preposition html:", htmlLi);
 								}
 							}
 							counter++;
 						}
 				});
 			}
-			console.log($("#init-prep").html());
-		};
+		}
 
 		makeDragabble();
 
@@ -236,28 +236,50 @@ WORDCRAFT.build = (function(){
 		});
 
 
+		webkit_drop.add('sent-adj-1', 
+		{ accept : ["li-adj"], 
+			onDrop : function(obj){	
+
+					var value = $(obj).text();
+					var listItem = value.substr(0, value.length - 1);
+					//var listItemId = $(obj).attr('id');	
+					//sentenceItems[listItemId] = listItem;
+					var color = $(obj).css( "background-color" );
+					$(obj).remove();
+					sentenceItems["adj"].push(listItem);
+					
+					var html = '<li class="drag-li-adj" id="adj_'+ listItem+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
+					$("#sent-adj-1").append(html);
+					$("#sent-adj-1").css("background-color",color);
+					draw_image();
+				
+			}
+		});
 
 		webkit_drop.add('sent-noun-1', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
-				var value = $(obj).text();
-				var listItem = value.substr(0, value.length - 1);
 
-				var listItemId = $(obj).attr('id');	
-				var color = $(obj).css( "background-color" );
+					var value = $(obj).text();
+					var listItem = value.substr(0, value.length - 1);
 
-				//sentenceItems[listItemId] = listItem;
-				$(obj).remove();
-				sentenceItems["noun"].push(listItem);
-				var html = '<li class="drag-li-noun" id="noun_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>'
-				$("#sent-noun-1").append(html);
-				$("#sent-noun-1").css("background-color",color);
-				draw_image();
+					var listItemId = $(obj).attr('id');	
+					var color = $(obj).css( "background-color" );
+
+					//sentenceItems[listItemId] = listItem;
+					$(obj).remove();
+					sentenceItems["noun"].push(listItem);
+					
+					var html = '<li class="drag-li-noun" id="noun_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
+					$("#sent-noun-1").append(html);
+					$("#sent-noun-1").css("background-color",color);
+					draw_image();
 			}
+			
 		});
-		
+
 		webkit_drop.add('sent-verb-1', 
-		{accept : ["li-verb"], 
+		{ accept : ["li-verb"], 
 			onDrop : function(obj){	
 				var value = $(obj).text();
 				var listItem = value.substr(0, value.length - 1);
@@ -267,7 +289,7 @@ WORDCRAFT.build = (function(){
 				var color = $(obj).css( "background-color" );
 				$(obj).remove();
 				sentenceItems["verb"].push(listItem);
-				var html = '<li class="drag-li-verb" id="verb_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>'
+				var html = '<li class="drag-li-verb" id="verb_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
 				$("#sent-verb-1").append(html);
 				$("#sent-verb-1").css("background-color",color);
 				draw_image();
@@ -275,8 +297,9 @@ WORDCRAFT.build = (function(){
 		});
 
 		webkit_drop.add('sent-prep-1', 
-		{accept : ["li-prep"], 
+		{ accept : ["li-prep"], 
 			onDrop : function(obj){	
+				alert("Inside preposition");
 				var value = $(obj).text();
 				var listItem = value.substr(0, value.length - 1);
 				//var listItemId = $(obj).attr('id');	
@@ -284,13 +307,14 @@ WORDCRAFT.build = (function(){
 				var color = $(obj).css( "background-color" );
 				$(obj).remove();
 				sentenceItems["prep"].push(listItem);
-				var html = '<li class="drag-li-prep" id="prep_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>'
+				var html = '<li class="drag-li-prep" id="prep_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
 				$("#sent-prep-1").append(html);
 				$("#sent-prep-1").css("background-color",color);
 				draw_image();
 				}
-			});
-		};
+		});
+
+
 
 		webkit_drop.add('sent-noun-2', 
 		{	accept : ["li-noun"], 
@@ -303,31 +327,15 @@ WORDCRAFT.build = (function(){
 				//sentenceItems[listItemId] = listItem;
 				$(obj).remove();
 				sentenceItems["noun"].push(listItem);
-				var html = '<li class="drag-li-noun" id="noun_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>'
+				var html = '<li class="drag-li-noun" id="noun_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
 				$("#sent-noun-2").append(html);
 				$("#sent-noun-2").css("background-color",color);
 				draw_image();
 			}
 		});
 
+	};
 
-		webkit_drop.add('sent-adj-1', 
-		{	accept : ["li-adj"], 
-			onDrop : function(obj){
-				var value = $(obj).text();
-				var listItem = value.substr(0, value.length - 1);
-
-				var listItemId = $(obj).attr('id');	
-				var color = $(obj).css( "background-color" );
-				//sentenceItems[listItemId] = listItem;
-				$(obj).remove();
-				sentenceItems["adj"].push(listItem);
-				var html = '<li class="drag-li-noun" id="noun_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;" onClick="$(this).parent().remove();">x</div></li>'
-				$("#sent-noun-2").append(html);
-				$("#sent-noun-2").css("background-color",color);
-				draw_image();
-			}
-		});
 
 	var draw_image = function()
 	{
@@ -345,7 +353,13 @@ WORDCRAFT.build = (function(){
 				{
 					verb_0 = tmpVerb[1];
 				}
-				var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
+				//var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
+				var jsonObj = {
+					"eyes": "res/img/animals/cat/cat_part_eye_happier.svg",
+                	"skin": "res/img/animals/cat/cat_skin.svg",
+                	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
+                };
+
 				WORDCRAFT.handleSentChanges(jsonObj);
 				gameLevel = 1;
 				
@@ -354,10 +368,11 @@ WORDCRAFT.build = (function(){
 			}	
 			else
 			{
-				var defaultJson = {"eyes": "resources/img/grass/grass_part_eyes_awake.svg",
-                "skin": "resources/img/grass/grass_skin.svg",
-                "mouth": "resources/img/grass/grass_part_mouth_happy.svg",
-                "ears": "resources/img/grass/grass_part_ears.svg"};
+				var defaultJson = {
+					"eyes": "res/img/animals/cat/cat_part_eye_happier.svg",
+                	"skin": "res/img/animals/cat/cat_skin.svg",
+                	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
+                };
 				WORDCRAFT.handleSentChanges(defaultJson);
 			}
 		};
@@ -371,7 +386,13 @@ WORDCRAFT.build = (function(){
 				{
 					verb_0 = tmpVerb[1];
 				}
-				var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
+				//var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
+				var jsonObj = {
+					"eyes": "res/img/animals/cat/cat_part_eye_happier.svg",
+                	"skin": "res/img/animals/cat/cat_skin.svg",
+                	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
+                };
+
 				WORDCRAFT.handleSentChanges(jsonObj);
 
 
@@ -381,10 +402,12 @@ WORDCRAFT.build = (function(){
 				if(prep_0 && noun_1 )
 				{
 					
-					var defaultJson = {"eyes": "resources/img/grass/grass_part_eyes_awake.svg",
-	                "skin": "resources/img/grass/grass_skin.svg",
-	                "mouth": "resources/img/grass/grass_part_mouth_happy.svg",
-	                "ears": "resources/img/grass/grass_part_ears.svg"};
+					var defaultJson = {
+						"eyes": "res/img/animals/cat/cat_part_eye_happier.svg",
+	                	"skin": "res/img/animals/cat/cat_skin.svg",
+	                	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
+	                };
+
 					WORDCRAFT.handleSentChanges(defaultJson);
 					gameLevel = 2;
 				
@@ -407,7 +430,7 @@ WORDCRAFT.build = (function(){
 
 	var levelChange = function(){
 
-		var overlay = jQuery('<div id="overlay"><p style="float:left">Level Complete!!!</p><div id="overlay-del"><b>x</b></div> </div>');
+		var overlay = jQuery('<div id="overlay"><p style="float:left">Level Complete!!!</p><div id="overlay-del"><b>X</b></div> </div>');
 		overlay.appendTo(document.body);
 	
 	}
