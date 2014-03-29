@@ -88,45 +88,45 @@ WORDCRAFT.build = (function(){
 
 	var parseData = function(d,level){
 	
-			if($("#init-det").children().length < levelPOSCnt[level].det)
+		if($("#init-det").children().length < levelPOSCnt[level].det)
+		{
+			var tmpDet = [];
+			console.log("Checking init det");
+			console.log("length of det < 3");
+			while($("#init-det").children().length < levelPOSCnt[level].det)
 			{
-				var tmpDet = [];
-				console.log("Checking init det");
-				console.log("length of det < 3");
-				while($("#init-det").children().length < levelPOSCnt[level].det)
+				
+				var number = 1 + Math.floor(Math.random() * Object.keys(d.det).length-1);
+				var det = d.det[number];
+				if(jQuery.inArray(det,tmpDet) == -1)
 				{
-					
-					var number = 1 + Math.floor(Math.random() * Object.keys(d.det).length-1);
-					var det = d.det[number];
-					if(jQuery.inArray(det,tmpDet) == -1)
-					{
-						tmpDet.push(det);
-						var htmlLi = '<li class="draggable li-det" id="det_'+det.replace(" ","_")+'">'+ det + '<div class="del" style="cursor: pointer;">x</div></li>' ;
-						$("#init-det").append(htmlLi);
-					}
-					
+					tmpDet.push(det);
+					var htmlLi = '<li class="draggable li-det" id="det_'+det.replace(" ","_")+'">'+ det + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+					$("#init-det").append(htmlLi);
 				}
-			};
+				
+			}
+		};
 
 		if($("#init-adj").children().length < levelPOSCnt[level].adj)
+		{
+			var tmpAdj = [];
+			console.log("Checking init det");
+			console.log("length of det < 3");
+			while($("#init-adj").children().length < levelPOSCnt[level].adj)
 			{
-				var tmpAdj = [];
-				console.log("Checking init det");
-				console.log("length of det < 3");
-				while($("#init-adj").children().length < levelPOSCnt[level].adj)
+				
+				var number = 1 + Math.floor(Math.random() * Object.keys(d.adj).length-1);
+				var adj = d.adj[number];
+				if(jQuery.inArray(adj,tmpAdj) == -1)
 				{
-					
-					var number = 1 + Math.floor(Math.random() * Object.keys(d.adj).length-1);
-					var adj = d.adj[number];
-					if(jQuery.inArray(adj,tmpDet) == -1)
-					{
-						tmpDet.push(det);
-						var htmlLi = '<li class="draggable li-adj" id="adj_'+adj.replace(" ","_")+'">'+ adj + '<div class="del" style="cursor: pointer;">x</div></li>' ;
-						$("#init-adj").append(htmlLi);
-					}
-					
+					tmpAdj.push(det);
+					var htmlLi = '<li class="draggable li-adj" id="adj_'+adj.replace(" ","_")+'">'+ adj + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+					$("#init-adj").append(htmlLi);
 				}
-			};
+				
+			}
+		};
 		
 		if($("#init-nouns").children().length < levelPOSCnt[level].noun)
 		{	
@@ -154,7 +154,6 @@ WORDCRAFT.build = (function(){
 				
 			}
 			console.log("Length of nouns list" + $("#init-nouns").children().length);
-		
 		};
 
 		if($("#init-verbs").children().length < levelPOSCnt[level].verb)
@@ -228,6 +227,14 @@ WORDCRAFT.build = (function(){
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
 
+		$('#init-det').children().each(function(index,value) {
+			new webkit_draggable(value.id, {revert : true, scroll : true});
+		});
+
+		$('#init-adj').children().each(function(index,value) {
+			new webkit_draggable(value.id, {revert : true, scroll : true});
+		});
+
 
 
 		webkit_drop.add('sent-noun-1', 
@@ -248,6 +255,7 @@ WORDCRAFT.build = (function(){
 				draw_image();
 			}
 		});
+		
 		webkit_drop.add('sent-verb-1', 
 		{accept : ["li-verb"], 
 			onDrop : function(obj){	

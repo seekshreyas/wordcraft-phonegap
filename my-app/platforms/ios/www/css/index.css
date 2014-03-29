@@ -19,6 +19,7 @@
     display:inline-block;
     margin:5px;
   }
+
 .words-list #init-det{
   margin-left:10px;
   float:left;
@@ -35,7 +36,6 @@
 
 .words-list #init-verbs{
   margin-left:15px;
-  margin-bottom:20px;
   float:left;
 }
 
@@ -43,9 +43,6 @@
   margin-left:10px;
   float:left;
 }
-
-
-
 
 
 #build-sentence{
@@ -102,7 +99,7 @@ height: 20px;
 
 .li-prep
 {
-    /*float:left;*/
+    float:left;
     margin:5px;
     border:1px solid black;
     background-color:#00FA9A;
@@ -127,11 +124,10 @@ height: 20px;
 
 .li-adj
 {
-    /*float:left;*/
-    margin:5px;
+    float:left;
     border:1px solid black;
     height:auto;
-    background-color:#CCCCCC;
+    background-color:#FF7F50;
     margin-left:5px;
     padding:10px;
     display: inline;
@@ -162,7 +158,7 @@ height: 20px;
 }
 
 .drag-li-adj{
-  background-color:#CCCCCC;
+  background-color:#FF7F50;
 }
 
 .drag-li-det{
