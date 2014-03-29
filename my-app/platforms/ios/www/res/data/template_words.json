@@ -1,0 +1,36 @@
+{
+	"cat" : {
+		"pos" : "NN",
+		"related" : ["animal", "pet"], //related words
+		"before" : ["the", "a"],
+		"after" : ["is", "are"]
+		"type" : "object", // possible values: ["object", "visual", "nonvisual"]
+		"canvaspos" : {
+			"plane" : "ground", // possible values: ["ground", "sky"]
+			"defaultX" : "left", // possible values: ["left", "center", "right"]
+			"defaultY" : "front" // possible values : ["front", "middle", "back"] 
+		},
+		"svg" : {
+			"dimension" : {
+				"width" : 350,
+				"height" : 350
+			},
+			"src" : {
+				"skin" : "res/img/animals/cat/cat_skin.svg",
+				"eyes" : "res/img/animals/cat/cat_part_eyes.svg",
+				"mouth" : "res/img/animals/cat/cat_part_mouth.svg"
+			} 
+		}
+	},
+	"amused" : {
+		"pos" : "VB",
+		"related" : ["animal", "farm"], //related words
+		"before" : ["is", "are"],
+		"after" : ["at", "on"],
+		"type" : "visual",
+		"bodypart" : {
+			"eyes" : "happier", //possible values ["sadder", "sad", default", "happy", "happier"]
+			"mouth" : "happier"
+		}
+	}
+}

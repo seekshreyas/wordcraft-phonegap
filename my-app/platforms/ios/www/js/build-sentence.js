@@ -214,11 +214,11 @@ WORDCRAFT.build = (function(){
 	};
 
 	var populateOnDrop = function(obj,type,form){
-			alert(obj.html());
+			//alert(obj.html());
 			var value = $(obj).text();
-			alert(value);
+			//alert(value);
 			var listItem = value.substr(0, value.length - 1);
-			alert(listItem);
+			//alert(listItem);
 			//var listItemId = $(obj).attr('id');	
 			//sentenceItems[listItemId] = listItem;
 			var color = $(obj).css("background-color");
@@ -226,9 +226,9 @@ WORDCRAFT.build = (function(){
 			sentenceItems[type.toString()].push(listItem);
 			
 			var html = '<li class="drag-li-'+type.toString()+'" id="'+type.toString()+'_'+ listItem+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
-			alert(html);
+			//alert(html);
 			var divid = "#sent-"+type.toString()+"-"+form.toString();
-			alert(divid);
+			//alert(divid);
 			$(divid).append(html);
 			$("#sent-"+type.toString()+form.toString()).css("background-color",color);
 			draw_image();
@@ -261,6 +261,7 @@ WORDCRAFT.build = (function(){
 		{ accept : ["li-adj"], 
 			onDrop : function(obj){	
 				populateOnDrop($(obj),'adj','1');
+				draw_image();
 			}
 		});
 
@@ -268,6 +269,7 @@ WORDCRAFT.build = (function(){
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
 					populateOnDrop($(obj),'noun','1');
+					
 					/*var value = $(obj).text();
 					var listItem = value.substr(0, value.length - 1);
 
@@ -289,7 +291,9 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-verb-1', 
 		{ accept : ["li-verb"], 
 			onDrop : function(obj){	
-				var value = $(obj).text();
+				populateOnDrop($(obj),'verb','1');
+				
+				/*var value = $(obj).text();
 				var listItem = value.substr(0, value.length - 1);
 				//var listItemId = $(obj).attr('id');	
 				//sentenceItems[listItemId] = listItem;
@@ -300,14 +304,16 @@ WORDCRAFT.build = (function(){
 				var html = '<li class="drag-li-verb" id="verb_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
 				$("#sent-verb-1").append(html);
 				$("#sent-verb-1").css("background-color",color);
-				draw_image();
-				}
+				draw_image();*/
+				} 
 		});
 
 		webkit_drop.add('sent-prep-1', 
 		{ accept : ["li-prep"], 
 			onDrop : function(obj){	
-				alert("Inside preposition");
+				populateOnDrop($(obj),'prep','1');
+				//draw_image();
+				/*alert("Inside preposition");
 				var value = $(obj).text();
 				var listItem = value.substr(0, value.length - 1);
 				//var listItemId = $(obj).attr('id');	
@@ -318,8 +324,8 @@ WORDCRAFT.build = (function(){
 				var html = '<li class="drag-li-prep" id="prep_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
 				$("#sent-prep-1").append(html);
 				$("#sent-prep-1").css("background-color",color);
-				draw_image();
-				}
+				draw_image();*/
+				} 
 		});
 
 
@@ -327,7 +333,9 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-noun-2', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
-				var value = $(obj).text();
+				populateOnDrop($(obj),'noun','2');
+				//draw_image();
+				/*var value = $(obj).text();
 				var listItem = value.substr(0, value.length - 1);
 
 				var listItemId = $(obj).attr('id');	
@@ -338,7 +346,7 @@ WORDCRAFT.build = (function(){
 				var html = '<li class="drag-li-noun" id="noun_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
 				$("#sent-noun-2").append(html);
 				$("#sent-noun-2").css("background-color",color);
-				draw_image();
+				draw_image(); */
 			}
 		});
 
