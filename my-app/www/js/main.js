@@ -3,12 +3,23 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT = (function(){
 
-	
+	var sceneObj = {};
+	var canvas; //canvas object so it is globally accessible
 
-
+	var defaultSceneObj = {
+		"eyes": "res/img/animals/cat/cat_part_eye.svg",
+		"skin": "res/img/animals/cat/cat_skin.svg",
+		"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
+		"pos": {
+			"ground" : "right_back", 
+			"sky" : "none", //other values ["none"]
+			"relative" : "none" //other values ["none", "top", "bottom"]
+		}  
+	};
 
 	var init = function(){
 		console.log("let the crafting begin!");
+
 		initCanvas();
 		evtHandler(); //all events handler
 	};
@@ -18,23 +29,12 @@ WORDCRAFT = (function(){
 	var initCanvas = function(){
 		//clean scene
 
-
-		var canvas = new fabric.Canvas('elem-frame-svg');
-
+		canvas = new fabric.Canvas('elem-frame-svg');
 		var perspDim = getCanvasPerspDim(canvas);
 
 		console.log("canvas perspective: ", perspDim);
 
-
-		
-
-
-		// fabric.loadSVGFromURL('res/img/animals/cat/cat_full_color.svg', function(objects, options) {
-		//     var shape = fabric.util.groupSVGElements(objects, options);
-		//     canvas.add(shape.scale(0.6));
-		//     shape.set({ left: 200, top: 100 }).setCoords();
-		//     canvas.renderAll();
-		// });
+		renderObjOnCanvas(defaultSceneObj, perspDim);
 
 
 		// fabric.Image.fromURL('res/img/animals/cat/cat_full_color.svg', function(oImg){
@@ -66,7 +66,7 @@ WORDCRAFT = (function(){
 			"vanishingY" : Math.floor(c_height/2), //vanishing plane
 			"theta" : Math.floor(theta), //
 			"ground" : {
-				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(theta)), Math.floor(y_unit)],
+				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(theta)/2), Math.floor(y_unit)],
 				"center_front" 	: [Math.floor(c_width/2), Math.floor(y_unit)],
 				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(theta)), Math.floor(y_unit)],
 				
@@ -94,26 +94,45 @@ WORDCRAFT = (function(){
 			// 	"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
 			// 	"ears": "res/img/animals/cat/cat_part_ears.svg"
 			// };
-			handleSentChanges(testObj);
+			handleSentChanges(defaultSceneObj);
 
 			// initCanvas();
 		});
 	};
 
 
-	var renderObjOnCanvas = function(cObj){
-		console.log(cObj);
-
+	var renderObjOnCanvas = function(cObj, cDim){
+		console.log("Object, Dimension:", cObj, cDim);
 		var canvas = new fabric.Canvas('elem-frame-svg');
 
-		for (var key in cObj){
-			fabric.Image.fromURL(cObj[key], function(oImg){
-				oImg.top = 250;
-				oImg.left = 500;
+		imgwidth = 200; //default image width
+		imgheight = 255; //default image height
 
-				oImg.scale(0.6);
+		imgScale = 0.6
+		imgOffsetX = Math.floor(imgwidth*imgScale/2);
+		imgOffsetY = Math.floor(imgheight*imgScale/2);
+	
+		canvaswidth = canvas.width;
+		canvasheight = canvas.height;	
+
+		console.log("render canvas dimensions:", canvaswidth, canvasheight);	
+
+		if (cObj.skin !== 'Undefined'){
+
+			var skin = new fabric.Image.fromURL(cObj.skin, function(oImg){
+				pos = cDim.ground[cObj.pos.ground];
+
+				console.log("imgposition", pos);
+
+				oImg.top = canvasheight - (pos[1] + imgOffsetY);
+				oImg.left = pos[0] - imgOffsetX;
+
+				console.log("final position:", oImg.top, oImg.left);
+
+				oImg.scale(imgScale);
 				canvas.add(oImg);
 			});
+		
 		}
 
 		
@@ -127,9 +146,11 @@ WORDCRAFT = (function(){
 	//changes
 
 	var handleSentChanges = function(obj){
-		
+		canvas = new fabric.Canvas('elem-frame-svg');
+		var cDim = getCanvasPerspDim(canvas);
 
-		renderObjOnCanvas(obj);
+
+		renderObjOnCanvas(obj, cDim);
 		// console.log(JSON.stringify(obj));
 	};
 
