@@ -189,24 +189,10 @@ WORDCRAFT.build = (function(){
 						var tmp = $(this).text(); 
 						tmp = tmp.substr(0, tmp.length - 1);
 						var tmpPrep = partsofSpeech["verbs"][tmp.toString()];
-						//while (tmpVerbs.length < 3)
-						//{
 
-						//for(var i=0 ; i < 1; i++)
-						//{
-							//if(tmpPrep[0]){
-								//if(jQuery.inArray(tmpPrep[0],tmpVerbs) === -1)
-								//{
-									//tmpVerbs.push(tmpPrep[0])
-									var htmlLi =  '<li class="draggable li-prep" id="prep_'+tmpPrep[0].replace(" ","_")+'">'+ tmpPrep[0] + '<div class="del" style="cursor: pointer;">x</div></li>' ;
-									$("#init-prep").append(htmlLi);
-									console.log("Preposition html:", htmlLi);
-								//}
-							//}
-						//}
-							//counter++;
-						//}
-						//console.log("Preposition array",tmpVerbs.toString());
+						var htmlLi =  '<li class="draggable li-prep" id="prep_'+tmpPrep[0].replace(" ","_")+'">'+ tmpPrep[0] + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+						$("#init-prep").append(htmlLi);
+						console.log("Preposition html:", htmlLi);
 				});
 			}
 		}

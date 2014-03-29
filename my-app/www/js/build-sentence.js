@@ -2,7 +2,7 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT.build = (function(){
 
-	var gameLevel = 2;
+	var gameLevel = 0;
 	var partsofSpeech = {};
 	var drawImageData = {};
 	var sentenceItems = {"noun":[],"verb":[],"prep":[],"adj":[],"det":[]};
@@ -189,24 +189,10 @@ WORDCRAFT.build = (function(){
 						var tmp = $(this).text(); 
 						tmp = tmp.substr(0, tmp.length - 1);
 						var tmpPrep = partsofSpeech["verbs"][tmp.toString()];
-						//while (tmpVerbs.length < 3)
-						//{
 
-						//for(var i=0 ; i < 1; i++)
-						//{
-							//if(tmpPrep[0]){
-								//if(jQuery.inArray(tmpPrep[0],tmpVerbs) === -1)
-								//{
-									//tmpVerbs.push(tmpPrep[0])
-									var htmlLi =  '<li class="draggable li-prep" id="prep_'+tmpPrep[0].replace(" ","_")+'">'+ tmpPrep[0] + '<div class="del" style="cursor: pointer;">x</div></li>' ;
-									$("#init-prep").append(htmlLi);
-									console.log("Preposition html:", htmlLi);
-								//}
-							//}
-						//}
-							//counter++;
-						//}
-						//console.log("Preposition array",tmpVerbs.toString());
+						var htmlLi =  '<li class="draggable li-prep" id="prep_'+tmpPrep[0].replace(" ","_")+'">'+ tmpPrep[0] + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+						$("#init-prep").append(htmlLi);
+						console.log("Preposition html:", htmlLi);
 				});
 			}
 		}
@@ -321,7 +307,7 @@ WORDCRAFT.build = (function(){
 					verb_0 = tmpVerb[1];
 				}
 				//var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
-				var jsonObj = {
+				var jsonObj = [{
 					"eyes": "res/img/animals/cat/cat_part_eye.svg",
 					"skin": "res/img/animals/cat/cat_skin.svg",
 					"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
@@ -330,7 +316,18 @@ WORDCRAFT.build = (function(){
 							"sky" : "none", //other values ["none"]
 							"relative" : "none" //other values ["none", "top", "bottom"]
 							}  
-					};
+					},
+					{
+					"eyes": "res/img/animals/cow/cow_part_eye_sad.svg",
+					"skin": "res/img/animals/cow/cow_skin.svg",
+					"mouth": "res/img/animals/cow/cow_part_mouth_sadder.svg",
+					"pos": {
+							"ground" : "center_middle", 
+							"sky" : "none", //other values ["none"]
+							"relative" : "none" //other values ["none", "top", "bottom"]
+							}  
+					
+					}];
 				/*var jsonObj = {
 					"eyes": "res/img/animals/cat/cat_part_eye_sadder.svg",
                 	"skin": "res/img/animals/cat/cat_skin.svg",
@@ -346,7 +343,7 @@ WORDCRAFT.build = (function(){
 			else
 			{
 				alert("gameLevel 2");
-				var defaultJson = {
+				var defaultJson = [{
 					"eyes": "res/img/animals/cat/cat_part_eye.svg",
 					"skin": "res/img/animals/cat/cat_skin.svg",
 					"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
@@ -355,7 +352,18 @@ WORDCRAFT.build = (function(){
 							"sky" : "none", //other values ["none"]
 							"relative" : "none" //other values ["none", "top", "bottom"]
 							}  
-					};
+					},
+					{
+					"eyes": "res/img/animals/cow/cow_part_eye_happy.svg",
+					"skin": "res/img/animals/cow/cow_skin.svg",
+					"mouth": "res/img/animals/cow/cow_part_mouth_happier.svg",
+					"pos": {
+							"ground" : "center_middle", 
+							"sky" : "none", //other values ["none"]
+							"relative" : "none" //other values ["none", "top", "bottom"]
+							}  
+					
+					}];
 				WORDCRAFT.handleSentChanges(defaultJson);
 			}
 		};
@@ -371,7 +379,7 @@ WORDCRAFT.build = (function(){
 					verb_0 = tmpVerb[1];
 				}
 				//var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
-				var jsonObj = {
+				var jsonObj = [{
 					"eyes": "res/img/animals/cat/cat_part_eye.svg",
 					"skin": "res/img/animals/cat/cat_skin.svg",
 					"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
@@ -380,7 +388,18 @@ WORDCRAFT.build = (function(){
 							"sky" : "none", //other values ["none"]
 							"relative" : "none" //other values ["none", "top", "bottom"]
 							}  
-					};
+					},
+					{
+					"eyes": "res/img/animals/cow/cow_part_eye.svg",
+					"skin": "res/img/animals/cow/cow_skin.svg",
+					"mouth": "res/img/animals/cow/cow_part_mouth_happy.svg",
+					"pos": {
+							"ground" : "center_middle", 
+							"sky" : "none", //other values ["none"]
+							"relative" : "none" //other values ["none", "top", "bottom"]
+							}  
+					
+					}];
 				WORDCRAFT.handleSentChanges(jsonObj);
 
 
@@ -390,16 +409,27 @@ WORDCRAFT.build = (function(){
 				if(prep_0 && noun_1 )
 				{
 					alert("gameLevel 4");
-					var defaultJson = {
-					"eyes": "res/img/animals/cat/cat_part_eye.svg",
+					var defaultJson = [{
+					"eyes": "res/img/animals/cat/cat_part_eye_angry.svg",
 					"skin": "res/img/animals/cat/cat_skin.svg",
-					"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
+					"mouth": "res/img/animals/cat/cat_part_mouth_angry.svg",
 					"pos": {
 							"ground" : "right_back", 
 							"sky" : "none", //other values ["none"]
 							"relative" : "none" //other values ["none", "top", "bottom"]
 							}  
-					};
+					},
+					{
+					"eyes": "res/img/animals/cow/cow_part_eye_awake.svg",
+					"skin": "res/img/animals/cow/cow_skin.svg",
+					"mouth": "res/img/animals/cow/cow_part_mouth_sad.svg",
+					"pos": {
+							"ground" : "center_middle", 
+							"sky" : "none", //other values ["none"]
+							"relative" : "none" //other values ["none", "top", "bottom"]
+							}  
+					
+					}];
 
 					WORDCRAFT.handleSentChanges(defaultJson);
 					gameLevel = 2;
