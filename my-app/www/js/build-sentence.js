@@ -303,9 +303,12 @@ WORDCRAFT.build = (function(){
 	};
 	var createDefaultJson = function(type,pos){
 		
-		var noun = type.split(" ")[1];
-		var json_elem = {
-			"eyes": "res/img/animals/"+noun+"/"+noun+"_part_eye.svg",
+		var noun = type.split(" ");
+		if(noun.length >1){
+			noun = noun[1];
+		}
+		var json_elem = [{
+			"eyes": "res/img/animals/"+noun+"/"+noun+"_part_eye_happy.svg",
 			"skin": "res/img/animals/"+noun+"/"+noun+"_skin.svg",
 			"mouth": "res/img/animals/"+noun+"/"+noun+"_part_mouth_happy.svg",
 			"pos": {
@@ -313,7 +316,7 @@ WORDCRAFT.build = (function(){
 					"sky" : "none",
 					"relative" : "none"
 					}  
-			};
+			}];
 
 		return json_elem;
 
@@ -354,8 +357,8 @@ WORDCRAFT.build = (function(){
 			}	
 			else
 			{
-				//alert("game level2");
-				//alert(JSON.stringify(createDefaultJson(noun_0,"right_back")));
+				alert("game level2");
+				alert(JSON.stringify(createDefaultJson(noun_0,"right_back")));
 				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0,"right_back"));
 			}
 		};
@@ -410,7 +413,7 @@ WORDCRAFT.build = (function(){
 					//alert("game level4");
 					//alert(JSON.stringify(jsonObj));
 					//jsonObj.push(defaultJson_noun1);
-					WORDCRAFT.handleSentChanges(jsonObj);
+					WORDCRAFT.handleSentChanges([jsonObj]);
 					gameLevel = 2;
 					playSound();
 

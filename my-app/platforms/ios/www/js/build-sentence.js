@@ -64,8 +64,6 @@ WORDCRAFT.build = (function(){
 			elem = elem.substr(0, elem.length - 1);
 			elemClass = $(this).parent().attr('class');
 			elemClass = elemClass.substr(8,elemClass.length);
-			alert(elem);
-			alert(elemClass);
 			sentenceItems[elemClass].remove(elem);
 			$(this).parent().remove();
 			$(this).parent().parent().css("background-color", "");
@@ -305,17 +303,20 @@ WORDCRAFT.build = (function(){
 	};
 	var createDefaultJson = function(type,pos){
 		
-		var noun = type.split(" ")[1];
-		var json_elem = {
-			"eyes": "res/img/animals/"+noun+"/"+noun+"_part_eye.svg",
+		var noun = type.split(" ");
+		if(noun.length >1){
+			noun = noun[1];
+		}
+		var json_elem = [{
+			"eyes": "res/img/animals/"+noun+"/"+noun+"_part_eye_happy.svg",
 			"skin": "res/img/animals/"+noun+"/"+noun+"_skin.svg",
-			"mouth": "res/img/animals/"+noun+"/"+noun+"+_part_mouth_happy.svg",
+			"mouth": "res/img/animals/"+noun+"/"+noun+"_part_mouth_happy.svg",
 			"pos": {
 					"ground" : pos.toString(), 
 					"sky" : "none",
 					"relative" : "none"
 					}  
-			};
+			}];
 
 		return json_elem;
 
@@ -336,7 +337,7 @@ WORDCRAFT.build = (function(){
 		{
 			if(verb_0)
 			{
-				alert("game level1");
+				//alert("game level1");
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
@@ -349,8 +350,8 @@ WORDCRAFT.build = (function(){
 							"relative" : "none" //other values ["none", "top", "bottom"]
 							}  ;
 
-				alert(JSON.stringify(jsonObj));
-				WORDCRAFT.handleSentChanges(jsonObj);
+				//alert(JSON.stringify(jsonObj));
+				WORDCRAFT.handleSentChanges([jsonObj]);
 				gameLevel = 1;
 				playSound();
 			}	
@@ -367,18 +368,18 @@ WORDCRAFT.build = (function(){
 			var jsonObj = [];
 			if(verb_0)
 			{
-				alert("game level3");
+				//alert("game level3");
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
 					verb_0 = tmpVerb[1];
 				}
 				jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
-				alert(JSON.stringify(jsonObj));
+				//alert(JSON.stringify(jsonObj));
 				if(prep_0 && noun_1 )
 				{
-					alert("game level4");
-					alert(JSON.stringify(jsonObj));
+					//alert("game level4");
+					//alert(JSON.stringify(jsonObj));
 					//jsonObj.push(defaultJson_noun1);
 					WORDCRAFT.handleSentChanges(jsonObj);
 					gameLevel = 2;
@@ -396,23 +397,23 @@ WORDCRAFT.build = (function(){
 
 		if(gameLevel === 2 && noun_0){
 			var jsonObj = [];
-			alert("game level6");
+			//alert("game level6");
 			if(verb_0)
 			{
-				alert("game level7");
+				//alert("game level7");
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
 					verb_0 = tmpVerb[1];
 				}
 				jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
-				alert(JSON.stringify(jsonObj));
+				//alert(JSON.stringify(jsonObj));
 				if(adj_1 && prep_0 && noun_1 )
 				{
-					alert("game level4");
-					alert(JSON.stringify(jsonObj));
+					//alert("game level4");
+					//alert(JSON.stringify(jsonObj));
 					//jsonObj.push(defaultJson_noun1);
-					WORDCRAFT.handleSentChanges(jsonObj);
+					WORDCRAFT.handleSentChanges([jsonObj]);
 					gameLevel = 2;
 					playSound();
 
