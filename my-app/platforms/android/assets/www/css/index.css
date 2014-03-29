@@ -8,18 +8,26 @@
 .words-list{
   background: #dfdfdf;
   float:left;
+  word-wrap: break-word;
   width:90%;
   margin:2em 1%;
-  clear:both;
 }
 
   .words-list ul>li{
     width:auto;
-    float:left;
     word-wrap: break-word;
     display:inline-block;
     margin:5px;
   }
+
+.words-list #init-det{
+  margin-left:10px;
+  float:left;
+}
+.words-list #init-adj{
+  margin-left:10px;
+  float:left;
+}
 
 .words-list #init-nouns{
   margin-bottom:20px;
@@ -28,13 +36,13 @@
 
 .words-list #init-verbs{
   margin-left:15px;
-  margin-bottom:20px;
   float:left;
 }
 
-
-
-
+.words-list #init-prep{
+  margin-left:10px;
+  float:left;
+}
 
 
 #build-sentence{
@@ -57,7 +65,7 @@
   margin:10px;
 }
 
-.del {
+.droppable-del, .del {
 display: inline-block;
 margin-left: 3px;
 right: 0px;
@@ -89,6 +97,18 @@ height: 20px;
     border-radius:5px;
 }
 
+.li-prep
+{
+    float:left;
+    margin:5px;
+    border:1px solid black;
+    background-color:#00FA9A;
+    margin-left:5px;
+    padding:8px;
+    display: inline;
+    border-radius:10px;
+}
+
 .li-verb
 {
     float:left;
@@ -101,10 +121,59 @@ height: 20px;
     display: inline;
     border-radius:5px;
 }
+
+.li-adj
+{
+    float:left;
+    border:1px solid black;
+    height:auto;
+    background-color:#FF7F50;
+    margin-left:5px;
+    padding:10px;
+    display: inline;
+    border-radius:5px;
+}
+
+.li-det
+{
+    /*float:left;*/
+    margin:5px;
+    border:1px solid black;
+    height:auto;
+    background-color:#CCCC33;
+    margin-left:5px;
+    padding:10px;
+    display: inline;
+    border-radius:5px;
+}
+
+.drag-li-noun{
+  background-color:#FFCCFF;
+}
+.drag-li-verb{
+  background-color:#CCCCFF;
+}
+.drag-li-prep{
+  background-color:#00FA9A;
+}
+
+.drag-li-adj{
+  background-color:#FF7F50;
+}
+
+.drag-li-det{
+  background-color:#CCCC33;
+}
+
+#build-sentence li{
+  display: inline-block;
+}
+
 #build-sentence .active{
   float:left;
   margin-left:10px;
-  width:90px;
+  min-width:90px;
+  width:auto;
   min-height:40px;
   border:1px dotted;
   border-radius:10px;
@@ -117,7 +186,80 @@ height: 20px;
   margin-top:10px;
 }
 
+#overlay {
+    position: fixed;
+    margin:auto;
+    padding:20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 20%;
+    background-color: #000;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 10000;
+    font-size:40px;
+    text-align:center;
+}
 
+#overlay-del{
+  cursor: pointer; 
+  position:relative; 
+  float:right; 
+  margin-right:10px; 
+  font-size:20px;"
+}
+
+/*
+sent-noun-1::before{
+content: "?";
+font-size: 20px;
+margin:1em 1em 1em 1em;
+color: white;
+top: 0;
+left: 0;
+}
+
+#sent-verb-1::before{
+content: "?";
+font-size: 20px;
+margin:1em 1em 1em 1em;
+color: white;
+top: 0;
+left: 0;
+}
+
+#sent-prep-1::before{
+content: "?";
+font-size: 20px;
+margin:1em 1em 1em 1em;
+color: white;
+top: 0;
+left: 0;
+}
+
+#sent-noun-2::before{
+content: "?";
+font-size: 20px;
+margin:1em 1em 1em 1em;
+color: white;
+top: 0;
+left: 0;
+}
+
+#sent-adj-1::before{
+content: "?";
+font-size: 20px;
+margin:1em 1em 1em 1em;
+color: white;
+top: 0;
+left: 0;
+}
+*/
 
 /* ==========================================================================
    Helper classes

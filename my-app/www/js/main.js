@@ -136,6 +136,8 @@ WORDCRAFT = (function(){
 		canvas = new fabric.Canvas('elem-frame-svg');
 		var cDim = getCanvasPerspDim(canvas);
 
+		alert(obj);
+
 
 		renderObjOnCanvas(obj, cDim);
 		// console.log(JSON.stringify(obj));
