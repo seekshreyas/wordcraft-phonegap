@@ -13,6 +13,14 @@ WORDCRAFT.build = (function(){
 	var init = function(){
 		console.log("let the crafting begin!");
 
+		Array.prototype.remove = function(value) {
+		  var idx = this.indexOf(value);
+		  if (idx != -1) {
+		      return this.splice(idx, 1); // The second parameter is the number of elements to remove.
+		  }
+		  return false;
+		}
+
 		var pos_json = $.getJSON( "res/data/parts-of-speech.json") 
 			.done(function(data) {
 				partsofSpeech = data;   
@@ -52,6 +60,11 @@ WORDCRAFT.build = (function(){
 		});
 
 		$(document).on("click",".droppable-del", function(){
+			var elem = $(this).parent().text();
+			elem = elem.substr(0, elem.length - 1);
+			elemClass = $(this).parent().attr('class');
+			elemClass = elemClass.substr(8,elemClass.length);
+			sentenceItems[elemClass].remove(elem);
 			$(this).parent().remove();
 			$(this).parent().parent().css("background-color", "");
 			draw_image();
@@ -290,10 +303,11 @@ WORDCRAFT.build = (function(){
 	};
 	var createDefaultJson = function(type,pos){
 		
+		var noun = type.split(" ")[1];
 		var json_elem = {
-			"eyes": "res/img/animals/"+type+"/"+type+"_part_eye.svg",
-			"skin": "res/img/animals/"+type+"/"+type+"_skin.svg",
-			"mouth": "res/img/animals/"+type+"/"+type+"+_part_mouth_happy.svg",
+			"eyes": "res/img/animals/"+noun+"/"+noun+"_part_eye.svg",
+			"skin": "res/img/animals/"+noun+"/"+noun+"_skin.svg",
+			"mouth": "res/img/animals/"+noun+"/"+noun+"_part_mouth_happy.svg",
 			"pos": {
 					"ground" : pos.toString(), 
 					"sky" : "none",
@@ -320,7 +334,7 @@ WORDCRAFT.build = (function(){
 		{
 			if(verb_0)
 			{
-				alert("game level1");
+				//alert("game level1");
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
@@ -333,15 +347,16 @@ WORDCRAFT.build = (function(){
 							"relative" : "none" //other values ["none", "top", "bottom"]
 							}  ;
 
-				alert(JSON.stringify(jsonObj));
-				WORDCRAFT.handleSentChanges(jsonObj);
+				//alert(JSON.stringify(jsonObj));
+				WORDCRAFT.handleSentChanges([jsonObj]);
 				gameLevel = 1;
 				playSound();
 			}	
 			else
 			{
-				alert("game level2");
-				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0));
+				//alert("game level2");
+				//alert(JSON.stringify(createDefaultJson(noun_0,"right_back")));
+				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0,"right_back"));
 			}
 		};
 
@@ -350,18 +365,18 @@ WORDCRAFT.build = (function(){
 			var jsonObj = [];
 			if(verb_0)
 			{
-				alert("game level3");
+				//alert("game level3");
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
 					verb_0 = tmpVerb[1];
 				}
 				jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
-				alert(JSON.stringify(jsonObj));
+				//alert(JSON.stringify(jsonObj));
 				if(prep_0 && noun_1 )
 				{
-					alert("game level4");
-					alert(JSON.stringify(jsonObj));
+					//alert("game level4");
+					//alert(JSON.stringify(jsonObj));
 					//jsonObj.push(defaultJson_noun1);
 					WORDCRAFT.handleSentChanges(jsonObj);
 					gameLevel = 2;
@@ -372,18 +387,40 @@ WORDCRAFT.build = (function(){
 			else
 			{
 
-				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0));
+				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0,"right_back"));
 			}
 
 		}
 
 		if(gameLevel === 2 && noun_0){
 			var jsonObj = [];
-			alert("game level6");
-			alert(JSON.stringify(createDefaultJson(noun_0)));
-			WORDCRAFT.handleSentChanges(createDefaultJson(noun_0));
-		
-			playSound();
+			//alert("game level6");
+			if(verb_0)
+			{
+				//alert("game level7");
+				var tmpVerb = verb_0.toString().split(" ");
+				if (tmpVerb.length>1)
+				{
+					verb_0 = tmpVerb[1];
+				}
+				jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
+				//alert(JSON.stringify(jsonObj));
+				if(adj_1 && prep_0 && noun_1 )
+				{
+					//alert("game level4");
+					//alert(JSON.stringify(jsonObj));
+					//jsonObj.push(defaultJson_noun1);
+					WORDCRAFT.handleSentChanges(jsonObj);
+					gameLevel = 2;
+					playSound();
+
+				}
+			}	
+			else
+			{
+
+				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0,"right_back"));
+			}
 		}
 	};
 
