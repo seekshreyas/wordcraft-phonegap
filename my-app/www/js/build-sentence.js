@@ -49,8 +49,8 @@ WORDCRAFT.build = (function(){
 			initReadData(gameLevel);
 		};
 
-		$(document).on("click","#overlay #overlay-del", function(){
-			$(this).parent().remove();
+		$(document).on("click","#overlay", function(){
+			$(this).parent();
 			initReadData(gameLevel);
 
 			/*$("#winning").append('<source src="res/sound/winning.wav"></source><source src="res/sound/winning.ogg"></source>');
@@ -312,7 +312,7 @@ WORDCRAFT.build = (function(){
 			"skin": "res/img/animals/"+noun+"/"+noun+"_skin.svg",
 			"mouth": "res/img/animals/"+noun+"/"+noun+"_part_mouth_happy.svg",
 			"pos": {
-					"ground" : pos.toString(), 
+					"ground" : "left_back", 
 					"sky" : "none",
 					"relative" : "none"
 					}  
@@ -345,7 +345,7 @@ WORDCRAFT.build = (function(){
 				}
 				var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
 				jsonObj["pos"]={
-							"ground" : "right_back", 
+							"ground" : "left_back", 
 							"sky" : "none", //other values ["none"]
 							"relative" : "none" //other values ["none", "top", "bottom"]
 							}  ;
@@ -357,15 +357,15 @@ WORDCRAFT.build = (function(){
 			}	
 			else
 			{
-				alert("game level2");
-				alert(JSON.stringify(createDefaultJson(noun_0,"right_back")));
-				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0,"right_back"));
+				//alert("game level2");
+				//alert(JSON.stringify(createDefaultJson(noun_0,"right_back")));
+				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0,"left_back"));
 			}
 		};
 
 		if(gameLevel === 1 && noun_0 )
 		{ 
-			var jsonObj = [];
+			
 			if(verb_0)
 			{
 				//alert("game level3");
@@ -374,14 +374,19 @@ WORDCRAFT.build = (function(){
 				{
 					verb_0 = tmpVerb[1];
 				}
-				jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
-				//alert(JSON.stringify(jsonObj));
+				var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
+				jsonObj["pos"] = {
+							"ground" : "left_front", 
+							"sky" : "none", //other values ["none"]
+							"relative" : "none" //other values ["none", "top", "bottom"]
+							} ;
+											//alert(JSON.stringify(jsonObj));
 				if(prep_0 && noun_1 )
 				{
 					//alert("game level4");
 					//alert(JSON.stringify(jsonObj));
 					//jsonObj.push(defaultJson_noun1);
-					WORDCRAFT.handleSentChanges(jsonObj);
+					WORDCRAFT.handleSentChanges([jsonObj]);
 					gameLevel = 2;
 					playSound();
 
@@ -390,13 +395,13 @@ WORDCRAFT.build = (function(){
 			else
 			{
 
-				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0,"right_back"));
+				WORDCRAFT.handleSentChanges(createDefaultJson(noun_0,"left_back"));
 			}
 
 		}
 
 		if(gameLevel === 2 && noun_0){
-			var jsonObj = [];
+			//var jsonObj = [];
 			//alert("game level6");
 			if(verb_0)
 			{
@@ -408,11 +413,15 @@ WORDCRAFT.build = (function(){
 				}
 				jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
 				//alert(JSON.stringify(jsonObj));
-				if(adj_1 && prep_0 && noun_1 )
+				//alert(adj_1);
+				if(adj_1 && prep_0)
 				{
 					//alert("game level4");
 					//alert(JSON.stringify(jsonObj));
 					//jsonObj.push(defaultJson_noun1);
+					jsonObj = drawImageData[noun_0.toString()]["adj"][adj_1.toString()];
+					//alert(adj);
+					//alert(jsonObj);
 					WORDCRAFT.handleSentChanges([jsonObj]);
 					gameLevel = 2;
 					playSound();
@@ -437,9 +446,9 @@ WORDCRAFT.build = (function(){
 	};
 
 	var levelChange = function(){
-
-		var overlay = jQuery('<div id="overlay"><p style="float:left">Level Complete!!!</p><div id="overlay-del"><b>X</b></div> </div>');
-		overlay.appendTo(document.body);
+		initReadData(gameLevel);
+		//var overlay = jQuery('<div id="overlay"><p style="float:left">Level Complete!!!</p><div id="overlay-del"><b>X</b></div> </div>');
+		//overlay.appendTo(document.body);
 	
 	}
 

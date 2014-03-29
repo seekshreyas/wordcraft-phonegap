@@ -6,19 +6,32 @@ WORDCRAFT = (function(){
 	var sceneObj = {};
 	var canvas; //canvas object so it is globally accessible
 
-	var defaultSceneObj = {
-		"eyes": "res/img/animals/cat/cat_part_eye.svg",
-		"skin": "res/img/animals/cat/cat_skin.svg",
-		"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
-		"pos": {
-			"ground" : "right_back", 
-			"sky" : "none", //other values ["none"]
-			"relative" : "none" //other values ["none", "top", "bottom"]
-		}  
-	};
+	var defaultSceneObj = [
+		{
+			"eyes": "res/img/animals/cat/cat_part_eye.svg",
+			"skin": "res/img/animals/cat/cat_skin.svg",
+			"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
+			"pos": {
+				"ground" : "right_back", 
+				"sky" : "none", //other values ["none"]
+				"relative" : "none" //other values ["none", "top", "bottom"]
+			}  
+		},
+		{
+			"eyes": "res/img/animals/cat/cat_part_eye.svg",
+			"skin": "res/img/animals/cat/cat_skin.svg",
+			"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
+			"pos": {
+				"ground" : "left_back", 
+				"sky" : "none", //other values ["none"]
+				"relative" : "none" //other values ["none", "top", "bottom"]
+			}  
+		}
+	];
 
 	var init = function(){
 		console.log("let the crafting begin!");
+		canvas = new fabric.Canvas('elem-frame-svg');
 
 		initCanvas();
 		evtHandler(); //all events handler
@@ -28,13 +41,12 @@ WORDCRAFT = (function(){
 
 	var initCanvas = function(){
 		//clean scene
-
-		canvas = new fabric.Canvas('elem-frame-svg');
+		
 		var perspDim = getCanvasPerspDim(canvas);
 
 		console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(defaultSceneObj, perspDim);
+		//renderObjOnCanvas(defaultSceneObj, perspDim);
 
 	};
 
@@ -54,7 +66,7 @@ WORDCRAFT = (function(){
 		
 		var persp = {
 			"vanishingY" : Math.floor(c_height/2), //vanishing plane
-			"theta" : Math.floor(theta), //
+			"theta" : Math.floor(theta), //angle of perspective
 			"ground" : {
 				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(theta)/2), Math.floor(y_unit)],
 				"center_front" 	: [Math.floor(c_width/2), Math.floor(y_unit)],
@@ -77,7 +89,6 @@ WORDCRAFT = (function(){
 	var evtHandler = function(){
 		jQuery('.text-muted').click(function(){
 
-		
 			handleSentChanges(defaultSceneObj);
 
 		});
@@ -86,43 +97,64 @@ WORDCRAFT = (function(){
 
 	var renderObjOnCanvas = function(cObj, cDim){
 		// console.log("Object, Dimension:", cObj, cDim);
-		var canvas = new fabric.Canvas('elem-frame-svg');
+		// var canvas = new fabric.Canvas('elem-frame-svg');
+		var canvas = this.__canvas = new fabric.Canvas('elem-frame-svg');
 
 		imgwidth = 200; //default image width
 		imgheight = 255; //default image height
-
 		imgScale = 0.6;
 		imgOffsetX = Math.floor(imgwidth*imgScale/2);
 		imgOffsetY = Math.floor(imgheight*imgScale/2);
 	
 		canvaswidth = canvas.width;
 		canvasheight = canvas.height;
-
-		var animalPartOrder = ['skin', 'eyes', 'mouth'];	
-
+			
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
+		if (cObj.length > 0){
 
-		if (cObj.skin !== 'Undefined'){
+			for (var c =0; c < cObj.length; c++){
+				var noun = cObj[c]; //assign the noun object
+				
+				if (noun.skin !== 'Undefined'){
 
+					var animalParts = ['skin', 'eyes', 'mouth'];
+					var pos = cDim.ground[noun.pos.ground];
+		
 
-			for (var i=0; i< animalPartOrder.length; i++){
+					for (var g = 0; g < animalParts.length; g++){
 
-				console.log("animal order:", cObj[animalPartOrder[i]])
-				var animal = new fabric.Image.fromURL(cObj[animalPartOrder[i]], function(oImg){
-					pos = cDim.ground[cObj.pos.ground];
+						var part_top = canvasheight - (pos[1] + imgOffsetY);
+						var part_left = pos[0] - imgOffsetX;
+						console.log("part:", noun[animalParts[g]], part_top, part_left);
 
-					// console.log("imgposition", pos);
+						// var img = new fabric.Image.fromURL(noun[animalParts[g]], {
+						// 	top : part_top,
+						// 	left : part_left,
+						// 	scale : imgScale
+						// });	
 
-					oImg.top = canvasheight - (pos[1] + imgOffsetY);
-					oImg.left = pos[0] - imgOffsetX;
+						// canvas.add(img);
 
-					// console.log("final position:", oImg.top, oImg.left);
+						var img = new fabric.Image.fromURL(noun[animalParts[g]], function(s){
+							s.top = part_top;
+							s.left = part_left;
+							s.scale(imgScale);
 
-					oImg.scale(imgScale);
-					canvas.add(oImg);
-				});
+							console.log("part:", part_top, part_left);
+
+							canvas.add(s);
+
+						});	
+					}
+				
+
+					// console.log("skin, eye, mouth", skin, eye, mouth);
+						
+				}
 			}
-		}	
+			
+		}
+			
 
 	};
 
@@ -135,6 +167,8 @@ WORDCRAFT = (function(){
 	var handleSentChanges = function(obj){
 		canvas = new fabric.Canvas('elem-frame-svg');
 		var cDim = getCanvasPerspDim(canvas);
+
+		//alert(obj);
 
 
 		renderObjOnCanvas(obj, cDim);

@@ -46,7 +46,7 @@ WORDCRAFT = (function(){
 
 		console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(defaultSceneObj, perspDim);
+		//renderObjOnCanvas(defaultSceneObj, perspDim);
 
 	};
 
@@ -168,7 +168,7 @@ WORDCRAFT = (function(){
 		canvas = new fabric.Canvas('elem-frame-svg');
 		var cDim = getCanvasPerspDim(canvas);
 
-		alert(obj);
+		//alert(obj);
 
 
 		renderObjOnCanvas(obj, cDim);

@@ -2,15 +2,15 @@
     "nouns": [
 
         "The cow",
-        "The sheep",
+        "The fence",
         "The cat"
     ],
     "verbs": {
 
-        "is walking":["in","near","on","with","behind"],
+        "is walking":["in front of","near","on","with","behind"],
         "is standing":["near","in","on","with","on top of","beneath"],
         "is laughing":["at","with"],
-        "is crying":["about","by","in","near","on"]
+        "is crying":["by","by","in","near","on"]
  
     },
     "adj": [
