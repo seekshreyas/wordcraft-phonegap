@@ -2,13 +2,13 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT.build = (function(){
 
-	var gameLevel = 0;
+	var gameLevel = 2;
 	var partsofSpeech = {};
 	var drawImageData = {};
 	var sentenceItems = {"noun":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var levelPOSCnt = {0:{"noun":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
 					   1:{"noun":2,"verb":3,"prep":5,"adj":0,"adv":0,"det":0},
-					   2:{"noun":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":2}};
+					   2:{"noun":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":1}};
 
 	var init = function(){
 		console.log("let the crafting begin!");
@@ -87,7 +87,46 @@ WORDCRAFT.build = (function(){
 	};
 
 	var parseData = function(d,level){
+	
+			if($("#init-det").children().length < levelPOSCnt[level].det)
+			{
+				var tmpDet = [];
+				console.log("Checking init det");
+				console.log("length of det < 3");
+				while($("#init-det").children().length < levelPOSCnt[level].det)
+				{
+					
+					var number = 1 + Math.floor(Math.random() * Object.keys(d.det).length-1);
+					var det = d.det[number];
+					if(jQuery.inArray(det,tmpDet) == -1)
+					{
+						tmpDet.push(det);
+						var htmlLi = '<li class="draggable li-det" id="det_'+det.replace(" ","_")+'">'+ det + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+						$("#init-det").append(htmlLi);
+					}
+					
+				}
+			};
 
+		if($("#init-adj").children().length < levelPOSCnt[level].adj)
+			{
+				var tmpAdj = [];
+				console.log("Checking init det");
+				console.log("length of det < 3");
+				while($("#init-adj").children().length < levelPOSCnt[level].adj)
+				{
+					
+					var number = 1 + Math.floor(Math.random() * Object.keys(d.adj).length-1);
+					var adj = d.adj[number];
+					if(jQuery.inArray(adj,tmpDet) == -1)
+					{
+						tmpDet.push(det);
+						var htmlLi = '<li class="draggable li-adj" id="adj_'+adj.replace(" ","_")+'">'+ adj + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+						$("#init-adj").append(htmlLi);
+					}
+					
+				}
+			};
 		
 		if($("#init-nouns").children().length < levelPOSCnt[level].noun)
 		{	
@@ -137,6 +176,7 @@ WORDCRAFT.build = (function(){
 				
 			}
 		};
+
 		if($("#init-prep").children().length < levelPOSCnt[level].prep)
 		{
 			console.log("Checking init prepositions");
