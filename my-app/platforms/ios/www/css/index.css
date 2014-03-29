@@ -19,6 +19,14 @@
     display:inline-block;
     margin:5px;
   }
+.words-list #init-det{
+  margin-left:10px;
+  float:left;
+}
+.words-list #init-adj{
+  margin-left:10px;
+  float:left;
+}
 
 .words-list #init-nouns{
   margin-bottom:20px;
@@ -32,8 +40,7 @@
 }
 
 .words-list #init-prep{
-  margin-left:15px;
-  margin-bottom:20px;
+  margin-left:10px;
   float:left;
 }
 
@@ -118,6 +125,32 @@ height: 20px;
     border-radius:5px;
 }
 
+.li-adj
+{
+    /*float:left;*/
+    margin:5px;
+    border:1px solid black;
+    height:auto;
+    background-color:#CCCCCC;
+    margin-left:5px;
+    padding:10px;
+    display: inline;
+    border-radius:5px;
+}
+
+.li-det
+{
+    /*float:left;*/
+    margin:5px;
+    border:1px solid black;
+    height:auto;
+    background-color:#CCCC33;
+    margin-left:5px;
+    padding:10px;
+    display: inline;
+    border-radius:5px;
+}
+
 .drag-li-noun{
   background-color:#FFCCFF;
 }
@@ -127,6 +160,15 @@ height: 20px;
 .drag-li-prep{
   background-color:#00FA9A;
 }
+
+.drag-li-adj{
+  background-color:#CCCCCC;
+}
+
+.drag-li-det{
+  background-color:#CCCC33;
+}
+
 #build-sentence li{
   display: inline-block;
 }
