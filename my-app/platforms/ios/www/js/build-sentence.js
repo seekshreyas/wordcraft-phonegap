@@ -213,6 +213,27 @@ WORDCRAFT.build = (function(){
 
 	};
 
+	var populateOnDrop = function(obj,type,form){
+			alert(obj.html());
+			var value = $(obj).text();
+			alert(value);
+			var listItem = value.substr(0, value.length - 1);
+			alert(listItem);
+			//var listItemId = $(obj).attr('id');	
+			//sentenceItems[listItemId] = listItem;
+			var color = $(obj).css("background-color");
+			$(obj).remove();
+			sentenceItems[type.toString()].push(listItem);
+			
+			var html = '<li class="drag-li-'+type.toString()+'" id="'+type.toString()+'_'+ listItem+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
+			alert(html);
+			var divid = "#sent-"+type.toString()+"-"+form.toString();
+			alert(divid);
+			$(divid).append(html);
+			$("#sent-"+type.toString()+form.toString()).css("background-color",color);
+			draw_image();
+	}
+
 	var makeDragabble = function(){
 
 		$('#init-nouns').children().each(function(index,value) {
@@ -239,28 +260,15 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-adj-1', 
 		{ accept : ["li-adj"], 
 			onDrop : function(obj){	
-
-					var value = $(obj).text();
-					var listItem = value.substr(0, value.length - 1);
-					//var listItemId = $(obj).attr('id');	
-					//sentenceItems[listItemId] = listItem;
-					var color = $(obj).css( "background-color" );
-					$(obj).remove();
-					sentenceItems["adj"].push(listItem);
-					
-					var html = '<li class="drag-li-adj" id="adj_'+ listItem+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
-					$("#sent-adj-1").append(html);
-					$("#sent-adj-1").css("background-color",color);
-					draw_image();
-				
+				populateOnDrop($(obj),'adj','1');
 			}
 		});
 
 		webkit_drop.add('sent-noun-1', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
-
-					var value = $(obj).text();
+					populateOnDrop($(obj),'noun','1');
+					/*var value = $(obj).text();
 					var listItem = value.substr(0, value.length - 1);
 
 					var listItemId = $(obj).attr('id');	
@@ -273,7 +281,7 @@ WORDCRAFT.build = (function(){
 					var html = '<li class="drag-li-noun" id="noun_'+listItem.replace(" ","_")+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
 					$("#sent-noun-1").append(html);
 					$("#sent-noun-1").css("background-color",color);
-					draw_image();
+					draw_image(); */
 			}
 			
 		});
@@ -348,6 +356,7 @@ WORDCRAFT.build = (function(){
 		{
 			if(verb_0)
 			{
+				alert("gameLevel 1");
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
@@ -355,7 +364,7 @@ WORDCRAFT.build = (function(){
 				}
 				//var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
 				var jsonObj = {
-					"eyes": "res/img/animals/cat/cat_part_eye_happier.svg",
+					"eyes": "res/img/animals/cat/cat_part_eye_sadder.svg",
                 	"skin": "res/img/animals/cat/cat_skin.svg",
                 	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
                 };
@@ -368,8 +377,9 @@ WORDCRAFT.build = (function(){
 			}	
 			else
 			{
+				alert("gameLevel 2");
 				var defaultJson = {
-					"eyes": "res/img/animals/cat/cat_part_eye_happier.svg",
+					"eyes": "res/img/animals/cat/cat_part_eye_happy.svg",
                 	"skin": "res/img/animals/cat/cat_skin.svg",
                 	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
                 };
@@ -381,6 +391,7 @@ WORDCRAFT.build = (function(){
 		{
 			if(verb_0)
 			{
+				alert("gameLevel 3");
 				var tmpVerb = verb_0.toString().split(" ");
 				if (tmpVerb.length>1)
 				{
@@ -388,9 +399,9 @@ WORDCRAFT.build = (function(){
 				}
 				//var jsonObj = drawImageData[noun_0.toString()]["verb"][verb_0.toString()];
 				var jsonObj = {
-					"eyes": "res/img/animals/cat/cat_part_eye_happier.svg",
+					"eyes": "res/img/animals/cat/cat_part_eye_angry.svg",
                 	"skin": "res/img/animals/cat/cat_skin.svg",
-                	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
+                	"mouth": "res/img/animals/cat/cat_part_mouth_angry.svg"
                 };
 
 				WORDCRAFT.handleSentChanges(jsonObj);
@@ -401,9 +412,9 @@ WORDCRAFT.build = (function(){
 			{
 				if(prep_0 && noun_1 )
 				{
-					
+					alert("gameLevel 4");
 					var defaultJson = {
-						"eyes": "res/img/animals/cat/cat_part_eye_happier.svg",
+						"eyes": "res/img/animals/cat/cat_part_eye_sad.svg",
 	                	"skin": "res/img/animals/cat/cat_skin.svg",
 	                	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
 	                };
@@ -416,6 +427,20 @@ WORDCRAFT.build = (function(){
 				}
 			}
 
+		}
+
+		if(gameLevel == 2){
+			alert("gameLevel 5");
+			var defaultJson = {
+				"eyes": "res/img/animals/cat/cat_part_eye_sad.svg",
+            	"skin": "res/img/animals/cat/cat_skin.svg",
+            	"mouth": "res/img/animals/cat/cat_part_mouth_sad.svg"
+            };
+
+			WORDCRAFT.handleSentChanges(defaultJson);
+			gameLevel = 2;
+		
+			playSound();
 		}
 	};
 
