@@ -36,16 +36,6 @@ WORDCRAFT = (function(){
 
 		renderObjOnCanvas(defaultSceneObj, perspDim);
 
-
-		// fabric.Image.fromURL('res/img/animals/cat/cat_full_color.svg', function(oImg){
-		// 	oImg.top = 250;
-		// 	oImg.left = 200;
-
-		// 	oImg.scale(0.6);
-		// 	canvas.add(oImg);
-		// });
-
-
 	};
 
 
@@ -87,55 +77,52 @@ WORDCRAFT = (function(){
 	var evtHandler = function(){
 		jQuery('.text-muted').click(function(){
 
-			// //for testing
-			// var testObj = {
-			// 	"eyes": "res/img/animals/cat/cat_part_eye.svg",
-			// 	"skin": "res/img/animals/cat/cat_skin.svg",
-			// 	"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
-			// 	"ears": "res/img/animals/cat/cat_part_ears.svg"
-			// };
+		
 			handleSentChanges(defaultSceneObj);
 
-			// initCanvas();
 		});
 	};
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
-		console.log("Object, Dimension:", cObj, cDim);
+		// console.log("Object, Dimension:", cObj, cDim);
 		var canvas = new fabric.Canvas('elem-frame-svg');
 
 		imgwidth = 200; //default image width
 		imgheight = 255; //default image height
 
-		imgScale = 0.6
+		imgScale = 0.6;
 		imgOffsetX = Math.floor(imgwidth*imgScale/2);
 		imgOffsetY = Math.floor(imgheight*imgScale/2);
 	
 		canvaswidth = canvas.width;
-		canvasheight = canvas.height;	
+		canvasheight = canvas.height;
 
-		console.log("render canvas dimensions:", canvaswidth, canvasheight);	
+		var animalPartOrder = ['skin', 'eyes', 'mouth'];	
+
+		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
 
 		if (cObj.skin !== 'Undefined'){
 
-			var skin = new fabric.Image.fromURL(cObj.skin, function(oImg){
-				pos = cDim.ground[cObj.pos.ground];
 
-				console.log("imgposition", pos);
+			for (var i=0; i< animalPartOrder.length; i++){
 
-				oImg.top = canvasheight - (pos[1] + imgOffsetY);
-				oImg.left = pos[0] - imgOffsetX;
+				console.log("animal order:", cObj[animalPartOrder[i]])
+				var animal = new fabric.Image.fromURL(cObj[animalPartOrder[i]], function(oImg){
+					pos = cDim.ground[cObj.pos.ground];
 
-				console.log("final position:", oImg.top, oImg.left);
+					// console.log("imgposition", pos);
 
-				oImg.scale(imgScale);
-				canvas.add(oImg);
-			});
-		
-		}
+					oImg.top = canvasheight - (pos[1] + imgOffsetY);
+					oImg.left = pos[0] - imgOffsetX;
 
-		
+					// console.log("final position:", oImg.top, oImg.left);
+
+					oImg.scale(imgScale);
+					canvas.add(oImg);
+				});
+			}
+		}	
 
 	};
 
