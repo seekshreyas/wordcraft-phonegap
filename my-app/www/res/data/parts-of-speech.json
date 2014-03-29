@@ -173,5 +173,7 @@
         "to",
         "with"
     ],
-    "adverbs": []
+    "adverbs": [],
+    "det":
+        ["the"]
 }
