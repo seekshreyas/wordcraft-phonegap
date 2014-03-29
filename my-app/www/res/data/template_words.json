@@ -2,7 +2,7 @@
 	"cat" : {
 		"pos" : "NN",
 		"related" : ["animal", "pet"], //related words
-		"before" : ["the", "a"]
+		"before" : ["the", "a"],
 		"after" : ["is", "are"]
 		"type" : "object", // possible values: ["object", "visual", "nonvisual"]
 		"canvaspos" : {
@@ -16,9 +16,9 @@
 				"height" : 350
 			},
 			"src" : {
-				"skin" : "animals/cat/cat_skin.svg",
-				"eyes" : "animals/cat/cat_part_eyes.svg",
-				"mouth" : "animals/cat/cat_part_mouth.svg"
+				"skin" : "res/img/animals/cat/cat_skin.svg",
+				"eyes" : "res/img/animals/cat/cat_part_eyes.svg",
+				"mouth" : "res/img/animals/cat/cat_part_mouth.svg"
 			} 
 		}
 	},
