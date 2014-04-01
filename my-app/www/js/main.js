@@ -112,7 +112,7 @@ WORDCRAFT = (function(){
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
 		if (cObj.length > 0){
 
-			for (var c =0; c < cObj.length; c++){
+			for (var c=0; c < cObj.length; c++){
 				var noun = cObj[c]; //assign the noun object
 				
 				if (noun.skin !== 'Undefined'){
@@ -130,16 +130,9 @@ WORDCRAFT = (function(){
 							s.top = part_top;
 							s.left = part_left;
 							s.scale(imgScale);
-
-							console.log(s, s.top,s.left, part_top, part_left);
-
+							// console.log(s, s.top,s.left, part_top, part_left);
 							canvas.add(s);
-
 						});
-
-						// img.top = part_top;
-						// img.left = part_left;
-						// img.scale(imgScale);
 					});
 				}
 			}	
