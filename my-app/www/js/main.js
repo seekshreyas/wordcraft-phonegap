@@ -46,7 +46,7 @@ WORDCRAFT = (function(){
 
 		console.log("canvas perspective: ", perspDim);
 
-		//renderObjOnCanvas(defaultSceneObj, perspDim);
+		renderObjOnCanvas(defaultSceneObj, perspDim);
 
 	};
 
@@ -108,7 +108,7 @@ WORDCRAFT = (function(){
 	
 		canvaswidth = canvas.width;
 		canvasheight = canvas.height;
-			
+	
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
 		if (cObj.length > 0){
 
@@ -116,52 +116,40 @@ WORDCRAFT = (function(){
 				var noun = cObj[c]; //assign the noun object
 				
 				if (noun.skin !== 'Undefined'){
-
 					var animalParts = ['skin', 'eyes', 'mouth'];
 					var pos = cDim.ground[noun.pos.ground];
-		
 
-					for (var g = 0; g < animalParts.length; g++){
+					animalParts.forEach(function(item, g){
+					// for (var g = 0; g < animalParts.length; g++){
 
 						var part_top = canvasheight - (pos[1] + imgOffsetY);
 						var part_left = pos[0] - imgOffsetX;
-						console.log("part:", noun[animalParts[g]], part_top, part_left);
-
-						// var img = new fabric.Image.fromURL(noun[animalParts[g]], {
-						// 	top : part_top,
-						// 	left : part_left,
-						// 	scale : imgScale
-						// });	
-
-						// canvas.add(img);
+						console.log("part:", noun[animalParts[g]], "part_position: ", part_top, part_left);
 
 						var img = new fabric.Image.fromURL(noun[animalParts[g]], function(s){
 							s.top = part_top;
 							s.left = part_left;
 							s.scale(imgScale);
 
-							console.log("part:", part_top, part_left);
+							console.log(s, s.top,s.left, part_top, part_left);
 
 							canvas.add(s);
 
-						});	
-					}
-				
+						});
 
-					// console.log("skin, eye, mouth", skin, eye, mouth);
-						
+						// img.top = part_top;
+						// img.left = part_left;
+						// img.scale(imgScale);
+					});
 				}
-			}
-			
+			}	
 		}
-			
-
 	};
 
 
 
 
-	//create a method of Sonali to call back from sentence
+	//create a method for Sonali to call back from sentence
 	//changes
 
 	var handleSentChanges = function(obj){
