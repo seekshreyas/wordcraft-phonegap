@@ -55,7 +55,6 @@ WORDCRAFT = (function(){
 
 	function getCanvasPerspDim(c){
 		// get canvas perspective dimensions
-
 		c_height = c.height;
 		c_width = c.width;
 
