@@ -22,7 +22,7 @@ WORDCRAFT = (function(){
 			"skin": "res/img/animals/cat/cat_skin.svg",
 			"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
 			"pos": {
-				"ground" : "left_back", 
+				"ground" : "center_front", 
 				"sky" : "none", //other values ["none"]
 				"relative" : "none" //other values ["none", "top", "bottom"]
 			}  
