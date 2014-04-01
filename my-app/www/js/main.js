@@ -46,7 +46,7 @@ WORDCRAFT = (function(){
 
 		console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(defaultSceneObj, perspDim);
+		// renderObjOnCanvas(defaultSceneObj, perspDim);
 
 	};
 
