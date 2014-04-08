@@ -114,7 +114,12 @@ textarea {
 
 
 
-/*fonts*/
+/*
+** FONTS
+*/
+
+
+/*OpenSans*/
 @font-face{    
   font-family: 'OpenSans Regular';
   src: url('../res/font/opensans/opensans_regular.ttf') format('truetype'); 
@@ -155,6 +160,8 @@ textarea {
   font-family: 'OpenSans Semi Bold Italic';
   src: url('../res/font/opensans/opensans_semibold_italic.ttf') format('truetype'); 
 }
+
+/*OpenSans Condensed*/
 @font-face{    
   font-family: 'OpenSans Condensed Bold';
   src: url('..res/font/opensans_condensed/opensans_condensed_bold.ttf') format('truetype'); 
@@ -169,7 +176,39 @@ textarea {
 }
 
 
-/*icons*/
+/*QuickSans*/
+@font-face{    
+  font-family: 'QuickSans';
+  src: url('..res/font/quicksand/quicksand_regular.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans Italic';
+  src: url('..res/font/quicksand/quicksand_italic.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans Bold';
+  src: url('..res/font/quicksand/quicksand_bold.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans BoldItalic';
+  src: url('..res/font/quicksand/quicksand_bolditalic.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans Light';
+  src: url('..res/font/quicksand/quicksand_light.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans LightItalic';
+  src: url('..res/font/quicksand/quicksand_lightitalic.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans Dashed';
+  src: url('..res/font/quicksand/quicksand_dash.otf') format('truetype'); 
+}
+
+
+
+/*Icons - Entypo*/
 @font-face{    
   font-family: 'Entypo';
   src: url('../res/font/icons/entypo.ttf') format('truetype'); 
