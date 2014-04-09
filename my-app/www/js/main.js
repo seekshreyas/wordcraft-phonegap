@@ -187,30 +187,41 @@ WORDCRAFT = (function(){
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
 		if (cObj.length > 0){
 
-			for (var c=0; c < cObj.length; c++){
-				var noun = cObj[c]; //assign the noun object
+			// for (var c=0; c < cObj.length; c++){
+			cObj.forEach(function(noun, count){
+
+
+				// var noun = cObj[c]; //assign the noun object
 				
 				if (noun.skin !== 'Undefined'){
-					var animalParts = ['skin', 'eyes', 'mouth'];
+					// var animalParts = ['skin', 'mouth', 'eyes'];
 					var pos = cDim.ground[noun.pos.ground];
 
-					animalParts.forEach(function(item, g){
-					// for (var g = 0; g < animalParts.length; g++){
+					console.log("Noun:", noun);
 
-						var part_top = canvasheight - (pos[1] + imgOffsetY);
-						var part_left = pos[0] - imgOffsetX;
-						console.log("part:", noun[animalParts[g]], "part_position: ", part_top, part_left);
+					var renderObject = (function(n){
+						fabric.Image.fromURL(n.skin, function(skin){
+							fabric.Image.fromURL(n.mouth, function(mouth){
+								fabric.Image.fromURL(n.eyes, function(eyes){
 
-						var img = new fabric.Image.fromURL(noun[animalParts[g]], function(s){
-							s.top = part_top;
-							s.left = part_left;
-							s.scale(imgScale);
-							// console.log(s, s.top,s.left, part_top, part_left);
-							canvas.add(s);
+									var part_top = canvasheight - (pos[1] + imgOffsetY);
+									var part_left = pos[0] - imgOffsetX;
+									console.log("positions:", part_top, part_left);
+
+									canvas.add(new fabric.Group([skin, mouth, eyes], function(g){
+										g.top = part_top;
+										g.left = part_left;
+										g.scale = imgScale;
+
+										console.log("Group Dimensions:", g.top, g.left, g.scale);
+									}));
+
+								});
+							});
 						});
-					});
+					})(noun);
 				}
-			}	
+			});	
 		}
 	};
 
