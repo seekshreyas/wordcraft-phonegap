@@ -18,7 +18,7 @@ WORDCRAFT = (function(){
 			}  
 		},
 		{
-			"eyes": "res/img/animals/cat/cat_part_eye.svg",
+			"eyes": "res/img/animals/cat/cat_part_eye_happy.svg",
 			"skin": "res/img/animals/cat/cat_skin.svg",
 			"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
 			"pos": {
@@ -173,7 +173,7 @@ WORDCRAFT = (function(){
 	var renderObjOnCanvas = function(cObj, cDim){
 		// console.log("Object, Dimension:", cObj, cDim);
 		// var canvas = new fabric.Canvas('elem-frame-svg');
-		var canvas = this.__canvas = new fabric.Canvas('elem-frame-svg');
+		// canvas = this.__canvas = new fabric.Canvas('elem-frame-svg');
 
 		imgwidth = 200; //default image width
 		imgheight = 255; //default image height
