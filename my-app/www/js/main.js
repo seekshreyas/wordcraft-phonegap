@@ -8,9 +8,9 @@ WORDCRAFT = (function(){
 
 	var defaultSceneObj = [
 		{
-			"eyes": "res/img/animals/cat/cat_part_eye.svg",
-			"skin": "res/img/animals/cat/cat_skin.svg",
-			"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
+			"eyes": "res/img/animals/sheep/sheep_part_eye_happy.svg",
+			"skin": "res/img/animals/sheep/sheep_skin.svg",
+			"mouth": "res/img/animals/sheep/sheep_part_mouth_happy.svg",
 			"pos": {
 				"ground" : "right_back", 
 				"sky" : "none", //other values ["none"]
@@ -122,7 +122,7 @@ WORDCRAFT = (function(){
 
 		console.log("canvas perspective: ", perspDim);
 
-		// renderObjOnCanvas(defaultSceneObj, perspDim);
+		renderObjOnCanvas(defaultSceneObj, perspDim);
 
 	};
 

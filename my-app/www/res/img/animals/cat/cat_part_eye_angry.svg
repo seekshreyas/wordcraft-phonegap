@@ -42,14 +42,20 @@
 	</g>
 </g>
 <g id="pane">
-	<ellipse fill="#FCFCFC" stroke="#020200" stroke-miterlimit="10" cx="66" cy="108" rx="16" ry="15"/>
-	<ellipse stroke="#020200" stroke-width="0.5477" stroke-miterlimit="10" cx="66" cy="108" rx="9" ry="8"/>
-	<ellipse fill="#FCFCFC" stroke="#020200" stroke-miterlimit="10" cx="129" cy="107" rx="16" ry="15"/>
-	<ellipse fill="#020200" stroke="#020200" stroke-width="0.5477" stroke-miterlimit="10" cx="129" cy="107" rx="9" ry="8"/>
-	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M84.332,133"/>
 	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M37.331,188.33"/>
-	<line fill="none" stroke="#020200" stroke-miterlimit="10" x1="99.999" y1="100" x2="129.999" y2="75"/>
-	<line fill="none" stroke="#020200" stroke-miterlimit="10" x1="84.999" y1="95" x2="59.999" y2="75"/>
+	<g>
+		<ellipse fill="#FCFCFC" stroke="#020200" stroke-miterlimit="10" cx="66" cy="108" rx="16" ry="15"/>
+		<ellipse stroke="#020200" stroke-width="0.5477" stroke-miterlimit="10" cx="66" cy="108" rx="9" ry="8"/>
+		<ellipse fill="#FCFCFC" stroke="#020200" stroke-miterlimit="10" cx="129" cy="107" rx="16" ry="15"/>
+		<ellipse fill="#020200" stroke="#020200" stroke-width="0.5477" stroke-miterlimit="10" cx="129" cy="107" rx="9" ry="8"/>
+		<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M84.332,133"/>
+		<g>
+			<polygon fill="#020200" points="98.72,98.463 130,75 101.28,101.536 			"/>
+		</g>
+		<g>
+			<polygon fill="#020200" points="84.062,96.171 60,75 85.938,93.828 			"/>
+		</g>
+	</g>
 </g>
 <g id="browserhead">
 </g>
