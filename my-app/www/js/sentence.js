@@ -197,10 +197,11 @@ WORDCRAFT.build = (function(){
 	};
 
 	var populateOnDrop = function(obj,type,form){
-			var value = $(obj).text();
+				var value = $(obj).text();
+
 			//if(($("#sent-"+type.toString()+"-"+form.toString()).html().length) == 21)
 			//{
-				var listItem = value.substr(0, value.length - 1);
+				var listItem = value;
 				var color = $(obj).css("background-color");
 				$(obj).remove();
 				//sentenceItems[type.toString()].push(listItem);
@@ -240,6 +241,12 @@ WORDCRAFT.build = (function(){
 		$('#init-adj').children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
+		makeDroppable();
+
+	};
+
+	var makeDroppable = function()
+	{
 
 		webkit_drop.add('sent-det-1', 
 		{ accept : ["li-det"], 
@@ -259,12 +266,12 @@ WORDCRAFT.build = (function(){
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
 					populateOnDrop($(obj),'noun','1');
-					//sent-helpverb-1
-					webkit_drop.add('sent-noun-1', 
-					{	accept : ["li-noun"], 
-						onDrop : function(obj){
-								populateOnDrop($(obj),'noun','1');
-								//sent-helpverb-1
+					var arrayOfClasses = $(obj).attr('class').split(' ');
+					nounType = arrayOfClasses[2].split("_")[1];
+					webkit_drop.add('sent-helpverb-1', 
+					{	accept : ["helpverb-"+nounType], 
+						onDrop : function(subObj){
+								populateOnDrop($(subObj),'helpverb','1');
 						}
 						
 					});
@@ -286,25 +293,18 @@ WORDCRAFT.build = (function(){
 				} 
 		});
 
-
-
 		webkit_drop.add('sent-noun-2', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
 				populateOnDrop($(obj),'noun','2');
 			}
 		});
-
-	};
-
-	var makeDroppable = function(dropDivid,idSerNo, dropDivClass, pos ){
-
-		webkit_drop.add(dropDivid, 
+		/*webkit_drop.add(dropDivid, 
 		{	accept : [dropDivClass], 
 			onDrop : function(obj){
 				populateOnDrop($(obj),pos,idSerNo);
 			}
-		});
+		});*/
 
 	};
 
