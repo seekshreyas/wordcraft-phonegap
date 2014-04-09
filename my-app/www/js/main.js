@@ -138,9 +138,6 @@ WORDCRAFT = (function(){
 		}
 	};
 
-
-
-
 	//create a method for Sonali to call back from sentence
 	//changes
 
