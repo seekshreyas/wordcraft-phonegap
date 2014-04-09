@@ -207,6 +207,12 @@ textarea {
 }
 
 
+/*Icons-ShortStack*/
+@font-face{    
+  font-family: 'ShortStack Regular';
+  src: url('..res/font/shortstack/shortstack_regular.otf') format('truetype'); 
+}
+
 
 /*Icons - Entypo*/
 @font-face{    

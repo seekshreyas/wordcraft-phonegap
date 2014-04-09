@@ -29,6 +29,82 @@ WORDCRAFT = (function(){
 		}
 	];
 
+
+	var newDefaultSceneObj = [{
+		"body" : {
+			"eyes" : "res/img/animals/cat/cat_part_eye.svg",
+			"skin" : "res/img/animals/cat/cat_skin.svg",
+			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
+			"color" : "", //there will be a default color for every animal
+			"size" : "normal", //"normal is default.
+			"width" : 350,
+			"height" : 350
+		},
+		"pos" : {
+			"plane" : "ground",
+			"plane_pos" : "right_back",
+			"plane_matrix" : [0, 0]
+		},
+		"animation" : [{
+				"duration" : "",
+				"animation_params" : {
+					"start" : "0",
+					"end" : "2",
+					"mid" : ""
+				},
+				"speed" : "normal",
+				"scale" : "",
+				"animation_type" : "rotate"
+			}, {
+				"duration" : "",
+				"animation_params" : {
+					"start" : "0",
+					"end" : "2",
+					"mid" : ""
+				},
+				"speed" : "normal",
+				"scale" : "",
+				"animation_type" : "translateX"
+			}
+		]
+	}, {
+		"body" : {
+			"eyes" : "res/img/animals/cat/cat_part_eye.svg",
+			"skin" : "res/img/animals/cat/cat_skin.svg",
+			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
+			"color" : "",
+			"size" : "large"
+		},
+		"pos" : {
+			"plane" : "ground",
+			"plane_pos" : "right_back",
+			"plane_matrix" : [0, 0]
+		},
+		"animation" : [{
+				"duration" : "",
+				"animation_params" : {
+					"start" : "0",
+					"end" : "2",
+					"mid" : ""
+				},
+				"speed" : "normal",
+				"scale" : "",
+				"animation_type" : "rotate"
+			}, {
+				"duration" : "",
+				"animation_params" : {
+					"start" : "0",
+					"end" : "2",
+					"mid" : ""
+				},
+				"speed" : "normal",
+				"scale" : "",
+				"animation_type" : "translateX"
+			}
+		]
+	}
+];
+
 	var init = function(){
 		console.log("let the crafting begin!");
 		canvas = new fabric.Canvas('elem-frame-svg');
