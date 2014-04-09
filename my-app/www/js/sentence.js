@@ -221,7 +221,6 @@ WORDCRAFT.build = (function(){
 		$('#init-noun').children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
-		//makeDroppable('sent-noun-1',1,'li-noun','noun');
 		$('#init-helpverb').children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
@@ -299,12 +298,6 @@ WORDCRAFT.build = (function(){
 				populateOnDrop($(obj),'noun','2');
 			}
 		});
-		/*webkit_drop.add(dropDivid, 
-		{	accept : [dropDivClass], 
-			onDrop : function(obj){
-				populateOnDrop($(obj),pos,idSerNo);
-			}
-		});*/
 
 	};
 
