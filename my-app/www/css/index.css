@@ -71,6 +71,11 @@
     background-color:#00FA9A;
 }
 
+.li-helpverb
+{
+  background-color: #FFFFCC;
+}
+
 .li-verb
 {
     background-color:#CCCCFF;
@@ -86,6 +91,7 @@
     background-color:#CCCC33;
 }
 
+/*
 .drag-li-noun{
   background-color:#FFCCFF;
 }
@@ -103,7 +109,10 @@
 .drag-li-det{
   background-color:#CCCC33;
 }
-
+*/
+#sent-noun-2{
+  text-transform: lowercase;
+}
 #build-sentence li{
   display: inline-block;
 }

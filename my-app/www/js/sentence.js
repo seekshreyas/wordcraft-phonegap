@@ -82,8 +82,21 @@ WORDCRAFT.build = (function(){
 			$("#sent-adj-1").addClass("active");
 			$("#sent-prep-1").addClass("active");
 			$("#sent-noun-2").addClass("active");
+			var nounText = $("#sent-noun-1 li").text().split(" ");
+			if(nounText.length>1)
+			{
 
+			 	var html = '<li class="draggable li-det" id="det_'+nounText[0]+'">'+ nounText[0] + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+				$("#sent-det-1").append(html);
+				var noun = $("#sent-noun-1 li").attr("id").split("_")[1];
+				var nounhtml = '<li class="draggable li-det" id="noun_'+noun+'">'+ nounText[1] + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+				$('#sent-noun-1').find('li').remove();
+				$("#sent-noun-1").append(nounhtml);
+			}
+
+			alert($("#sent-noun-1 li").text());
 		}
+
 
 		parseData(partsofSpeech);	
 
@@ -111,7 +124,7 @@ WORDCRAFT.build = (function(){
 				{
 					wordText = word;
 					currWordList[pos].push(word);
-					if(pos === 'noun' )
+					if(pos === 'noun')
 					{
 						tmpNoun = getNounPrefixSufix(pos,word);
 						posClass = tmpNoun[1];
@@ -139,7 +152,14 @@ WORDCRAFT.build = (function(){
 	{
 		var tmpPrefixDet = jQuery.inArray(word, currWordList[pos])%2;
 		var prefixDet = currWordList["det"][tmpPrefixDet];
-		word = prefixDet+" "+word + nounSuffix[prefixDet];
+		if(gameLevel > 1)
+		{
+			word = word+nounSuffix[prefixDet];
+		}
+		else
+		{
+			word = prefixDet+" "+word + nounSuffix[prefixDet];
+		}
 		if(nounSuffix[prefixDet])
 		{
 			posClass = pos+'_plural';
@@ -356,9 +376,9 @@ WORDCRAFT.build = (function(){
 
 	var draw_image = function()
 	{
-		alert("Inside draw image");
+		//alert("Inside draw image");
 		var builtSent = $("#build-sentence").children();
-		if(sentWordList["noun"][0].length>0)
+		if(sentWordList["noun"][0].length === 0)
 		{
 			/*
 			getJson method creates the actual Json. Following values
@@ -383,14 +403,16 @@ WORDCRAFT.build = (function(){
 
 		if(sentWordList["noun"].length>1 && sentWordList["verb"].length>0 && sentWordList["prep"].length>0)
 		{
-			if (sentWordList["adj"])
+			if (sentWordList["adj"].length>0)
 			{
 				getJson(4);
+				initReadData();
 			}
 			else
 			{
 				getJson(3);
 				gameLevel = 2;
+				initReadData();
 			}
 
 		}
@@ -411,7 +433,7 @@ WORDCRAFT.build = (function(){
 
 	var getJson = function(status)
 	{
-		alert(status);
+		//alert(status);
 	};
 
 	var levelChange = function(){
