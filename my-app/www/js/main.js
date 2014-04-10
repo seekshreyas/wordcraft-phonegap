@@ -251,10 +251,12 @@ WORDCRAFT = (function(){
 			var defaultDuration = 1000;
 
 			switch (anim_kind.animation_type){
+				
+				// translate X
 				case "translateX":
 					console.log("translate on the X-axis");
 
-					var amplitude = 50;
+					var amplitude = 50; // in pixels
 					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
 
 					var movement = states[0] === '' ? 0 : parseInt(states[0]) * amplitude;
@@ -298,9 +300,55 @@ WORDCRAFT = (function(){
 					});
 		
 
-					
-
 					break;
+
+				//rotate
+				case "rotate":
+					console.log("Rotation Animation");
+
+					var angleAmplitude = 10; // in radians
+					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
+
+					var movement = states[0] === '' ? 0 : parseInt(states[0]) * angleAmplitude;
+					var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
+
+					// console.log("Displacement: ", displacement,"states: ", parseInt(states[0]), "movement: ", movement, anim_kind);
+
+					obj.animate('angle', displacement, { 
+						onChange: canvas.renderAll.bind(canvas),
+						duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+						easing: fabric.util.ease.easeInCubic,
+						onComplete : function(){
+							var movement = states[1] === '' ? 0 : parseInt(states[1]) * angleAmplitude;
+							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
+
+							console.log("Displacement: ", displacement);
+
+							obj.animate('angle', displacement, { 
+								onChange: canvas.renderAll.bind(canvas),
+								duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+								easing: fabric.util.ease.easeInCubic,
+								onComplete : function(){
+									var movement = states[2] === '' ? 0 : parseInt(states[2]) * angleAmplitude;
+									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
+
+									console.log("Displacement: ", displacement);
+
+									obj.animate('angle', displacement, { 
+										onChange: canvas.renderAll.bind(canvas),
+										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+										easing: fabric.util.ease.easeOutCubic,
+										onComplete : function(){
+											console.log("completed:", anim_kind.animation_type);
+										}
+									});
+		
+								}
+							});
+		
+						}
+					});
+
 				default:
 					console.log("no animation");
 			}
