@@ -355,7 +355,7 @@ WORDCRAFT = (function(){
 
 
 				//rotate
-				case "rotateX":
+				case "rotate":
 					console.log("Rotation Animation");
 
 					var angleAmplitude = 10; // in radians
