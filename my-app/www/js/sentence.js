@@ -2,16 +2,16 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT.build = (function(){
 
-	var gameLevel = 1;
+	var gameLevel = 0;
 	var partsofSpeech = {};
 	var fullJsonData = {};
 	var nounSuffix = {"The":"s","A":""}
 	var helpVerbType = {"is":"singular","are":"plural"}
-	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":["The","A"]};
-	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[]};
+	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
+	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var levelPOSCnt = {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
-					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
-					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":1}};
+					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":2},
+					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":2}};
 
 	var init = function(){
 		console.log("let the crafting begin!");
@@ -56,8 +56,7 @@ WORDCRAFT.build = (function(){
 			var pos = $(this).parent().attr("class").split(" ")[1];
 			
 			pos = pos.substr(3,pos.length);
-			var word = $(this).parent().attr("id");
-			
+			var word = $(this).parent().attr("id");		
 			word =  word.split("_")[1];
 			currWordList[pos].remove(word);
 			sentWordList[pos].remove(word);
@@ -88,13 +87,12 @@ WORDCRAFT.build = (function(){
 
 			 	var html = '<li class="draggable li-det" id="det_'+nounText[0]+'">'+ nounText[0] + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 				$("#sent-det-1").append(html);
-				var noun = $("#sent-noun-1 li").attr("id").split("_")[1];
-				var nounhtml = '<li class="draggable li-det" id="noun_'+noun+'">'+ nounText[1] + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+				var nounId = $("#sent-noun-1 li").attr("id").split("_")[1];
+				var nounhtml = '<li class="draggable li-noun" id="noun_'+nounId+'">'+ nounText[1] + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+				
 				$('#sent-noun-1').find('li').remove();
 				$("#sent-noun-1").append(nounhtml);
 			}
-
-			alert($("#sent-noun-1 li").text());
 		}
 
 
@@ -127,8 +125,19 @@ WORDCRAFT.build = (function(){
 					if(pos === 'noun')
 					{
 						tmpNoun = getNounPrefixSufix(pos,word);
-						posClass = tmpNoun[1];
+						posClass = 'noun_'+tmpNoun[1];
 						wordText = tmpNoun[0];
+					}
+					if(pos === 'det')
+					{
+						if(wordText === 'The')
+						{
+							posClass = 'det_plural';
+						}	
+						else
+						{
+							posClass = 'det_singular';
+						}
 					}
 					if(pos === 'helpverb')
 					{
@@ -151,7 +160,7 @@ WORDCRAFT.build = (function(){
 	var getNounPrefixSufix = function(pos,word)
 	{
 		var tmpPrefixDet = jQuery.inArray(word, currWordList[pos])%2;
-		var prefixDet = currWordList["det"][tmpPrefixDet];
+		var prefixDet = partsofSpeech["det"][tmpPrefixDet];
 		if(gameLevel > 1)
 		{
 			word = word+nounSuffix[prefixDet];
@@ -162,11 +171,11 @@ WORDCRAFT.build = (function(){
 		}
 		if(nounSuffix[prefixDet])
 		{
-			posClass = pos+'_plural';
+			posClass = 'plural';
 		}
 		else
 		{
-			posClass = pos+'_singular';
+			posClass = 'singular';
 		}
 
 		return [word,posClass];
@@ -203,6 +212,7 @@ WORDCRAFT.build = (function(){
 
 	var parseData = function(d){
 	
+		getPOSToDisplay(d,gameLevel,"det");
 		getPOSToDisplay(d,gameLevel,"noun");
 		getPOSToDisplay(d,gameLevel,"helpverb");
 		getPOSToDisplay(d,gameLevel,"verb");
@@ -377,8 +387,7 @@ WORDCRAFT.build = (function(){
 	var draw_image = function()
 	{
 		//alert("Inside draw image");
-		var builtSent = $("#build-sentence").children();
-		if(sentWordList["noun"][0].length === 0)
+		if(sentWordList["noun"][0].length > 0)
 		{
 			/*
 			getJson method creates the actual Json. Following values
@@ -433,7 +442,7 @@ WORDCRAFT.build = (function(){
 
 	var getJson = function(status)
 	{
-		//alert(status);
+		alert(status);
 	};
 
 	var levelChange = function(){
