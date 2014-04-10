@@ -54,14 +54,14 @@ WORDCRAFT.build = (function(){
 			var pos = $(this).parent().attr("class").split(" ")[1];
 			
 			pos = pos.substr(3,pos.length);
-			alert(pos);
+			//alert(pos);
 			var word = $(this).parent().attr("id");
 			
 			word =  word.split("_")[1];
-			alert(word);
-			alert(sentenceItems[pos]);
+			//alert(word);
+			//alert(sentenceItems[pos]);
 			sentenceItems[pos].remove(word);
-			alert($(this).parent().html().toString());
+			//alert($(this).parent().html().toString());
 			//console.log(sentenceItems[pos]);
 			$(this).parent().remove();
 		});
@@ -225,7 +225,7 @@ WORDCRAFT.build = (function(){
 				
 				var html = '<li class="draggable li-'+type.toString()+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 				var divid = "#sent-"+type.toString()+"-"+form.toString();
-				alert(html);
+				//alert(html);
 				$(divid).append(html);
 
 				$("#sent-"+type.toString()+"-"+form.toString()).css("background-color",color);
@@ -353,7 +353,7 @@ WORDCRAFT.build = (function(){
 		$.each(builtSent,function(i,value){
 			finalSentence[value.id] = value.innerHtml;
 		});
-		alert(finalSentence["sent-noun-1"].length);
+		//alert(finalSentence["sent-noun-1"].length);
 
 	};
 
