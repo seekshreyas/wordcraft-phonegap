@@ -32,17 +32,17 @@ WORDCRAFT = (function(){
 
 	var newDefaultSceneObj = [{
 		"body" : {
-			"eyes" : "res/img/animals/cat/cat_part_eye.svg",
-			"skin" : "res/img/animals/cat/cat_skin.svg",
-			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
+			"eyes" : "res/img/animals/sheep/sheep_part_eye_happy.svg",
+			"skin" : "res/img/animals/sheep/sheep_skin.svg",
+			"mouth" : "res/img/animals/sheep/sheep_part_mouth_happy.svg",
 			"color" : "", //there will be a default color for every animal
 			"size" : "normal", //"normal is default.
-			"width" : 350,
-			"height" : 350
+			"width" : 200,
+			"height" : 255
 		},
 		"pos" : {
-			"plane" : "ground",
-			"plane_pos" : "right_back",
+			"plane" : "sky",
+			"plane_pos" : "center_front",
 			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
@@ -69,15 +69,17 @@ WORDCRAFT = (function(){
 		]
 	}, {
 		"body" : {
-			"eyes" : "res/img/animals/cat/cat_part_eye.svg",
+			"eyes" : "res/img/animals/cat/cat_part_eye_happy.svg",
 			"skin" : "res/img/animals/cat/cat_skin.svg",
 			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
 			"color" : "",
-			"size" : "large"
+			"size" : "large",
+			"width" : 200,
+			"height" : 255
 		},
 		"pos" : {
-			"plane" : "ground",
-			"plane_pos" : "right_back",
+			"plane" : "sky",
+			"plane_pos" : "center_front",
 			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
@@ -122,7 +124,7 @@ WORDCRAFT = (function(){
 
 		console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(defaultSceneObj, perspDim);
+		renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
@@ -138,6 +140,9 @@ WORDCRAFT = (function(){
 
 		x_unit = Math.floor(c_width/8)
 		y_unit = Math.floor(c_height/16);
+		pi = Math.PI; 
+
+		console.log("x,y :", x_unit, y_unit );
 		
 		var persp = {
 			"vanishingY" : Math.floor(c_height/2), //vanishing plane
@@ -154,6 +159,19 @@ WORDCRAFT = (function(){
 				"left_back" 	: [Math.floor(x_unit + 5*y_unit / Math.tan(theta)), Math.floor(5*y_unit)],
 				"center_back" 	: [Math.floor(c_width/2), Math.floor(5*y_unit)],
 				"right_back"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(theta)), Math.floor(5*y_unit)]
+			},
+			"sky" : {
+				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(pi - theta)), Math.floor(11*y_unit)],
+				"center_front" 	: [Math.floor(c_width/2), Math.floor(11*y_unit)],
+				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(11*y_unit)],
+				
+				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(pi - theta)), Math.floor(9*y_unit)],
+				"center_middle" : [Math.floor(c_width/2), Math.floor(9*y_unit)],
+				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(pi - theta)), Math.floor(9*y_unit)],
+
+				"left_back" 	: [Math.floor(x_unit + 5*y_unit / Math.tan(pi - theta)), Math.floor(7*y_unit)],
+				"center_back" 	: [Math.floor(c_width/2), Math.floor(7*y_unit)],
+				"right_back"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(7*y_unit)]
 			}
 		};
 
@@ -175,43 +193,43 @@ WORDCRAFT = (function(){
 		// var canvas = new fabric.Canvas('elem-frame-svg');
 		// canvas = this.__canvas = new fabric.Canvas('elem-frame-svg');
 
-		imgwidth = 200; //default image width
-		imgheight = 255; //default image height
-		imgScale = 0.2;
-		imgOffsetX = Math.floor(imgwidth*imgScale/2);
-		imgOffsetY = Math.floor(imgheight*imgScale/2);
-	
-		canvaswidth = canvas.width;
-		canvasheight = canvas.height;
-	
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
 		if (cObj.length > 0){
 
 			// for (var c=0; c < cObj.length; c++){
 			cObj.forEach(function(noun, count){
 
+				imgwidth = noun.body.width; //default image width
+				imgheight = noun.body.height; //default image height
+				imgScale = 0.2;
+				imgOffsetX = Math.floor(imgwidth*imgScale/2);
+				imgOffsetY = Math.floor(imgheight*imgScale/2);
+			
+				canvaswidth = canvas.width;
+				canvasheight = canvas.height;
 
+				console.log("ImageWidth, Height:", imgwidth, imgheight, noun);
 				// var noun = cObj[c]; //assign the noun object
 				
-				if (noun.skin !== 'Undefined'){
+				if (noun.body.skin !== 'Undefined'){
 					// var animalParts = ['skin', 'mouth', 'eyes'];
-					var pos = cDim.ground[noun.pos.ground];
+					var pos = cDim[noun.pos.plane][noun.pos.plane_pos];
 
-					console.log("Noun:", noun);
+					console.log("Noun: ", noun, "Position: ", pos);
 
 					var renderObject = (function(n){
-						fabric.Image.fromURL(n.skin, function(skin){
-							fabric.Image.fromURL(n.mouth, function(mouth){
-								fabric.Image.fromURL(n.eyes, function(eyes){
+						fabric.Image.fromURL(n.body.skin, function(skin){
+							fabric.Image.fromURL(n.body.mouth, function(mouth){
+								fabric.Image.fromURL(n.body.eyes, function(eyes){
 
 									var part_top = canvasheight - (pos[1] + imgOffsetY);
 									var part_left = pos[0] - imgOffsetX;
-									console.log("positions:", part_top, part_left, imgScale);
+									console.log("positions:", canvasheight, imgOffsetY, imgOffsetX, part_top, part_left, imgScale);
 
 									canvas.add(new fabric.Group([skin, mouth, eyes], function(g){
 										g.top = part_top;
 										g.left = part_left;
-										g.scale = imgScale;
+										g.scale = 0.1;
 
 										console.log("Group Dimensions:", g.top, g.left, g.scale);
 									}));
