@@ -2,12 +2,13 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT.build = (function(){
 
-	var gameLevel = 0;
+	var gameLevel = 1;
 	var partsofSpeech = {};
 	var fullJsonData = {};
 	var nounSuffix = {"The":"s","A":""}
 	var helpVerbType = {"is":"singular","are":"plural"}
-	var sentenceItems = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":["The","A"]};
+	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":["The","A"]};
+	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[]};
 	var levelPOSCnt = {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
 					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
 					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":1}};
@@ -30,7 +31,7 @@ WORDCRAFT.build = (function(){
 				console.log("Read full json");
 				fullJsonData = data;   
 				drawImageData = data;
-				initReadData(gameLevel);
+				initReadData();
 			})
 			.fail(function() {
 			    console.log( "error" );
@@ -39,14 +40,15 @@ WORDCRAFT.build = (function(){
 		Array.prototype.remove = function(value) {
 		  var idx = this.indexOf(value);
 		  if (idx != -1) {
-		      return this.splice(idx, 1); // The second parameter is the number of elements to remove.
+		  	  // The second parameter is the number of elements to remove.
+		      return this.splice(idx, 1); 
 		  }
 		  return false;
 		};
 
 
 		$("#btn_add_words").bind("tap",function() {
-			initReadData(gameLevel);
+			initReadData();
 		});
 
 
@@ -54,36 +56,26 @@ WORDCRAFT.build = (function(){
 			var pos = $(this).parent().attr("class").split(" ")[1];
 			
 			pos = pos.substr(3,pos.length);
-			//alert(pos);
 			var word = $(this).parent().attr("id");
 			
 			word =  word.split("_")[1];
-			//alert(word);
-			//alert(sentenceItems[pos]);
-			sentenceItems[pos].remove(word);
-			//alert($(this).parent().html().toString());
-			//console.log(sentenceItems[pos]);
+			currWordList[pos].remove(word);
+			sentWordList[pos].remove(word);
 			$(this).parent().remove();
-		});
-
-		$(document).on("click","#overlay", function(){
-			$(this).parent();
-			initReadData(gameLevel);
-
 		});
 
 
 	};
 	
-	var initReadData = function(level)
+	var initReadData = function()
 	{
-		if (level === 1)
+		if (gameLevel === 1)
 		{
 			console.log()
 			$("#sent-prep-1").addClass("active");
 			$("#sent-noun-2").addClass("active");
 		}
-		if (level === 2)
+		if (gameLevel === 2)
 		{
 			console.log("Inside level 2");
 			$("#sent-det-1").addClass("active");
@@ -93,7 +85,7 @@ WORDCRAFT.build = (function(){
 
 		}
 
-		parseData(partsofSpeech,level);	
+		parseData(partsofSpeech);	
 
 	};
 
@@ -102,23 +94,23 @@ WORDCRAFT.build = (function(){
 		var posClass="";
 		var currData = $(divId).children().get();
 		$.each(currData, function(i,val) {
-			if(jQuery.inArray(val.text(), sentenceItems[pos])==-1)
+			if(jQuery.inArray(val.text(), currWordList[pos])==-1)
 			{
-				sentenceItems[pos].push(val.text());
+				currWordList[pos].push(val.text());
 			}
 		});
 		var divId = "#init-"+pos;
 		var currData = $(divId).contents();
-		if(sentenceItems[pos].length < levelPOSCnt[level][pos])
+		if(currWordList[pos].length < levelPOSCnt[level][pos])
 		{
-			while(sentenceItems[pos].length < levelPOSCnt[level][pos])
+			while(currWordList[pos].length < levelPOSCnt[level][pos])
 			{
 				var randIndex  = 1 + Math.floor(Math.random() * data[pos].length-1);
 				var word = data[pos][randIndex];
-				if(jQuery.inArray(word, sentenceItems[pos])==-1)
+				if(jQuery.inArray(word, currWordList[pos])==-1)
 				{
 					wordText = word;
-					sentenceItems[pos].push(word);
+					currWordList[pos].push(word);
 					if(pos === 'noun' )
 					{
 						tmpNoun = getNounPrefixSufix(pos,word);
@@ -134,17 +126,19 @@ WORDCRAFT.build = (function(){
 					$(divId).append(htmlLi);						
 				}		
 			}
-			if(sentenceItems[pos].length === levelPOSCnt[level][pos])
-			{
-				getPrepToDisplay(pos,divId,gameLevel);
-			}
+			
+		}
+		if(currWordList[pos].length === levelPOSCnt[level][pos])
+		{
+			//alert(currWordList[pos]);
+			getPrepToDisplay(pos,divId,gameLevel);
 		}
 	}
 
 	var getNounPrefixSufix = function(pos,word)
 	{
-		var tmpPrefixDet = jQuery.inArray(word, sentenceItems[pos])%2;
-		var prefixDet = sentenceItems["det"][tmpPrefixDet];
+		var tmpPrefixDet = jQuery.inArray(word, currWordList[pos])%2;
+		var prefixDet = currWordList["det"][tmpPrefixDet];
 		word = prefixDet+" "+word + nounSuffix[prefixDet];
 		if(nounSuffix[prefixDet])
 		{
@@ -163,34 +157,31 @@ WORDCRAFT.build = (function(){
 		var tmpPrep = [];
 		if(pos === 'verb')
 		{
-			var currPrepData = $("#init-prep").children().get();
-			$.each(currPrepData, function(i,val) {
-				if(jQuery.inArray(val.text(), sentenceItems["prep"])==-1)
-				{
-				 	sentenceItems["prep"].push(val.text());
-				}
-			});
-
 			var currData = $(divId).children().get();
 			var counter = 0;
-			$.each(currData, function(i,val) {
-				prepositions = Object.keys(fullJsonData.verb[val.innerText].preposition);
-				if(sentenceItems["prep"].length < levelPOSCnt[level]["prep"])
+			$.each(currWordList["verb"], function(i,val) {
+				prepositions = Object.keys(fullJsonData.verb[val].preposition);
+				if(currWordList["prep"].length < levelPOSCnt[level]["prep"])
 				{
 					var randIndex  = 1 + Math.floor(Math.random() * prepositions.length-1);
 					var word = prepositions[randIndex];
-					if(jQuery.inArray(word, sentenceItems["prep"])==-1)
+					if(jQuery.inArray(word, currWordList["prep"])==-1)
 					{
-						sentenceItems["prep"].push(word);
-						var htmlLi = '<li class="draggable li-prep prep-'+val.innerText+'" id="prep_'+word.replace(" ","_")+'">'+ word + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
+						currWordList["prep"].push(word);
+						var htmlLi = '<li class="draggable li-prep prep-'+val+'" id="prep_'+word.replace(" ","_")+'">'+ word + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
 						$("#init-prep").append(htmlLi);	
+					}
+					else
+					{
+						console.log("Inside prep add class");
+						$("#prep_"+word.replace(" ","_")).addClass("prep-"+val);
 					}
 				}
 			});	
 		}
 	}
 
-	var parseData = function(d,level){
+	var parseData = function(d){
 	
 		getPOSToDisplay(d,gameLevel,"noun");
 		getPOSToDisplay(d,gameLevel,"helpverb");
@@ -217,11 +208,14 @@ WORDCRAFT.build = (function(){
 					wordId =  $(obj).attr("id").split("_")[1]
 				}
 
-				if(jQuery.inArray(wordId, sentenceItems[type.toString()])==-1)
+				if(jQuery.inArray(wordId, currWordList[type.toString()])==-1)
 				{
-				 	sentenceItems[type.toString()].push(wordId);
+				 	currWordList[type.toString()].push(wordId);
 				}
-				
+				if(jQuery.inArray(wordId, sentWordList[type.toString()])==-1)
+				{
+				 	sentWordList[type.toString()].push(wordId);
+				}
 				
 				var html = '<li class="draggable li-'+type.toString()+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 				var divid = "#sent-"+type.toString()+"-"+form.toString();
@@ -230,8 +224,9 @@ WORDCRAFT.build = (function(){
 
 				$("#sent-"+type.toString()+"-"+form.toString()).css("background-color",color);
 				$(obj).parent().css("background-color",color);
-				//draw_image();
+
 			}
+			return true;
 	}
 
 	var makeDragabble = function(){
@@ -275,23 +270,30 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-adj-1', 
 		{ accept : ["li-adj"], 
 			onDrop : function(obj){	
-				populateOnDrop($(obj),'adj','1');
+				if(populateOnDrop($(obj),'adj','1'))
+				{
+					draw_image();
+				}
 			}
 		});
 
 		webkit_drop.add('sent-noun-1', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
-					populateOnDrop($(obj),'noun','1');
-					var arrayOfClasses = $(obj).attr('class').split(' ');
-					nounType = arrayOfClasses[2].split("_")[1];
-					webkit_drop.add('sent-helpverb-1', 
-					{	accept : ["helpverb-"+nounType], 
-						onDrop : function(subObj){
-								populateOnDrop($(subObj),'helpverb','1');
-						}
-						
-					});
+					if(populateOnDrop($(obj),'noun','1'))
+					{
+						var arrayOfClasses = $(obj).attr('class').split(' ');
+						nounType = arrayOfClasses[2].split("_")[1];
+						draw_image();
+						webkit_drop.add('sent-helpverb-1', 
+						{	accept : ["helpverb-"+nounType], 
+							onDrop : function(subObj){
+									populateOnDrop($(subObj),'helpverb','1');
+							}
+							
+						});
+
+					}
 			}
 			
 		});
@@ -299,17 +301,20 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-verb-1', 
 		{ accept : ["li-verb"], 
 			onDrop : function(obj){	
-				populateOnDrop($(obj),'verb','1');
-				var prepClass = $(obj).text()
-				prepClass = "prep-"+prepClass;
-				webkit_drop.add('sent-prep-1', 
-				{	
-					accept : [prepClass], 
-					onDrop : function(subObj){
-						populateOnDrop($(subObj),'prep','1');
-					}
-					
-				});
+				if(populateOnDrop($(obj),'verb','1'))
+				{
+					var prepClass = $(obj).text()
+					prepClass = "prep-"+prepClass;
+					draw_image();
+					webkit_drop.add('sent-prep-1', 
+					{	
+						accept : [prepClass], 
+						onDrop : function(subObj){
+							populateOnDrop($(subObj),'prep','1');
+						}
+						
+					});
+				}
 
 				} 
 		});
@@ -317,11 +322,14 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-noun-2', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
-				populateOnDrop($(obj),'noun','2');
+				if(populateOnDrop($(obj),'noun','2'))
+				{
+					draw_image();
+				}
 			}
 		});
 		
-		draw_image();
+		//draw_image();
 	};
 
 
@@ -348,12 +356,46 @@ WORDCRAFT.build = (function(){
 
 	var draw_image = function()
 	{
-		var finalSentence = {}
-		var builtSent = $( "#build-sentence").children();
-		$.each(builtSent,function(i,value){
-			finalSentence[value.id] = value.innerHtml;
-		});
-		//alert(finalSentence["sent-noun-1"].length);
+		alert("Inside draw image");
+		var builtSent = $("#build-sentence").children();
+		if(sentWordList["noun"][0].length>0)
+		{
+			/*
+			getJson method creates the actual Json. Following values
+			are passed to determine the json structure
+			1. Only noun 1 avaiable
+			2. noun1 and verb are available
+			3. noun1, verb, prep,noun2 are available
+			4. noun1, verb, noun2 and adj are available
+			*/
+			if (sentWordList["verb"].length>0 && sentWordList["helpverb"].length>0)
+			{
+				getJson(2);
+				gameLevel = 1;
+				initReadData();
+
+			}
+			else
+			{
+				getJson(1);
+			}
+		}
+
+		if(sentWordList["noun"].length>1 && sentWordList["verb"].length>0 && sentWordList["prep"].length>0)
+		{
+			if (sentWordList["adj"])
+			{
+				getJson(4);
+			}
+			else
+			{
+				getJson(3);
+				gameLevel = 2;
+			}
+
+		}
+
+		return true;
 
 	};
 
@@ -367,8 +409,13 @@ WORDCRAFT.build = (function(){
 		levelChange();	*/	
 	};
 
+	var getJson = function(status)
+	{
+		alert(status);
+	};
+
 	var levelChange = function(){
-		initReadData(gameLevel);
+		initReadData();
 		//var overlay = jQuery('<div id="overlay"><p style="float:left">Level Complete!!!</p><div id="overlay-del"><b>X</b></div> </div>');
 		//overlay.appendTo(document.body);
 	
