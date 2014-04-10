@@ -114,7 +114,7 @@ WORDCRAFT.build = (function(){
 				//if(jQuery.inArray(det,tmpDet) == -1)
 				//{
 					tmpDet.push(det);
-					var htmlLi = '<li class="draggable li-det" id="det_'+det.replace(" ","_")+'">'+ det + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+					var htmlLi = '<li class="draggable li-det" id="det_'+det.replace(" ","_")+'">'+ det + '<div class="del icon-entypo">&#10006;</div></li>' ;
 					$("#init-det").append(htmlLi);
 				//}
 				
@@ -134,7 +134,7 @@ WORDCRAFT.build = (function(){
 				if(jQuery.inArray(adj,tmpAdj) == -1)
 				{
 					tmpAdj.push(det);
-					var htmlLi = '<li class="draggable li-adj" id="adj_'+adj.replace(" ","_")+'">'+ adj + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+					var htmlLi = '<li class="draggable li-adj" id="adj_'+adj.replace(" ","_")+'">'+ adj + '<div class="del icon-entypo">&#10006;</div></li>' ;
 					$("#init-adj").append(htmlLi);
 				}
 				
@@ -156,12 +156,12 @@ WORDCRAFT.build = (function(){
 						if(gameLevel == 2)
 						{
 							
-							var htmlLi = '<li class="draggable li-noun" id="noun_'+noun.split(" ")[1]+'">'+ noun.split(" ")[1] + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+							var htmlLi = '<li class="draggable li-noun" id="noun_'+noun.split(" ")[1]+'">'+ noun.split(" ")[1] + '<div class="del icon-entypo">&#10006;</div></li>' ;
 							$("#init-nouns").append(htmlLi);
 						}
 						else
 						{
-							var htmlLi = '<li class="draggable li-noun" id="noun_'+noun.replace(" ","_")+'">'+ noun + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+							var htmlLi = '<li class="draggable li-noun" id="noun_'+noun.replace(" ","_")+'">'+ noun + '<div class="del icon-entypo">&#10006;</div></li>' ;
 							$("#init-nouns").append(htmlLi);	
 						}
 						//$("#all-words").append(htmlLi);
@@ -182,7 +182,7 @@ WORDCRAFT.build = (function(){
 				if(jQuery.inArray(verb,tmpVerbs) == -1)
 				{
 					tmpVerbs.push(verb);
-					var htmlLi = '<li class="draggable li-verb" id="verb_'+verb.replace(" ","_")+'">'+ verb + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+					var htmlLi = '<li class="draggable li-verb" id="verb_'+verb.replace(" ","_")+'">'+ verb + '<div class="del icon-entypo">&#10006;</div></li>' ;
 					$("#init-verbs").append(htmlLi);
 				}
 				
@@ -203,7 +203,7 @@ WORDCRAFT.build = (function(){
 						tmp = tmp.substr(0, tmp.length - 1);
 						var tmpPrep = partsofSpeech["verbs"][tmp.toString()];
 
-						var htmlLi =  '<li class="draggable li-prep" id="prep_'+tmpPrep[0].replace(" ","_")+'">'+ tmpPrep[0] + '<div class="del" style="cursor: pointer;">x</div></li>' ;
+						var htmlLi =  '<li class="draggable li-prep" id="prep_'+tmpPrep[0].replace(" ","_")+'">'+ tmpPrep[0] + '<div class="del icon-entypo">&#10006;</div></li>' ;
 						$("#init-prep").append(htmlLi);
 						console.log("Preposition html:", htmlLi);
 				});
@@ -223,7 +223,7 @@ WORDCRAFT.build = (function(){
 				$(obj).remove();
 				sentenceItems[type.toString()].push(listItem);
 				
-				var html = '<li class="drag-li-'+type.toString()+'" id="'+type.toString()+'_'+ listItem+'">'+ listItem + '<div class="droppable-del" style="cursor: pointer;">x</div></li>';
+				var html = '<li class="drag-li-'+type.toString()+'" id="'+type.toString()+'_'+ listItem+'">'+ listItem + '<div class="del icon-entypo">&#10006;</div></li>';
 				var divid = "#sent-"+type.toString()+"-"+form.toString();
 				$(divid).append(html);
 

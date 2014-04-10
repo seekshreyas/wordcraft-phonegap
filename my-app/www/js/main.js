@@ -22,7 +22,7 @@ WORDCRAFT = (function(){
 			"skin": "res/img/animals/cat/cat_skin.svg",
 			"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
 			"pos": {
-				"ground" : "center_front", 
+				"ground" : "left_middle", 
 				"sky" : "none", //other values ["none"]
 				"relative" : "none" //other values ["none", "top", "bottom"]
 			}  
@@ -177,7 +177,7 @@ WORDCRAFT = (function(){
 
 		imgwidth = 200; //default image width
 		imgheight = 255; //default image height
-		imgScale = 0.6;
+		imgScale = 0.2;
 		imgOffsetX = Math.floor(imgwidth*imgScale/2);
 		imgOffsetY = Math.floor(imgheight*imgScale/2);
 	
@@ -206,7 +206,7 @@ WORDCRAFT = (function(){
 
 									var part_top = canvasheight - (pos[1] + imgOffsetY);
 									var part_left = pos[0] - imgOffsetX;
-									console.log("positions:", part_top, part_left);
+									console.log("positions:", part_top, part_left, imgScale);
 
 									canvas.add(new fabric.Group([skin, mouth, eyes], function(g){
 										g.top = part_top;
