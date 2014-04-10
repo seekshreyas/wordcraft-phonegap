@@ -10,7 +10,7 @@ WORDCRAFT.build = (function(){
 	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var levelPOSCnt = {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
-					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":2},
+					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
 					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":2}};
 
 	var init = function(){
@@ -442,7 +442,7 @@ WORDCRAFT.build = (function(){
 
 	var getJson = function(status)
 	{
-		alert(status);
+		//alert(status);
 	};
 
 	var levelChange = function(){
