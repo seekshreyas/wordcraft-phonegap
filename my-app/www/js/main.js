@@ -5,6 +5,11 @@ WORDCRAFT = (function(){
 
 	var sceneObj = {};
 	var canvas; //canvas object so it is globally accessible
+	var animationSpeed = {
+		'fast' : 200,
+		'normal' : 400,
+		'slow': 600
+	};
 
 	var defaultSceneObj = [
 		{
@@ -50,7 +55,7 @@ WORDCRAFT = (function(){
 				"animation_params" : {
 					"start" : "0",
 					"end" : "2",
-					"mid" : ""
+					"mid" : "-5"
 				},
 				"speed" : "normal",
 				"scale" : "",
@@ -60,7 +65,7 @@ WORDCRAFT = (function(){
 				"animation_params" : {
 					"start" : "0",
 					"end" : "2",
-					"mid" : ""
+					"mid" : "3"
 				},
 				"speed" : "normal",
 				"scale" : "",
@@ -97,7 +102,7 @@ WORDCRAFT = (function(){
 				"animation_params" : {
 					"start" : "0",
 					"end" : "2",
-					"mid" : ""
+					"mid" : "-1"
 				},
 				"speed" : "normal",
 				"scale" : "",
@@ -189,10 +194,6 @@ WORDCRAFT = (function(){
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
-		// console.log("Object, Dimension:", cObj, cDim);
-		// var canvas = new fabric.Canvas('elem-frame-svg');
-		// canvas = this.__canvas = new fabric.Canvas('elem-frame-svg');
-
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
 		if (cObj.length > 0){
 
@@ -215,25 +216,25 @@ WORDCRAFT = (function(){
 					// var animalParts = ['skin', 'mouth', 'eyes'];
 					var pos = cDim[noun.pos.plane][noun.pos.plane_pos];
 
-					console.log("Noun: ", noun, "Position: ", pos);
+					// console.log("Noun: ", noun, "Position: ", pos);
 
-					var renderObject = (function(n){
-						fabric.Image.fromURL(n.body.skin, function(skin){
-							fabric.Image.fromURL(n.body.mouth, function(mouth){
-								fabric.Image.fromURL(n.body.eyes, function(eyes){
+					var renderObject = (function(noun){
+						fabric.Image.fromURL(noun.body.skin, function(skin){
+							fabric.Image.fromURL(noun.body.mouth, function(mouth){
+								fabric.Image.fromURL(noun.body.eyes, function(eyes){
 
 									var part_top = canvasheight - (pos[1] + imgOffsetY);
 									var part_left = pos[0] - imgOffsetX;
-									console.log("positions:", canvasheight, imgOffsetY, imgOffsetX, part_top, part_left, imgScale);
+									// console.log("positions:", canvasheight, imgOffsetY, imgOffsetX, part_top, part_left, imgScale);
 
-									canvas.add(new fabric.Group([skin, mouth, eyes], function(g){
+									var group = new fabric.Group([skin, mouth, eyes], function(g){
 										g.top = part_top;
 										g.left = part_left;
-										g.scale = 0.1;
+									});
+									canvas.add(group);
 
-										console.log("Group Dimensions:", g.top, g.left, g.scale);
-									}));
-
+									console.log("animation: ", noun.animation, group.top, group.left);
+									handleObjAnimations(group, noun.animation);
 								});
 							});
 						});
@@ -243,7 +244,68 @@ WORDCRAFT = (function(){
 		}
 	};
 
+	var handleObjAnimations = function(obj, anims){
+		console.log("Object Position: ", anims);
 
+		anims.forEach(function(anim_kind, count){
+			var defaultDuration = 1000;
+
+			switch (anim_kind.animation_type){
+				case "translateX":
+					console.log("translate on the X-axis");
+
+					var amplitude = 50;
+					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
+
+					var movement = states[0] === '' ? 0 : parseInt(states[0]) * amplitude;
+					console.log("Displacement: ", displacement);
+
+					var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
+
+					obj.animate('left', displacement, { 
+						onChange: canvas.renderAll.bind(canvas),
+						duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+						easing: fabric.util.ease.easeInCubic,
+						onComplete : function(){
+							var movement = states[1] === '' ? 0 : parseInt(states[1]) * amplitude;
+							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
+
+							console.log("Displacement: ", displacement);
+
+							obj.animate('left', displacement, { 
+								onChange: canvas.renderAll.bind(canvas),
+								duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+								easing: fabric.util.ease.easeInCubic,
+								onComplete : function(){
+									var movement = states[2] === '' ? 0 : parseInt(states[2]) * amplitude;
+									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
+
+									console.log("Displacement: ", displacement);
+
+									obj.animate('left', displacement, { 
+										onChange: canvas.renderAll.bind(canvas),
+										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+										easing: fabric.util.ease.easeOutCubic,
+										onComplete : function(){
+											console.log("completed:", anim_kind.animation_type);
+										}
+									});
+		
+								}
+							});
+		
+						}
+					});
+		
+
+					
+
+					break;
+				default:
+					console.log("no animation");
+			}
+		});
+	}
 
 
 	//create a method for Sonali to call back from sentence
@@ -253,16 +315,14 @@ WORDCRAFT = (function(){
 		canvas = new fabric.Canvas('elem-frame-svg');
 		var cDim = getCanvasPerspDim(canvas);
 
-		//alert(obj);
-
 
 		renderObjOnCanvas(obj, cDim);
-		// console.log(JSON.stringify(obj));
 	};
 
 	return {
 		'init' : init,
-		'handleSentChanges' : handleSentChanges
+		'handleSentChanges' : handleSentChanges,
+		'animationSpeed' : animationSpeed
 	};
 
 })();
