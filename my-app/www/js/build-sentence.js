@@ -1,6 +1,6 @@
 var WORDCRAFT = WORDCRAFT || {}
 
-WORDCRAFT.build = (function(){
+WORDCRAFT.build = (function($){
 
 	var gameLevel = 0;
 	var partsofSpeech = {};
@@ -460,5 +460,5 @@ WORDCRAFT.build = (function(){
 
 	};
 
-})();
+})(jQuery);
 
