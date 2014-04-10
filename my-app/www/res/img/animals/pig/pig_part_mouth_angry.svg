@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px"
-	 height="225px" viewBox="0 0 200 225" enable-background="new 0 0 200 225" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200px" height="225px" viewBox="0 0 200 225" enable-background="new 0 0 200 225" xml:space="preserve">
 <g id="Ext">
 </g>
 <g id="Guides">
@@ -42,8 +42,12 @@
 	</g>
 </g>
 <g id="pane">
-	
-		<line fill="none" stroke="#020200" stroke-width="1.3229" stroke-miterlimit="10" x1="87.824" y1="149.5" x2="122.822" y2="134.5"/>
+	<g>
+		<path fill="#020200" d="M87.785,149.408c0,0,2.148-1.029,5.37-2.573c3.213-1.564,7.541-3.551,11.853-5.57
+			c2.159-1.004,4.291-2.07,6.33-2.976c2.053-0.876,4.007-1.602,5.701-2.181c3.381-1.171,5.744-1.7,5.744-1.7l0.078,0.184
+			c0,0-2.012,1.346-5.192,2.987c-1.587,0.827-3.461,1.742-5.51,2.624c-2.062,0.853-4.305,1.661-6.521,2.532
+			c-4.437,1.73-8.859,3.494-12.208,4.742c-3.34,1.269-5.567,2.114-5.567,2.114L87.785,149.408z"/>
+	</g>
 </g>
 <g id="browserhead">
 </g>
