@@ -69,7 +69,7 @@ WORDCRAFT = (function(){
 				},
 				"speed" : "normal",
 				"scale" : "",
-				"animation_type" : "translateX"
+				"animation_type" : "translateY"
 			}
 		]
 	}, {
@@ -302,8 +302,60 @@ WORDCRAFT = (function(){
 
 					break;
 
+
+				// translate Y
+				case "translateY":
+					console.log("translate on the X-axis");
+
+					var amplitude = 50; // in pixels
+					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
+
+					var movement = states[0] === '' ? 0 : parseInt(states[0]) * amplitude;
+					console.log("Displacement: ", displacement);
+
+					var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
+
+					obj.animate('top', displacement, { 
+						onChange: canvas.renderAll.bind(canvas),
+						duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+						easing: fabric.util.ease.easeInCubic,
+						onComplete : function(){
+							var movement = states[1] === '' ? 0 : parseInt(states[1]) * amplitude;
+							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
+
+							console.log("Displacement: ", displacement);
+
+							obj.animate('top', displacement, { 
+								onChange: canvas.renderAll.bind(canvas),
+								duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+								easing: fabric.util.ease.easeInCubic,
+								onComplete : function(){
+									var movement = states[2] === '' ? 0 : parseInt(states[2]) * amplitude;
+									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
+
+									console.log("Displacement: ", displacement);
+
+									obj.animate('top', displacement, { 
+										onChange: canvas.renderAll.bind(canvas),
+										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+										easing: fabric.util.ease.easeOutCubic,
+										onComplete : function(){
+											console.log("completed:", anim_kind.animation_type);
+										}
+									});
+		
+								}
+							});
+		
+						}
+					});
+		
+
+					break;
+
+
 				//rotate
-				case "rotate":
+				case "rotateX":
 					console.log("Rotation Animation");
 
 					var angleAmplitude = 10; // in radians
@@ -348,6 +400,8 @@ WORDCRAFT = (function(){
 		
 						}
 					});
+
+					break;
 
 				default:
 					console.log("no animation");
