@@ -5,13 +5,14 @@ WORDCRAFT.build = (function(){
 	var gameLevel = 0;
 	var partsofSpeech = {};
 	var fullJsonData = {};
-	var nounSuffix = {"The":"s","A":""}
+	var nounSuffix = {"The":"s","A":"","An":""}
+	var vowels=['a','e','i','o','u'];
 	var helpVerbType = {"is":"singular","are":"plural"}
 	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var levelPOSCnt = {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
 					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
-					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":2}};
+					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}};
 
 	var init = function(){
 		console.log("let the crafting begin!");
@@ -47,12 +48,12 @@ WORDCRAFT.build = (function(){
 		};
 
 
-		$("#btn_add_words").bind("tap",function() {
+		$("#btn_add_words").bind("taphold",function() {
 			initReadData();
 		});
 
 
-		$(document).on("tap",".circled-cross", function(){
+		$(document).on("taphold",".circled-cross", function(){
 			var pos = $(this).parent().attr("class").split(" ")[1];
 			
 			pos = pos.substr(3,pos.length);
@@ -61,6 +62,14 @@ WORDCRAFT.build = (function(){
 			currWordList[pos].remove(word);
 			sentWordList[pos].remove(word);
 			$(this).parent().remove();
+
+			if( pos === 'noun')
+			{
+				helpverb = $("#sent-helpverb-1 li").text();
+				currWordList["helpverb"].remove(helpverb);
+				sentWordList["helpverb"].remove(helpverb);
+				$("#sent-helpverb-1 li").remove();
+			}
 		});
 
 
@@ -84,7 +93,10 @@ WORDCRAFT.build = (function(){
 			var nounText = $("#sent-noun-1 li").text().split(" ");
 			if(nounText.length>1)
 			{
-
+				if(jQuery.inArray(nounText[0], currWordList["det"])==-1)
+				{
+					currWordList["det"].push(nounText[0]);
+				}
 			 	var html = '<li class="draggable li-det" id="det_'+nounText[0]+'">'+ nounText[0] + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 				$("#sent-det-1").append(html);
 				var nounId = $("#sent-noun-1 li").attr("id").split("_")[1];
@@ -103,6 +115,7 @@ WORDCRAFT.build = (function(){
 	var getPOSToDisplay = function(data,level,pos)
 	{
 		var posClass="";
+		var wordText = "";
 		var currData = $(divId).children().get();
 		$.each(currData, function(i,val) {
 			if(jQuery.inArray(val.text(), currWordList[pos])==-1)
@@ -126,6 +139,7 @@ WORDCRAFT.build = (function(){
 					{
 						tmpNoun = getNounPrefixSufix(pos,word);
 						posClass = 'noun_'+tmpNoun[1];
+
 						wordText = tmpNoun[0];
 					}
 					if(pos === 'det')
@@ -143,6 +157,10 @@ WORDCRAFT.build = (function(){
 					{
 						posClass = "helpverb-"+helpVerbType[word];
 					}	
+					if(jQuery.inArray(wordText.substr(0,1),vowels) !== -1)
+					{
+						posClass = posClass+' '+pos+'_vowel';
+					}
 					var htmlLi = '<li class="draggable li-'+pos+' '+posClass+'" id="'+pos+'_'+word.replace(" ","_")+'">'+ wordText;
 					htmlLi = htmlLi + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
 					$(divId).append(htmlLi);						
@@ -161,8 +179,14 @@ WORDCRAFT.build = (function(){
 	{
 		var tmpPrefixDet = jQuery.inArray(word, currWordList[pos])%2;
 		var prefixDet = partsofSpeech["det"][tmpPrefixDet];
+		var currDet = $("#sent-det-1 li").text();
+		//alert(currDet);
 		if(gameLevel > 1)
 		{
+			if(currDet.length>0)
+			{
+				prefixDet = currDet;
+			}
 			word = word+nounSuffix[prefixDet];
 		}
 		else
@@ -229,7 +253,7 @@ WORDCRAFT.build = (function(){
 
 			if(($("#sent-"+type.toString()+"-"+form.toString()).html().length) == 21)
 			{
-				var color = $(obj).css("background-color");
+				//var color = $(obj).css("background-color");
 				$(obj).remove();
 				
 
@@ -252,8 +276,8 @@ WORDCRAFT.build = (function(){
 				//alert(html);
 				$(divid).append(html);
 
-				$("#sent-"+type.toString()+"-"+form.toString()).css("background-color",color);
-				$(obj).parent().css("background-color",color);
+				//$("#sent-"+type.toString()+"-"+form.toString()).css("background-color",color);
+				//$(obj).parent().css("background-color",color);
 
 			}
 			return true;
@@ -310,6 +334,7 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-noun-1', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
+
 					if(populateOnDrop($(obj),'noun','1'))
 					{
 						var arrayOfClasses = $(obj).attr('class').split(' ');
@@ -421,7 +446,11 @@ WORDCRAFT.build = (function(){
 			{
 				getJson(3);
 				gameLevel = 2;
-				initReadData();
+				if(gameLevel === 2)
+				{
+				 	initReadData();
+				}
+				
 			}
 
 		}
