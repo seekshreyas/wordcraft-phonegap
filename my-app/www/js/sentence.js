@@ -7,12 +7,14 @@ WORDCRAFT.build = (function(){
 	var fullJsonData = {};
 	var nounSuffix = {"The":"s","A":"","An":""}
 	var vowels=['a','e','i','o','u'];
-	var helpVerbType = {"is":"singular","are":"plural"}
+	var pluralWords = ['sheep'];
+	var helpVerbType = {"is":"singular","are":"plural"};
 	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var levelPOSCnt = {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
 					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
 					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}};
+	var jsonForImage = {"body":{},"pos":{},"animation":[]};
 
 	var init = function(){
 		console.log("let the crafting begin!");
@@ -30,8 +32,7 @@ WORDCRAFT.build = (function(){
 		var full_json = $.getJSON( "res/data/full_json.json") 
 			.done(function(data) {
 				console.log("Read full json");
-				fullJsonData = data;   
-				drawImageData = data;
+				fullJsonData = data; 
 				initReadData();
 			})
 			.fail(function() {
@@ -76,7 +77,8 @@ WORDCRAFT.build = (function(){
 	};
 	
 	var initReadData = function()
-	{
+	{	
+		
 		if (gameLevel === 1)
 		{
 			console.log()
@@ -93,14 +95,16 @@ WORDCRAFT.build = (function(){
 			var nounText = $("#sent-noun-1 li").text().split(" ");
 			if(nounText.length>1)
 			{
-				if(jQuery.inArray(nounText[0], currWordList["det"])==-1)
+				if(jQuery.inArray(nounText[0], currWordList["det"]) == -1)
 				{
 					currWordList["det"].push(nounText[0]);
 				}
-			 	var html = '<li class="draggable li-det" id="det_'+nounText[0]+'">'+ nounText[0] + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+			 	var html = '<li class="draggable li-det" id="det_'+nounText[0]+'">'+nounText[0];
+			 	html +=  + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 				$("#sent-det-1").append(html);
 				var nounId = $("#sent-noun-1 li").attr("id").split("_")[1];
-				var nounhtml = '<li class="draggable li-noun" id="noun_'+nounId+'">'+ nounText[1] + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+				var nounhtml = '<li class="draggable li-noun" id="noun_'+nounId+'">'+nounText[1] 
+				nounhtml += '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 				
 				$('#sent-noun-1').find('li').remove();
 				$("#sent-noun-1").append(nounhtml);
@@ -187,11 +191,11 @@ WORDCRAFT.build = (function(){
 			{
 				prefixDet = currDet;
 			}
-			word = word+nounSuffix[prefixDet];
+			word = word + nounSuffix[prefixDet];
 		}
 		else
 		{
-			word = prefixDet+" "+word + nounSuffix[prefixDet];
+			word = prefixDet + " " + word + nounSuffix[prefixDet];
 		}
 		if(nounSuffix[prefixDet])
 		{
@@ -334,7 +338,6 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-noun-1', 
 		{	accept : ["li-noun"], 
 			onDrop : function(obj){
-
 					if(populateOnDrop($(obj),'noun','1'))
 					{
 						var arrayOfClasses = $(obj).attr('class').split(' ');
@@ -387,26 +390,6 @@ WORDCRAFT.build = (function(){
 		//draw_image();
 	};
 
-
-	var createDefaultJson = function(type,pos){	
-		var noun = type.split(" ");
-		if(noun.length >1){
-			noun = noun[1];
-		}
-		var json_elem = [{
-			"eyes": "res/img/animals/"+noun+"/"+noun+"_part_eye_happy.svg",
-			"skin": "res/img/animals/"+noun+"/"+noun+"_skin.svg",
-			"mouth": "res/img/animals/"+noun+"/"+noun+"_part_mouth_happy.svg",
-			"pos": {
-					"ground" : "left_back", 
-					"sky" : "none",
-					"relative" : "none"
-					}  
-			}];
-
-		return json_elem;
-
-	};
 
 
 	var draw_image = function()
@@ -471,7 +454,31 @@ WORDCRAFT.build = (function(){
 
 	var getJson = function(status)
 	{
-		//alert(status);
+		body_url = fullJsonData["noun"][sentWordList["noun"]]["svg"]["src"];
+		body_dim = fullJsonData["noun"][sentWordList["noun"]]["svg"]["dimension"];
+		canvas_pos = fullJsonData["noun"][sentWordList["noun"]]["canvaspos"];
+		plane = canvas_pos["plane"];
+		plane_pos = canvas_pos["defaultX"] + "_" + canvas_pos["defaultY"];
+		//alert(JSON.stringify(plane_pos));
+		jsonForImage["body"]["eyes"] = "res/img/animals/"+sentWordList["noun"]+"/"+body_url["eyes"];
+		jsonForImage["body"]["skin"] = "res/img/animals/"+sentWordList["noun"]+"/"+body_url["skin"];
+		jsonForImage["body"]["mouth"] = "res/img/animals/"+sentWordList["noun"]+"/"+body_url["mouth"];
+		jsonForImage["body"]["color"] = "";
+		jsonForImage["body"]["size"] = "normal";
+		jsonForImage["body"]["width"] = body_dim["width"];
+		jsonForImage["body"]["height"] = body_dim["height"];
+		jsonForImage["pos"] = { "plane":plane,
+								"plane_pos": plane_pos,
+								"plane_matrix":[0,0] };
+
+		if(status === 2)
+		{
+			animation = fullJsonData["verb"][sentWordList["verb"]]["animation"];
+			jsonForImage["animation"] = animation;
+		}
+		//alert(JSON.stringify(jsonForImage));
+		WORDCRAFT.handleSentChanges([jsonForImage]);
+
 	};
 
 	var levelChange = function(){

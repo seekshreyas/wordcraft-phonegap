@@ -1492,7 +1492,7 @@
 		"sheep" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "sheep_part_eyes.svg",
+					"eyes" : "sheep_part_eye.svg",
 					"mouth" : "sheep_part_mouth.svg",
 					"skin" : "sheep_skin.svg"
 				},
@@ -1514,7 +1514,7 @@
 		"horse" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "horse_part_eyes.svg",
+					"eyes" : "horse_part_eye.svg",
 					"mouth" : "horse_part_mouth.svg",
 					"skin" : "horse_skin.svg"
 				},
@@ -1536,7 +1536,7 @@
 		"grass" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "grass_part_eyes.svg",
+					"eyes" : "grass_part_eye.svg",
 					"mouth" : "grass_part_mouth.svg",
 					"skin" : "grass_skin.svg"
 				},
@@ -1558,7 +1558,7 @@
 		"fence" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "fence_part_eyes.svg",
+					"eyes" : "fence_part_eye.svg",
 					"mouth" : "fence_part_mouth.svg",
 					"skin" : "fence_skin.svg"
 				},
@@ -1580,7 +1580,7 @@
 		"cow" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "cow_part_eyes.svg",
+					"eyes" : "cow_part_eye.svg",
 					"mouth" : "cow_part_mouth.svg",
 					"skin" : "cow_skin.svg"
 				},
@@ -1602,7 +1602,7 @@
 		"pond" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "pond_part_eyes.svg",
+					"eyes" : "pond_part_eye.svg",
 					"mouth" : "pond_part_mouth.svg",
 					"skin" : "pond_skin.svg"
 				},
@@ -1624,7 +1624,7 @@
 		"sun" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "sun_part_eyes.svg",
+					"eyes" : "sun_part_eye.svg",
 					"mouth" : "sun_part_mouth.svg",
 					"skin" : "sun_skin.svg"
 				},
@@ -1646,7 +1646,7 @@
 		"bucket" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "bucket_part_eyes.svg",
+					"eyes" : "bucket_part_eye.svg",
 					"mouth" : "bucket_part_mouth.svg",
 					"skin" : "bucket_skin.svg"
 				},
@@ -1668,7 +1668,7 @@
 		"dog" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "dog_part_eyes.svg",
+					"eyes" : "dog_part_eye.svg",
 					"mouth" : "dog_part_mouth.svg",
 					"skin" : "dog_skin.svg"
 				},
@@ -1690,7 +1690,7 @@
 		"moon" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "moon_part_eyes.svg",
+					"eyes" : "moon_part_eye.svg",
 					"mouth" : "moon_part_mouth.svg",
 					"skin" : "moon_skin.svg"
 				},
@@ -1712,7 +1712,7 @@
 		"pig" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "pig_part_eyes.svg",
+					"eyes" : "pig_part_eye.svg",
 					"mouth" : "pig_part_mouth.svg",
 					"skin" : "pig_skin.svg"
 				},
@@ -1734,7 +1734,7 @@
 		"cat" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "cat_part_eyes.svg",
+					"eyes" : "cat_part_eye.svg",
 					"mouth" : "cat_part_mouth.svg",
 					"skin" : "cat_skin.svg"
 				},
@@ -1756,7 +1756,7 @@
 		"rabbit" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "rabbit_part_eyes.svg",
+					"eyes" : "rabbit_part_eye.svg",
 					"mouth" : "rabbit_part_mouth.svg",
 					"skin" : "rabbit_skin.svg"
 				},
@@ -1778,7 +1778,7 @@
 		"duck" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "duck_part_eyes.svg",
+					"eyes" : "duck_part_eye.svg",
 					"mouth" : "duck_part_mouth.svg",
 					"skin" : "duck_skin.svg"
 				},
@@ -1800,7 +1800,7 @@
 		"chick" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "chick_part_eyes.svg",
+					"eyes" : "chick_part_eye.svg",
 					"mouth" : "chick_part_mouth.svg",
 					"skin" : "chick_skin.svg"
 				},
@@ -1822,7 +1822,7 @@
 		"hen" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "hen_part_eyes.svg",
+					"eyes" : "hen_part_eye.svg",
 					"mouth" : "hen_part_mouth.svg",
 					"skin" : "hen_skin.svg"
 				},
@@ -1844,7 +1844,7 @@
 		"rooster" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "rooster_part_eyes.svg",
+					"eyes" : "rooster_part_eye.svg",
 					"mouth" : "rooster_part_mouth.svg",
 					"skin" : "rooster_skin.svg"
 				},
@@ -1866,7 +1866,7 @@
 		"goat" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "goat_part_eyes.svg",
+					"eyes" : "goat_part_eye.svg",
 					"mouth" : "goat_part_mouth.svg",
 					"skin" : "goat_skin.svg"
 				},
@@ -1888,7 +1888,7 @@
 		"cloud" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "cloud_part_eyes.svg",
+					"eyes" : "cloud_part_eye.svg",
 					"mouth" : "cloud_part_mouth.svg",
 					"skin" : "cloud_skin.svg"
 				},
@@ -1910,7 +1910,7 @@
 		"barn" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "barn_part_eyes.svg",
+					"eyes" : "barn_part_eye.svg",
 					"mouth" : "barn_part_mouth.svg",
 					"skin" : "barn_skin.svg"
 				},
