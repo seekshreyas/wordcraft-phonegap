@@ -46,8 +46,8 @@ WORDCRAFT = (function(){
 			"height" : 255
 		},
 		"pos" : {
-			"plane" : "sky",
-			"plane_pos" : "center_front",
+			"plane" : "ground",
+			"plane_pos" : "right_middle",
 			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
@@ -200,36 +200,39 @@ WORDCRAFT = (function(){
 			// for (var c=0; c < cObj.length; c++){
 			cObj.forEach(function(noun, count){
 
-				imgwidth = noun.body.width; //default image width
-				imgheight = noun.body.height; //default image height
-				imgScale = 0.2;
-				imgOffsetX = Math.floor(imgwidth*imgScale/2);
-				imgOffsetY = Math.floor(imgheight*imgScale/2);
+				var imgwidth = noun.body.width; //default image width
+				var imgheight = noun.body.height; //default image height
+				var imgScale = 0.2;
+				var imgOffsetX = Math.floor(imgwidth*imgScale/2);
+				var imgOffsetY = Math.floor(imgheight*imgScale/2);
 			
-				canvaswidth = canvas.width;
-				canvasheight = canvas.height;
+				var canvaswidth = canvas.width;
+				var canvasheight = canvas.height;
+				var pos;
+				var renderObject;
 
 				console.log("ImageWidth, Height:", imgwidth, imgheight, noun);
 				// var noun = cObj[c]; //assign the noun object
 				
-				if (noun.body.skin !== 'Undefined'){
+				if (noun.body.skin !== 'undefined'){
 					// var animalParts = ['skin', 'mouth', 'eyes'];
-					var pos = cDim[noun.pos.plane][noun.pos.plane_pos];
+					pos = cDim[noun.pos.plane][noun.pos.plane_pos];
 
 					// console.log("Noun: ", noun, "Position: ", pos);
 
-					var renderObject = (function(noun){
+					// renderObject = (function(noun){
 						fabric.Image.fromURL(noun.body.skin, function(skin){
 							fabric.Image.fromURL(noun.body.mouth, function(mouth){
 								fabric.Image.fromURL(noun.body.eyes, function(eyes){
 
 									var part_top = canvasheight - (pos[1] + imgOffsetY);
 									var part_left = pos[0] - imgOffsetX;
-									// console.log("positions:", canvasheight, imgOffsetY, imgOffsetX, part_top, part_left, imgScale);
+									console.log("Shreyas:",pos, part_top, part_left, imgScale);
 
-									var group = new fabric.Group([skin, mouth, eyes], function(g){
-										g.top = part_top;
-										g.left = part_left;
+									var group = new fabric.Group([skin, mouth, eyes],{
+										top: part_top,
+										left: part_left,
+										scale: imgScale
 									});
 									canvas.add(group);
 
@@ -238,7 +241,7 @@ WORDCRAFT = (function(){
 								});
 							});
 						});
-					})(noun);
+					// })(noun);
 				}
 			});	
 		}
