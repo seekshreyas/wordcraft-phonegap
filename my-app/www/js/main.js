@@ -69,7 +69,7 @@ WORDCRAFT = (function(){
 				},
 				"speed" : "normal",
 				"scale" : "",
-				"animation_type" : "translateY"
+				"animation_type" : "translateX"
 			}
 		]
 	}, {
