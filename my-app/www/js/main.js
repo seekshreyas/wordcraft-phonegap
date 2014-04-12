@@ -1,5 +1,5 @@
 
-var WORDCRAFT = WORDCRAFT || {}
+var WORDCRAFT = WORDCRAFT || {};
 
 WORDCRAFT = (function(){
 
@@ -69,7 +69,7 @@ WORDCRAFT = (function(){
 				},
 				"speed" : "normal",
 				"scale" : "",
-				"animation_type" : "translateY"
+				"animation_type" : "translateX"
 			}
 		]
 	}, {
@@ -439,4 +439,3 @@ jQuery(document).ready(function(){
 	WORDCRAFT.build.init()
     
 });
-
