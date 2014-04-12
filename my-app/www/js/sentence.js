@@ -184,6 +184,12 @@ WORDCRAFT.build = (function(){
 		var tmpPrefixDet = jQuery.inArray(word, currWordList[pos])%2;
 		var prefixDet = partsofSpeech["det"][tmpPrefixDet];
 		var currDet = $("#sent-det-1 li").text();
+		var suffix = nounSuffix[prefixDet];
+
+		if(jQuery.inArray(word,pluralWords) !== -1)
+		{
+			suffix = "";
+		}		
 		//alert(currDet);
 		if(gameLevel > 1)
 		{
@@ -191,11 +197,11 @@ WORDCRAFT.build = (function(){
 			{
 				prefixDet = currDet;
 			}
-			word = word + nounSuffix[prefixDet];
+			word = word + suffix;
 		}
 		else
 		{
-			word = prefixDet + " " + word + nounSuffix[prefixDet];
+			word = prefixDet + " " + word + suffix;
 		}
 		if(nounSuffix[prefixDet])
 		{
