@@ -10,6 +10,7 @@ WORDCRAFT.build = (function($){
 					   1:{"noun":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
 					   2:{"noun":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":1}};
 
+
 	var init = function(){
 		console.log("let the crafting begin!");
 
@@ -457,11 +458,17 @@ WORDCRAFT.build = (function($){
 	
 	}
 
+	var canvasInterFinish = function(bReady){
+		// the function that is called after the
+		// canvas interactions have finished
+
+		console.log("CanvasFinished: ", bReady);
+	}
+
 	return {
 		
 		'init' : init,
 		'gameLevel': gameLevel
-		
 
 	};
 

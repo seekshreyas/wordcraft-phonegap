@@ -1,5 +1,5 @@
 
-var WORDCRAFT = WORDCRAFT || {}
+var WORDCRAFT = WORDCRAFT || {};
 
 WORDCRAFT = (function(){
 
