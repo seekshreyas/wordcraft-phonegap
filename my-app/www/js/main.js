@@ -11,28 +11,7 @@ WORDCRAFT = (function(){
 		'slow': 600
 	};
 
-	var defaultSceneObj = [
-		{
-			"eyes": "res/img/animals/sheep/sheep_part_eye_happy.svg",
-			"skin": "res/img/animals/sheep/sheep_skin.svg",
-			"mouth": "res/img/animals/sheep/sheep_part_mouth_happy.svg",
-			"pos": {
-				"ground" : "right_back", 
-				"sky" : "none", //other values ["none"]
-				"relative" : "none" //other values ["none", "top", "bottom"]
-			}  
-		},
-		{
-			"eyes": "res/img/animals/cat/cat_part_eye_happy.svg",
-			"skin": "res/img/animals/cat/cat_skin.svg",
-			"mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
-			"pos": {
-				"ground" : "left_middle", 
-				"sky" : "none", //other values ["none"]
-				"relative" : "none" //other values ["none", "top", "bottom"]
-			}  
-		}
-	];
+	var canvasState = 'inactive'; 
 
 
 	var newDefaultSceneObj = [{
@@ -47,7 +26,7 @@ WORDCRAFT = (function(){
 		},
 		"pos" : {
 			"plane" : "ground",
-			"plane_pos" : "right_middle",
+			"plane_pos" : "left_middle",
 			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
@@ -197,6 +176,8 @@ WORDCRAFT = (function(){
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
 		if (cObj.length > 0){
 
+			canvasState = 'active';
+
 			// for (var c=0; c < cObj.length; c++){
 			cObj.forEach(function(noun, count){
 
@@ -253,6 +234,8 @@ WORDCRAFT = (function(){
 		anims.forEach(function(anim_kind, count){
 			var defaultDuration = 1000;
 
+			canvasState = 'animating';
+
 			switch (anim_kind.animation_type){
 				
 				// translate X
@@ -293,6 +276,8 @@ WORDCRAFT = (function(){
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
 											console.log("completed:", anim_kind.animation_type);
+
+											canvasState = 'inactive';
 										}
 									});
 		
@@ -344,6 +329,8 @@ WORDCRAFT = (function(){
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
 											console.log("completed:", anim_kind.animation_type);
+											
+											canvasState = 'inactive';
 										}
 									});
 		
@@ -395,6 +382,8 @@ WORDCRAFT = (function(){
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
 											console.log("completed:", anim_kind.animation_type);
+
+											canvasState = 'inactive';
 										}
 									});
 		
@@ -408,6 +397,8 @@ WORDCRAFT = (function(){
 
 				default:
 					console.log("no animation");
+
+					WORDCRAFT.build.init(); //to signal animation finished
 			}
 		});
 	}
@@ -427,7 +418,8 @@ WORDCRAFT = (function(){
 	return {
 		'init' : init,
 		'handleSentChanges' : handleSentChanges,
-		'animationSpeed' : animationSpeed
+		'animationSpeed' : animationSpeed,
+		'canvasState' : canvasState
 	};
 
 })();

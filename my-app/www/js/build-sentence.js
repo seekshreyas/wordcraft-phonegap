@@ -12,7 +12,7 @@ WORDCRAFT.build = (function($){
 
 
 	var init = function(){
-		console.log("let the crafting begin!");
+		console.log("Sentence Handler Initialized");
 
 		Array.prototype.remove = function(value) {
 		  var idx = this.indexOf(value);
@@ -458,18 +458,12 @@ WORDCRAFT.build = (function($){
 	
 	}
 
-	var canvasInterFinish = function(bReady){
-		// the function that is called after the
-		// canvas interactions have finished
-
-		console.log("CanvasFinished: ", bReady);
-	}
+	
 
 	return {
 		
 		'init' : init,
 		'gameLevel': gameLevel
-
 	};
 
 })(jQuery);
