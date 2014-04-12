@@ -253,38 +253,32 @@ WORDCRAFT.build = (function(){
 
 	var populateOnDrop = function(obj,type,form){
 		var listItem = $(obj).text();
-		var wordId = $(obj).text();
+		var wordId = $(obj).attr("id").split("_")[1]
+		var divid = "#sent-"+type.toString()+"-"+form.toString();
 
-			if(($("#sent-"+type.toString()+"-"+form.toString()).html().length) == 21)
-			{
-				//var color = $(obj).css("background-color");
-				$(obj).remove();
-				
+		/* Code to remove the existing word from sentence area */
+		currId = $(divid+' li').attr("id");
+		if(currId)
+		{
+			word = currId.split("_")[1];
+			currWordList[type.toString()].remove(word);
+			sentWordList[type.toString()].remove(word);
+			$(divid).find('li').remove();
+		}
+		$(obj).remove();
+		
+		if(jQuery.inArray(wordId, currWordList[type.toString()])==-1)
+		{
+		 	currWordList[type.toString()].push(wordId);
+		}
+		if(jQuery.inArray(wordId, sentWordList[type.toString()])==-1)
+		{
+		 	sentWordList[type.toString()].push(wordId);
+		}
+		var html = '<li class="draggable li-'+type.toString()+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 
-				if(type === 'noun')
-				{
-					wordId =  $(obj).attr("id").split("_")[1]
-				}
-
-				if(jQuery.inArray(wordId, currWordList[type.toString()])==-1)
-				{
-				 	currWordList[type.toString()].push(wordId);
-				}
-				if(jQuery.inArray(wordId, sentWordList[type.toString()])==-1)
-				{
-				 	sentWordList[type.toString()].push(wordId);
-				}
-				
-				var html = '<li class="draggable li-'+type.toString()+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
-				var divid = "#sent-"+type.toString()+"-"+form.toString();
-				//alert(html);
-				$(divid).append(html);
-
-				//$("#sent-"+type.toString()+"-"+form.toString()).css("background-color",color);
-				//$(obj).parent().css("background-color",color);
-
-			}
-			return true;
+		$(divid).append(html);
+		return true;
 	}
 
 	var makeDragabble = function(){
@@ -314,6 +308,13 @@ WORDCRAFT.build = (function(){
 		makeDroppable();
 
 	};
+
+	/* Needs to be populated work in progress*/
+	var makeDroppableOnCancel = function()
+	{
+
+
+	}
 
 
 	var makeDroppable = function()
@@ -442,6 +443,7 @@ WORDCRAFT.build = (function(){
 
 	};
 
+
 	var playSound = function()
 	{
 		console.log("Clicked remove");
@@ -476,7 +478,13 @@ WORDCRAFT.build = (function(){
 			animation = fullJsonData["verb"][sentWordList["verb"]]["animation"];
 			jsonForImage["animation"] = animation;
 		}
+		/*if(status > 2)
+		{
+			prep = fullJsonData["verb"][sentWordList["verb"]]["preposition"][sentWordList["prep"]];
+			prepX = prep["position_change"]
+		}*/
 		//alert(JSON.stringify(jsonForImage));
+
 		WORDCRAFT.handleSentChanges([jsonForImage]);
 
 	};

@@ -1492,8 +1492,8 @@
 		"sheep" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "sheep_part_eye.svg",
-					"mouth" : "sheep_part_mouth.svg",
+					"eyes" : "sheep_part_eye_happy.svg",
+					"mouth" : "sheep_part_mouth_happy.svg",
 					"skin" : "sheep_skin.svg"
 				},
 				"dimension" : {
@@ -1514,8 +1514,8 @@
 		"horse" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "horse_part_eye.svg",
-					"mouth" : "horse_part_mouth.svg",
+					"eyes" : "horse_part_eye_happy.svg",
+					"mouth" : "horse_part_mouth_happy.svg",
 					"skin" : "horse_skin.svg"
 				},
 				"dimension" : {
@@ -1536,8 +1536,8 @@
 		"grass" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "grass_part_eye.svg",
-					"mouth" : "grass_part_mouth.svg",
+					"eyes" : "grass_part_eye_happy.svg",
+					"mouth" : "grass_part_mouth_happy.svg",
 					"skin" : "grass_skin.svg"
 				},
 				"dimension" : {
@@ -1558,8 +1558,8 @@
 		"fence" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "fence_part_eye.svg",
-					"mouth" : "fence_part_mouth.svg",
+					"eyes" : "fence_part_eye_happy.svg",
+					"mouth" : "fence_part_mouth_happy.svg",
 					"skin" : "fence_skin.svg"
 				},
 				"dimension" : {
@@ -1580,8 +1580,8 @@
 		"cow" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "cow_part_eye.svg",
-					"mouth" : "cow_part_mouth.svg",
+					"eyes" : "cow_part_eye_happy.svg",
+					"mouth" : "cow_part_mouth_happy.svg",
 					"skin" : "cow_skin.svg"
 				},
 				"dimension" : {
@@ -1602,8 +1602,8 @@
 		"pond" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "pond_part_eye.svg",
-					"mouth" : "pond_part_mouth.svg",
+					"eyes" : "pond_part_eye_happy.svg",
+					"mouth" : "pond_part_mouth_happy.svg",
 					"skin" : "pond_skin.svg"
 				},
 				"dimension" : {
@@ -1624,8 +1624,8 @@
 		"sun" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "sun_part_eye.svg",
-					"mouth" : "sun_part_mouth.svg",
+					"eyes" : "sun_part_eye_happy.svg",
+					"mouth" : "sun_part_mouth_happy.svg",
 					"skin" : "sun_skin.svg"
 				},
 				"dimension" : {
@@ -1646,8 +1646,8 @@
 		"bucket" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "bucket_part_eye.svg",
-					"mouth" : "bucket_part_mouth.svg",
+					"eyes" : "bucket_part_eye_happy.svg",
+					"mouth" : "bucket_part_mouth_happy.svg",
 					"skin" : "bucket_skin.svg"
 				},
 				"dimension" : {
@@ -1668,8 +1668,8 @@
 		"dog" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "dog_part_eye.svg",
-					"mouth" : "dog_part_mouth.svg",
+					"eyes" : "dog_part_eye_happy.svg",
+					"mouth" : "dog_part_mouth_happy.svg",
 					"skin" : "dog_skin.svg"
 				},
 				"dimension" : {
@@ -1690,8 +1690,8 @@
 		"moon" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "moon_part_eye.svg",
-					"mouth" : "moon_part_mouth.svg",
+					"eyes" : "moon_part_eye_happy.svg",
+					"mouth" : "moon_part_mouth_happy.svg",
 					"skin" : "moon_skin.svg"
 				},
 				"dimension" : {
@@ -1712,8 +1712,8 @@
 		"pig" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "pig_part_eye.svg",
-					"mouth" : "pig_part_mouth.svg",
+					"eyes" : "pig_part_eye_happy.svg",
+					"mouth" : "pig_part_mouth_happy.svg",
 					"skin" : "pig_skin.svg"
 				},
 				"dimension" : {
@@ -1734,8 +1734,8 @@
 		"cat" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "cat_part_eye.svg",
-					"mouth" : "cat_part_mouth.svg",
+					"eyes" : "cat_part_eye_happy.svg",
+					"mouth" : "cat_part_mouth_happy.svg",
 					"skin" : "cat_skin.svg"
 				},
 				"dimension" : {
@@ -1756,8 +1756,8 @@
 		"rabbit" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "rabbit_part_eye.svg",
-					"mouth" : "rabbit_part_mouth.svg",
+					"eyes" : "rabbit_part_eye_happy.svg",
+					"mouth" : "rabbit_part_mouth_happy.svg",
 					"skin" : "rabbit_skin.svg"
 				},
 				"dimension" : {
@@ -1778,8 +1778,8 @@
 		"duck" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "duck_part_eye.svg",
-					"mouth" : "duck_part_mouth.svg",
+					"eyes" : "duck_part_eye_happy.svg",
+					"mouth" : "duck_part_mouth_happy.svg",
 					"skin" : "duck_skin.svg"
 				},
 				"dimension" : {
@@ -1800,8 +1800,8 @@
 		"chick" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "chick_part_eye.svg",
-					"mouth" : "chick_part_mouth.svg",
+					"eyes" : "chick_part_eye_happy.svg",
+					"mouth" : "chick_part_mouth_happy.svg",
 					"skin" : "chick_skin.svg"
 				},
 				"dimension" : {
@@ -1822,8 +1822,8 @@
 		"hen" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "hen_part_eye.svg",
-					"mouth" : "hen_part_mouth.svg",
+					"eyes" : "hen_part_eye_happy.svg",
+					"mouth" : "hen_part_mouth_happy.svg",
 					"skin" : "hen_skin.svg"
 				},
 				"dimension" : {
@@ -1844,8 +1844,8 @@
 		"rooster" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "rooster_part_eye.svg",
-					"mouth" : "rooster_part_mouth.svg",
+					"eyes" : "rooster_part_eye_happy.svg",
+					"mouth" : "rooster_part_mouth_happy.svg",
 					"skin" : "rooster_skin.svg"
 				},
 				"dimension" : {
@@ -1866,8 +1866,8 @@
 		"goat" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "goat_part_eye.svg",
-					"mouth" : "goat_part_mouth.svg",
+					"eyes" : "goat_part_eye_happy.svg",
+					"mouth" : "goat_part_mouth_happy.svg",
 					"skin" : "goat_skin.svg"
 				},
 				"dimension" : {
@@ -1888,8 +1888,8 @@
 		"cloud" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "cloud_part_eye.svg",
-					"mouth" : "cloud_part_mouth.svg",
+					"eyes" : "cloud_part_eye_happy.svg",
+					"mouth" : "cloud_part_mouth_happy.svg",
 					"skin" : "cloud_skin.svg"
 				},
 				"dimension" : {
@@ -1910,8 +1910,8 @@
 		"barn" : {
 			"svg" : {
 				"src" : {
-					"eyes" : "barn_part_eye.svg",
-					"mouth" : "barn_part_mouth.svg",
+					"eyes" : "barn_part_eye_happy.svg",
+					"mouth" : "barn_part_mouth_happy.svg",
 					"skin" : "barn_skin.svg"
 				},
 				"dimension" : {
