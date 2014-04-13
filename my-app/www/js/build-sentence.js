@@ -10,8 +10,9 @@ WORDCRAFT.build = (function($){
 					   1:{"noun":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
 					   2:{"noun":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":1}};
 
+
 	var init = function(){
-		console.log("let the crafting begin!");
+		console.log("Sentence Handler Initialized");
 
 		Array.prototype.remove = function(value) {
 		  var idx = this.indexOf(value);
@@ -457,12 +458,12 @@ WORDCRAFT.build = (function($){
 	
 	}
 
+	
+
 	return {
 		
 		'init' : init,
 		'gameLevel': gameLevel
-		
-
 	};
 
 })(jQuery);
