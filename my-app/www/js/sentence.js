@@ -11,9 +11,9 @@ WORDCRAFT.build = (function(){
 	var helpVerbType = {"is":"singular","are":"plural"};
 	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
-	var levelPOSCnt = {0:{"noun":3,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
-					   1:{"noun":3,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
-					   2:{"noun":3,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}};
+	var levelPOSCnt = {0:{"noun":3,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0,"nounLvl3":0},
+					   1:{"noun":3,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0,"nounLvl3":0},
+					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3,"nounLvl3":2}};
 	var jsonForImage = {"body":{},"pos":{},"animation":[]};
 
 	var init = function(){
@@ -53,6 +53,11 @@ WORDCRAFT.build = (function(){
 			initReadData();
 		});
 
+		$("#btn_check_sent").bind("taphold",function() {
+			gameLevel++;
+			initReadData();
+		});
+
 
 		$(document).on("taphold",".circled-cross", function(){
 			var nounType = "";
@@ -66,23 +71,14 @@ WORDCRAFT.build = (function(){
 			if(pos === 'noun' || pos === 'helpverb')
 			{
 			 	nounType = objClass[2];
-				//makeDroppableOnCancel(pos,nounType,word,parentClass);
-				//parentClass = $(this).parents('[data-outer-parent="true"]:first')
-				parentClass = $(this).parent().parent().parent().attr("class");
+			 	//Check this out
+				parentClass = $(this).parent().parent().parent().parent().attr("class");
 			}
 
 			currWordList[pos].remove(word);
 			sentWordList[pos].remove(word);
 			$(this).parent().remove();
 			makeDroppableOnCancel(pos,nounType,word,parentClass);
-			//makeDroppableOnCancel(pos,nounType,word,parentClass);
-			/*if( pos === 'noun')
-			{
-				helpverb = $("#sent-helpverb-1 li").text();
-				currWordList["helpverb"].remove(helpverb);
-				sentWordList["helpverb"].remove(helpverb);
-				$("#sent-helpverb-1 li").remove();
-			}*/
 		});
 
 
@@ -112,7 +108,7 @@ WORDCRAFT.build = (function(){
 					currWordList["det"].push(nounText[0]);
 				}
 			 	var html = '<li class="draggable li-det" id="det_'+nounText[0]+'">'+nounText[0];
-			 	html +=  + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+			 	html += '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 				$("#sent-det-1").append(html);
 				var nounId = $("#sent-noun-1 li").attr("id").split("_")[1];
 				var nounhtml = '<li class="draggable li-noun" id="noun_'+nounId+'">'+nounText[1] 
@@ -120,7 +116,13 @@ WORDCRAFT.build = (function(){
 				
 				$('#sent-noun-1').find('li').remove();
 				$("#sent-noun-1").append(nounhtml);
+
+				$( "#init-noun li" ).each(function( index ) {
+				  console.log( index + ": " + $( this ).text() );
+				});
 			}
+
+			makeDroppable('sent-noun-1','li-noun-lvl3','noun','1');
 		}
 
 
@@ -203,18 +205,6 @@ WORDCRAFT.build = (function(){
 			suffix = "";
 		}		
 		//alert(currDet);
-		if(gameLevel > 1)
-		{
-			if(currDet.length>0)
-			{
-				prefixDet = currDet;
-			}
-			word = word + suffix;
-		}
-		else
-		{
-			word = prefixDet + " " + word + suffix;
-		}
 		if(nounSuffix[prefixDet])
 		{
 			posClass = 'plural';
@@ -224,6 +214,19 @@ WORDCRAFT.build = (function(){
 			posClass = 'singular';
 		}
 
+		if(gameLevel > 1)
+		{
+			if(currDet.length>0)
+			{
+				prefixDet = currDet;
+			}
+			word = word + suffix;
+			posClass = posClass+ ' li-'+pos+'-lvl3'
+		}
+		else
+		{
+			word = prefixDet + " " + word + suffix;
+		}
 		return [word,posClass];
 	}
 
@@ -265,7 +268,6 @@ WORDCRAFT.build = (function(){
 		getPOSToDisplay(d,gameLevel,"adj");
 
 		makeDragabble();
-		//draw_image();
 
 	};
 
@@ -324,125 +326,95 @@ WORDCRAFT.build = (function(){
 		$('#init-adj').children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
-		makeDroppable();
+
+
+		makeDroppable('sent-noun-1','li-noun','noun','1');
+		makeDroppable('sent-noun-2','li-noun','noun','2');
+		makeDroppable('sent-det-1','li-det','det','1');
+		makeDroppable('sent-verb-1','li-verb','verb','1');
+		makeDroppable('sent-adj-1','li-adj','adj','1');
 
 	};
 
 	/* Needs to be populated work in progress*/
 	var makeDroppableOnCancel = function(pos, nounType, word, parentClass)
 	{
-		
-		var acceptableClass = 'noun_'+ helpVerbType[sentWordList["helpverb"][0]];
-		//alert(acceptableClass);
-		webkit_drop.remove('sent-noun-1');
-		//alert("removed draggable");
-		webkit_drop.add('sent-noun-1', 
-		{	accept : [acceptableClass], 
-			onDrop : function(obj){
-					//alert(acceptableClass);
-					//alert("I am here");
-					if(populateOnDrop($(obj),'noun','1'))
-					{
-						var arrayOfClasses = $(obj).attr('class').split(' ');
-						nounType = arrayOfClasses[2].split("_")[1];
-						//draw_image(nounType);
-						webkit_drop.add('sent-helpverb-1', 
-						{	accept : ["helpverb-"+nounType], 
-							onDrop : function(subObj){
-									populateOnDrop($(subObj),'helpverb','1');
-							}
-							
-						});
+		var nounType= "";
+		var acceptableClass = "";
 
-					}
-			}
-			
-		}); 
+		if(pos === 'noun' && sentWordList["helpverb"][0].length > 0)
+		{
+			acceptableClass = 'noun_'+ helpVerbType[sentWordList["helpverb"][0]];
+			makeDroppable('sent-noun-1',acceptableClass,'noun','1');
+		}
+		if(pos == 'helpverb')
+		{
+			makeDroppable('sent-noun-1','li-noun','noun','1');
+		}
+
 
 		return true;
 	}
 
-
-	var makeDroppable = function()
+	var makeDroppable = function(containerId, acceptClass, pos, posCnt)
 	{
-		webkit_drop.add('sent-det-1', 
-		{ accept : ["li-det"], 
-			onDrop : function(obj){	
-				populateOnDrop($(obj),'det','1');
-			}
-		});
-
-		webkit_drop.add('sent-adj-1', 
-		{ accept : ["li-adj"], 
-			onDrop : function(obj){	
-				if(populateOnDrop($(obj),'adj','1'))
-				{
-					draw_image("none");
-				}
-			}
-		});
-
-		webkit_drop.add('sent-noun-1', 
-		{	accept : ["li-noun"], 
+		var nounType = "";
+		webkit_drop.add(containerId, 
+		{	accept : [acceptClass], 
 			onDrop : function(obj){
-					if(populateOnDrop($(obj),'noun','1'))
+					if(populateOnDrop($(obj),pos,posCnt))
 					{
-						var arrayOfClasses = $(obj).attr('class').split(' ');
-						nounType = arrayOfClasses[2].split("_")[1];
-						draw_image(nounType);
-						webkit_drop.add('sent-helpverb-1', 
-						{	accept : ["helpverb-"+nounType], 
-							onDrop : function(subObj){
-									populateOnDrop($(subObj),'helpverb','1');
-							}
-							
-						});
-
+						if(pos === 'noun')
+						{
+							nounType = getNounType($(obj));
+							draw_image(nounType);
+							webkit_drop.add('sent-helpverb-1', 
+							{	accept : ["helpverb-"+nounType], 
+								onDrop : function(subObj){
+										populateOnDrop($(subObj),'helpverb','1');
+								}
+								
+							});
+						}
+						else if(pos === 'verb')
+						{
+							var prepClass = $(obj).text()
+							prepClass = "prep-"+prepClass;
+							draw_image("none");
+							webkit_drop.add('sent-prep-1', 
+							{	
+								accept : [prepClass], 
+								onDrop : function(subObj){
+									populateOnDrop($(subObj),'prep','1');
+								}
+								
+							});
+						}
+						else if(pos === 'adj')
+						{
+							draw_image("none");
+						}
 					}
 			}
 			
 		});
 
-		webkit_drop.add('sent-verb-1', 
-		{ accept : ["li-verb"], 
-			onDrop : function(obj){	
-				if(populateOnDrop($(obj),'verb','1'))
-				{
-					var prepClass = $(obj).text()
-					prepClass = "prep-"+prepClass;
-					draw_image("none");
-					webkit_drop.add('sent-prep-1', 
-					{	
-						accept : [prepClass], 
-						onDrop : function(subObj){
-							populateOnDrop($(subObj),'prep','1');
-						}
-						
-					});
-				}
-
-				} 
-		});
-
-		webkit_drop.add('sent-noun-2', 
-		{	accept : ["li-noun"], 
-			onDrop : function(obj){
-				if(populateOnDrop($(obj),'noun','2'))
-				{
-					var arrayOfClasses = $(obj).attr('class').split(' ');
-					nounType = arrayOfClasses[2].split("_")[1];
-					draw_image(nounType);
-				}
-			}
-		});
-		
-		//draw_image();
-	};
+	}
 
 
-
-	var draw_image = function(nounType)
+	var getNounType = function(obj)
 	{
+		var nounType = "";
+		var arrayOfClasses = $(obj).attr('class').split(' ');
+		nounType = arrayOfClasses[2].split("_")[1];
+		return nounType;
+	}
+
+
+
+	var draw_image = function(nounPos)
+	{
+		var finalJson = [];
 		//alert("Inside draw image");
 		if(sentWordList["noun"][0].length > 0)
 		{
@@ -456,15 +428,11 @@ WORDCRAFT.build = (function(){
 			*/
 			if (sentWordList["verb"].length>0 && sentWordList["helpverb"].length>0)
 			{
-				
-				gameLevel = 1;
-				getJson(2,nounType);
-				initReadData();
-
+				getJson(2,nounPos);
 			}
 			else
 			{
-				getJson(1,nounType);
+				getJson(1,nounPos);
 			}
 		}
 
@@ -472,18 +440,11 @@ WORDCRAFT.build = (function(){
 		{
 			if (sentWordList["adj"].length>0)
 			{
-				getJson(4,nounType);
-				initReadData();
+				getJson(4,nounPos);
 			}
 			else
 			{
-				getJson(3,nounType);
-				gameLevel = 2;
-				if(gameLevel === 2)
-				{
-				 	initReadData();
-				}
-				
+				getJson(3,nounPos);
 			}
 
 		}
@@ -511,7 +472,6 @@ WORDCRAFT.build = (function(){
 		canvas_pos = fullJsonData["noun"][sentWordList["noun"][nounPos]]["canvaspos"];
 		plane = canvas_pos["plane"];
 		plane_pos = canvas_pos["defaultX"] + "_" + canvas_pos["defaultY"];
-		//alert(JSON.stringify(plane_pos));
 		jsonForImage["body"]["eyes"] = "res/img/animals/"+sentWordList["noun"][nounPos]+"/"+body_url["eyes"];
 		jsonForImage["body"]["skin"] = "res/img/animals/"+sentWordList["noun"][nounPos]+"/"+body_url["skin"];
 		jsonForImage["body"]["mouth"] = "res/img/animals/"+sentWordList["noun"][nounPos]+"/"+body_url["mouth"];
@@ -532,35 +492,26 @@ WORDCRAFT.build = (function(){
 		var defJson = defaultJson(0);
 		var noun2Json = {};
 		var finalJson = [];
-		if(status === 1)
-		{
-			//alert(defJson);
-			//WORDCRAFT.handleSentChanges([defJson,defJson]);
-			finalJson.push(defJson);
-			if(nounType === 'plural')
-			{
-				finalJson.push(defJson);
-			}
-			
-			//WORDCRAFT.handleSentChanges(finalJson);
-		}
-
-		if(status === 2)
+		finalJson.push(defJson);
+		if(status == 2)
 		{
 			animation = fullJsonData["verb"][sentWordList["verb"]]["animation"];
 			defJson["animation"] = animation;
-
+			finalJson.push(defJson);
 		}
 		if(status === 3)
 		{
+
+			animation = fullJsonData["verb"][sentWordList["verb"]]["animation"];
+			defJson["animation"] = animation;
 			noun2Json = defaultJson(1);
 			prep = fullJsonData["verb"][sentWordList["verb"]][sentWordList["prep"]]
 			plane_matrixX = prep["position_change"]["positionX"];
 			plane_matrixY = prep["position_change"]["positionY"];
 			defJson["pos"]["plane_matrix"] = [plane_matrixX,plane_matrixY];
+			finalJson.push(defJson);
 		}
 
-		finalJson.push(defJson);
 		if(nounType === 'plural')
 		{
 			finalJson.push(defJson);
@@ -569,20 +520,10 @@ WORDCRAFT.build = (function(){
 		if(status ==3)
 		{
 			finalJson.push(noun2Json);
-		}
-		
+		}	
 		//alert(JSON.stringify(finalJson));
-		return true;
-		//alert(JSON.stringify(finalJson));
-		//WORDCRAFT.handleSentChanges(finalJson);
-		/*if(status > 2)
-		{
-			prep = fullJsonData["verb"][sentWordList["verb"]]["preposition"][sentWordList["prep"]];
-			prepX = prep["position_change"]
-		}*/
-		//alert(JSON.stringify(jsonForImage));
-
-		//WORDCRAFT.handleSentChanges([defJson]);
+		WORDCRAFT.handleSentChanges(finalJson);
+		return;	
 
 	};
 
