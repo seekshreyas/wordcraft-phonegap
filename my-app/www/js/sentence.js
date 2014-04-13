@@ -71,10 +71,17 @@ WORDCRAFT.build = (function(){
 			if(pos === 'noun' || pos === 'helpverb')
 			{
 			 	nounType = objClass[2];
-			 	//Check this out
+			 	//Check this out, this has to be changed
 				parentClass = $(this).parent().parent().parent().parent().attr("class");
 			}
+			if(pos === 'verb')
+			{
+				var prep = $(".prep-"+word).attr("id").split("_")[1];
+				currWordList["prep"].remove(prep);
+				sentWordList["prep"].remove(prep);
+				$(".prep-"+word).remove();
 
+			}
 			currWordList[pos].remove(word);
 			sentWordList[pos].remove(word);
 			$(this).parent().remove();
