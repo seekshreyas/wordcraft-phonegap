@@ -19,7 +19,7 @@
   }
 
 
-#build-sentence{
+.build-sentence{
   float:left;
   margin:1.5em 2.5%;
   width:75%;
@@ -39,7 +39,7 @@
   margin-left:10px;
 }
 
-#build-sentence ul>li{
+.build-sentence ul>li{
   width:auto;
   float:left;
   display:inline;
@@ -113,11 +113,11 @@
 #sent-noun-2{
   text-transform: lowercase;
 }
-#build-sentence li{
+.build-sentence li{
   display: inline-block;
 }
 
-#build-sentence .active{
+.build-sentence .active{
   float:left;
   margin-left:10px;
   min-width:90px;

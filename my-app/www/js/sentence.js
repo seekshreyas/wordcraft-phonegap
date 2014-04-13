@@ -11,9 +11,9 @@ WORDCRAFT.build = (function(){
 	var helpVerbType = {"is":"singular","are":"plural"};
 	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
-	var levelPOSCnt = {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
-					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
-					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}};
+	var levelPOSCnt = {0:{"noun":3,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
+					   1:{"noun":3,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
+					   2:{"noun":3,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}};
 	var jsonForImage = {"body":{},"pos":{},"animation":[]};
 
 	var init = function(){
@@ -55,22 +55,34 @@ WORDCRAFT.build = (function(){
 
 
 		$(document).on("taphold",".circled-cross", function(){
-			var pos = $(this).parent().attr("class").split(" ")[1];
-			
-			pos = pos.substr(3,pos.length);
-			var word = $(this).parent().attr("id");		
+			var nounType = "";
+			var word = $(this).parent().attr("id");	
+			var parentClass = "";
+			var objClass = $(this).parent().attr("class").split(" ");			
+			var pos = objClass[1].substr(3,objClass[1].length);
 			word =  word.split("_")[1];
+			//if(pos === 'noun' || pos == 'helverb')
+			//{
+			if(pos === 'noun' || pos === 'helpverb')
+			{
+			 	nounType = objClass[2];
+				//makeDroppableOnCancel(pos,nounType,word,parentClass);
+				//parentClass = $(this).parents('[data-outer-parent="true"]:first')
+				parentClass = $(this).parent().parent().parent().attr("class");
+			}
+
 			currWordList[pos].remove(word);
 			sentWordList[pos].remove(word);
 			$(this).parent().remove();
-
-			if( pos === 'noun')
+			makeDroppableOnCancel(pos,nounType,word,parentClass);
+			//makeDroppableOnCancel(pos,nounType,word,parentClass);
+			/*if( pos === 'noun')
 			{
 				helpverb = $("#sent-helpverb-1 li").text();
 				currWordList["helpverb"].remove(helpverb);
 				sentWordList["helpverb"].remove(helpverb);
 				$("#sent-helpverb-1 li").remove();
-			}
+			}*/
 		});
 
 
@@ -142,7 +154,7 @@ WORDCRAFT.build = (function(){
 					if(pos === 'noun')
 					{
 						tmpNoun = getNounPrefixSufix(pos,word);
-						posClass = 'noun_'+tmpNoun[1];
+						posClass = ' noun_'+tmpNoun[1];
 
 						wordText = tmpNoun[0];
 					}
@@ -150,22 +162,22 @@ WORDCRAFT.build = (function(){
 					{
 						if(wordText === 'The')
 						{
-							posClass = 'det_plural';
+							posClass = ' det_plural';
 						}	
 						else
 						{
-							posClass = 'det_singular';
+							posClass = ' det_singular';
 						}
 					}
 					if(pos === 'helpverb')
 					{
-						posClass = "helpverb-"+helpVerbType[word];
+						posClass = " helpverb-"+helpVerbType[word];
 					}	
 					if(jQuery.inArray(wordText.substr(0,1),vowels) !== -1)
 					{
 						posClass = posClass+' '+pos+'_vowel';
 					}
-					var htmlLi = '<li class="draggable li-'+pos+' '+posClass+'" id="'+pos+'_'+word.replace(" ","_")+'">'+ wordText;
+					var htmlLi = '<li class="draggable li-'+pos+posClass+'" id="'+pos+'_'+word.replace(" ","_")+'">'+ wordText;
 					htmlLi = htmlLi + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
 					$(divId).append(htmlLi);						
 				}		
@@ -260,6 +272,7 @@ WORDCRAFT.build = (function(){
 	var populateOnDrop = function(obj,type,form){
 		var listItem = $(obj).text();
 		var wordId = $(obj).attr("id").split("_")[1]
+		//alert($(obj).attr("class"));
 		var divid = "#sent-"+type.toString()+"-"+form.toString();
 
 		/* Code to remove the existing word from sentence area */
@@ -281,8 +294,8 @@ WORDCRAFT.build = (function(){
 		{
 		 	sentWordList[type.toString()].push(wordId);
 		}
-		var html = '<li class="draggable li-'+type.toString()+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
-
+		var html = '<li class="'+$(obj).attr("class")+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+		//alert(html);
 		$(divid).append(html);
 		return true;
 	}
@@ -316,10 +329,37 @@ WORDCRAFT.build = (function(){
 	};
 
 	/* Needs to be populated work in progress*/
-	var makeDroppableOnCancel = function()
+	var makeDroppableOnCancel = function(pos, nounType, word, parentClass)
 	{
+		
+		var acceptableClass = 'noun_'+ helpVerbType[sentWordList["helpverb"][0]];
+		//alert(acceptableClass);
+		webkit_drop.remove('sent-noun-1');
+		//alert("removed draggable");
+		webkit_drop.add('sent-noun-1', 
+		{	accept : [acceptableClass], 
+			onDrop : function(obj){
+					//alert(acceptableClass);
+					//alert("I am here");
+					if(populateOnDrop($(obj),'noun','1'))
+					{
+						var arrayOfClasses = $(obj).attr('class').split(' ');
+						nounType = arrayOfClasses[2].split("_")[1];
+						//draw_image(nounType);
+						webkit_drop.add('sent-helpverb-1', 
+						{	accept : ["helpverb-"+nounType], 
+							onDrop : function(subObj){
+									populateOnDrop($(subObj),'helpverb','1');
+							}
+							
+						});
 
+					}
+			}
+			
+		}); 
 
+		return true;
 	}
 
 
@@ -337,7 +377,7 @@ WORDCRAFT.build = (function(){
 			onDrop : function(obj){	
 				if(populateOnDrop($(obj),'adj','1'))
 				{
-					draw_image();
+					draw_image("none");
 				}
 			}
 		});
@@ -349,7 +389,7 @@ WORDCRAFT.build = (function(){
 					{
 						var arrayOfClasses = $(obj).attr('class').split(' ');
 						nounType = arrayOfClasses[2].split("_")[1];
-						draw_image();
+						draw_image(nounType);
 						webkit_drop.add('sent-helpverb-1', 
 						{	accept : ["helpverb-"+nounType], 
 							onDrop : function(subObj){
@@ -370,7 +410,7 @@ WORDCRAFT.build = (function(){
 				{
 					var prepClass = $(obj).text()
 					prepClass = "prep-"+prepClass;
-					draw_image();
+					draw_image("none");
 					webkit_drop.add('sent-prep-1', 
 					{	
 						accept : [prepClass], 
@@ -389,7 +429,9 @@ WORDCRAFT.build = (function(){
 			onDrop : function(obj){
 				if(populateOnDrop($(obj),'noun','2'))
 				{
-					draw_image();
+					var arrayOfClasses = $(obj).attr('class').split(' ');
+					nounType = arrayOfClasses[2].split("_")[1];
+					draw_image(nounType);
 				}
 			}
 		});
@@ -399,7 +441,7 @@ WORDCRAFT.build = (function(){
 
 
 
-	var draw_image = function()
+	var draw_image = function(nounType)
 	{
 		//alert("Inside draw image");
 		if(sentWordList["noun"][0].length > 0)
@@ -414,14 +456,15 @@ WORDCRAFT.build = (function(){
 			*/
 			if (sentWordList["verb"].length>0 && sentWordList["helpverb"].length>0)
 			{
-				getJson(2);
+				
 				gameLevel = 1;
+				getJson(2,nounType);
 				initReadData();
 
 			}
 			else
 			{
-				getJson(1);
+				getJson(1,nounType);
 			}
 		}
 
@@ -429,12 +472,12 @@ WORDCRAFT.build = (function(){
 		{
 			if (sentWordList["adj"].length>0)
 			{
-				getJson(4);
+				getJson(4,nounType);
 				initReadData();
 			}
 			else
 			{
-				getJson(3);
+				getJson(3,nounType);
 				gameLevel = 2;
 				if(gameLevel === 2)
 				{
@@ -460,17 +503,18 @@ WORDCRAFT.build = (function(){
 		levelChange();	*/	
 	};
 
-	var getJson = function(status)
+	var defaultJson = function(nounPos)
 	{
-		body_url = fullJsonData["noun"][sentWordList["noun"]]["svg"]["src"];
-		body_dim = fullJsonData["noun"][sentWordList["noun"]]["svg"]["dimension"];
-		canvas_pos = fullJsonData["noun"][sentWordList["noun"]]["canvaspos"];
+
+		body_url = fullJsonData["noun"][sentWordList["noun"][nounPos]]["svg"]["src"];
+		body_dim = fullJsonData["noun"][sentWordList["noun"][nounPos]]["svg"]["dimension"];
+		canvas_pos = fullJsonData["noun"][sentWordList["noun"][nounPos]]["canvaspos"];
 		plane = canvas_pos["plane"];
 		plane_pos = canvas_pos["defaultX"] + "_" + canvas_pos["defaultY"];
 		//alert(JSON.stringify(plane_pos));
-		jsonForImage["body"]["eyes"] = "res/img/animals/"+sentWordList["noun"]+"/"+body_url["eyes"];
-		jsonForImage["body"]["skin"] = "res/img/animals/"+sentWordList["noun"]+"/"+body_url["skin"];
-		jsonForImage["body"]["mouth"] = "res/img/animals/"+sentWordList["noun"]+"/"+body_url["mouth"];
+		jsonForImage["body"]["eyes"] = "res/img/animals/"+sentWordList["noun"][nounPos]+"/"+body_url["eyes"];
+		jsonForImage["body"]["skin"] = "res/img/animals/"+sentWordList["noun"][nounPos]+"/"+body_url["skin"];
+		jsonForImage["body"]["mouth"] = "res/img/animals/"+sentWordList["noun"][nounPos]+"/"+body_url["mouth"];
 		jsonForImage["body"]["color"] = "";
 		jsonForImage["body"]["size"] = "normal";
 		jsonForImage["body"]["width"] = body_dim["width"];
@@ -479,11 +523,58 @@ WORDCRAFT.build = (function(){
 								"plane_pos": plane_pos,
 								"plane_matrix":[0,0] };
 
+		return jsonForImage;
+
+	}	
+
+	var getJson = function(status,nounType)
+	{
+		var defJson = defaultJson(0);
+		var noun2Json = {};
+		var finalJson = [];
+		if(status === 1)
+		{
+			//alert(defJson);
+			//WORDCRAFT.handleSentChanges([defJson,defJson]);
+			finalJson.push(defJson);
+			if(nounType === 'plural')
+			{
+				finalJson.push(defJson);
+			}
+			
+			//WORDCRAFT.handleSentChanges(finalJson);
+		}
+
 		if(status === 2)
 		{
 			animation = fullJsonData["verb"][sentWordList["verb"]]["animation"];
-			jsonForImage["animation"] = animation;
+			defJson["animation"] = animation;
+
 		}
+		if(status === 3)
+		{
+			noun2Json = defaultJson(1);
+			prep = fullJsonData["verb"][sentWordList["verb"]][sentWordList["prep"]]
+			plane_matrixX = prep["position_change"]["positionX"];
+			plane_matrixY = prep["position_change"]["positionY"];
+			defJson["pos"]["plane_matrix"] = [plane_matrixX,plane_matrixY];
+		}
+
+		finalJson.push(defJson);
+		if(nounType === 'plural')
+		{
+			finalJson.push(defJson);
+		}
+
+		if(status ==3)
+		{
+			finalJson.push(noun2Json);
+		}
+		
+		//alert(JSON.stringify(finalJson));
+		return true;
+		//alert(JSON.stringify(finalJson));
+		//WORDCRAFT.handleSentChanges(finalJson);
 		/*if(status > 2)
 		{
 			prep = fullJsonData["verb"][sentWordList["verb"]]["preposition"][sentWordList["prep"]];
@@ -491,7 +582,7 @@ WORDCRAFT.build = (function(){
 		}*/
 		//alert(JSON.stringify(jsonForImage));
 
-		WORDCRAFT.handleSentChanges([jsonForImage]);
+		//WORDCRAFT.handleSentChanges([defJson]);
 
 	};
 
