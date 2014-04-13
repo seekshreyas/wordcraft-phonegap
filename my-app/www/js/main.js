@@ -49,6 +49,18 @@ WORDCRAFT = (function(){
 				"speed" : "normal",
 				"scale" : "",
 				"animation_type" : "translateX"
+			}, {
+				"duration" : "none",
+				"animation_params" : {
+					"start" : "res/img/animals/sheep/sheep_part_eyes_awake.svg",
+					"end" : "res/img/animals/sheep/sheep_part_eyes_asleep.svg",
+					"mid" : ""
+				},
+				"speed" : "fast",
+				"scale" : "",
+				"animation_part" : "eyes",
+				"animation_type" : "swap"
+				
 			}
 		]
 	}, {
@@ -395,6 +407,41 @@ WORDCRAFT = (function(){
 
 					break;
 
+
+
+				case 'swap':
+
+					console.log("Swap animation: ", anim_kind.animation_part);
+					var partIndex = {
+						'skin' : 0,
+						'mouth' : 1,
+						'eyes' : 2
+					};
+
+					var groupObjects = obj.getObjects();
+
+					var swapObj = groupObjects[partIndex[anim_kind.animation_part]];
+
+					var start = anim_kind.animation_params.start;
+					var stop = anim_kind.animation_params.end;
+
+					var swapAnim = function(start, stop){
+						// console.log("Swap Object", swapObj.getSrc());
+						swapObj.setSourcePath = stop;
+
+						// console.log("Swap Object", swapObj.getSrc());
+
+						if (anim_kind.duration === 'none'){
+							window.setTimeout(swapAnim(stop, start), 1000);
+						}
+					}
+
+					swapAnim(start, stop);
+
+
+
+					break;
+
 				default:
 					console.log("no animation");
 
@@ -428,6 +475,6 @@ WORDCRAFT = (function(){
 jQuery(document).ready(function(){
 
 	WORDCRAFT.init();
-	WORDCRAFT.build.init()
+	WORDCRAFT.build.init();
     
 });
