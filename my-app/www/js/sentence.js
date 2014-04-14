@@ -2,18 +2,19 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT.build = (function(){
 
-	var gameLevel = 0;
+	var gameLevel = 2;
 	var partsofSpeech = {};
 	var fullJsonData = {};
+	var pluralSuffix = ["","s"];
 	var nounSuffix = {"The":"s","A":"","An":""}
 	var vowels=['a','e','i','o','u'];
 	var pluralWords = ['sheep'];
 	var helpVerbType = {"is":"singular","are":"plural"};
 	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
-	var levelPOSCnt = {0:{"noun":3,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0,"nounLvl3":0},
-					   1:{"noun":3,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0,"nounLvl3":0},
-					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3,"nounLvl3":2}};
+	var levelPOSCnt = {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
+					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
+					   2:{"noun":4,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}};
 	var jsonForImage = {"body":{},"pos":{},"animation":[]};
 
 	var init = function(){
@@ -68,23 +69,24 @@ WORDCRAFT.build = (function(){
 			word =  word.split("_")[1];
 			//if(pos === 'noun' || pos == 'helverb')
 			//{
-			if(pos === 'noun' || pos === 'helpverb')
+			if(pos === 'noun' || pos === 'helpverb' || pos === 'det')
 			{
 			 	nounType = objClass[2];
 			 	//Check this out, this has to be changed
-				parentClass = $(this).parent().parent().parent().parent().attr("class");
+				//parentClass = $(this).parent().parent().parent().parent().attr("class");
 			}
-			if(pos === 'verb')
+			if(pos === 'verb' && gameLevel>0 &&  sentWordList["prep"].length >0)
 			{
-				var prep = $(".prep-"+word).attr("id").split("_")[1];
+				var prep = $(".prep_"+word).attr("id").split("_")[1];
 				currWordList["prep"].remove(prep);
 				sentWordList["prep"].remove(prep);
-				$(".prep-"+word).remove();
+				$(".prep_"+word).remove();
 
 			}
 			currWordList[pos].remove(word);
 			sentWordList[pos].remove(word);
 			$(this).parent().remove();
+
 			makeDroppableOnCancel(pos,nounType,word,parentClass);
 		});
 
@@ -124,12 +126,13 @@ WORDCRAFT.build = (function(){
 				$('#sent-noun-1').find('li').remove();
 				$("#sent-noun-1").append(nounhtml);
 
-				$( "#init-noun li" ).each(function( index ) {
-				  console.log( index + ": " + $( this ).text() );
-				});
 			}
 
-			makeDroppable('sent-noun-1','li-noun-lvl3','noun','1');
+			makeDroppable('sent-noun-2','noun_level2','noun','2');
+			makeDroppable('sent-noun-1','noun_level1','noun','1');
+
+
+			//makeDroppable('sent-noun-1','li-noun-lvl3','noun','1');
 		}
 
 
@@ -163,30 +166,33 @@ WORDCRAFT.build = (function(){
 					if(pos === 'noun')
 					{
 						tmpNoun = getNounPrefixSufix(pos,word);
-						posClass = ' noun_'+tmpNoun[1];
-
+						posClass = tmpNoun[1];
 						wordText = tmpNoun[0];
 					}
 					if(pos === 'det')
 					{
 						if(wordText === 'The')
 						{
-							posClass = ' det_plural';
+							posClass = 'det_plural';
 						}	
 						else
 						{
-							posClass = ' det_singular';
+							posClass = 'det_singular';
 						}
 					}
 					if(pos === 'helpverb')
 					{
-						posClass = " helpverb-"+helpVerbType[word];
+						posClass = "helpverb_"+helpVerbType[word];
 					}	
 					if(jQuery.inArray(wordText.substr(0,1),vowels) !== -1)
 					{
 						posClass = posClass+' '+pos+'_vowel';
 					}
-					var htmlLi = '<li class="draggable li-'+pos+posClass+'" id="'+pos+'_'+word.replace(" ","_")+'">'+ wordText;
+					else
+					{
+						posClass = posClass+' '+pos+'_consonant';
+					}
+					var htmlLi = '<li class="draggable li-'+pos+' '+posClass+'" id="'+pos+'_'+word.replace(" ","_")+'">'+ wordText;
 					htmlLi = htmlLi + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
 					$(divId).append(htmlLi);						
 				}		
@@ -202,10 +208,12 @@ WORDCRAFT.build = (function(){
 
 	var getNounPrefixSufix = function(pos,word)
 	{
-		var tmpPrefixDet = jQuery.inArray(word, currWordList[pos])%2;
-		var prefixDet = partsofSpeech["det"][tmpPrefixDet];
+	
+		var randIndex  = Math.floor(Math.random() * 2);
+		var prefixDet = partsofSpeech["det"][randIndex];
 		var currDet = $("#sent-det-1 li").text();
 		var suffix = nounSuffix[prefixDet];
+		var tmpIndex = currWordList[pos].length;
 
 		if(jQuery.inArray(word,pluralWords) !== -1)
 		{
@@ -214,25 +222,24 @@ WORDCRAFT.build = (function(){
 		//alert(currDet);
 		if(nounSuffix[prefixDet])
 		{
-			posClass = 'plural';
+			posClass = pos+'_plural';
 		}
 		else
 		{
-			posClass = 'singular';
+			posClass = pos+'_singular';
 		}
 
-		if(gameLevel > 1)
+		if(gameLevel > 1 && tmpIndex%2 == 0)
 		{
-			if(currDet.length>0)
-			{
-				prefixDet = currDet;
-			}
+
 			word = word + suffix;
-			posClass = posClass+ ' li-'+pos+'-lvl3'
+			posClass = posClass+ ' noun_level1';
+
 		}
 		else
 		{
 			word = prefixDet + " " + word + suffix;
+			posClass = posClass+ ' noun_level2';
 		}
 		return [word,posClass];
 	}
@@ -253,7 +260,7 @@ WORDCRAFT.build = (function(){
 					if(jQuery.inArray(word, currWordList["prep"])==-1)
 					{
 						currWordList["prep"].push(word);
-						var htmlLi = '<li class="draggable li-prep prep-'+val+'" id="prep_'+word.replace(" ","_")+'">'+ word + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
+						var htmlLi = '<li class="draggable li-prep prep_'+val+'" id="prep_'+word.replace(" ","_")+'">'+ word + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
 						$("#init-prep").append(htmlLi);	
 					}
 					else
@@ -336,10 +343,36 @@ WORDCRAFT.build = (function(){
 
 
 		makeDroppable('sent-noun-1','li-noun','noun','1');
-		makeDroppable('sent-noun-2','li-noun','noun','2');
 		makeDroppable('sent-det-1','li-det','det','1');
+		$("#init-det li" ).each(function() {
+				console.log("I am here in the loop");
+				if($( this ).attr("id") === "det_The")
+				{
+			  		$( this ).addClass( "det_singular" );
+			  	}
+			});
 		makeDroppable('sent-verb-1','li-verb','verb','1');
-		makeDroppable('sent-adj-1','li-adj','adj','1');
+		if(sentWordList["det"][0] === 'An')
+		{
+			makeDroppable('sent-adj-1','adj_vowel','adj','1');
+		}
+		else if(sentWordList["det"][0] === 'A')
+		{
+			makeDroppable('sent-adj-1','adj_consonant','adj','1');
+		}
+		else
+		{
+			makeDroppable('sent-adj-1','li-adj','adj','1');
+		}
+		
+		if(gameLevel <= 1)
+		{
+			makeDroppable('sent-noun-2','li-noun','noun','2');
+		}
+		else
+		{
+			makeDroppable('sent-noun-1','noun_level1','noun','1');
+		}
 
 	};
 
@@ -354,14 +387,24 @@ WORDCRAFT.build = (function(){
 			acceptableClass = 'noun_'+ helpVerbType[sentWordList["helpverb"][0]];
 			makeDroppable('sent-noun-1',acceptableClass,'noun','1');
 		}
-		if(pos == 'helpverb')
+		if(pos === 'helpverb')
 		{
 			makeDroppable('sent-noun-1','li-noun','noun','1');
+			makeDroppable('sent-det-1','li-det','det','1');
+
 		}
-
-
+		if(pos === 'det')
+		{
+			var arrayClasses = $("#sent-helpverb-1 li").attr("class").split(" ");
+			if(arrayClasses.length > 0)
+			{
+				acceptableClass = "det_"+arrayClasses[2].split("_")[1];
+				makeDroppable('sent-det-1',acceptableClass,'det','1');
+			}
+		}
 		return true;
 	}
+
 
 	var makeDroppable = function(containerId, acceptClass, pos, posCnt)
 	{
@@ -376,7 +419,7 @@ WORDCRAFT.build = (function(){
 							nounType = getNounType($(obj));
 							draw_image(nounType);
 							webkit_drop.add('sent-helpverb-1', 
-							{	accept : ["helpverb-"+nounType], 
+							{	accept : ["helpverb_"+nounType], 
 								onDrop : function(subObj){
 										populateOnDrop($(subObj),'helpverb','1');
 								}
@@ -386,7 +429,7 @@ WORDCRAFT.build = (function(){
 						else if(pos === 'verb')
 						{
 							var prepClass = $(obj).text()
-							prepClass = "prep-"+prepClass;
+							prepClass = "prep_"+prepClass;
 							draw_image("none");
 							webkit_drop.add('sent-prep-1', 
 							{	
@@ -396,6 +439,20 @@ WORDCRAFT.build = (function(){
 								}
 								
 							});
+						}
+						else if (pos === 'det')
+						{
+							if(sentWordList["det"][0] === 'An')
+							{
+								webkit_drop.add('sent-adj-1', 
+								{	
+									accept : ["adj_vowel"], 
+									onDrop : function(subObj){
+										populateOnDrop($(subObj),'adj','1');
+									}
+									
+								});
+							}
 						}
 						else if(pos === 'adj')
 						{
@@ -528,7 +585,8 @@ WORDCRAFT.build = (function(){
 		{
 			finalJson.push(noun2Json);
 		}	
-		//alert(JSON.stringify(finalJson));
+			//alert(JSON.stringify(finalJson));
+
 		WORDCRAFT.handleSentChanges(finalJson);
 		return;	
 
