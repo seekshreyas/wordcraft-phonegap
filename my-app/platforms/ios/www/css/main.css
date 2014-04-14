@@ -1,3 +1,251 @@
+/* ==========================================================================
+   COLOR CODES
+   ========================================================================== */
+/*
+  top light blue : #b8c4cd;
+  background light blue : #eff2f5;
+*/
+
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+/******************
+** GLOBAL STYLES
+******************/
+
+
+
+/*
+** FONTS
+*/
+
+
+/*OpenSans*/
+@font-face{    
+  font-family: 'OpenSans Regular';
+  src: url('../res/font/opensans/opensans_regular.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Bold';
+  src: url('../res/font/opensans/opensans_bold.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Bold Italic';
+  src: url('../res/font/opensans/opensans_bold_italic.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Extra Bold';
+  src: url('../res/font/opensans/opensans_extra_bold.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Extra Bold Italic';
+  src: url('../res/font/opensans/opensans_extra_bold_italic.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Italic';
+  src: url('../res/font/opensans/opensans_italic.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Light';
+  src: url('../res/font/opensans/opensans_light.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Light Italic';
+  src: url('../res/font/opensans/opensans_light_italic.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Semi Bold';
+  src: url('../res/font/opensans/opensans_semibold.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Semi Bold Italic';
+  src: url('../res/font/opensans/opensans_semibold_italic.ttf') format('truetype'); 
+}
+
+/*OpenSans Condensed*/
+@font-face{    
+  font-family: 'OpenSans Condensed Bold';
+  src: url('..res/font/opensans_condensed/opensans_condensed_bold.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Condensed Light';
+  src: url('../res/font/opensans_condensed/opensans_condensed_light.ttf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'OpenSans Condensed Light Italic';
+  src: url('../res/font/opensans_condensed/opensans_condensed_light_italic.ttf') format('truetype'); 
+}
+
+
+/*QuickSans*/
+@font-face{    
+  font-family: 'QuickSans';
+  src: url('..res/font/quicksand/quicksand_regular.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans Italic';
+  src: url('..res/font/quicksand/quicksand_italic.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans Bold';
+  src: url('..res/font/quicksand/quicksand_bold.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans BoldItalic';
+  src: url('..res/font/quicksand/quicksand_bolditalic.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans Light';
+  src: url('..res/font/quicksand/quicksand_light.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans LightItalic';
+  src: url('..res/font/quicksand/quicksand_lightitalic.otf') format('truetype'); 
+}
+@font-face{    
+  font-family: 'QuickSans Dashed';
+  src: url('..res/font/quicksand/quicksand_dash.otf') format('truetype'); 
+}
+
+
+/*Icons-ShortStack*/
+@font-face{    
+  font-family: 'ShortStack Regular';
+  src: url('..res/font/shortstack/shortstack_regular.otf') format('truetype'); 
+}
+
+
+/*Icons - Entypo*/
+@font-face{    
+  font-family: 'Entypo';
+  src: url('../res/font/icons/entypo.ttf') format('truetype'); 
+}
+
+
+
+body{
+    font-family: 'OpenSans Regular', sans-serif;
+}
+
+.icon-entypo{
+  font-family: 'Entypo', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*section*/
