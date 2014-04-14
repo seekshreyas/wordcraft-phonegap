@@ -2,7 +2,7 @@ var WORDCRAFT = WORDCRAFT || {}
 
 WORDCRAFT.build = (function(){
 
-	var gameLevel = 2;
+	var gameLevel = 0;
 	var partsofSpeech = {};
 	var fullJsonData = {};
 	var pluralSuffix = ["","s"];
@@ -201,7 +201,6 @@ WORDCRAFT.build = (function(){
 		}
 		if(currWordList[pos].length === levelPOSCnt[level][pos])
 		{
-			//alert(currWordList[pos]);
 			getPrepToDisplay(pos,divId,gameLevel);
 		}
 	}
@@ -478,19 +477,26 @@ WORDCRAFT.build = (function(){
 
 	var draw_image = function(nounPos)
 	{
+		alert("nountType:"+nounPos);
 		var finalJson = [];
+		var noun = sentWordList["noun"];
+		var verb = sentWordList["verb"];
+		var helpverb = sentWordList["helpverb"];
+		var prep = sentWordList["prep"];
+		var adj = sentWordList["adj"];
 		//alert("Inside draw image");
-		if(sentWordList["noun"][0].length > 0)
+
+		if(gameLevel===0 && noun[0].length > 0 && noun.length<2)
 		{
 			/*
 			getJson method creates the actual Json. Following values
 			are passed to determine the json structure
-			1. Only noun 1 avaiable
+			1. Only noun 1 available
 			2. noun1 and verb are available
 			3. noun1, verb, prep,noun2 are available
 			4. noun1, verb, noun2 and adj are available
 			*/
-			if (sentWordList["verb"].length>0 && sentWordList["helpverb"].length>0)
+			if (verb.length>0 && helpverb.length>0)
 			{
 				getJson(2,nounPos);
 			}
@@ -499,10 +505,9 @@ WORDCRAFT.build = (function(){
 				getJson(1,nounPos);
 			}
 		}
-
-		if(sentWordList["noun"].length>1 && sentWordList["verb"].length>0 && sentWordList["prep"].length>0)
+		if(gameLevel>=1 && noun.length>1 && verb.length>0 && prep.length>0)
 		{
-			if (sentWordList["adj"].length>0)
+			if (adj.length>0)
 			{
 				getJson(4,nounPos);
 			}
@@ -512,7 +517,6 @@ WORDCRAFT.build = (function(){
 			}
 
 		}
-
 		return true;
 
 	};
@@ -530,15 +534,17 @@ WORDCRAFT.build = (function(){
 
 	var defaultJson = function(nounPos)
 	{
-
-		body_url = fullJsonData["noun"][sentWordList["noun"][nounPos]]["svg"]["src"];
-		body_dim = fullJsonData["noun"][sentWordList["noun"][nounPos]]["svg"]["dimension"];
-		canvas_pos = fullJsonData["noun"][sentWordList["noun"][nounPos]]["canvaspos"];
-		plane = canvas_pos["plane"];
-		plane_pos = canvas_pos["defaultX"] + "_" + canvas_pos["defaultY"];
-		jsonForImage["body"]["eyes"] = "res/img/animals/"+sentWordList["noun"][nounPos]+"/"+body_url["eyes"];
-		jsonForImage["body"]["skin"] = "res/img/animals/"+sentWordList["noun"][nounPos]+"/"+body_url["skin"];
-		jsonForImage["body"]["mouth"] = "res/img/animals/"+sentWordList["noun"][nounPos]+"/"+body_url["mouth"];
+		var prefixUrl = "res/img/animals/";
+		var noun = sentWordList["noun"][nounPos];
+		alert("the noun is:"+noun);
+		var body_url = fullJsonData["noun"][noun]["svg"]["src"];
+		var body_dim = fullJsonData["noun"][noun]["svg"]["dimension"];
+		var canvas_pos = fullJsonData["noun"][noun]["canvaspos"];
+		var plane = canvas_pos["plane"];
+		var plane_pos = canvas_pos["defaultX"] + "_" + canvas_pos["defaultY"];
+		jsonForImage["body"]["eyes"] = prefixUrl+noun+"/"+formUrl(noun,"eyes",body_url["eyes"]);
+		jsonForImage["body"]["skin"] = prefixUrl+noun+"/"+formUrl(noun,"skin",body_url["skin"]);
+		jsonForImage["body"]["mouth"] = prefixUrl+noun+"/"+formUrl(noun,"mouth",body_url["mouth"]);
 		jsonForImage["body"]["color"] = "";
 		jsonForImage["body"]["size"] = "normal";
 		jsonForImage["body"]["width"] = body_dim["width"];
@@ -551,41 +557,60 @@ WORDCRAFT.build = (function(){
 
 	}	
 
+	var formUrl = function(posName,part,partURL)
+	{
+		return posName+'_'+'part_'+part+'_'+partURL+'.svg';
+	}
+
 	var getJson = function(status,nounType)
 	{
+		var prefixUrl = "res/img/animals/";
 		var defJson = defaultJson(0);
+		var noun = sentWordList["noun"][0];
+		var verb = sentWordList["verb"];
 		var noun2Json = {};
 		var finalJson = [];
+		var body_url = "";
 		finalJson.push(defJson);
+		
 		if(status == 2)
 		{
-			animation = fullJsonData["verb"][sentWordList["verb"]]["animation"];
+			alert("Inside status >=2:"+status);
+			body_url = fullJsonData["verb"][verb]["bodypart"];
+			defJson["body"]["eyes"] = prefixUrl+noun+"/"+formUrl(noun,"eyes",body_url["eyes"]);
+			defJson["body"]["skin"] = prefixUrl+noun+"/"+formUrl(noun,"skin",body_url["skin"]);
+			defJson["body"]["mouth"] = prefixUrl+noun+"/"+formUrl(noun,"mouth",body_url["mouth"]);
+			animation = fullJsonData["verb"][verb]["animation"];
 			defJson["animation"] = animation;
-			finalJson.push(defJson);
 		}
-		if(status === 3)
+		if(status ==3)
 		{
-
-			animation = fullJsonData["verb"][sentWordList["verb"]]["animation"];
+			alert("Inside 3:"+status);
+			body_url = fullJsonData["verb"][verb]["bodypart"];
+			defJson["body"]["eyes"] = prefixUrl+noun+"/"+formUrl(noun,"eyes",body_url["eyes"]);
+			defJson["body"]["skin"] = prefixUrl+noun+"/"+formUrl(noun,"skin",body_url["skin"]);
+			defJson["body"]["mouth"] = prefixUrl+noun+"/"+formUrl(noun,"mouth",body_url["mouth"]);
+			animation = fullJsonData["verb"][verb]["animation"];
 			defJson["animation"] = animation;
 			noun2Json = defaultJson(1);
-			prep = fullJsonData["verb"][sentWordList["verb"]][sentWordList["prep"]]
+			alert("Printing noun2json");
+			alert(JSON.stringify(noun2Json));
+			prep = fullJsonData["verb"][verb][sentWordList["prep"]]
 			plane_matrixX = prep["position_change"]["positionX"];
 			plane_matrixY = prep["position_change"]["positionY"];
 			defJson["pos"]["plane_matrix"] = [plane_matrixX,plane_matrixY];
-			finalJson.push(defJson);
 		}
 
 		if(nounType === 'plural')
 		{
 			finalJson.push(defJson);
 		}
-
-		if(status ==3)
+		if(!jQuery.isEmptyObject(noun2Json))
 		{
+			alert("Noun2Json");
 			finalJson.push(noun2Json);
-		}	
-			//alert(JSON.stringify(finalJson));
+		}
+		alert(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return;	
