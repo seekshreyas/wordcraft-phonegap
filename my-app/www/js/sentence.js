@@ -121,7 +121,7 @@ WORDCRAFT.build = (function(){
 				$("#sent-det-1").append(html);
 				var nounId = $("#sent-noun-1 li").attr("id").split("_")[1];
 				var nounClass = $("#sent-noun-1 li").attr("class");
-				alert(nounClass);
+				//alert(nounClass);
 				var nounhtml = '<li class="'+nounClass+'" id="noun_'+nounId+'">'+nounText[1] 
 				nounhtml += '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 				
@@ -482,7 +482,7 @@ WORDCRAFT.build = (function(){
 	{
 		var finalJson = [];
 		var noun = sentWordList["noun"];
-		alert(noun.length);
+		//alert(noun.length);
 		var verb = sentWordList["verb"];
 		var helpverb = sentWordList["helpverb"];
 		var prep = sentWordList["prep"];
@@ -609,7 +609,7 @@ WORDCRAFT.build = (function(){
 		}
 		if(status >=4 )
 		{
-			alert("Inside 4:"+status);
+			//alert("Inside 4:"+status);
 			/*var adjProp = fullJsonData["adj"][adj]["properties"];
 			defJson["body"]["color"] = adjProp["color"];
 			defJson["body"]["size"] = adjProp["size"];
@@ -634,7 +634,7 @@ WORDCRAFT.build = (function(){
 			//alert("Noun2Json");
 			finalJson.push(noun2Json);
 		}
-		alert(JSON.stringify(finalJson));
+		//alert(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return;	
@@ -645,7 +645,7 @@ WORDCRAFT.build = (function(){
 	{
 		var verbBodyPart = fullJsonData["verb"][verb]["bodypart"][part];
 		var adjBodyPart = fullJsonData["adj"][adj]["svg"]["src"][part];
-		alert("Inside body parts");
+		//alert("Inside body parts");
 		if(part === 'skin')
 		{
 			if(adjBodyPart === 'positive')
