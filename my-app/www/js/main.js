@@ -164,14 +164,14 @@ WORDCRAFT = (function(){
 	
 
 	var evtHandler = function(){
-		jQuery(document).on('vclick', 'li.draggable', function(evt){
-			console.log("draggable clicked");
-			jQuery(this).children('.circled-cross').show(100);
+		// jQuery(document).on('vclick', 'li.draggable', function(evt){
+		// 	console.log("draggable clicked");
+		// 	jQuery(this).children('.circled-cross').show(100);
 
-			jQuery(document).on('vclick', '.circled-cross', function(evt){
-				jQuery(this).parent().remove();
-			})
-		});
+		// 	jQuery(document).on('vclick', '.circled-cross', function(evt){
+		// 		jQuery(this).parent().remove();
+		// 	})
+		// });
 
 
 	};
