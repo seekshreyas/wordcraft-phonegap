@@ -96,7 +96,7 @@ WORDCRAFT = (function(){
 		
 
 		// initCanvas();
-		evtHandler(); //all events handler
+		// evtHandler(); //all events handler
 	};
 
 
