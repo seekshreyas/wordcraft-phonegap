@@ -187,6 +187,15 @@ Entypo Icons
 .icon-entypo.squared-plus:before{ content:'\229E'; }
 .icon-entypo.check:before{ content:'\2713';}
 
+
+
+
+
+/*span*/
+.circled-cross{
+  display:none;
+}
+
 /*Sonali: Right now this is a hack, have to remove this*/
 .ui-loader{
   display:none;

@@ -96,7 +96,7 @@ WORDCRAFT = (function(){
 		
 
 		// initCanvas();
-		// evtHandler(); //all events handler
+		evtHandler(); //all events handler
 	};
 
 
@@ -164,8 +164,9 @@ WORDCRAFT = (function(){
 	
 
 	var evtHandler = function(){
-		jQuery('.text-muted').click(function(){
-			handleSentChanges(newDefaultSceneObj);
+		jQuery(document).on('tap', 'li.draggable', function(evt){
+			console.log("draggable clicked");
+			jQuery(this).children('.circled-cross').toggle(100);
 		});
 	};
 
