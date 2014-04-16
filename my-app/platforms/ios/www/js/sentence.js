@@ -57,12 +57,14 @@ WORDCRAFT.build = (function(){
 	var evtHandle = function()
 	{
 		
-		$("#btn_add_words").bind("taphold",function() {
+		$("#btn_add_words").bind("taphold",function(event) {
+			event.stopPropagation();
 			initReadData();
 		});
 
-		$("#btn_forward").bind("taphold",function() {
-			var currWord = getCurrWordsList();
+		$("#btn_forward").bind("taphold",function(event) {
+			event.stopPropagation();
+			var currWord = getCurrWordsList(event);
 			if( gameLevel === 0 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0)
 			{
 				gameLevel++;
@@ -84,7 +86,6 @@ WORDCRAFT.build = (function(){
 		alert("Inside trash words");
 
 		var word = $(obj).attr("id");	
-		//alert(word);
 		var parentId = $(obj).parent().attr("id");
 		var objClass = $(obj).attr("class").split(" ");			
 		var pos = objClass[1].substr(3,objClass[1].length);
@@ -106,60 +107,13 @@ WORDCRAFT.build = (function(){
 		currWordList[pos].remove(word);
 		sentWordList[pos].remove(word);
 		$(obj).remove();
-		makeDroppableOnCancel(pos,word,nounType,parentId,$(this));
-	}
 
-
-		/* Needs to be populated work in progress*/
-	var makeDroppableOnCancel = function(pos, word,nounType, parentId,obj)
-	{
-		var acceptableClass = "";
-		//Run rules for gameLevel 2 separately
-		if(gameLevel === 2 && parentId === 'sent-'+pos+'-1')
+		//Code for level 2
+		if(gameLevel === 2)
 		{
-			if(pos === 'noun' && sentWordList["helpverb"][0].length > 0)
-			{
-				//$("#sent-det-1 li").remove();
-				acceptableClass = 'noun_pos1_'+ helpVerbType[sentWordList["helpverb"][0]];
-				alert(acceptableClass);
-				makeDroppable('sent-noun-1',acceptableClass,'noun','1');
-			}
-			if(pos === 'helpverb')
-			{
-				var tmpDet = sentWordList["det"][0];
-				if(tmpDet.length > 0)
-				{
-					var detType = getPosType(obj);
-					alert(detType);
-					switch (detType)
-						{
-							case 'plural':
-								makeDroppable('sent-noun-1','noun_pos1_plural','noun','1');
-								break;
-							case 'singular':
-								makeDroppable('sent-noun-1','noun_pos1_singular','noun','1');
-								break;
-							default:
-								makeDroppable('sent-noun-1','noun_pos1','noun','1');
-						}
-				}
-				else
-				{
-					makeDroppable('sent-noun-1','noun_pos1','noun','1');
-				}
-
-			}
-			if(pos === 'det')
-			{
-				var arrayClasses = $("#sent-helpverb-1 li").attr("class").split(" ");
-				if(arrayClasses.length > 0)
-				{
-					acceptableClass = "det_"+arrayClasses[2].split("_")[1];
-					makeDroppable('sent-det-1',acceptableClass,'det','1');
-				}
-			}
+			sentenceRulesLevel2();
 		}
-		return true;
+		//makeDroppableOnCancel(pos,word,nounType,parentId,$(this));
 	}
 
 	var makeDroppableTrash = function()
@@ -189,22 +143,37 @@ WORDCRAFT.build = (function(){
 		return posType;
 	}
 
-
-
-	var getCurrWordsList = function()
+	var getWordFromId = function(divId)
 	{
-		var noun1 = sentWordList["noun"][0];
-		var helpverb = sentWordList["helpverb"];
-		var verb = sentWordList["verb"];
-		var prep = sentWordList["prep"];
-		var noun2 = "";
-
-		if(sentWordList["noun"].length >1)
+		
+		var tmpWord = $(divId).attr("id");
+		alert(tmpWord);
+		if(tmpWord.length > 0)
 		{
-			noun2 = sentWordList["noun"][1];
+			tmpWord = tmpWord.split("_")[1].replace(/-/g,' ');
+			return tmpWord;
 		}
-		var adj = sentWordList["adj"];
-		return [noun1,helpverb,verb,prep,noun2,adj];
+		else
+		{
+			return "";
+		}
+	}
+
+
+	var getCurrWordsList = function(event)
+	{
+
+			var noun1 = sentWordList["noun"][0];
+			var helpverb = sentWordList["helpverb"];
+			var verb = sentWordList["verb"];
+			var prep = sentWordList["prep"];
+			var noun2 = "";
+			var adj = sentWordList["adj"];
+			if(sentWordList["noun"].length >  1)
+			{
+				noun2 = sentWordList["noun"][1];
+			}
+			return [noun1,helpverb,verb,prep,noun2,adj];
 
 	}
 
@@ -245,6 +214,11 @@ WORDCRAFT.build = (function(){
 			{
 				currWordList["det"].push(nounText[0]);
 			}
+			if(jQuery.inArray(nounText[0], sentWordList["det"]) == -1)
+			{
+				sentWordList["det"].push(nounText[0]);
+			}
+							
 		 	var html = '<li class="draggable li-det" id="det_'+nounText[0]+'">'+nounText[0];
 		 	html += '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 			$("#sent-det-1").append(html);
@@ -319,6 +293,7 @@ WORDCRAFT.build = (function(){
 					}
 					if(pos === 'helpverb')
 					{
+
 						posClass = "helpverb_"+ helpVerbType[word];
 					}	
 					if(jQuery.inArray(wordText.substr(0,1),vowels) !== -1)
@@ -329,7 +304,7 @@ WORDCRAFT.build = (function(){
 					{
 						posClass = posClass + ' ' + pos + '_consonant';
 					}
-					var htmlLi = '<li class="draggable li-'+pos+' '+posClass+'" id="'+pos+'_'+word.replace(/\s/g,"_")+'">'+ wordText;
+					var htmlLi = '<li class="draggable li-'+pos+' '+posClass.trim()+'" id="'+pos+'_'+word.replace(/\s/g,"_")+'">'+ wordText;
 					htmlLi = htmlLi + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
 					$(divId).append(htmlLi);						
 				}		
@@ -443,8 +418,7 @@ WORDCRAFT.build = (function(){
 			$(divid).find('li').remove();
 			if(gameLevel === 2)
 			{
-				makeDroppable('sent-noun-2','noun_pos2','noun','2');
-				makeDroppable('sent-noun-1','noun_pos1','noun','1');
+				sentenceRulesLevel2();
 			}
 		}
 
@@ -465,8 +439,10 @@ WORDCRAFT.build = (function(){
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
 
-
-		$("#sent-noun-2 li").removeClass("zoom");
+		if(gameLevel === 2)
+		{
+			sentenceRulesLevel2();
+		}
 
 		return true;
 	}
@@ -533,6 +509,8 @@ WORDCRAFT.build = (function(){
 			{
 				makeDroppable('sent-adj-1','li-adj','adj','1');
 			}
+
+			sentenceRulesLevel2();
 		}
 
 	}
@@ -641,6 +619,7 @@ WORDCRAFT.build = (function(){
 		var nounType = "";
 		webkit_drop.add(containerId, 
 		{	accept : [acceptClass], 
+			hoverClass : "zoom",
 			onDrop : function(obj){
 					if(populateOnDrop($(obj),pos,posCnt))
 					{
@@ -743,7 +722,15 @@ WORDCRAFT.build = (function(){
 		var defJson = {"body":{},"pos":{},"animation":[]};	
 		var prefixUrl = "res/img/animals/";
 		var plane = "";
-		var noun = sentWordList["noun"][nounPos];
+		var noun = "";
+		if(nounPos === 0)
+		{
+			noun = $("#sent-noun-1 li").attr("id").split("_")[1];//getWordFromId("#sent-noun-1 li");
+		}
+		else
+		{
+			noun = $("#sent-noun-2 li").attr("id").split("_")[1];//getWordFromId("#sent-noun-2 li");
+		}
 		//alert("the noun is:"+noun);
 		var body_url = fullJsonData["noun"][noun]["svg"]["src"];
 		var body_dim = fullJsonData["noun"][noun]["svg"]["dimension"];
@@ -784,7 +771,11 @@ WORDCRAFT.build = (function(){
 		var prefixUrl = "res/img/animals/";
 
 		var defJson = defaultJson(0);
-		var noun = sentWordList["noun"][0];
+		alert("Get Json");
+		var noun = $("#sent-noun-1 li").attr("id").split("_")[1]; 
+		alert(noun); 
+		//The method below is not working. event propagation as to be checked
+		//getWordFromId($("sent-noun-1 li"));  //sentWordList["noun"][0];
 		var verb = sentWordList["verb"];
 		var adj = sentWordList["adj"];
 		//alert(adj);
@@ -912,6 +903,133 @@ WORDCRAFT.build = (function(){
 		//var overlay = jQuery('<div id="overlay"><p style="float:left">Level Complete!!!</p><div id="overlay-del"><b>X</b></div> </div>');
 		//overlay.appendTo(document.body);
 	
+	}
+
+	var sentenceRulesLevel2 = function()
+	{
+		alert("Inside sentenceRules words");
+
+		var posType = "";
+		var det = sentWordList["det"];
+		var noun = sentWordList["noun"];
+		var noun1 = $("#sent-noun-1 li").attr("id").split("_")[1]; 
+		var noun2 = "";
+		if(noun.length>1)
+		{
+			noun2 = $("#sent-noun-2 li").attr("id").split("_")[1]; 
+		}
+		var helpverb = sentWordList["helpverb"];
+		var verb = sentWordList["verb"];
+		var prep = sentWordList["prep"];
+		var adj = sentWordList["adj"];
+
+		if(det.length > 0)
+		{	alert("Inside det");
+			posType = getPosType($("#sent-det-1 li"));
+			switch (det)
+			{
+				case "An":
+					makeDroppable('sent-adj-1','adj_vowel','adj','1');
+					break;
+				default:
+					makeDroppable('sent-adj-1','li-adj','adj','1');
+			}
+			switch (posType)
+			{
+				case 'singular':
+					makeDroppable('sent-noun-1','noun_pos1_singular','noun','1');
+					makeDroppable('sent-helpverb-1','helpverb_singular','helpverb','1');
+					break;
+				default:
+					makeDroppable('sent-noun-1','noun_pos1','noun','1');
+					makeDroppable('sent-helpverb-1','li-helpverb','helpverb','1');
+			}
+		}
+
+		if(noun1.length > 0)
+		{
+			alert("Inside noun");
+			posType = getPosType($("#sent-noun-1 li"));
+
+			switch(posType)
+			{
+				case 'plural':
+					makeDroppable('sent-det-1','det_singularplural','det','1');
+					makeDroppable('sent-helpverb-1','helpverb_plural','helpverb','1');
+					makeDroppable('sent-helpverb-1','helpverb_plural','helpverb','1');
+				default:
+					//Check if adj exists or not and differentiate between  A and An
+					makeDroppable('sent-det-1','det_singular','det','1');
+					makeDroppable('sent-helpverb-1','helpverb_singular','helpverb','1');
+
+			}
+			
+			if(det.length > 0)
+			{
+				switch (det)
+				{
+					case "An":
+						makeDroppable('sent-adj-1','adj_vowel','adj','1');
+						break;
+					default:
+						makeDroppable('sent-adj-1','li-adj','adj','1');
+				}
+			}
+			else
+			{
+				makeDroppable('sent-adj-1','li-adj','adj','1');
+			}
+
+		}
+
+		if(helpverb.length > 0)
+		{
+			alert("Inside helpverb");
+			posType = getPosType($("#sent-helverb-1 li"));
+			switch(posType)
+			{
+				case 'plural':
+					makeDroppable('sent-det-1','det_singularplural','det','1');
+					makeDroppable('sent-noun-1','noun_pos1_plural','noun','1');
+					if(det.length > 0)
+					{
+						switch (det)
+						{
+							case "An":
+								makeDroppable('sent-adj-1','adj_vowel','adj','1');
+								break;
+							default:
+								makeDroppable('sent-adj-1','li-adj','adj','1');
+						}
+					}
+					else
+					{
+						makeDroppable('sent-adj-1','li-adj','adj','1');
+					}
+					break;
+				default:
+					makeDroppable('sent-noun-1','noun_pos1_singular','noun','1');
+					if(adj.length > 0)
+					{
+						if(("#sent-adj-1 li").hasClass('adj_vowel'))
+						{
+							makeDroppable('sent-det-1','det_vowel','det','1');
+						}
+						else
+						{
+							makeDroppable('sent-det-1','det_consonant','det','1');
+						}
+					}
+					else
+					{
+						makeDroppable('sent-det-1','li-det','det','1');
+					}
+			}
+
+
+		}
+		return true;
+
 	}
 
 	return {
