@@ -38,7 +38,7 @@
   background: #E8E8E8 ;
   float:left;
   word-wrap: break-word;
-  width:75%;
+  width:85%;
   margin:1em 2.5%;
 }
 
@@ -55,7 +55,7 @@
 .build-sentence{
   float:left;
   margin:1.5em 1.5%;
-  width:65%;
+  width:75%;
   background:#808080;
   padding:1.0em 1%;
 }
