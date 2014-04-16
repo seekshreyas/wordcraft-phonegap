@@ -50,14 +50,18 @@ WORDCRAFT.build = (function(){
 		  return false;
 		};
 
+		evtHandle(); //Handling events
+	};
 
+
+	var evtHandle = function()
+	{
+		
 		$("#btn_add_words").bind("taphold",function() {
-
-
 			initReadData();
 		});
 
-		$("#btn_check_sent").bind("taphold",function() {
+		$("#btn_forward").bind("taphold",function() {
 			var currWord = getCurrWordsList();
 			if( gameLevel === 0 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0)
 			{
@@ -73,38 +77,20 @@ WORDCRAFT.build = (function(){
 			
 		});
 
-		var getCurrWordsList = function()
-		{
-			var noun1 = sentWordList["noun"][0];
-			var helpverb = sentWordList["helpverb"];
-			var verb = sentWordList["verb"];
-			var prep = sentWordList["prep"];
-			var noun2 = "";
-
-			if(sentWordList["noun"].length >1)
-			{
-				noun2 = sentWordList["noun"][1];
-			}
-			var adj = sentWordList["adj"];
-			return [noun1,helpverb,verb,prep,noun2,adj];
-
-		}
 
 
 		$(document).on("taphold",".circled-cross", function(){
-			var nounType = "";
 			var word = $(this).parent().attr("id");	
-			var parentClass = "";
+			var parentId = $(this).parent().parent().attr("id");
 			var objClass = $(this).parent().attr("class").split(" ");			
 			var pos = objClass[1].substr(3,objClass[1].length);
+			var nounType = "";
 			word =  word.split("_")[1];
-			//if(pos === 'noun' || pos == 'helverb')
-			//{
+		
 			if(pos === 'noun' || pos === 'helpverb' || pos === 'det')
 			{
 			 	nounType = objClass[2];
-			 	//Check this out, this has to be changed
-				//parentClass = $(this).parent().parent().parent().parent().attr("class");
+			 	
 			}
 			if(pos === 'verb'  &&  sentWordList["prep"].length >0)
 			{
@@ -112,17 +98,127 @@ WORDCRAFT.build = (function(){
 				currWordList["prep"].remove(prep);
 				sentWordList["prep"].remove(prep);
 				$(".prep_"+word).remove();
-
 			}
 			currWordList[pos].remove(word);
 			sentWordList[pos].remove(word);
 			$(this).parent().remove();
+			makeDroppableOnCancel(pos,word,nounType,parentId,$(this));
+			
+		});
+	}
 
-			makeDroppableOnCancel(pos,nounType,word,parentClass);
+	var trashWords = function(obj)
+	{
+		alert("Inside trash words");
+		var word = $(obj).attr("id");	
+		alert(word);
+		var parentId = $(obj).parent().attr("id");
+		var objClass = $(obj).attr("class").split(" ");			
+		var pos = objClass[1].substr(3,objClass[1].length);
+		var nounType = "";
+		word =  word.split("_")[1];
+	
+		if(pos === 'noun' || pos === 'helpverb' || pos === 'det')
+		{
+		 	nounType = objClass[2];
+		 	
+		}
+		if(pos === 'verb'  &&  sentWordList["prep"].length >0)
+		{
+			var prep = $(".prep_"+word).attr("id").split("_")[1];
+			currWordList["prep"].remove(prep);
+			sentWordList["prep"].remove(prep);
+			$(".prep_"+word).remove();
+		}
+		currWordList[pos].remove(word);
+		sentWordList[pos].remove(word);
+		$(obj).remove();
+		makeDroppableOnCancel(pos,word,nounType,parentId,$(this));
+	}
+
+	var makeDroppableTrash = function()
+	{
+
+		webkit_drop.add("trash", 
+		{
+			accept : ["draggable"], 
+			hoverClass : "zoom",
+			onDrop : function(obj){
+					alert("Inside on drop");
+					trashWords(obj);
+					}		
 		});
 
+		return true;
+	}
 
-	};
+		/* Needs to be populated work in progress*/
+	var makeDroppableOnCancel = function(pos, word,nounType, parentId,obj)
+	{
+		var acceptableClass = "";
+		alert(parentId);
+
+		//Run rules for gameLevel 2 separately
+		if(gameLevel === 2 && parentId === 'sent-'+pos+'-1')
+		{
+			if(pos === 'noun' && sentWordList["helpverb"][0].length > 0)
+			{
+				//$("#sent-det-1 li").remove();
+				acceptableClass = 'noun_pos1_'+ helpVerbType[sentWordList["helpverb"][0]];
+				makeDroppable('sent-noun-1',acceptableClass,'noun','1');
+			}
+			if(pos === 'helpverb')
+			{
+				var tmpDet = sentWordList["det"][0];
+				if(tmpDet.length > 0)
+				{
+					alert(getPosType(obj));
+				}
+				makeDroppable('sent-noun-1','li-noun','noun','1');
+				makeDroppable('sent-det-1','li-det','det','1');
+
+			}
+			if(pos === 'det')
+			{
+				var arrayClasses = $("#sent-helpverb-1 li").attr("class").split(" ");
+				if(arrayClasses.length > 0)
+				{
+					acceptableClass = "det_"+arrayClasses[2].split("_")[1];
+					makeDroppable('sent-det-1',acceptableClass,'det','1');
+				}
+			}
+		}
+		return true;
+	}
+
+		//This is to get whether a given word is singular or plural
+	var getPosType = function(obj)
+	{
+		var posType = "";
+		var arrayOfClasses = $(obj).attr('class').split(' ');
+		posType = arrayOfClasses[2].split("_")[1];
+		return posType;
+	}
+
+
+
+	var getCurrWordsList = function()
+	{
+		var noun1 = sentWordList["noun"][0];
+		var helpverb = sentWordList["helpverb"];
+		var verb = sentWordList["verb"];
+		var prep = sentWordList["prep"];
+		var noun2 = "";
+
+		if(sentWordList["noun"].length >1)
+		{
+			noun2 = sentWordList["noun"][1];
+		}
+		var adj = sentWordList["adj"];
+		return [noun1,helpverb,verb,prep,noun2,adj];
+
+	}
+
 	
 	var initReadData = function()
 	{	
@@ -161,8 +257,8 @@ WORDCRAFT.build = (function(){
 
 			}
 
-			makeDroppable('sent-noun-2','noun_level2','noun','2');
-			makeDroppable('sent-noun-1','noun_level1','noun','1');
+			makeDroppable('sent-noun-2','noun_pos2','noun','2');
+			makeDroppable('sent-noun-1','noun_pos1','noun','1');
 
 
 			//makeDroppable('sent-noun-1','li-noun-lvl3','noun','1');
@@ -206,7 +302,7 @@ WORDCRAFT.build = (function(){
 					{
 						if(wordText === 'The')
 						{
-							posClass = 'det_plural';
+							posClass = 'det_singularplural';
 						}	
 						else
 						{
@@ -246,6 +342,7 @@ WORDCRAFT.build = (function(){
 		var currDet = $("#sent-det-1 li").text();
 		var suffix = nounSuffix[prefixDet];
 		var tmpIndex = currWordList[pos].length;
+		var type = "";  // can be singular or plural
 
 		if(jQuery.inArray(word,pluralWords) !== -1)
 		{
@@ -255,23 +352,26 @@ WORDCRAFT.build = (function(){
 		if(nounSuffix[prefixDet])
 		{
 			posClass = pos+'_plural';
+			type = "plural";
 		}
 		else
 		{
 			posClass = pos+'_singular';
+			type = "singular";
 		}
 
 		if(gameLevel > 1 && tmpIndex%2 == 0)
 		{
-
 			word = word + suffix;
-			posClass = posClass+ ' noun_level1';
+			posClass = posClass+ ' noun_pos1';
+			posClass = posClass+ ' noun_pos1_'+type;
 
 		}
 		else
 		{
 			word = prefixDet + " " + word + suffix;
-			posClass = posClass+ ' noun_level2';
+			posClass = posClass+ ' noun_pos2';
+			posClass = posClass+ ' noun_pos2_'+type;
 		}
 		return [word,posClass];
 	}
@@ -299,7 +399,7 @@ WORDCRAFT.build = (function(){
 					else
 					{
 						console.log("Inside prep add class");
-						$("#prep_"+word.replace(" ","_")).addClass("prep-"+val);
+						$("#prep_"+word.replace(" ","_")).addClass("prep_"+val);
 					}
 				}
 			});	
@@ -345,6 +445,13 @@ WORDCRAFT.build = (function(){
 		}
 		var html = '<li class="'+$(obj).attr("class")+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 		$(divid).append(html);
+
+		alert(divid);
+		//Making the dropped tile draggable for the trash can
+		$(divid).children().each(function(index,value) {
+			new webkit_draggable(value.id, {revert : true, scroll : true});
+		});
+		$("#sent-noun-2 li").removeClass("zoom");
 		return true;
 	}
 
@@ -373,18 +480,32 @@ WORDCRAFT.build = (function(){
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
 
-		makeDroppableRules();
+		//Initial set up making all words droppable on trash and then assigning droppable rules
+		if(makeDroppableTrash())
+		{
+			makeDroppableRules();
+		}
+			
 		
 	};
 
 
 	var makeDroppableRules = function()
 	{
+
 		makeDroppable('sent-noun-1','li-noun','noun','1');
 
 		makeDroppable('sent-det-1','li-det','det','1');
 
-		$("#init-det li" ).each(function() {
+		makeDroppable('sent-verb-1','li-verb','verb','1');
+		makeDroppable('sent-noun-1','noun_pos2','noun','1');
+		makeDroppable('sent-noun-2','noun_pos2','noun','2');
+
+		if(gameLevel ===2 )
+		{
+			makeDroppable('sent-noun-1','noun_pos1','noun','1');
+			makeDroppable('sent-noun-1','noun_pos2','noun','2');
+			$("#init-det li" ).each(function() {
 				console.log("I am here in the loop");
 				if($( this ).attr("id") === "det_The")
 				{
@@ -392,69 +513,35 @@ WORDCRAFT.build = (function(){
 			  	}
 			});
 
-		makeDroppable('sent-verb-1','li-verb','verb','1');
-
-		if(sentWordList["det"][0] === 'An')
-		{
-			makeDroppable('sent-adj-1','adj_vowel','adj','1');
-		}
-		else if(sentWordList["det"][0] === 'A')
-		{
-			makeDroppable('sent-adj-1','adj_consonant','adj','1');
-		}
-		else
-		{
-			makeDroppable('sent-adj-1','li-adj','adj','1');
-		}
-		
-		if(gameLevel <= 1)
-		{
-			makeDroppable('sent-noun-2','noun_level2','noun','2');
-		}
-		else
-		{
-			makeDroppable('sent-noun-1','noun_level1','noun','1');
-		}
-
-
-	}
-	/* Needs to be populated work in progress*/
-	var makeDroppableOnCancel = function(pos, nounType, word, parentClass)
-	{
-		var nounType= "";
-		var acceptableClass = "";
-
-		if(pos === 'noun' && sentWordList["helpverb"][0].length > 0)
-		{
-			acceptableClass = 'noun_'+ helpVerbType[sentWordList["helpverb"][0]];
-			makeDroppable('sent-noun-1',acceptableClass,'noun','1');
-		}
-		if(pos === 'helpverb')
-		{
-			makeDroppable('sent-noun-1','li-noun','noun','1');
-			makeDroppable('sent-det-1','li-det','det','1');
-
-		}
-		if(pos === 'det')
-		{
-			var arrayClasses = $("#sent-helpverb-1 li").attr("class").split(" ");
-			if(arrayClasses.length > 0)
+			if(sentWordList["det"][0] === 'An')
 			{
-				acceptableClass = "det_"+arrayClasses[2].split("_")[1];
-				makeDroppable('sent-det-1',acceptableClass,'det','1');
+				makeDroppable('sent-adj-1','adj_vowel','adj','1');
+			}
+			else if(sentWordList["det"][0] === 'A')
+			{
+				makeDroppable('sent-adj-1','adj_consonant','adj','1');
+			}
+			else
+			{
+				makeDroppable('sent-adj-1','li-adj','adj','1');
 			}
 		}
-		return true;
+
 	}
+
 
 	var dropNounRule = function(obj)
 	{
-		nounType = getNounType($(obj));
+		nounType = getPosType($(obj));
 		draw_image(nounType);
 		webkit_drop.add('sent-helpverb-1', 
 		{	accept : ["helpverb_"+nounType], 
+			hoverClass : "zoom",
 			onDrop : function(subObj){
-					populateOnDrop($(subObj),'helpverb','1');
+					if(populateOnDrop($(subObj),'helpverb','1'))
+					{
+						draw_image("none");
+					}
 			}
 			
 		});
@@ -469,8 +556,12 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add('sent-prep-1', 
 		{	
 			accept : [prepClass], 
+			hoverClass : "zoom",
 			onDrop : function(subObj){
-				populateOnDrop($(subObj),'prep','1');
+				if(populateOnDrop($(subObj),'prep','1'))
+				{
+					draw_image("none");
+				}
 			}
 			
 		});
@@ -483,8 +574,44 @@ WORDCRAFT.build = (function(){
 			webkit_drop.add('sent-adj-1', 
 			{	
 				accept : ["adj_vowel"], 
+				hoverClass : "zoom",
 				onDrop : function(subObj){
-					populateOnDrop($(subObj),'adj','1');
+					if(populateOnDrop($(subObj),'adj','1'))
+					{
+						draw_image("none");
+					}
+				}
+				
+			});
+		}
+
+		if(sentWordList["det"][0] === 'A')
+		{
+			webkit_drop.add('sent-adj-1', 
+			{	
+				accept : ["adj_consonant"], 
+				hoverClass : "zoom",
+				onDrop : function(subObj){
+					if(populateOnDrop($(subObj),'adj','1'))
+					{
+						draw_image("none");
+					}
+				}
+				
+			});
+		}
+
+		if(sentWordList["det"][0] === 'The')
+		{
+			webkit_drop.add('sent-adj-1', 
+			{	
+				accept : ["li-adj"], 
+				hoverClass : "zoom",
+				onDrop : function(subObj){
+					if(populateOnDrop($(subObj),'adj','1'))
+					{
+						draw_image("none");
+					}
 				}
 				
 			});
@@ -497,6 +624,8 @@ WORDCRAFT.build = (function(){
 	}
 
 
+
+
 	var makeDroppable = function(containerId, acceptClass, pos, posCnt)
 	{
 		var nounType = "";
@@ -505,6 +634,7 @@ WORDCRAFT.build = (function(){
 			onDrop : function(obj){
 					if(populateOnDrop($(obj),pos,posCnt))
 					{
+					
 						if(pos === 'noun')
 						{
 							dropNounRule(obj);
@@ -526,16 +656,10 @@ WORDCRAFT.build = (function(){
 			
 		});
 
+		return true;
+
 	}
 
-
-	var getNounType = function(obj)
-	{
-		var nounType = "";
-		var arrayOfClasses = $(obj).attr('class').split(' ');
-		nounType = arrayOfClasses[2].split("_")[1];
-		return nounType;
-	}
 
 
 
@@ -607,12 +731,20 @@ WORDCRAFT.build = (function(){
 	{
 		var defJson = {"body":{},"pos":{},"animation":[]};	
 		var prefixUrl = "res/img/animals/";
+		var plane = "";
 		var noun = sentWordList["noun"][nounPos];
 		//alert("the noun is:"+noun);
 		var body_url = fullJsonData["noun"][noun]["svg"]["src"];
 		var body_dim = fullJsonData["noun"][noun]["svg"]["dimension"];
 		var canvas_pos = fullJsonData["noun"][noun]["canvaspos"];
-		var	plane = canvas_pos["plane"];	
+		if(nounPos === 0)
+		{
+			plane = canvas_pos["plane"];	
+		}
+		else
+		{
+			plane = "right_middle";
+		}
 		var plane_pos = canvas_pos["defaultX"] + "_" + canvas_pos["defaultY"];
 		defJson["body"]["eyes"] = prefixUrl+noun+"/"+formUrl(noun,"eyes",body_url["eyes"]);
 		defJson["body"]["skin"] = prefixUrl+noun+"/"+formUrl(noun,"skin",body_url["skin"]);
@@ -651,11 +783,11 @@ WORDCRAFT.build = (function(){
 		var finalJson = [];
 		var body_url = "";
 		
-		var noun1Type = getNounType("#sent-noun-1 li");
+		var noun1Type = getPosType("#sent-noun-1 li");
 		var noun2Type = "";
 		if(sentWordList["noun"] .length>1)
 		{
-			noun2Type = getNounType("#sent-noun-2 li");
+			noun2Type = getPosType("#sent-noun-2 li");
 		}
 		//alert("This is noun1Type"+noun1Type);
 
@@ -702,7 +834,7 @@ WORDCRAFT.build = (function(){
 			var newDefJson = defaultJson(0);
 			newDefJson["body"] = defJson["body"];
 			newDefJson["animation"] = defJson["animation"];
-			newDefJson["pos"]["plane_pos"] = "center_right";
+			newDefJson["pos"]["plane_pos"] = "right_middle";
 			finalJson.push(newDefJson);
 		}
 
@@ -716,7 +848,7 @@ WORDCRAFT.build = (function(){
 			var newNoun2Json = defaultJson(1);
 			newNoun2Json["body"] = noun2Json["body"];
 			newNoun2Json["animation"] = noun2Json["animation"];
-			newNoun2Json["pos"]["plane_pos"] = "center_right";
+			newNoun2Json["pos"]["plane_pos"] = "right_middle";
 			finalJson.push(newNoun2Json);
 
 		}

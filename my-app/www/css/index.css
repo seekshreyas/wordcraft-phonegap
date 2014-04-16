@@ -5,11 +5,40 @@
 
 
 /*div*/
+
+.bottom-content{
+  width: 75%;
+  float:left;
+  height:30%;
+  background:#E8E8E8;
+  margin: 1em 2.5%;
+}
+
+.bottom-content #content{
+  height:110px; 
+  width:30%;
+  margin:auto;
+
+
+}
+.add-words{
+  float:left;
+  text-align:center;
+  margin:0.5em 1em;
+   
+}
+.trash{
+  clear:both;
+  float:left;
+  margin-left:2em;
+  height:80px;
+}
+
 .words-list{
   background: #E8E8E8 ;
   float:left;
   word-wrap: break-word;
-  width:85%;
+  width:75%;
   margin:1em 2.5%;
 }
 
@@ -18,20 +47,20 @@
     display:inline-block;
   }
 
+.btn-back
+{
+  width:10%;
+}
 
 .build-sentence{
   float:left;
-  margin:2.5em 2.5%;
-  width:85%;
-  clear:both;
+  margin:1.5em 1.5%;
+  width:65%;
   background:#808080;
-  padding:0.5em 1%;
+  padding:1.0em 1%;
 }
 
-.add-words{
-  float:left;
-  padding:0.5em 1%;
-}
+
 #sent-list{
   margin-top:-100px;
   margin-left:10px;
@@ -50,12 +79,14 @@
     min-width:80px;
     margin:5px;
     border:1px solid black;
-    height:3.5em;
+    height:2.5em;
     margin-left:5px;
     padding:5px;
     display: inline;
     border-radius:5px;
-    font-size: 1.5em;
+    font-family:'QuickSans Bold';
+    text-align: center;
+    font-size: 2.0em;
 }
 
 .li-noun
@@ -120,7 +151,7 @@
   margin-left:10px;
   min-width:90px;
   width:auto;
-  min-height:40px;
+  min-height:4.5em;
   border:1px dotted;
   border-radius:10px;
   border-color:black;
@@ -157,21 +188,42 @@
   font-size:20px;"
 }
 
+
+.zoom {      
+  -webkit-transform: scale(2.0);
+  -moz-transform: scale(2.0);
+  -ms-transform: scale(2.0);
+  -o-transform: scale(2.0);
+  transform: scale(2.0);    
+}
+
+.unzoom {      
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);    
+}
 /*==============================
 Entypo Icons
 ===========================*/
 
 
-
-@font-face{    
-  font-family: 'Entypo';
-  src: url('../res/font/icons/entypo.ttf') format('truetype'); 
+@font-face {
+    font-family: 'EntypoRegular';
+    src: url('../res/font/icons/entypo.eot');
+    src: url('../res/font/icons/entypo.eot?#iefix') format('embedded-opentype'),
+         url('../res/font/icons/entypo.woff') format('woff'),
+         url('../res/font/icons/entypo.ttf') format('truetype'),
+         url('../res/font/icons/entypo.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .icon-entypo{
   position:relative;
   top:0.5em;
-  font-family: 'Entypo', sans-serif;
+  font-family: 'EntypoRegular', sans-serif;
   font-size: 2.5em;
   font-weight: normal;
   line-height: 0;
@@ -186,7 +238,15 @@ Entypo Icons
 .icon-entypo.cross:before{ content:'\274C'; }
 .icon-entypo.squared-plus:before{ content:'\229E'; }
 .icon-entypo.check:before{ content:'\2713';}
+.icon-entypo.trash:before{ content:'\E729'; }
+.icon-entypo.back:before{ content:'\1F519';  color:green;}
+.icon-entypo.forward:before{ content:'\1F519';  color:green;}
 
+
+.circled-cross
+{
+  display:none;
+}
 /*Sonali: Right now this is a hack, have to remove this*/
 .ui-loader{
   display:none;
