@@ -56,7 +56,7 @@ WORDCRAFT.build = (function(){
 
 	var evtHandle = function()
 	{
-		
+
 		$("#btn_add_words").bind("taphold",function(event) {
 			event.stopPropagation();
 			initReadData();
@@ -76,7 +76,7 @@ WORDCRAFT.build = (function(){
 				initReadData();
 			}
 
-			
+
 		});
 
 	}
@@ -91,11 +91,11 @@ WORDCRAFT.build = (function(){
 		var pos = objClass[1].substr(3,objClass[1].length);
 		var nounType = "";
 		word =  word.split("_")[1];
-	
+
 		if(pos === 'noun' || pos === 'helpverb' || pos === 'det')
 		{
 		 	nounType = objClass[2];
-		 	
+
 		}
 		if(pos === 'verb'  &&  sentWordList["prep"].length >0)
 		{
@@ -145,7 +145,7 @@ WORDCRAFT.build = (function(){
 
 	var getWordFromId = function(divId)
 	{
-		
+
 		var tmpWord = $(divId).attr("id");
 		//alert(tmpWord);
 		if(tmpWord.length > 0)
@@ -177,10 +177,10 @@ WORDCRAFT.build = (function(){
 
 	}
 
-	
+
 	var initReadData = function()
 	{	
-		
+
 		if (gameLevel === 1)
 		{
 			console.log()
@@ -218,7 +218,7 @@ WORDCRAFT.build = (function(){
 			{
 				sentWordList["det"].push(nounText[0]);
 			}
-							
+
 		 	var html = '<li class="draggable li-det" id="det_'+nounText[0]+'">'+nounText[0];
 		 	html += '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 			$("#sent-det-1").append(html);
@@ -227,10 +227,10 @@ WORDCRAFT.build = (function(){
 			//alert(nounClass);
 			var nounhtml = '<li class="'+nounClass+'" id="noun_'+nounId+'">'+nounText[1] 
 			nounhtml += '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
-			
+
 			$('#sent-noun-1').find('li').remove();
 			$("#sent-noun-1").append(nounhtml);
-			
+
 			//Making the newly added elements draggable
 			$("#sent-noun-1").children().each(function(index,value) {
 				new webkit_draggable(value.id, {revert : true, scroll : true});
@@ -309,7 +309,7 @@ WORDCRAFT.build = (function(){
 					$(divId).append(htmlLi);						
 				}		
 			}
-			
+
 		}
 		if(currWordList[pos].length === levelPOSCnt[level][pos])
 		{
@@ -319,7 +319,7 @@ WORDCRAFT.build = (function(){
 
 	var getNounPrefixSufix = function(pos,word)
 	{
-	
+
 		var randIndex  = Math.floor(Math.random() * 2);
 		var prefixDet = partsofSpeech["det"][randIndex];
 		var currDet = $("#sent-det-1 li").text();
@@ -390,7 +390,7 @@ WORDCRAFT.build = (function(){
 	}
 
 	var parseData = function(d){
-	
+
 		getPOSToDisplay(d,gameLevel,"det");
 		getPOSToDisplay(d,gameLevel,"noun");
 		getPOSToDisplay(d,gameLevel,"helpverb");
@@ -477,8 +477,8 @@ WORDCRAFT.build = (function(){
 		{
 			makeDroppableRules();
 		}
-			
-		
+
+
 	};
 
 
@@ -531,7 +531,7 @@ WORDCRAFT.build = (function(){
 						draw_image("none");
 					}
 			}
-			
+
 		});
 
 	}
@@ -551,7 +551,7 @@ WORDCRAFT.build = (function(){
 					draw_image("none");
 				}
 			}
-			
+
 		});
 	}
 
@@ -569,7 +569,7 @@ WORDCRAFT.build = (function(){
 						draw_image("none");
 					}
 				}
-				
+
 			});
 		}
 
@@ -585,7 +585,7 @@ WORDCRAFT.build = (function(){
 						draw_image("none");
 					}
 				}
-				
+
 			});
 		}
 
@@ -601,7 +601,7 @@ WORDCRAFT.build = (function(){
 						draw_image("none");
 					}
 				}
-				
+
 			});
 		}
 	}
@@ -623,7 +623,7 @@ WORDCRAFT.build = (function(){
 			onDrop : function(obj){
 					if(populateOnDrop($(obj),pos,posCnt))
 					{
-					
+
 						if(pos === 'noun')
 						{
 							dropNounRule(obj);
@@ -642,7 +642,7 @@ WORDCRAFT.build = (function(){
 						}
 					}
 			}
-			
+
 		});
 
 		return true;
@@ -783,7 +783,7 @@ WORDCRAFT.build = (function(){
 		var noun2Json = {};
 		var finalJson = [];
 		var body_url = "";
-		
+
 		var noun1Type = getPosType("#sent-noun-1 li");
 		var noun2Type = "";
 		if(sentWordList["noun"] .length>1)
@@ -901,7 +901,7 @@ WORDCRAFT.build = (function(){
 		initReadData();
 		//var overlay = jQuery('<div id="overlay"><p style="float:left">Level Complete!!!</p><div id="overlay-del"><b>X</b></div> </div>');
 		//overlay.appendTo(document.body);
-	
+
 	}
 
 	var sentenceRulesLevel2 = function()
@@ -972,7 +972,7 @@ WORDCRAFT.build = (function(){
 					makeDroppable('sent-helpverb-1','helpverb_singular','helpverb','1');
 
 			}
-			
+
 			if(det.length > 0)
 			{
 				switch (det)
@@ -1048,4 +1048,3 @@ WORDCRAFT.build = (function(){
 	};
 
 })();
-

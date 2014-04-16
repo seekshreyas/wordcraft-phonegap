@@ -243,11 +243,12 @@ Entypo Icons
 .icon-entypo.forward:before{ content:'\E4AE';  color:green;}
 
 
-
 .circled-cross
 {
   display:none;
 }
+=======
+
 /*Sonali: Right now this is a hack, have to remove this*/
 .ui-loader{
   display:none;
