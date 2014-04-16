@@ -296,13 +296,16 @@ WORDCRAFT.build = (function(){
 
 						posClass = "helpverb_"+ helpVerbType[word];
 					}	
-					if(jQuery.inArray(wordText.substr(0,1),vowels) !== -1)
+					if(pos === 'adj')
 					{
-						posClass = posClass + ' ' + pos + '_vowel';
-					}
-					else
-					{
-						posClass = posClass + ' ' + pos + '_consonant';
+						if(jQuery.inArray(wordText.substr(0,1),vowels) !== -1)
+						{
+							posClass = posClass + ' ' + pos + '_vowel';
+						}
+						else
+						{
+							posClass = posClass + ' ' + pos + '_consonant';
+						}
 					}
 					var htmlLi = '<li class="draggable li-'+pos+' '+posClass.trim()+'" id="'+pos+'_'+word.replace(/\s/g,"_")+'">'+ wordText;
 					htmlLi = htmlLi + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
@@ -406,7 +409,7 @@ WORDCRAFT.build = (function(){
 		var wordId = $(obj).attr("id").split("_")[1]
 		var divid = "#sent-"+type.toString()+"-"+form.toString();
 
-		$(obj).remove();
+		
 		/* Code to remove the existing word from sentence area */
 		currId = $(divid+' li').attr("id");
 
@@ -416,10 +419,6 @@ WORDCRAFT.build = (function(){
 			currWordList[type.toString()].remove(word);
 			sentWordList[type.toString()].remove(word);
 			$(divid).find('li').remove();
-			if(gameLevel === 2)
-			{
-				sentenceRulesLevel2();
-			}
 		}
 
 		if(jQuery.inArray(wordId, currWordList[type.toString()])==-1)
@@ -430,6 +429,7 @@ WORDCRAFT.build = (function(){
 		{
 		 	sentWordList[type.toString()].push(wordId);
 		}
+		$(obj).remove();
 		var html = '<li class="'+$(obj).attr("class")+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 		$(divid).append(html);
 
@@ -940,7 +940,16 @@ WORDCRAFT.build = (function(){
 					makeDroppable('sent-helpverb-1','helpverb_singular','helpverb','1');
 					break;
 				default:
-					makeDroppable('sent-noun-1','noun_pos1','noun','1');
+					if(helpverb.length > 0)
+					{
+						var helpverbType = getPosType($("#sent-helpverb-1 li"));
+						makeDroppable('sent-noun-1','noun_pos1_'+helpverbType,'noun','1');
+					}
+					else
+					{
+						makeDroppable('sent-noun-1','noun_pos1','noun','1');
+					}
+					
 					makeDroppable('sent-helpverb-1','li-helpverb','helpverb','1');
 			}
 		}
@@ -1022,6 +1031,7 @@ WORDCRAFT.build = (function(){
 					{
 						if(("#sent-adj-1 li").hasClass('adj_vowel'))
 						{
+							alert("Inside vowel class");
 							makeDroppable('sent-det-1','det_vowel','det','1');
 						}
 						else
