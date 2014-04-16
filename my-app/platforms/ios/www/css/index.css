@@ -81,6 +81,7 @@
     border:1px solid black;
     height:2.5em;
     margin-left:5px;
+    padding:5px;
     display: inline;
     border-radius:5px;
     font-family:'QuickSans Bold';
@@ -147,7 +148,7 @@
 
 .build-sentence .active{
   float:left;
-  margin:1.5em 1.5em;
+  margin-left:10px;
   min-width:90px;
   width:auto;
   min-height:4.5em;

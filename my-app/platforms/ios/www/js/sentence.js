@@ -83,7 +83,7 @@ WORDCRAFT.build = (function(){
 
 	var trashWords = function(obj)
 	{
-		alert("Inside trash words");
+		//alert("Inside trash words");
 
 		var word = $(obj).attr("id");	
 		var parentId = $(obj).parent().attr("id");
@@ -124,7 +124,7 @@ WORDCRAFT.build = (function(){
 			accept : ["draggable"], 
 			hoverClass : "zoom",
 			onDrop : function(obj){
-					alert("Inside on drop");
+					//alert("Inside on drop");
 					trashWords(obj);
 					}		
 		});
@@ -147,7 +147,7 @@ WORDCRAFT.build = (function(){
 	{
 		
 		var tmpWord = $(divId).attr("id");
-		alert(tmpWord);
+		//alert(tmpWord);
 		if(tmpWord.length > 0)
 		{
 			tmpWord = tmpWord.split("_")[1].replace(/-/g,' ');
@@ -433,7 +433,7 @@ WORDCRAFT.build = (function(){
 		var html = '<li class="'+$(obj).attr("class")+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 		$(divid).append(html);
 
-		alert(divid);
+		//alert(divid);
 		//Making the dropped tile draggable for the trash can
 		$(divid).children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
@@ -519,7 +519,7 @@ WORDCRAFT.build = (function(){
 	var dropNounRule = function(obj)
 	{
 		nounType = getPosType($(obj));
-		alert(nounType);
+		//alert(nounType);
 
 		draw_image(nounType);
 		webkit_drop.add('sent-helpverb-1', 
@@ -626,7 +626,6 @@ WORDCRAFT.build = (function(){
 					
 						if(pos === 'noun')
 						{
-							alert("Inside make Droopable Noun");
 							dropNounRule(obj);
 						}
 						else if(pos === 'verb')
@@ -771,9 +770,9 @@ WORDCRAFT.build = (function(){
 		var prefixUrl = "res/img/animals/";
 
 		var defJson = defaultJson(0);
-		alert("Get Json");
+		//alert("Get Json");
 		var noun = $("#sent-noun-1 li").attr("id").split("_")[1]; 
-		alert(noun); 
+		//alert(noun); 
 		//The method below is not working. event propagation as to be checked
 		//getWordFromId($("sent-noun-1 li"));  //sentWordList["noun"][0];
 		var verb = sentWordList["verb"];
@@ -855,7 +854,7 @@ WORDCRAFT.build = (function(){
 
 		}
 
-		alert(JSON.stringify(finalJson));
+		//alert(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return;	
@@ -907,7 +906,7 @@ WORDCRAFT.build = (function(){
 
 	var sentenceRulesLevel2 = function()
 	{
-		alert("Inside sentenceRules words");
+		//alert("Inside sentenceRules words");
 
 		var posType = "";
 		var det = sentWordList["det"];
@@ -924,7 +923,7 @@ WORDCRAFT.build = (function(){
 		var adj = sentWordList["adj"];
 
 		if(det.length > 0)
-		{	alert("Inside det");
+		{	//alert("Inside det");
 			posType = getPosType($("#sent-det-1 li"));
 			switch (det)
 			{
@@ -948,7 +947,7 @@ WORDCRAFT.build = (function(){
 
 		if(noun1.length > 0)
 		{
-			alert("Inside noun");
+			//alert("Inside noun");
 			posType = getPosType($("#sent-noun-1 li"));
 
 			switch(posType)
@@ -959,7 +958,17 @@ WORDCRAFT.build = (function(){
 					makeDroppable('sent-helpverb-1','helpverb_plural','helpverb','1');
 				default:
 					//Check if adj exists or not and differentiate between  A and An
-					makeDroppable('sent-det-1','det_singular','det','1');
+					if(adj.length > 0)
+					{
+						if(("#sent-adj-1 li").hasClass('adj_vowel'))
+						{
+							makeDroppable('sent-det-1','det_vowel','det','1');
+						}
+						else
+						{
+							makeDroppable('sent-det-1','det_consonant','det','1');
+						}
+					}
 					makeDroppable('sent-helpverb-1','helpverb_singular','helpverb','1');
 
 			}
@@ -984,7 +993,7 @@ WORDCRAFT.build = (function(){
 
 		if(helpverb.length > 0)
 		{
-			alert("Inside helpverb");
+			//alert("Inside helpverb");
 			posType = getPosType($("#sent-helverb-1 li"));
 			switch(posType)
 			{
