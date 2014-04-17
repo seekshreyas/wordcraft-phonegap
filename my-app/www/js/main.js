@@ -78,7 +78,7 @@ WORDCRAFT = (function(){
 		"pos" : {
 			"plane" : "ground",
 			"plane_pos" : "center_middle",
-			"plane_matrix" : [0, 1]
+			"plane_matrix" : [1, 0]
 		},
 		"animation" : [{
 				"duration" : "",
@@ -117,7 +117,9 @@ WORDCRAFT = (function(){
 
 	var initCanvas = function(){
 		//clean scene
-		canvas = new fabric.Canvas('elem-frame-svg');
+		// canvas = new fabric.Canvas('elem-frame-svg');
+		canvas.selection = false;
+
 		var perspDim = getCanvasPerspDim(canvas);
 
 		console.log("canvas perspective: ", perspDim);
@@ -211,11 +213,17 @@ WORDCRAFT = (function(){
 
 		});
 
+		jQuery('canvas').on('vclick', function(evt){
+			evt.preventDefault();
+		});
+
 	};
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
+
+
 		canvas.selection = false;
 
 		replay.push(cObj);
