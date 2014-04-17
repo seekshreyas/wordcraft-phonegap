@@ -839,15 +839,12 @@ WORDCRAFT.build = (function(){
 		defJson["body"]["size"] = "normal";
 		defJson["body"]["width"] = body_dim["width"];
 		defJson["body"]["height"] = body_dim["height"];
-		if(nounPos === 0)
-		{
+
 			plane = canvas_pos["plane"];
 
-		}
-		else
+		if(nounPos >0 )
 		{
-			plane = "right_middle";
-			//posOffset = [0,1];
+			plane_pos = "right_middle";
 			
 		}
 		defJson["pos"] = { "plane":plane,
