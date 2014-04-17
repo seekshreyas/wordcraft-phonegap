@@ -5,7 +5,10 @@ WORDCRAFT = (function(){
 
 	var sceneObj = {};
 	// var canvas; //canvas object so it is globally accessible
-	var canvas =  new fabric.Canvas('elem-frame-svg');
+	var canvas =  new fabric.StaticCanvas('elem-frame-svg');
+	var canvasDim = getCanvasPerspDim(canvas);
+
+
 	var animationSpeed = {
 		'fast' : 200,
 		'normal' : 400,
@@ -109,7 +112,7 @@ WORDCRAFT = (function(){
 		console.log("let the crafting begin!");
 		
 
-		initCanvas();
+		// initCanvas();
 		evtHandler(); //all events handler
 	};
 
@@ -118,11 +121,11 @@ WORDCRAFT = (function(){
 	var initCanvas = function(){
 		//clean scene
 		// canvas = new fabric.Canvas('elem-frame-svg');
-		canvas.selection = false;
+		// canvas.selection = false;
 
-		var perspDim = getCanvasPerspDim(canvas);
+		// var perspDim = getCanvasPerspDim(canvas);
 
-		console.log("canvas perspective: ", perspDim);
+		// console.log("canvas perspective: ", perspDim);
 
 		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
@@ -205,7 +208,7 @@ WORDCRAFT = (function(){
 			lastElem = replay.pop()
 
 
-			canvas = new fabric.Canvas('elem-frame-svg');
+			// canvas = new fabric.Canvas('elem-frame-svg');
 			var cDim = getCanvasPerspDim(canvas);
 
 
@@ -217,12 +220,13 @@ WORDCRAFT = (function(){
 			evt.preventDefault();
 		});
 
+
+
 	};
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
-		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
-
+		console.log("render canvas dimensions:", cDim);	
 
 		canvas.selection = false;
 
@@ -284,6 +288,13 @@ WORDCRAFT = (function(){
 										selectable : false
 									});
 									canvas.add(group);
+
+									canvas.on({
+										'object:moving': function(e){
+											console.log("moving");
+											e.preventDefault();
+										}
+									})
 
 									console.log("animation: ", noun.animation, group.top, group.left);
 									handleObjAnimations(group, noun.animation);
@@ -511,7 +522,7 @@ WORDCRAFT = (function(){
 	//changes
 
 	var handleSentChanges = function(obj){
-		canvas = new fabric.Canvas('elem-frame-svg');
+		canvas = new fabric.StaticCanvas('elem-frame-svg');
 		var cDim = getCanvasPerspDim(canvas);
 
 		console.log("Object passed: ", obj);
