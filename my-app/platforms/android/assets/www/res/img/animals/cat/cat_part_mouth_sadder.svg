@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px"
-	 height="255px" viewBox="0 0 200 255" enable-background="new 0 0 200 255" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200px" height="255px" viewBox="0 0 200 255" enable-background="new 0 0 200 255" xml:space="preserve">
 <g id="Ext">
 </g>
 <g id="Guides">
@@ -41,20 +41,18 @@
 	<g id="Text">
 	</g>
 </g>
-<g id="pane">
+<g>
 	<path fill="none" stroke="#020200" stroke-miterlimit="10" d="M84.332,133"/>
+	<path stroke="#020200" stroke-width="1.0158" stroke-miterlimit="10" d="M100.967,146.997l-8.601-9.333c0,0,1.429-3.999,2.408-5
+		c1.006-1.028,3.707-2.51,5.16-2.667c1.042-0.112,3.205,0.192,4.128,0.667c0.808,0.415,2.234,1.604,2.752,2.333
+		c0.587,0.83,1.72,3.667,1.72,3.667L100.967,146.997z"/>
 	<g>
-		<path stroke="#020200" stroke-miterlimit="10" d="M100.665,146.997l-8.334-9.333c0,0,1.385-3.999,2.334-5
-			c0.975-1.028,3.592-2.51,5-2.667c1.008-0.112,3.104,0.192,4,0.667c0.782,0.415,2.165,1.603,2.666,2.333
-			c0.569,0.83,1.667,3.667,1.667,3.667L100.665,146.997z"/>
-		<g>
-			<path fill="none" stroke="#020200" stroke-width="0.7518" stroke-miterlimit="10" d="M76,160c0,0,3.365-4.371,5-5.652
-				c1.033-0.811,3.35-2.469,5-2.827c3.501-0.759,15,0,15,0l-0.335-4.524"/>
-			<path fill="none" stroke="#020200" stroke-width="0.7518" stroke-miterlimit="10" d="M126,160c0,0-3.509-4.316-5-5.652
-				c-0.942-0.846-3.367-2.445-5-2.827c-3.465-0.812-15,0-15,0l0.335-4.524"/>
-		</g>
+		<path fill="none" stroke="#020200" stroke-width="0.8275" stroke-miterlimit="10" d="M76,162.75c0,0,3.365-5.296,5-6.848
+			c1.033-0.982,3.35-2.991,5-3.424c3.501-0.921,15,0,15,0l-0.335-5.481"/>
+		<path fill="none" stroke="#020200" stroke-width="0.8275" stroke-miterlimit="10" d="M126,162.75c0,0-3.509-5.229-5-6.848
+			c-0.941-1.024-3.367-2.963-5-3.424c-3.465-0.984-15,0-15,0l0.335-5.481"/>
 	</g>
-</g>
-<g id="browserhead">
+	<g id="browserhead">
+	</g>
 </g>
 </svg>

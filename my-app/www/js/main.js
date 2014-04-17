@@ -12,6 +12,7 @@ WORDCRAFT = (function(){
 	};
 
 	var canvasState = 'inactive'; 
+	var replay = []; // for caching animations
 
 
 	var newDefaultSceneObj = [{

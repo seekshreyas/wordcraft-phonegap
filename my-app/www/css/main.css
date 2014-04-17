@@ -16,7 +16,7 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Base styles: opinionated canv
    ========================================================================== */
 
 html,
@@ -238,6 +238,12 @@ body{
 
 
 
+/*div*/
+.ui-loader{
+  display:none;
+}
+
+
 
 
 
@@ -265,7 +271,7 @@ body{
     #elem-frame-svg{
         border:1px solid #bfbfbf;
         margin:1em 4%;
-        background: url('../res/img/bg/bg_scene_green.png') top left no-repeat ;
+        background: url('../res/img/bg/bg_green.png') top left no-repeat ;
     }
 
 

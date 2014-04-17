@@ -16,7 +16,7 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Base styles: opinionated canv
    ========================================================================== */
 
 html,
@@ -179,31 +179,31 @@ textarea {
 /*QuickSans*/
 @font-face{    
   font-family: 'QuickSans';
-  src: url('..res/font/quicksand/quicksand_regular.otf') format('truetype'); 
+  src: url('../res/font/quicksand/quicksand_regular.otf') format('truetype'); 
 }
 @font-face{    
   font-family: 'QuickSans Italic';
-  src: url('..res/font/quicksand/quicksand_italic.otf') format('truetype'); 
+  src: url('../res/font/quicksand/quicksand_italic.otf') format('truetype'); 
 }
 @font-face{    
   font-family: 'QuickSans Bold';
-  src: url('..res/font/quicksand/quicksand_bold.otf') format('truetype'); 
+  src: url('../res/font/quicksand/quicksand_bold.otf') format('truetype'); 
 }
 @font-face{    
   font-family: 'QuickSans BoldItalic';
-  src: url('..res/font/quicksand/quicksand_bolditalic.otf') format('truetype'); 
+  src: url('../res/font/quicksand/quicksand_bolditalic.otf') format('truetype'); 
 }
 @font-face{    
   font-family: 'QuickSans Light';
-  src: url('..res/font/quicksand/quicksand_light.otf') format('truetype'); 
+  src: url('../res/font/quicksand/quicksand_light.otf') format('truetype'); 
 }
 @font-face{    
   font-family: 'QuickSans LightItalic';
-  src: url('..res/font/quicksand/quicksand_lightitalic.otf') format('truetype'); 
+  src: url('../res/font/quicksand/quicksand_lightitalic.otf') format('truetype'); 
 }
 @font-face{    
   font-family: 'QuickSans Dashed';
-  src: url('..res/font/quicksand/quicksand_dash.otf') format('truetype'); 
+  src: url('../res/font/quicksand/quicksand_dash.otf') format('truetype'); 
 }
 
 
@@ -238,6 +238,12 @@ body{
 
 
 
+/*div*/
+.ui-loader{
+  display:none;
+}
+
+
 
 
 
@@ -265,7 +271,7 @@ body{
     #elem-frame-svg{
         border:1px solid #bfbfbf;
         margin:1em 4%;
-        background: url('../res/img/bg/bg_scene_green.png') top left no-repeat ;
+        background: url('../res/img/bg/bg_green.png') top left no-repeat ;
     }
 
 
