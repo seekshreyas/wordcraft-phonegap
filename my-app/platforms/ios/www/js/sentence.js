@@ -68,14 +68,12 @@ WORDCRAFT.build = (function(){
 			var currWord = getCurrWordsList(event);
 			if( gameLevel === 0 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0)
 			{
-				$(".level").replaceWith('<div class="level">Build a 5 word sentense</div>');
 				gameLevel++;
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
 			}
 			else if (gameLevel === 1 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0 && currWord[3].length > 0 &&  currWord[4].length > 0)
 			{
-				$(".level").replaceWith('<div class="level">Build a 7 word sentense</div>');
 				gameLevel++;
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
@@ -136,7 +134,7 @@ WORDCRAFT.build = (function(){
 		word =  word.split("_")[1];
 	
 		//alert("2. Just before if statement");
-		if(pos === 'verb')
+		if(pos === 'verb' && sentWordList["prep"].length>0)
 		{
 			var prep = $(".prep_"+word).attr("id").split("_")[1];
 			currWordList["prep"].remove(prep);
@@ -809,6 +807,7 @@ WORDCRAFT.build = (function(){
 		var prefixUrl = "res/img/animals/";
 		var plane = "";
 		var noun = "";
+		var posOffset = [0,0];
 		if(nounPos === 0)
 		{
 			noun = $("#sent-noun-1 li").attr("id").split("_")[1];//getWordFromId("#sent-noun-1 li");
@@ -821,14 +820,7 @@ WORDCRAFT.build = (function(){
 		var body_url = fullJsonData["noun"][noun]["svg"]["src"];
 		var body_dim = fullJsonData["noun"][noun]["svg"]["dimension"];
 		var canvas_pos = fullJsonData["noun"][noun]["canvaspos"];
-		if(nounPos === 0)
-		{
-			plane = canvas_pos["plane"];	
-		}
-		else
-		{
-			plane = "right_middle";
-		}
+
 		var plane_pos = canvas_pos["defaultX"] + "_" + canvas_pos["defaultY"];
 		defJson["body"]["eyes"] = prefixUrl+noun+"/"+formUrl(noun,"eyes",body_url["eyes"]);
 		defJson["body"]["skin"] = prefixUrl+noun+"/"+formUrl(noun,"skin",body_url["skin"]);
@@ -837,9 +829,20 @@ WORDCRAFT.build = (function(){
 		defJson["body"]["size"] = "normal";
 		defJson["body"]["width"] = body_dim["width"];
 		defJson["body"]["height"] = body_dim["height"];
+		if(nounPos === 0)
+		{
+			plane = canvas_pos["plane"];
+
+		}
+		else
+		{
+			plane = "right_middle";
+			//posOffset = [0,1];
+			
+		}
 		defJson["pos"] = { "plane":plane,
 								"plane_pos": plane_pos,
-								"plane_matrix":[0,0] };
+								"plane_matrix":posOffset};
 
 		return defJson;
 
@@ -927,7 +930,8 @@ WORDCRAFT.build = (function(){
 			var newDefJson = defaultJson(0);
 			newDefJson["body"] = defJson["body"];
 			newDefJson["animation"] = defJson["animation"];
-			newDefJson["pos"]["plane_pos"] = "right_middle";
+			//newDefJson["pos"]["plane_pos"] = "right_middle";
+			newDefJson["pos"]["plane_matrix"] = [1,0];
 			finalJson.push(newDefJson);
 		}
 
@@ -941,12 +945,17 @@ WORDCRAFT.build = (function(){
 			var newNoun2Json = defaultJson(1);
 			newNoun2Json["body"] = noun2Json["body"];
 			newNoun2Json["animation"] = noun2Json["animation"];
-			newNoun2Json["pos"]["plane_pos"] = "right_middle";
+			//newNoun2Json["pos"]["plane_pos"] = "right_middle";
+			if(newDefJson["pos"]["plane_matrix"][0] === 0 && newDefJson["pos"]["plane_matrix"][1] ===0)
+			{
+				newDefJson["pos"]["plane_matrix"] = [1,0];
+			}
+			
 			finalJson.push(newNoun2Json);
 
 		}
 
-		//alert(JSON.stringify(finalJson));
+		alert(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return true;	
@@ -1174,4 +1183,3 @@ WORDCRAFT.build = (function(){
 	};
 
 })();
-
