@@ -76,8 +76,8 @@ WORDCRAFT = (function(){
 			"height" : 255
 		},
 		"pos" : {
-			"plane" : "sky",
-			"plane_pos" : "center_front",
+			"plane" : "ground",
+			"plane_pos" : "right_front",
 			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
@@ -122,7 +122,7 @@ WORDCRAFT = (function(){
 
 		console.log("canvas perspective: ", perspDim);
 
-		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
@@ -220,7 +220,7 @@ WORDCRAFT = (function(){
 
 				var imgwidth = noun.body.width; //default image width
 				var imgheight = noun.body.height; //default image height
-				var imgScale = 0.2;
+				var imgScale = 0.6;
 				var imgOffsetX = Math.floor(imgwidth*imgScale/2);
 				var imgOffsetY = Math.floor(imgheight*imgScale/2);
 			
@@ -239,9 +239,17 @@ WORDCRAFT = (function(){
 					// console.log("Noun: ", noun, "Position: ", pos);
 
 					// renderObject = (function(noun){
-						fabric.Image.fromURL(noun.body.skin, function(skin){
-							fabric.Image.fromURL(noun.body.mouth, function(mouth){
-								fabric.Image.fromURL(noun.body.eyes, function(eyes){
+						fabric.Image.fromURL(noun.body.skin, function(img){
+
+							var skin = img.scale(imgScale);
+
+							fabric.Image.fromURL(noun.body.mouth, function(img){
+
+								var mouth = img.scale(imgScale);
+
+								fabric.Image.fromURL(noun.body.eyes, function(img){
+
+									var eyes = img.scale(imgScale);
 
 									var part_top = canvasheight - (pos[1] + imgOffsetY);
 									var part_left = pos[0] - imgOffsetX;
