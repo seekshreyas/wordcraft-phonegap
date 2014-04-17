@@ -107,7 +107,7 @@ WORDCRAFT = (function(){
 		console.log("let the crafting begin!");
 		
 
-		// initCanvas();
+		initCanvas();
 		evtHandler(); //all events handler
 	};
 
@@ -120,7 +120,7 @@ WORDCRAFT = (function(){
 
 		console.log("canvas perspective: ", perspDim);
 
-		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
@@ -419,32 +419,32 @@ WORDCRAFT = (function(){
 
 				case 'swap':
 
-					console.log("Swap animation: ", anim_kind.animation_part);
-					var partIndex = {
-						'skin' : 0,
-						'mouth' : 1,
-						'eyes' : 2
-					};
+					// console.log("Swap animation: ", anim_kind.animation_part);
+					// var partIndex = {
+					// 	'skin' : 0,
+					// 	'mouth' : 1,
+					// 	'eyes' : 2
+					// };
 
-					var groupObjects = obj.getObjects();
+					// var groupObjects = obj.getObjects();
 
-					var swapObj = groupObjects[partIndex[anim_kind.animation_part]];
+					// var swapObj = groupObjects[partIndex[anim_kind.animation_part]];
 
-					var start = anim_kind.animation_params.start;
-					var stop = anim_kind.animation_params.end;
+					// var start = anim_kind.animation_params.start;
+					// var stop = anim_kind.animation_params.end;
 
-					var swapAnim = function(start, stop){
-						// console.log("Swap Object", swapObj.getSrc());
-						swapObj.setSourcePath = stop;
+					// var swapAnim = function(start, stop){
+					// 	// console.log("Swap Object", swapObj.getSrc());
+					// 	swapObj.setSourcePath = stop;
 
-						// console.log("Swap Object", swapObj.getSrc());
+					// 	// console.log("Swap Object", swapObj.getSrc());
 
-						if (anim_kind.duration === 'none'){
-							window.setTimeout(swapAnim(stop, start), 1000);
-						}
-					}
+					// 	if (anim_kind.duration === 'none'){
+					// 		window.setTimeout(swapAnim(stop, start), 1000);
+					// 	}
+					// }
 
-					swapAnim(start, stop);
+					// swapAnim(start, stop);
 
 
 
