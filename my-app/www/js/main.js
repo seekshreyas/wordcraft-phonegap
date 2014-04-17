@@ -246,6 +246,7 @@ WORDCRAFT = (function(){
 				var imgOffsetY = Math.floor(imgheight*imgInitScale/2);
 
 				var adjacencyOffset = noun.pos.plane_matrix;
+				var adjacencyAmplitude = 40;
 
 				console.log("adjacencyOffset: ", adjacencyOffset);
 
@@ -278,8 +279,8 @@ WORDCRAFT = (function(){
 									var eyes = img.scale(imgInitScale*pos[2]);
 
 									
-									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * 20;
-									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * 20;
+									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * adjacencyAmplitude;
+									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * adjacencyAmplitude;
 									// console.log("Shreyas:",pos, part_top, part_left, imgScale);
 
 									var group = new fabric.Group([skin, mouth, eyes],{
