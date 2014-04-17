@@ -208,7 +208,7 @@ WORDCRAFT = (function(){
 			lastElem = replay.pop()
 
 
-			// canvas = new fabric.Canvas('elem-frame-svg');
+			canvas = new fabric.StaticCanvas('elem-frame-svg');
 			var cDim = getCanvasPerspDim(canvas);
 
 
