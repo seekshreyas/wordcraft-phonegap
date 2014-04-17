@@ -18,9 +18,9 @@ WORDCRAFT = (function(){
 
 	var newDefaultSceneObj = [{
 		"body" : {
-			"eyes" : "res/img/animals/sheep/sheep_part_eyes_happy.svg",
-			"skin" : "res/img/animals/sheep/sheep_part_skin_positive.svg",
-			"mouth" : "res/img/animals/sheep/sheep_part_mouth_happy.svg",
+			"eyes" : "res/img/animals/cat/cat_part_eyes_happy.svg",
+			"skin" : "res/img/animals/cat/cat_part_skin_positive.svg",
+			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
 			"color" : "", //there will be a default color for every animal
 			"size" : "normal", //"normal is default.
 			"width" : 200,
@@ -28,7 +28,7 @@ WORDCRAFT = (function(){
 		},
 		"pos" : {
 			"plane" : "ground",
-			"plane_pos" : "left_middle",
+			"plane_pos" : "center_middle",
 			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
@@ -77,8 +77,8 @@ WORDCRAFT = (function(){
 		},
 		"pos" : {
 			"plane" : "ground",
-			"plane_pos" : "right_front",
-			"plane_matrix" : [0, 0]
+			"plane_pos" : "center_middle",
+			"plane_matrix" : [0, 1]
 		},
 		"animation" : [{
 				"duration" : "",
@@ -232,6 +232,11 @@ WORDCRAFT = (function(){
 				var imgInitScale = 0.8;
 				var imgOffsetX = Math.floor(imgwidth*imgInitScale/2);
 				var imgOffsetY = Math.floor(imgheight*imgInitScale/2);
+
+				var adjacencyOffset = noun.pos.plane_matrix;
+
+				console.log("adjacencyOffset: ", adjacencyOffset);
+
 			
 				var canvaswidth = canvas.width;
 				var canvasheight = canvas.height;
@@ -260,8 +265,9 @@ WORDCRAFT = (function(){
 
 									var eyes = img.scale(imgInitScale*pos[2]);
 
-									var part_top = canvasheight - (pos[1] + imgOffsetY);
-									var part_left = pos[0] - imgOffsetX;
+									
+									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * 20;
+									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * 20;
 									// console.log("Shreyas:",pos, part_top, part_left, imgScale);
 
 									var group = new fabric.Group([skin, mouth, eyes],{
