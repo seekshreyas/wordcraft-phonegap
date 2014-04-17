@@ -58,12 +58,12 @@ WORDCRAFT.build = (function(){
 	var evtHandle = function()
 	{
 		
-		$("#btn_add_words").bind("taphold",function(event) {
+		$("#btn_add_words").bind("vclick",function(event) {
 			event.stopPropagation();
 			initReadData();
 		});
 
-		$("#btn_forward").bind("taphold",function(event) {
+		$("#btn_forward").bind("vclick",function(event) {
 			event.stopPropagation();
 			var currWord = getCurrWordsList(event);
 			if( gameLevel === 0 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0)
@@ -80,7 +80,7 @@ WORDCRAFT.build = (function(){
 			}	
 		});
 
-		$("#btn_back").bind("taphold",function(event) {
+		$("#btn_back").bind("vclick",function(event) {
 
 
 			if(gameLevel > 0)
@@ -102,11 +102,11 @@ WORDCRAFT.build = (function(){
 
 			initReadData();
 
-			event.preventDefault();
+			//event.preventDefault();
 			
 		});
 
-		$("#btn_refresh").bind("taphold",function(event) {
+		$("#btn_refresh").bind("vclick",function(event) {
 
 			$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 			$('.build-sentence').children().each(function (id,obj) {
@@ -117,9 +117,14 @@ WORDCRAFT.build = (function(){
 			
 			initReadData();
 
-			event.preventDefault();
+			//event.preventDefault();
 			
 		});
+
+		$('document').on('vclick', function(evt){
+			evt.preventDefault();
+		});
+
 	}
 
 	var trashWords = function(obj)
@@ -740,10 +745,11 @@ WORDCRAFT.build = (function(){
 
 	var draw_image = function(nounPos)
 	{
+		//alert("1.Reached draw image");
 		var finalJson = [];
 		var noun1 = "";
 		var tmpNounId = $("#sent-noun-1 li").attr("id");
-		if(tmpNounId.length > 0)
+		if(typeof tmpNounId != 'undefined')
 		{
 			noun1 = tmpNounId.split("_")[1]; 
 		}
@@ -753,6 +759,8 @@ WORDCRAFT.build = (function(){
 		var helpverb = sentWordList["helpverb"];
 		var prep = sentWordList["prep"];
 		var adj = sentWordList["adj"];
+		//alert("1a.");
+		//alert(noun.length,helpverb.length,verb.length,prep.length,gameLevel);
 
 		if(noun1.length > 0 && noun.length<2 && gameLevel <1)
 		{
@@ -774,8 +782,10 @@ WORDCRAFT.build = (function(){
 			}
 		}
 
+
 		if(noun.length>1 && helpverb.length > 0 && verb.length>0 && prep.length>0 && gameLevel>=1)
 		{
+			alert("2.Reached draw image");
 			if (adj.length>0)
 			{
 				getJson(4,nounPos);
@@ -864,10 +874,10 @@ WORDCRAFT.build = (function(){
 		var defJson = defaultJson(0);
 		//alert("Get Json");
 		var tmpNounId = $("#sent-noun-1 li").attr("id");
-		if(tmpNounId.length > 0)
+		if(typeof tmpNounId != 'undefined')
 		{
 			noun = tmpNounId.split("_")[1]; 
-			noun1Type = getPosType("#sent-noun-1 li");
+			noun1Type = getPosType($("#sent-noun-1 li"));
 		}
 
 		var verb = sentWordList["verb"];
@@ -883,9 +893,9 @@ WORDCRAFT.build = (function(){
 
 		if(sentWordList["noun"] .length>1)
 		{
-			noun2Type = getPosType("#sent-noun-2 li");
+			noun2Type = getPosType($("#sent-noun-2 li"));
 		}
-		//alert("This is noun1Type"+noun1Type);
+		//alert("This is noun2Type:"+noun2Type);
 
 		if(status >= 2)
 		{
@@ -901,8 +911,9 @@ WORDCRAFT.build = (function(){
 		{
 			//alert("Inside 3:"+status);
 			noun2Json = defaultJson(1);
+			
 			var preposition = fullJsonData["verb"][verb]["preposition"][sentWordList["prep"][0].replace(/-/g,' ')];
-			//alert("prep"+ prep);
+			//alert("prep"+ preposition);
 			plane_matrixX = preposition["position_change"]["positionX"];
 			plane_matrixY = preposition["position_change"]["positionY"];
 			defJson["pos"]["plane_matrix"] = [plane_matrixX,plane_matrixY];
@@ -942,15 +953,20 @@ WORDCRAFT.build = (function(){
 		}
 		if(noun2Type === 'plural')
 		{
+			//alert("1. getJson Noun2 plral");
+
 			var newNoun2Json = defaultJson(1);
 			newNoun2Json["body"] = noun2Json["body"];
 			newNoun2Json["animation"] = noun2Json["animation"];
 			//newNoun2Json["pos"]["plane_pos"] = "right_middle";
+			//alert("1aa. "+newDefJson["pos"]["plane_matrix"] );
 			if(newDefJson["pos"]["plane_matrix"][0] === 0 && newDefJson["pos"]["plane_matrix"][1] ===0)
 			{
+				//alert("1a. Inside plural noun");
 				newDefJson["pos"]["plane_matrix"] = [1,0];
 			}
 			
+			//alert("1ab. Inside plural noun");
 			finalJson.push(newNoun2Json);
 
 		}

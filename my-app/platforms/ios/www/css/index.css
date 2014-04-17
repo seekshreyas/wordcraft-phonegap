@@ -230,9 +230,6 @@ Entypo Icons
   float:right;
 }
 
-#btn_refresh{
-  font-size:10em;
-}
 
 .icon-entypo.hair-cross:before{ content:'\1F3AF'; }
 .icon-entypo.thumbs-up:before{ content:'\1F44D'; }
