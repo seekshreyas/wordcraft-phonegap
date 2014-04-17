@@ -39,44 +39,61 @@
         <section class="wrapper-main">
             <div class="wrapper-canvas">
                 <canvas id="elem-frame-svg" width="700" height="518"></canvas>
-
             </div>
             
 
             <!-- sonali's code -->
             <div data-role="content" class="content">
-               
-                
+                <div class="top-content">
+                    <div class="btn-back">
+                        <span id="back" class="icon-entypo back" style="font-size: 7em; float:left;margin-top:0.2em;"></span>
+                    </div>
+                    <div class="build-sentence" data-outer-parent="true">
+                        <div id="sent-det-1" data-role="det1">
+                        </div>
+                        <div id="sent-adj-1"  data-role="adj1">
+                        </div>
+                        <div id="sent-noun-1" class="active"  data-role="noun1">
+                        </div>
+                        <div id="sent-helpverb-1" class="active"  data-role="helpverb1">
+                        </div>
+                        <div id="sent-verb-1" class="active"  data-role="verb1">
+                        </div>
+                        <div id="sent-prep-1"  data-role="prep1">
+                        </div>
+                        <div id="sent-noun-2"  data-role="noun2">
+                        </div>    
+                    </div>
+                    <div class="btn-forward">
+                        <span id="btn_forward" class="icon-entypo forward" style="font-size: 7em; float:left;margin-top:0.2em;"></span>
+                    </div>
+                </div>
+                <div class="middle-content">   
+                    <div class="words-list" data-outer-parent="true">
+                        <ul id="init-det" data-role="listview"></ul>
+                        <ul id="init-noun" data-role="listview"></ul>
+                        <ul id="init-helpverb" data-role="listview"></ul> 
+                        <ul id="init-verb" class="active" data-role="listview"></ul> 
+                        <ul id="init-prep" data-role="listview"></ul> 
+                        <ul id="init-adj" data-role="listview"></ul>
+                        <ul id="init-nounlvl3" data-role="listview"></ul>  
+                    </div>
+                </div>
+                    
 
-                <div id="build-sentence">
-                    <div id="sent-det-1" data-role="det1">
+                </div>  
+                <div class="bottom-content">
+                    <div id="content">
+                        <div class="add-words">
+                                <span id="btn_add_words" class="icon-entypo squared-plus" style="font-size: 8.5em; cursor: pointer;">
+                                </span>
+                        </div>
+                        <div class="trash" id="word_trash">
+                            <span id="trash" class="icon-entypo trash" style="font-size: 9em; float:left;">
+                            </span>
+                        </div> 
                     </div>
-                    <div id="sent-adj-1"  data-role="adj1">
-                    </div>
-                    <div id="sent-noun-1" class="active"  data-role="noun1">
-                    </div>
-                    <div id="sent-helpverb-1" class="active"  data-role="helpverb1">
-                    </div>
-                    <div id="sent-verb-1" class="active"  data-role="verb1">
-                    </div>
-                    <div id="sent-prep-1"  data-role="prep1">
-                    </div>
-                    <div id="sent-noun-2"  data-role="noun2">
-                    </div> 
                 </div>
-                <div class="add-words"><span id="btn_add_words" class="icon-entypo squared-plus" style="font-size: 7em; float:left"></span>
-                </div>
-                <div class="words-list">
-                    <ul id="init-det" data-role="listview"></ul>
-                    <ul id="init-noun" data-role="listview"></ul>
-                    <ul id="init-helpverb" data-role="listview"></ul> 
-                    <ul id="init-verb" class="active" data-role="listview"></ul> 
-                    <ul id="init-prep" data-role="listview"></ul> 
-                    <ul id="init-adj" data-role="listview"></ul>
-                    <ul id="init-adv" data-role="listview"></ul>  
-                </div>
-
-                
             </div>
 
         </section>

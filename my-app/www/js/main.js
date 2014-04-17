@@ -16,8 +16,8 @@ WORDCRAFT = (function(){
 
 	var newDefaultSceneObj = [{
 		"body" : {
-			"eyes" : "res/img/animals/sheep/sheep_part_eye_happy.svg",
-			"skin" : "res/img/animals/sheep/sheep_skin.svg",
+			"eyes" : "res/img/animals/sheep/sheep_part_eyes_happy.svg",
+			"skin" : "res/img/animals/sheep/sheep_part_skin_positive.svg",
 			"mouth" : "res/img/animals/sheep/sheep_part_mouth_happy.svg",
 			"color" : "", //there will be a default color for every animal
 			"size" : "normal", //"normal is default.
@@ -65,8 +65,8 @@ WORDCRAFT = (function(){
 		]
 	}, {
 		"body" : {
-			"eyes" : "res/img/animals/cat/cat_part_eye_happy.svg",
-			"skin" : "res/img/animals/cat/cat_skin.svg",
+			"eyes" : "res/img/animals/cat/cat_part_eyes_happy.svg",
+			"skin" : "res/img/animals/cat/cat_part_skin_positive.svg",
 			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
 			"color" : "",
 			"size" : "large",
@@ -105,9 +105,9 @@ WORDCRAFT = (function(){
 
 	var init = function(){
 		console.log("let the crafting begin!");
-		canvas = new fabric.Canvas('elem-frame-svg');
+		
 
-		initCanvas();
+		// initCanvas();
 		evtHandler(); //all events handler
 	};
 
@@ -115,12 +115,12 @@ WORDCRAFT = (function(){
 
 	var initCanvas = function(){
 		//clean scene
-		
+		canvas = new fabric.Canvas('elem-frame-svg');
 		var perspDim = getCanvasPerspDim(canvas);
 
 		console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
@@ -176,16 +176,23 @@ WORDCRAFT = (function(){
 	
 
 	var evtHandler = function(){
-		jQuery('.text-muted').click(function(){
+		// jQuery(document).on('vclick', 'li.draggable', function(evt){
+		// 	console.log("draggable clicked");
+		// 	jQuery(this).children('.circled-cross').show(100);
 
-			handleSentChanges(defaultSceneObj);
+		// 	jQuery(document).on('vclick', '.circled-cross', function(evt){
+		// 		jQuery(this).parent().remove();
+		// 	})
+		// });
 
-		});
+
 	};
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
+		canvas.selection = false;
+
 		if (cObj.length > 0){
 
 			canvasState = 'active';
@@ -225,7 +232,8 @@ WORDCRAFT = (function(){
 									var group = new fabric.Group([skin, mouth, eyes],{
 										top: part_top,
 										left: part_left,
-										scale: imgScale
+										scale: imgScale,
+										selectable : false
 									});
 									canvas.add(group);
 
