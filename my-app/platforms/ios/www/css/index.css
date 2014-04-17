@@ -244,11 +244,12 @@ Entypo Icons
 .icon-entypo.refresh:before{ content:'\1F504';}
 
 
-
 .circled-cross
 {
   display:none;
 }
+=======
+
 /*Sonali: Right now this is a hack, have to remove this*/
 .ui-loader{
   display:none;

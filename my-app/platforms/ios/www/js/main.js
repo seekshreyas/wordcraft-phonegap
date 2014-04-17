@@ -16,8 +16,8 @@ WORDCRAFT = (function(){
 
 	var newDefaultSceneObj = [{
 		"body" : {
-			"eyes" : "res/img/animals/sheep/sheep_part_eye_happy.svg",
-			"skin" : "res/img/animals/sheep/sheep_skin.svg",
+			"eyes" : "res/img/animals/sheep/sheep_part_eyes_happy.svg",
+			"skin" : "res/img/animals/sheep/sheep_part_skin_positive.svg",
 			"mouth" : "res/img/animals/sheep/sheep_part_mouth_happy.svg",
 			"color" : "", //there will be a default color for every animal
 			"size" : "normal", //"normal is default.
@@ -49,12 +49,24 @@ WORDCRAFT = (function(){
 				"speed" : "normal",
 				"scale" : "",
 				"animation_type" : "translateX"
+			}, {
+				"duration" : "none",
+				"animation_params" : {
+					"start" : "res/img/animals/sheep/sheep_part_eyes_awake.svg",
+					"end" : "res/img/animals/sheep/sheep_part_eyes_asleep.svg",
+					"mid" : ""
+				},
+				"speed" : "fast",
+				"scale" : "",
+				"animation_part" : "eyes",
+				"animation_type" : "swap"
+				
 			}
 		]
 	}, {
 		"body" : {
-			"eyes" : "res/img/animals/cat/cat_part_eye_happy.svg",
-			"skin" : "res/img/animals/cat/cat_skin.svg",
+			"eyes" : "res/img/animals/cat/cat_part_eyes_happy.svg",
+			"skin" : "res/img/animals/cat/cat_part_skin_positive.svg",
 			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
 			"color" : "",
 			"size" : "large",
@@ -93,7 +105,7 @@ WORDCRAFT = (function(){
 
 	var init = function(){
 		console.log("let the crafting begin!");
-		canvas = new fabric.Canvas('elem-frame-svg');
+		
 
 		initCanvas();
 		evtHandler(); //all events handler
@@ -103,7 +115,7 @@ WORDCRAFT = (function(){
 
 	var initCanvas = function(){
 		//clean scene
-		
+		canvas = new fabric.Canvas('elem-frame-svg');
 		var perspDim = getCanvasPerspDim(canvas);
 
 		console.log("canvas perspective: ", perspDim);
@@ -164,16 +176,23 @@ WORDCRAFT = (function(){
 	
 
 	var evtHandler = function(){
-		jQuery('.text-muted').click(function(){
+		// jQuery(document).on('vclick', 'li.draggable', function(evt){
+		// 	console.log("draggable clicked");
+		// 	jQuery(this).children('.circled-cross').show(100);
 
-			handleSentChanges(defaultSceneObj);
+		// 	jQuery(document).on('vclick', '.circled-cross', function(evt){
+		// 		jQuery(this).parent().remove();
+		// 	})
+		// });
 
-		});
+
 	};
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
+		canvas.selection = false;
+
 		if (cObj.length > 0){
 
 			canvasState = 'active';
@@ -213,7 +232,8 @@ WORDCRAFT = (function(){
 									var group = new fabric.Group([skin, mouth, eyes],{
 										top: part_top,
 										left: part_left,
-										scale: imgScale
+										scale: imgScale,
+										selectable : false
 									});
 									canvas.add(group);
 
@@ -395,6 +415,41 @@ WORDCRAFT = (function(){
 
 					break;
 
+
+
+				case 'swap':
+
+					// console.log("Swap animation: ", anim_kind.animation_part);
+					// var partIndex = {
+					// 	'skin' : 0,
+					// 	'mouth' : 1,
+					// 	'eyes' : 2
+					// };
+
+					// var groupObjects = obj.getObjects();
+
+					// var swapObj = groupObjects[partIndex[anim_kind.animation_part]];
+
+					// var start = anim_kind.animation_params.start;
+					// var stop = anim_kind.animation_params.end;
+
+					// var swapAnim = function(start, stop){
+					// 	// console.log("Swap Object", swapObj.getSrc());
+					// 	swapObj.setSourcePath = stop;
+
+					// 	// console.log("Swap Object", swapObj.getSrc());
+
+					// 	if (anim_kind.duration === 'none'){
+					// 		window.setTimeout(swapAnim(stop, start), 1000);
+					// 	}
+					// }
+
+					// swapAnim(start, stop);
+
+
+
+					break;
+
 				default:
 					console.log("no animation");
 
@@ -428,6 +483,6 @@ WORDCRAFT = (function(){
 jQuery(document).ready(function(){
 
 	WORDCRAFT.init();
-	WORDCRAFT.build.init()
+	WORDCRAFT.build.init();
     
 });
