@@ -194,6 +194,8 @@ WORDCRAFT = (function(){
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
 		canvas.selection = false;
 
+		
+
 		if (cObj.length > 0){
 
 			canvasState = 'active';
