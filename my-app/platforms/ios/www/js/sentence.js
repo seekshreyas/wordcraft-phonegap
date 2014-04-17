@@ -971,7 +971,7 @@ WORDCRAFT.build = (function(){
 
 		}
 
-		alert(JSON.stringify(finalJson));
+		//alert(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return true;	

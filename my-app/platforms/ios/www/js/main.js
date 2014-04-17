@@ -1,4 +1,3 @@
-
 var WORDCRAFT = WORDCRAFT || {};
 
 WORDCRAFT = (function(){
@@ -65,7 +64,7 @@ WORDCRAFT = (function(){
 				"scale" : "",
 				"animation_part" : "eyes",
 				"animation_type" : "swap"
-				
+
 			}
 		]
 	}, {
@@ -110,7 +109,7 @@ WORDCRAFT = (function(){
 
 	var init = function(){
 		console.log("let the crafting begin!");
-		
+
 
 		// initCanvas();
 		evtHandler(); //all events handler
@@ -149,13 +148,13 @@ WORDCRAFT = (function(){
 
 		// for perspective scaling, take the ratio of the y_units
 		// Therefore:
-		
+
 		var scale = {
 			'front': 1.0, //5/5
 			'middle': 0.6, //3/5
 			'back' : 0.2 //1/5
 		};
-		
+
 		var persp = {
 			"vanishingY" : Math.floor(c_height/2), //vanishing plane
 			"theta" : Math.floor(theta), //angle of perspective
@@ -163,7 +162,7 @@ WORDCRAFT = (function(){
 				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(theta)/2), Math.floor(y_unit), scale.front],
 				"center_front" 	: [Math.floor(c_width/2), Math.floor(y_unit),  scale.front],
 				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(theta)), Math.floor(y_unit),  scale.front],
-				
+
 				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(theta)), Math.floor(3*y_unit), scale.middle],
 				"center_middle" : [Math.floor(c_width/2), Math.floor(3*y_unit), scale.middle],
 				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(theta)), Math.floor(3*y_unit), scale.middle],
@@ -176,7 +175,7 @@ WORDCRAFT = (function(){
 				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(pi - theta)), Math.floor(11*y_unit), scale.front],
 				"center_front" 	: [Math.floor(c_width/2), Math.floor(11*y_unit), scale.front],
 				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(11*y_unit), scale.front],
-				
+
 				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(pi - theta)), Math.floor(9*y_unit), scale.middle],
 				"center_middle" : [Math.floor(c_width/2), Math.floor(9*y_unit), scale.middle],
 				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(pi - theta)), Math.floor(9*y_unit), scale.middle],
@@ -189,7 +188,7 @@ WORDCRAFT = (function(){
 
 		return persp; 
 	}
-	
+
 
 	var evtHandler = function(){
 		// jQuery(document).on('vclick', 'li.draggable', function(evt){
@@ -249,7 +248,7 @@ WORDCRAFT = (function(){
 
 				console.log("adjacencyOffset: ", adjacencyOffset);
 
-			
+
 				var canvaswidth = canvas.width;
 				var canvasheight = canvas.height;
 				var pos;
@@ -257,7 +256,7 @@ WORDCRAFT = (function(){
 
 				console.log("ImageWidth, Height:", imgwidth, imgheight, noun);
 				// var noun = cObj[c]; //assign the noun object
-				
+
 				if (noun.body.skin !== 'undefined'){
 					// var animalParts = ['skin', 'mouth', 'eyes'];
 					pos = cDim[noun.pos.plane][noun.pos.plane_pos];
@@ -277,7 +276,7 @@ WORDCRAFT = (function(){
 
 									var eyes = img.scale(imgInitScale*pos[2]);
 
-									
+
 									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * 20;
 									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * 20;
 									// console.log("Shreyas:",pos, part_top, part_left, imgScale);
@@ -316,7 +315,7 @@ WORDCRAFT = (function(){
 			canvasState = 'animating';
 
 			switch (anim_kind.animation_type){
-				
+
 				// translate X
 				case "translateX":
 					console.log("translate on the X-axis");
@@ -359,13 +358,13 @@ WORDCRAFT = (function(){
 											canvasState = 'inactive';
 										}
 									});
-		
+
 								}
 							});
-		
+
 						}
 					});
-		
+
 
 					break;
 
@@ -408,17 +407,17 @@ WORDCRAFT = (function(){
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
 											console.log("completed:", anim_kind.animation_type);
-											
+
 											canvasState = 'inactive';
 										}
 									});
-		
+
 								}
 							});
-		
+
 						}
 					});
-		
+
 
 					break;
 
@@ -465,10 +464,10 @@ WORDCRAFT = (function(){
 											canvasState = 'inactive';
 										}
 									});
-		
+
 								}
 							});
-		
+
 						}
 					});
 
