@@ -785,7 +785,7 @@ WORDCRAFT.build = (function(){
 
 		if(noun.length>1 && helpverb.length > 0 && verb.length>0 && prep.length>0 && gameLevel>=1)
 		{
-			alert("2.Reached draw image");
+			//alert("2.Reached draw image");
 			if (adj.length>0)
 			{
 				getJson(4,nounPos);
@@ -839,15 +839,12 @@ WORDCRAFT.build = (function(){
 		defJson["body"]["size"] = "normal";
 		defJson["body"]["width"] = body_dim["width"];
 		defJson["body"]["height"] = body_dim["height"];
-		if(nounPos === 0)
-		{
+
 			plane = canvas_pos["plane"];
 
-		}
-		else
+		if(nounPos >0 )
 		{
-			plane = "right_middle";
-			//posOffset = [0,1];
+			plane_pos = "right_middle";
 			
 		}
 		defJson["pos"] = { "plane":plane,
