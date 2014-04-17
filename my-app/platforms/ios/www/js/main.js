@@ -279,8 +279,13 @@ WORDCRAFT = (function(){
 									var eyes = img.scale(imgInitScale*pos[2]);
 
 									
+<<<<<<< HEAD
 									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * adjacencyAmplitude;
 									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * adjacencyAmplitude;
+=======
+									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * 20;
+									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * 20;
+>>>>>>> dev
 									// console.log("Shreyas:",pos, part_top, part_left, imgScale);
 
 									var group = new fabric.Group([skin, mouth, eyes],{
