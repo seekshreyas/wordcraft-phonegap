@@ -4,7 +4,8 @@ var WORDCRAFT = WORDCRAFT || {};
 WORDCRAFT = (function(){
 
 	var sceneObj = {};
-	var canvas; //canvas object so it is globally accessible
+	// var canvas; //canvas object so it is globally accessible
+	var canvas =  new fabric.Canvas('elem-frame-svg');
 	var animationSpeed = {
 		'fast' : 200,
 		'normal' : 400,
@@ -187,6 +188,20 @@ WORDCRAFT = (function(){
 		// });
 
 
+		jQuery('#btn-replay').on('vclick', function(){
+			console.log('replay clicked');
+
+			lastElem = replay.pop()
+
+
+			canvas = new fabric.Canvas('elem-frame-svg');
+			var cDim = getCanvasPerspDim(canvas);
+
+
+			renderObjOnCanvas(lastElem, cDim);
+
+		});
+
 	};
 
 
@@ -194,7 +209,7 @@ WORDCRAFT = (function(){
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
 		canvas.selection = false;
 
-		
+		replay.push(cObj);
 
 		if (cObj.length > 0){
 
