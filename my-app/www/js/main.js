@@ -122,7 +122,7 @@ WORDCRAFT = (function(){
 
 		console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
