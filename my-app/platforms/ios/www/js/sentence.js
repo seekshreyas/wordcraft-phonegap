@@ -68,14 +68,12 @@ WORDCRAFT.build = (function(){
 			var currWord = getCurrWordsList(event);
 			if( gameLevel === 0 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0)
 			{
-				$(".level").replaceWith('<div class="level">Build a 5 word sentense</div>');
 				gameLevel++;
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
 			}
 			else if (gameLevel === 1 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0 && currWord[3].length > 0 &&  currWord[4].length > 0)
 			{
-				$(".level").replaceWith('<div class="level">Build a 7 word sentense</div>');
 				gameLevel++;
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
@@ -1174,4 +1172,3 @@ WORDCRAFT.build = (function(){
 	};
 
 })();
-

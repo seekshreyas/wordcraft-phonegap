@@ -514,7 +514,7 @@ WORDCRAFT = (function(){
 		canvas = new fabric.Canvas('elem-frame-svg');
 		var cDim = getCanvasPerspDim(canvas);
 
-
+		console.log("Object passed: ", obj);
 		renderObjOnCanvas(obj, cDim);
 	};
 

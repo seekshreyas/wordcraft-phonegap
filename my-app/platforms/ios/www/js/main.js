@@ -4,7 +4,8 @@ var WORDCRAFT = WORDCRAFT || {};
 WORDCRAFT = (function(){
 
 	var sceneObj = {};
-	var canvas; //canvas object so it is globally accessible
+	// var canvas; //canvas object so it is globally accessible
+	var canvas =  new fabric.Canvas('elem-frame-svg');
 	var animationSpeed = {
 		'fast' : 200,
 		'normal' : 400,
@@ -12,13 +13,14 @@ WORDCRAFT = (function(){
 	};
 
 	var canvasState = 'inactive'; 
+	var replay = []; // for caching animations
 
 
 	var newDefaultSceneObj = [{
 		"body" : {
-			"eyes" : "res/img/animals/sheep/sheep_part_eyes_happy.svg",
-			"skin" : "res/img/animals/sheep/sheep_part_skin_positive.svg",
-			"mouth" : "res/img/animals/sheep/sheep_part_mouth_happy.svg",
+			"eyes" : "res/img/animals/cat/cat_part_eyes_happy.svg",
+			"skin" : "res/img/animals/cat/cat_part_skin_positive.svg",
+			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
 			"color" : "", //there will be a default color for every animal
 			"size" : "normal", //"normal is default.
 			"width" : 200,
@@ -26,7 +28,7 @@ WORDCRAFT = (function(){
 		},
 		"pos" : {
 			"plane" : "ground",
-			"plane_pos" : "left_middle",
+			"plane_pos" : "center_middle",
 			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
@@ -74,9 +76,9 @@ WORDCRAFT = (function(){
 			"height" : 255
 		},
 		"pos" : {
-			"plane" : "sky",
-			"plane_pos" : "center_front",
-			"plane_matrix" : [0, 0]
+			"plane" : "ground",
+			"plane_pos" : "center_middle",
+			"plane_matrix" : [1, 0]
 		},
 		"animation" : [{
 				"duration" : "",
@@ -115,12 +117,14 @@ WORDCRAFT = (function(){
 
 	var initCanvas = function(){
 		//clean scene
-		canvas = new fabric.Canvas('elem-frame-svg');
+		// canvas = new fabric.Canvas('elem-frame-svg');
+		canvas.selection = false;
+
 		var perspDim = getCanvasPerspDim(canvas);
 
 		console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
@@ -139,35 +143,44 @@ WORDCRAFT = (function(){
 		pi = Math.PI; 
 
 		console.log("x,y :", x_unit, y_unit );
+
+		// for perspective scaling, take the ratio of the y_units
+		// Therefore:
+		
+		var scale = {
+			'front': 1.0, //5/5
+			'middle': 0.6, //3/5
+			'back' : 0.2 //1/5
+		};
 		
 		var persp = {
 			"vanishingY" : Math.floor(c_height/2), //vanishing plane
 			"theta" : Math.floor(theta), //angle of perspective
 			"ground" : {
-				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(theta)/2), Math.floor(y_unit)],
-				"center_front" 	: [Math.floor(c_width/2), Math.floor(y_unit)],
-				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(theta)), Math.floor(y_unit)],
+				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(theta)/2), Math.floor(y_unit), scale.front],
+				"center_front" 	: [Math.floor(c_width/2), Math.floor(y_unit),  scale.front],
+				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(theta)), Math.floor(y_unit),  scale.front],
 				
-				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(theta)), Math.floor(3*y_unit)],
-				"center_middle" : [Math.floor(c_width/2), Math.floor(3*y_unit)],
-				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(theta)), Math.floor(3*y_unit)],
+				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(theta)), Math.floor(3*y_unit), scale.middle],
+				"center_middle" : [Math.floor(c_width/2), Math.floor(3*y_unit), scale.middle],
+				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(theta)), Math.floor(3*y_unit), scale.middle],
 
-				"left_back" 	: [Math.floor(x_unit + 5*y_unit / Math.tan(theta)), Math.floor(5*y_unit)],
-				"center_back" 	: [Math.floor(c_width/2), Math.floor(5*y_unit)],
-				"right_back"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(theta)), Math.floor(5*y_unit)]
+				"left_back" 	: [Math.floor(x_unit + 5*y_unit / Math.tan(theta)), Math.floor(5*y_unit), scale.back],
+				"center_back" 	: [Math.floor(c_width/2), Math.floor(5*y_unit), scale.back],
+				"right_back"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(theta)), Math.floor(5*y_unit), scale.back]
 			},
 			"sky" : {
-				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(pi - theta)), Math.floor(11*y_unit)],
-				"center_front" 	: [Math.floor(c_width/2), Math.floor(11*y_unit)],
-				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(11*y_unit)],
+				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(pi - theta)), Math.floor(11*y_unit), scale.front],
+				"center_front" 	: [Math.floor(c_width/2), Math.floor(11*y_unit), scale.front],
+				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(11*y_unit), scale.front],
 				
-				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(pi - theta)), Math.floor(9*y_unit)],
-				"center_middle" : [Math.floor(c_width/2), Math.floor(9*y_unit)],
-				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(pi - theta)), Math.floor(9*y_unit)],
+				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(pi - theta)), Math.floor(9*y_unit), scale.middle],
+				"center_middle" : [Math.floor(c_width/2), Math.floor(9*y_unit), scale.middle],
+				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(pi - theta)), Math.floor(9*y_unit), scale.middle],
 
-				"left_back" 	: [Math.floor(x_unit + 5*y_unit / Math.tan(pi - theta)), Math.floor(7*y_unit)],
-				"center_back" 	: [Math.floor(c_width/2), Math.floor(7*y_unit)],
-				"right_back"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(7*y_unit)]
+				"left_back" 	: [Math.floor(x_unit + 5*y_unit / Math.tan(pi - theta)), Math.floor(7*y_unit), scale.back],
+				"center_back" 	: [Math.floor(c_width/2), Math.floor(7*y_unit), scale.back],
+				"right_back"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(7*y_unit), scale.back]
 			}
 		};
 
@@ -186,12 +199,34 @@ WORDCRAFT = (function(){
 		// });
 
 
+		jQuery('#btn-replay').on('vclick', function(){
+			console.log('replay clicked');
+
+			lastElem = replay.pop()
+
+
+			canvas = new fabric.Canvas('elem-frame-svg');
+			var cDim = getCanvasPerspDim(canvas);
+
+
+			renderObjOnCanvas(lastElem, cDim);
+
+		});
+
+		jQuery('canvas').on('vclick', function(evt){
+			evt.preventDefault();
+		});
+
 	};
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
 		// console.log("render canvas dimensions:", canvaswidth, canvasheight);	
+
+
 		canvas.selection = false;
+
+		replay.push(cObj);
 
 		if (cObj.length > 0){
 
@@ -202,9 +237,14 @@ WORDCRAFT = (function(){
 
 				var imgwidth = noun.body.width; //default image width
 				var imgheight = noun.body.height; //default image height
-				var imgScale = 0.2;
-				var imgOffsetX = Math.floor(imgwidth*imgScale/2);
-				var imgOffsetY = Math.floor(imgheight*imgScale/2);
+				var imgInitScale = 0.8;
+				var imgOffsetX = Math.floor(imgwidth*imgInitScale/2);
+				var imgOffsetY = Math.floor(imgheight*imgInitScale/2);
+
+				var adjacencyOffset = noun.pos.plane_matrix;
+
+				console.log("adjacencyOffset: ", adjacencyOffset);
+
 			
 				var canvaswidth = canvas.width;
 				var canvasheight = canvas.height;
@@ -221,18 +261,26 @@ WORDCRAFT = (function(){
 					// console.log("Noun: ", noun, "Position: ", pos);
 
 					// renderObject = (function(noun){
-						fabric.Image.fromURL(noun.body.skin, function(skin){
-							fabric.Image.fromURL(noun.body.mouth, function(mouth){
-								fabric.Image.fromURL(noun.body.eyes, function(eyes){
+						fabric.Image.fromURL(noun.body.skin, function(img){
 
-									var part_top = canvasheight - (pos[1] + imgOffsetY);
-									var part_left = pos[0] - imgOffsetX;
-									console.log("Shreyas:",pos, part_top, part_left, imgScale);
+							var skin = img.scale(imgInitScale*pos[2]);
+
+							fabric.Image.fromURL(noun.body.mouth, function(img){
+
+								var mouth = img.scale(imgInitScale*pos[2]);
+
+								fabric.Image.fromURL(noun.body.eyes, function(img){
+
+									var eyes = img.scale(imgInitScale*pos[2]);
+
+									
+									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * 20;
+									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * 20;
+									// console.log("Shreyas:",pos, part_top, part_left, imgScale);
 
 									var group = new fabric.Group([skin, mouth, eyes],{
 										top: part_top,
 										left: part_left,
-										scale: imgScale,
 										selectable : false
 									});
 									canvas.add(group);
@@ -466,7 +514,7 @@ WORDCRAFT = (function(){
 		canvas = new fabric.Canvas('elem-frame-svg');
 		var cDim = getCanvasPerspDim(canvas);
 
-
+		console.log("Object passed: ", obj);
 		renderObjOnCanvas(obj, cDim);
 	};
 

@@ -234,7 +234,15 @@ body{
 
 
 
-
+/*button*/
+#btn-replay{
+  float:left;
+  border:none;
+  background:none;
+  font-size:10em;
+  margin:-1em 0 0 0;
+  padding:0;
+}
 
 
 
