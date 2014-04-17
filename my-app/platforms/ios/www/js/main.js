@@ -1,3 +1,4 @@
+
 var WORDCRAFT = WORDCRAFT || {};
 
 WORDCRAFT = (function(){
@@ -64,7 +65,7 @@ WORDCRAFT = (function(){
 				"scale" : "",
 				"animation_part" : "eyes",
 				"animation_type" : "swap"
-
+				
 			}
 		]
 	}, {
@@ -109,7 +110,7 @@ WORDCRAFT = (function(){
 
 	var init = function(){
 		console.log("let the crafting begin!");
-
+		
 
 		// initCanvas();
 		evtHandler(); //all events handler
@@ -148,13 +149,13 @@ WORDCRAFT = (function(){
 
 		// for perspective scaling, take the ratio of the y_units
 		// Therefore:
-
+		
 		var scale = {
 			'front': 1.0, //5/5
 			'middle': 0.6, //3/5
 			'back' : 0.2 //1/5
 		};
-
+		
 		var persp = {
 			"vanishingY" : Math.floor(c_height/2), //vanishing plane
 			"theta" : Math.floor(theta), //angle of perspective
@@ -162,7 +163,7 @@ WORDCRAFT = (function(){
 				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(theta)/2), Math.floor(y_unit), scale.front],
 				"center_front" 	: [Math.floor(c_width/2), Math.floor(y_unit),  scale.front],
 				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(theta)), Math.floor(y_unit),  scale.front],
-
+				
 				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(theta)), Math.floor(3*y_unit), scale.middle],
 				"center_middle" : [Math.floor(c_width/2), Math.floor(3*y_unit), scale.middle],
 				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(theta)), Math.floor(3*y_unit), scale.middle],
@@ -175,7 +176,7 @@ WORDCRAFT = (function(){
 				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(pi - theta)), Math.floor(11*y_unit), scale.front],
 				"center_front" 	: [Math.floor(c_width/2), Math.floor(11*y_unit), scale.front],
 				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(11*y_unit), scale.front],
-
+				
 				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(pi - theta)), Math.floor(9*y_unit), scale.middle],
 				"center_middle" : [Math.floor(c_width/2), Math.floor(9*y_unit), scale.middle],
 				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(pi - theta)), Math.floor(9*y_unit), scale.middle],
@@ -188,7 +189,7 @@ WORDCRAFT = (function(){
 
 		return persp; 
 	}
-
+	
 
 	var evtHandler = function(){
 		// jQuery(document).on('vclick', 'li.draggable', function(evt){
@@ -225,7 +226,7 @@ WORDCRAFT = (function(){
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
-		console.log("render canvas dimensions:", cDim);	
+		// console.log("render canvas dimensions:", cDim);	
 
 		canvas.selection = false;
 
@@ -245,20 +246,26 @@ WORDCRAFT = (function(){
 				var imgOffsetY = Math.floor(imgheight*imgInitScale/2);
 
 				var adjacencyOffset = noun.pos.plane_matrix;
+				var adjacencyAmplitude = 40;
 
-				console.log("adjacencyOffset: ", adjacencyOffset);
+				// console.log("adjacencyOffset: ", adjacencyOffset);
 
-
+			
 				var canvaswidth = canvas.width;
 				var canvasheight = canvas.height;
 				var pos;
 				var renderObject;
 
-				console.log("ImageWidth, Height:", imgwidth, imgheight, noun);
-				// var noun = cObj[c]; //assign the noun object
+				var cDim = getCanvasPerspDim(canvas);
 
+				// console.log("ImageWidth, Height:", imgwidth, imgheight, noun);
+				// var noun = cObj[c]; //assign the noun object
+				
 				if (noun.body.skin !== 'undefined'){
 					// var animalParts = ['skin', 'mouth', 'eyes'];
+					console.log("noun: ", noun, cDim);
+
+
 					pos = cDim[noun.pos.plane][noun.pos.plane_pos];
 
 					// console.log("Noun: ", noun, "Position: ", pos);
@@ -276,9 +283,9 @@ WORDCRAFT = (function(){
 
 									var eyes = img.scale(imgInitScale*pos[2]);
 
-
-									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * 20;
-									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * 20;
+									
+									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * adjacencyAmplitude;
+									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * adjacencyAmplitude;
 									// console.log("Shreyas:",pos, part_top, part_left, imgScale);
 
 									var group = new fabric.Group([skin, mouth, eyes],{
@@ -288,14 +295,14 @@ WORDCRAFT = (function(){
 									});
 									canvas.add(group);
 
-									canvas.on({
-										'object:moving': function(e){
-											console.log("moving");
-											e.preventDefault();
-										}
-									})
+									// canvas.on({
+									// 	'object:moving': function(e){
+									// 		console.log("moving");
+									// 		e.preventDefault();
+									// 	}
+									// })
 
-									console.log("animation: ", noun.animation, group.top, group.left);
+									// console.log("animation: ", noun.animation, group.top, group.left);
 									handleObjAnimations(group, noun.animation);
 								});
 							});
@@ -307,7 +314,7 @@ WORDCRAFT = (function(){
 	};
 
 	var handleObjAnimations = function(obj, anims){
-		console.log("Object Position: ", anims);
+		// console.log("Object Position: ", anims);
 
 		anims.forEach(function(anim_kind, count){
 			var defaultDuration = 1000;
@@ -315,16 +322,16 @@ WORDCRAFT = (function(){
 			canvasState = 'animating';
 
 			switch (anim_kind.animation_type){
-
+				
 				// translate X
 				case "translateX":
-					console.log("translate on the X-axis");
+					// console.log("translate on the X-axis");
 
 					var amplitude = 50; // in pixels
 					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
 
 					var movement = states[0] === '' ? 0 : parseInt(states[0]) * amplitude;
-					console.log("Displacement: ", displacement);
+					// console.log("Displacement: ", displacement);
 
 					var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
@@ -336,7 +343,7 @@ WORDCRAFT = (function(){
 							var movement = states[1] === '' ? 0 : parseInt(states[1]) * amplitude;
 							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-							console.log("Displacement: ", displacement);
+							// console.log("Displacement: ", displacement);
 
 							obj.animate('left', displacement, { 
 								onChange: canvas.renderAll.bind(canvas),
@@ -346,38 +353,38 @@ WORDCRAFT = (function(){
 									var movement = states[2] === '' ? 0 : parseInt(states[2]) * amplitude;
 									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-									console.log("Displacement: ", displacement);
+									// console.log("Displacement: ", displacement);
 
 									obj.animate('left', displacement, { 
 										onChange: canvas.renderAll.bind(canvas),
 										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
-											console.log("completed:", anim_kind.animation_type);
+											// console.log("completed:", anim_kind.animation_type);
 
 											canvasState = 'inactive';
 										}
 									});
-
+		
 								}
 							});
-
+		
 						}
 					});
-
+		
 
 					break;
 
 
 				// translate Y
 				case "translateY":
-					console.log("translate on the X-axis");
+					// console.log("translate on the X-axis");
 
 					var amplitude = 50; // in pixels
 					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
 
 					var movement = states[0] === '' ? 0 : parseInt(states[0]) * amplitude;
-					console.log("Displacement: ", displacement);
+					// console.log("Displacement: ", displacement);
 
 					var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
@@ -389,7 +396,7 @@ WORDCRAFT = (function(){
 							var movement = states[1] === '' ? 0 : parseInt(states[1]) * amplitude;
 							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-							console.log("Displacement: ", displacement);
+							// console.log("Displacement: ", displacement);
 
 							obj.animate('top', displacement, { 
 								onChange: canvas.renderAll.bind(canvas),
@@ -399,32 +406,32 @@ WORDCRAFT = (function(){
 									var movement = states[2] === '' ? 0 : parseInt(states[2]) * amplitude;
 									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-									console.log("Displacement: ", displacement);
+									// console.log("Displacement: ", displacement);
 
 									obj.animate('top', displacement, { 
 										onChange: canvas.renderAll.bind(canvas),
 										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
-											console.log("completed:", anim_kind.animation_type);
-
+											// console.log("completed:", anim_kind.animation_type);
+											
 											canvasState = 'inactive';
 										}
 									});
-
+		
 								}
 							});
-
+		
 						}
 					});
-
+		
 
 					break;
 
 
 				//rotate
 				case "rotate":
-					console.log("Rotation Animation");
+					// console.log("Rotation Animation");
 
 					var angleAmplitude = 10; // in radians
 					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
@@ -442,7 +449,7 @@ WORDCRAFT = (function(){
 							var movement = states[1] === '' ? 0 : parseInt(states[1]) * angleAmplitude;
 							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-							console.log("Displacement: ", displacement);
+							// console.log("Displacement: ", displacement);
 
 							obj.animate('angle', displacement, { 
 								onChange: canvas.renderAll.bind(canvas),
@@ -452,22 +459,22 @@ WORDCRAFT = (function(){
 									var movement = states[2] === '' ? 0 : parseInt(states[2]) * angleAmplitude;
 									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-									console.log("Displacement: ", displacement);
+									// console.log("Displacement: ", displacement);
 
 									obj.animate('angle', displacement, { 
 										onChange: canvas.renderAll.bind(canvas),
 										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
-											console.log("completed:", anim_kind.animation_type);
+											// console.log("completed:", anim_kind.animation_type);
 
 											canvasState = 'inactive';
 										}
 									});
-
+		
 								}
 							});
-
+		
 						}
 					});
 
