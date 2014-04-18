@@ -226,7 +226,11 @@ WORDCRAFT = (function(){
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
+<<<<<<< HEAD
 		console.log("render canvas dimensions:", cDim);	
+=======
+		// console.log("render canvas dimensions:", cDim);	
+>>>>>>> dev
 
 		canvas.selection = false;
 
@@ -248,7 +252,7 @@ WORDCRAFT = (function(){
 				var adjacencyOffset = noun.pos.plane_matrix;
 				var adjacencyAmplitude = 40;
 
-				console.log("adjacencyOffset: ", adjacencyOffset);
+				// console.log("adjacencyOffset: ", adjacencyOffset);
 
 			
 				var canvaswidth = canvas.width;
@@ -256,11 +260,16 @@ WORDCRAFT = (function(){
 				var pos;
 				var renderObject;
 
-				console.log("ImageWidth, Height:", imgwidth, imgheight, noun);
+				var cDim = getCanvasPerspDim(canvas);
+
+				// console.log("ImageWidth, Height:", imgwidth, imgheight, noun);
 				// var noun = cObj[c]; //assign the noun object
 				
 				if (noun.body.skin !== 'undefined'){
 					// var animalParts = ['skin', 'mouth', 'eyes'];
+					console.log("noun: ", noun, cDim);
+
+
 					pos = cDim[noun.pos.plane][noun.pos.plane_pos];
 
 					// console.log("Noun: ", noun, "Position: ", pos);
@@ -290,6 +299,7 @@ WORDCRAFT = (function(){
 									});
 									canvas.add(group);
 
+<<<<<<< HEAD
 									canvas.on({
 										'object:moving': function(e){
 											console.log("moving");
@@ -298,6 +308,16 @@ WORDCRAFT = (function(){
 									})
 
 									console.log("animation: ", noun.animation, group.top, group.left);
+=======
+									// canvas.on({
+									// 	'object:moving': function(e){
+									// 		console.log("moving");
+									// 		e.preventDefault();
+									// 	}
+									// })
+
+									// console.log("animation: ", noun.animation, group.top, group.left);
+>>>>>>> dev
 									handleObjAnimations(group, noun.animation);
 								});
 							});
@@ -309,7 +329,7 @@ WORDCRAFT = (function(){
 	};
 
 	var handleObjAnimations = function(obj, anims){
-		console.log("Object Position: ", anims);
+		// console.log("Object Position: ", anims);
 
 		anims.forEach(function(anim_kind, count){
 			var defaultDuration = 1000;
@@ -320,13 +340,13 @@ WORDCRAFT = (function(){
 				
 				// translate X
 				case "translateX":
-					console.log("translate on the X-axis");
+					// console.log("translate on the X-axis");
 
 					var amplitude = 50; // in pixels
 					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
 
 					var movement = states[0] === '' ? 0 : parseInt(states[0]) * amplitude;
-					console.log("Displacement: ", displacement);
+					// console.log("Displacement: ", displacement);
 
 					var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
@@ -338,7 +358,7 @@ WORDCRAFT = (function(){
 							var movement = states[1] === '' ? 0 : parseInt(states[1]) * amplitude;
 							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-							console.log("Displacement: ", displacement);
+							// console.log("Displacement: ", displacement);
 
 							obj.animate('left', displacement, { 
 								onChange: canvas.renderAll.bind(canvas),
@@ -348,14 +368,14 @@ WORDCRAFT = (function(){
 									var movement = states[2] === '' ? 0 : parseInt(states[2]) * amplitude;
 									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-									console.log("Displacement: ", displacement);
+									// console.log("Displacement: ", displacement);
 
 									obj.animate('left', displacement, { 
 										onChange: canvas.renderAll.bind(canvas),
 										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
-											console.log("completed:", anim_kind.animation_type);
+											// console.log("completed:", anim_kind.animation_type);
 
 											canvasState = 'inactive';
 										}
@@ -373,13 +393,13 @@ WORDCRAFT = (function(){
 
 				// translate Y
 				case "translateY":
-					console.log("translate on the X-axis");
+					// console.log("translate on the X-axis");
 
 					var amplitude = 50; // in pixels
 					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
 
 					var movement = states[0] === '' ? 0 : parseInt(states[0]) * amplitude;
-					console.log("Displacement: ", displacement);
+					// console.log("Displacement: ", displacement);
 
 					var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
@@ -391,7 +411,7 @@ WORDCRAFT = (function(){
 							var movement = states[1] === '' ? 0 : parseInt(states[1]) * amplitude;
 							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-							console.log("Displacement: ", displacement);
+							// console.log("Displacement: ", displacement);
 
 							obj.animate('top', displacement, { 
 								onChange: canvas.renderAll.bind(canvas),
@@ -401,14 +421,14 @@ WORDCRAFT = (function(){
 									var movement = states[2] === '' ? 0 : parseInt(states[2]) * amplitude;
 									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-									console.log("Displacement: ", displacement);
+									// console.log("Displacement: ", displacement);
 
 									obj.animate('top', displacement, { 
 										onChange: canvas.renderAll.bind(canvas),
 										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
-											console.log("completed:", anim_kind.animation_type);
+											// console.log("completed:", anim_kind.animation_type);
 											
 											canvasState = 'inactive';
 										}
@@ -426,7 +446,7 @@ WORDCRAFT = (function(){
 
 				//rotate
 				case "rotate":
-					console.log("Rotation Animation");
+					// console.log("Rotation Animation");
 
 					var angleAmplitude = 10; // in radians
 					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
@@ -444,7 +464,7 @@ WORDCRAFT = (function(){
 							var movement = states[1] === '' ? 0 : parseInt(states[1]) * angleAmplitude;
 							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-							console.log("Displacement: ", displacement);
+							// console.log("Displacement: ", displacement);
 
 							obj.animate('angle', displacement, { 
 								onChange: canvas.renderAll.bind(canvas),
@@ -454,14 +474,14 @@ WORDCRAFT = (function(){
 									var movement = states[2] === '' ? 0 : parseInt(states[2]) * angleAmplitude;
 									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
-									console.log("Displacement: ", displacement);
+									// console.log("Displacement: ", displacement);
 
 									obj.animate('angle', displacement, { 
 										onChange: canvas.renderAll.bind(canvas),
 										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
-											console.log("completed:", anim_kind.animation_type);
+											// console.log("completed:", anim_kind.animation_type);
 
 											canvasState = 'inactive';
 										}
