@@ -830,7 +830,7 @@ WORDCRAFT.build = (function(){
 
 		if(noun.length>1 && helpverb.length > 0 && verb.length>0 && prep.length>0 && gameLevel>=1)
 		{
-			//alert("2.Reached draw image");
+
 			if (adj.length>0)
 			{
 				getJson(4,nounPos);
@@ -1022,7 +1022,7 @@ WORDCRAFT.build = (function(){
 
 		}
 
-		alert(JSON.stringify(finalJson));
+		//alert(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return true;	
