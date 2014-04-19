@@ -226,15 +226,7 @@ WORDCRAFT = (function(){
 
 
 	var renderObjOnCanvas = function(cObj, cDim){
-<<<<<<< HEAD
-<<<<<<< HEAD
-		console.log("render canvas dimensions:", cDim);	
-=======
 		// console.log("render canvas dimensions:", cDim);	
->>>>>>> dev
-=======
-		// console.log("render canvas dimensions:", cDim);	
->>>>>>> e667e92431ad3e96895d6673a394580445aad023
 
 		canvas.selection = false;
 
@@ -303,19 +295,6 @@ WORDCRAFT = (function(){
 									});
 									canvas.add(group);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-									canvas.on({
-										'object:moving': function(e){
-											console.log("moving");
-											e.preventDefault();
-										}
-									})
-
-									console.log("animation: ", noun.animation, group.top, group.left);
-=======
-=======
->>>>>>> e667e92431ad3e96895d6673a394580445aad023
 									// canvas.on({
 									// 	'object:moving': function(e){
 									// 		console.log("moving");
@@ -324,10 +303,6 @@ WORDCRAFT = (function(){
 									// })
 
 									// console.log("animation: ", noun.animation, group.top, group.left);
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> e667e92431ad3e96895d6673a394580445aad023
 									handleObjAnimations(group, noun.animation);
 								});
 							});
