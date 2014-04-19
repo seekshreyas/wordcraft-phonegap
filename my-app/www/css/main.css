@@ -231,7 +231,9 @@ body{
 }
 
 
-
+header{
+  display:none;
+}
 
 
 /*button*/
