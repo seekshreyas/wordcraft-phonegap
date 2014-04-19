@@ -146,29 +146,32 @@ WORDCRAFT.build = (function(){
 		var pos = objClass[1].substr(3,objClass[1].length);
 		var nounType = "";
 		word =  word.split("_")[1];
-	
 		//alert("1. Just before if statement");
-		if(pos === 'verb')
+		if(pos === 'verb' && sentWordList["prep"].length>0)
 		{
 			//alert("2.inside trash words");
 			var prep = $(".prep_"+word).attr("id");
 			if(prep !== 'undefined')
 			{
+				//alert("This is prep:"+prep);
 				prep = prep.split("_")[1];
 				//alert("3.inside trash words:"+prep);
-				if(currWordList["prep"].length>0)
+				if(currWordList["prep"]!== 'undefined')
 				{
-					//alert("5.inside trash words:");
+					//alert("5a.inside trash words:");
 					currWordList["prep"].remove(prep);
 				}
-				if(sentWordList["prep"].length>0)
+				if(sentWordList["prep"]!== 'undefined')
 				{
-					//alert("5.inside trash words:");
+					//alert("5b.inside trash words:");
 					sentWordList["prep"].remove(prep);
 				}
+
+				//alert("6a.inside trash words:");
+				$(".prep_"+word).remove();
 			}
 			//alert("6.inside trash words:");
-			$(".prep_"+word).remove();
+			
 		}
 		//alert("7.inside trash words:");
 		currWordList[pos].remove(word);
@@ -959,6 +962,7 @@ WORDCRAFT.build = (function(){
 				noun1_pos = defJson["pos"]["plane_pos"].split("_")[1];
 				//alert("position of noun1"+noun1_pos);
 				noun2Json["pos"]["plane_pos"] = "right_"+noun1_pos;
+				defJson["pos"]["plane_pos"] = "right_"+noun1_pos;
 				//noun2Json["pos"]["plane_pos"] = "right_middle";
 			}
 			else

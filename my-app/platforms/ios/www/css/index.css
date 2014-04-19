@@ -230,9 +230,9 @@ Entypo Icons
 .icon-entypo.squared-plus:before{ content:'\229E'; }
 .icon-entypo.check:before{ content:'\2713';}
 .icon-entypo.trash:before{ content:'\E729'; }
-.icon-entypo.back:before{ content:'\E4AD';  color:green;}
-.icon-entypo.forward:before{ content:'\E4AE';  color:green;}
-.icon-entypo.refresh:before{ content:'\1F504';}
+.icon-entypo.back:before{ content:'\E4AD';  color:#008000;}
+.icon-entypo.forward:before{ content:'\E4AE';  color:#008000;}
+.icon-entypo.refresh:before{ content:'\1F504';color:#87CEFA;}
 
 
 .circled-cross
