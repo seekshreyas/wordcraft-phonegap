@@ -492,47 +492,59 @@
         }
     },
     "verb": {
-        "walking": {
+        "standing": {
             "sound": "",
             "preposition": {
-                "near": {
+                "in front of": {
                     "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": 0
+                        "positionY": -3
                     }
                 },
                 "behind": {
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": -1,
+                        "positionX": 3,
+                        "positionY": 3
+                    }
+                },
+                "below": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": 3
+                    }
+                },
+                "near": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 5,
+                        "positionY": 0
+                    }
+                },
+                "on top of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -2
+                    }
+                },
+                "with": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 }
             },
-            "animation": [
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "start": "0",
-                        "end": "2",
-                        "mid": "1"
-                    },
-                    "speed": "slow",
-                    "scale": "",
-                    "animation_type": "translateX"
-                }
-            ],
+            "animation": [],
             "bubble": false,
             "bodypart": {
                 "eyes": "happy",
@@ -549,20 +561,36 @@
         "shivering": {
             "sound": "",
             "preposition": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
                 "near": {
                     "multi_nouns": false,
                     "position_change": {
                         "status": false,
-                        "positionX": 0,
+                        "positionX": 5,
                         "positionY": 0
                     }
                 },
-                "by": {
-                    "multi_nouns": false,
+                "with": {
+                    "multi_nouns": true,
                     "position_change": {
-                        "status": false,
-                        "positionX": 0,
+                        "status": true,
+                        "positionX": 3,
                         "positionY": 0
+                    }
+                },
+                "behind": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 3
                     }
                 }
             },
@@ -592,23 +620,63 @@
                 "are"
             ]
         },
-        "dreaming": {
+        "weeping": {
             "sound": "",
             "preposition": {
-                "about": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
+                "behind": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 3
+                    }
+                },
+                "near": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 5,
+                        "positionY": 0
+                    }
+                },
+                "next to": {
                     "multi_nouns": true,
                     "position_change": {
                         "status": false,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                },
+                "below": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
                         "positionX": 0,
+                        "positionY": 3
+                    }
+                },
+                "with": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 }
             },
             "animation": [],
-            "bubble": true,
+            "bubble": false,
             "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
+                "eyes": "sadder",
+                "mouth": "sadder",
                 "skin": "negative"
             },
             "type": "emotion",
@@ -618,87 +686,7 @@
                 "are"
             ]
         },
-        "smiling": {
-            "sound": "",
-            "preposition": {
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "at": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "leaving": {
-            "sound": "",
-            "preposition": {
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "none",
-                    "animation_params": {
-                        "start": "0",
-                        "end": "disappear",
-                        "mid": ""
-                    },
-                    "speed": "slow",
-                    "scale": "",
-                    "animation_type": "translateX"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "standing": {
+        "hopping": {
             "sound": "",
             "preposition": {
                 "in front of": {
@@ -706,14 +694,22 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
+                        "positionY": -3
+                    }
+                },
+                "near": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 5,
                         "positionY": 0
                     }
                 },
-                "behind": {
+                "with": {
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": -1,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 },
@@ -722,35 +718,42 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -1
+                        "positionY": 3
                     }
                 },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "on top of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 1
-                    }
-                },
-                "with": {
+                "next to": {
                     "multi_nouns": true,
                     "position_change": {
-                        "status": true,
-                        "positionX": 0,
+                        "status": false,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 }
             },
-            "animation": [],
+            "animation": [
+                {
+                    "duration": "none",
+                    "animation_params": {
+                        "start": "-2",
+                        "end": "2",
+                        "mid": "0"
+                    },
+                    "speed": "fast",
+                    "scale": "",
+                    "animation_type": "translateX"
+                },
+                {
+                    "duration": "none",
+                    "animation_params": {
+                        "start": "-2",
+                        "end": "2",
+                        "mid": "0"
+                    },
+                    "speed": "fast",
+                    "scale": "",
+                    "animation_type": "translateY"
+                }
+            ],
             "bubble": false,
             "bodypart": {
                 "eyes": "happy",
@@ -767,19 +770,11 @@
         "dancing": {
             "sound": "",
             "preposition": {
-                "below": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": -1
-                    }
-                },
                 "near": {
                     "multi_nouns": false,
                     "position_change": {
                         "status": false,
-                        "positionX": 0,
+                        "positionX": 5,
                         "positionY": 0
                     }
                 },
@@ -787,16 +782,16 @@
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": 0,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 },
-                "by": {
+                "below": {
                     "multi_nouns": false,
                     "position_change": {
-                        "status": false,
+                        "status": true,
                         "positionX": 0,
-                        "positionY": 0
+                        "positionY": 3
                     }
                 }
             },
@@ -826,150 +821,50 @@
                 "are"
             ]
         },
-        "crying": {
-            "sound": "",
-            "preposition": {
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "by": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "sadder",
-                "mouth": "sadder",
-                "skin": "negative"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "wailing": {
-            "sound": "",
-            "preposition": {
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "by": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "sadder",
-                "mouth": "sadder",
-                "skin": "negative"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "winking": {
-            "sound": "",
-            "preposition": {
-                "at": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "scale": "",
-                    "animation_part": "eyes",
-                    "animation_params": {
-                        "start": "eyes_awake",
-                        "end": "eyes_asleep",
-                        "mid": ""
-                    },
-                    "animation_type": "swap",
-                    "duration": "",
-                    "speed": "fast"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "weeping": {
-            "sound": "",
-            "preposition": {
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "by": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "sadder",
-                "mouth": "sadder",
-                "skin": "negative"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
         "hurrying": {
             "sound": "",
-            "preposition": {},
+            "preposition": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
+                "near": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 5,
+                        "positionY": 0
+                    }
+                },
+                "with": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                },
+                "next to": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                },
+                "behind": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 3
+                    }
+                }
+            },
             "animation": [
                 {
                     "duration": "",
@@ -996,27 +891,263 @@
                 "are"
             ]
         },
-        "blinking": {
+        "walking": {
             "sound": "",
-            "preposition": {},
+            "preposition": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
+                "near": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 5,
+                        "positionY": 0
+                    }
+                },
+                "with": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                },
+                "behind": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 3
+                    }
+                },
+                "next to": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                }
+            },
             "animation": [
                 {
-                    "scale": "",
-                    "animation_part": "eyes",
+                    "duration": "",
                     "animation_params": {
-                        "start": "eyes_awake",
-                        "end": "eyes_asleep",
-                        "mid": ""
+                        "start": "0",
+                        "end": "2",
+                        "mid": "1"
                     },
-                    "animation_type": "swap",
-                    "duration": "none",
-                    "speed": "very_fast"
+                    "speed": "slow",
+                    "scale": "",
+                    "animation_type": "translateX"
                 }
             ],
             "bubble": false,
             "bodypart": {
                 "eyes": "happy",
                 "mouth": "happy",
+                "skin": "positive"
+            },
+            "type": "action",
+            "pos": "vb",
+            "before": [
+                "is",
+                "are"
+            ]
+        },
+        "fighting": {
+            "sound": "",
+            "preposition": {
+                "with": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                }
+            },
+            "animation": [],
+            "bubble": false,
+            "bodypart": {
+                "eyes": "angry",
+                "mouth": "angry",
+                "skin": "negative"
+            },
+            "type": "emotion",
+            "pos": "vb",
+            "before": [
+                "is",
+                "are"
+            ]
+        },
+        "amused": {
+            "sound": "url",
+            "preposition": {
+                "with": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                }
+            },
+            "animation": [],
+            "bubble": false,
+            "bodypart": {
+                "eyes": "happier",
+                "mouth": "happier",
+                "skin": "positive"
+            },
+            "type": "emotion",
+            "pos": "vb",
+            "before": [
+                "is",
+                "are"
+            ]
+        },
+        "wailing": {
+            "sound": "",
+            "preposition": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
+                "behind": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 3
+                    }
+                },
+                "near": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 5,
+                        "positionY": 0
+                    }
+                },
+                "next to": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                },
+                "below": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": 3
+                    }
+                },
+                "with": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                }
+            },
+            "animation": [],
+            "bubble": false,
+            "bodypart": {
+                "eyes": "sadder",
+                "mouth": "sadder",
+                "skin": "negative"
+            },
+            "type": "action",
+            "pos": "vb",
+            "before": [
+                "is",
+                "are"
+            ]
+        },
+        "cheering": {
+            "sound": "url",
+            "preposition": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
+                "behind": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 3
+                    }
+                },
+                "near": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 5,
+                        "positionY": 0
+                    }
+                },
+                "next to": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                },
+                "below": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": 3
+                    }
+                },
+                "with": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                }
+            },
+            "animation": [
+                {
+                    "duration": "none",
+                    "animation_params": {
+                        "start": "0",
+                        "end": "0",
+                        "mid": "5"
+                    },
+                    "speed": "normal",
+                    "scale": "",
+                    "animation_type": "translateY"
+                }
+            ],
+            "bubble": false,
+            "bodypart": {
+                "eyes": "happier",
+                "mouth": "happier",
                 "skin": "positive"
             },
             "type": "action",
@@ -1034,22 +1165,22 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": 0
+                        "positionY": -3
                     }
                 },
                 "behind": {
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": -1,
-                        "positionY": 0
+                        "positionX": 3,
+                        "positionY": 3
                     }
                 },
-                "by": {
-                    "multi_nouns": false,
+                "with": {
+                    "multi_nouns": true,
                     "position_change": {
-                        "status": false,
-                        "positionX": 0,
+                        "status": true,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 }
@@ -1083,11 +1214,19 @@
         "jumping": {
             "sound": "",
             "preposition": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
                 "near": {
                     "multi_nouns": false,
                     "position_change": {
                         "status": false,
-                        "positionX": 0,
+                        "positionX": 5,
                         "positionY": 0
                     }
                 },
@@ -1095,7 +1234,15 @@
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": 0,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                },
+                "next to": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 },
@@ -1104,7 +1251,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": 0
+                        "positionY": -5
                     }
                 }
             },
@@ -1137,11 +1284,19 @@
         "awake": {
             "sound": "",
             "preposition": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
                 "near": {
                     "multi_nouns": false,
                     "position_change": {
                         "status": false,
-                        "positionX": 0,
+                        "positionX": 5,
                         "positionY": 0
                     }
                 },
@@ -1149,16 +1304,16 @@
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": 0,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 },
-                "by": {
+                "below": {
                     "multi_nouns": false,
                     "position_change": {
-                        "status": false,
+                        "status": true,
                         "positionX": 0,
-                        "positionY": 0
+                        "positionY": 3
                     }
                 }
             },
@@ -1176,22 +1331,96 @@
                 "are"
             ]
         },
-        "rolling": {
+        "crying": {
             "sound": "",
             "preposition": {
-                "from": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
+                "behind": {
                     "multi_nouns": true,
                     "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 3
                     }
                 },
                 "near": {
                     "multi_nouns": false,
                     "position_change": {
                         "status": false,
+                        "positionX": 5,
+                        "positionY": 0
+                    }
+                },
+                "next to": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                },
+                "below": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
                         "positionX": 0,
+                        "positionY": 3
+                    }
+                },
+                "with": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 0
+                    }
+                }
+            },
+            "animation": [],
+            "bubble": false,
+            "bodypart": {
+                "eyes": "sadder",
+                "mouth": "sadder",
+                "skin": "negative"
+            },
+            "type": "emotion",
+            "pos": "vb",
+            "before": [
+                "is",
+                "are"
+            ]
+        },
+        "rolling": {
+            "sound": "",
+            "preposition": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
+                "from": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 999,
+                        "positionY": 999
+                    }
+                },
+                "near": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": false,
+                        "positionX": 5,
                         "positionY": 0
                     }
                 },
@@ -1199,16 +1428,16 @@
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": 0,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 },
-                "by": {
-                    "multi_nouns": false,
+                "behind": {
+                    "multi_nouns": true,
                     "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 3
                     }
                 }
             },
@@ -1247,14 +1476,14 @@
                 "are"
             ]
         },
-        "hiding": {
+        "smiling": {
             "sound": "",
             "preposition": {
                 "near": {
                     "multi_nouns": false,
                     "position_change": {
                         "status": false,
-                        "positionX": 0,
+                        "positionX": 5,
                         "positionY": 0
                     }
                 },
@@ -1262,162 +1491,7 @@
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "start": "peek",
-                        "end": "0",
-                        "mid": "0"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateX"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "hopping": {
-            "sound": "",
-            "preposition": {
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "none",
-                    "animation_params": {
-                        "start": "-2",
-                        "end": "2",
-                        "mid": "0"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateX"
-                },
-                {
-                    "duration": "none",
-                    "animation_params": {
-                        "start": "-2",
-                        "end": "2",
-                        "mid": "0"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateY"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "fighting": {
-            "sound": "",
-            "preposition": {
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "angry",
-                "mouth": "angry",
-                "skin": "negative"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "amused": {
-            "sound": "url",
-            "preposition": {
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "by": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happier",
-                "mouth": "happier",
-                "skin": "positive"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "grinning": {
-            "sound": "",
-            "preposition": {
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 },
@@ -1425,138 +1499,16 @@
                     "multi_nouns": false,
                     "position_change": {
                         "status": false,
-                        "positionX": 0,
-                        "positionY": 0
+                        "positionX": 999,
+                        "positionY": 999
                     }
                 }
             },
-            "animation": [
-                {
-                    "scale": "",
-                    "animation_part": "mouth",
-                    "animation_params": {
-                        "start": "mouth_happy",
-                        "end": "mouth_happier",
-                        "mid": ""
-                    },
-                    "animation_type": "swap",
-                    "duration": "none",
-                    "speed": ""
-                }
-            ],
+            "animation": [],
             "bubble": false,
             "bodypart": {
-                "eyes": "happier",
-                "mouth": "happier",
-                "skin": "positive"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "cheering": {
-            "sound": "url",
-            "preposition": {
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "for": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "none",
-                    "animation_params": {
-                        "start": "0",
-                        "end": "0",
-                        "mid": "5"
-                    },
-                    "speed": "normal",
-                    "scale": "",
-                    "animation_type": "translateY"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happier",
-                "mouth": "happier",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "laughing": {
-            "sound": "url",
-            "preposition": {
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "at": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "by": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "scale": "",
-                    "animation_part": "mouth",
-                    "animation_params": {
-                        "start": "mouth_happier",
-                        "end": "mouth_happy",
-                        "mid": ""
-                    },
-                    "animation_type": "swap",
-                    "duration": "none",
-                    "speed": ""
-                }
-            ],
-            "bubble": true,
-            "bodypart": {
-                "eyes": "happier",
-                "mouth": "happier",
+                "eyes": "happy",
+                "mouth": "happy",
                 "skin": "positive"
             },
             "type": "emotion",
@@ -1569,20 +1521,36 @@
         "shaking": {
             "sound": "",
             "preposition": {
+                "in front of": {
+                    "multi_nouns": false,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 0,
+                        "positionY": -3
+                    }
+                },
                 "near": {
                     "multi_nouns": false,
                     "position_change": {
                         "status": false,
-                        "positionX": 0,
+                        "positionX": 5,
                         "positionY": 0
                     }
                 },
-                "by": {
-                    "multi_nouns": false,
+                "with": {
+                    "multi_nouns": true,
                     "position_change": {
-                        "status": false,
-                        "positionX": 0,
+                        "status": true,
+                        "positionX": 3,
                         "positionY": 0
+                    }
+                },
+                "behind": {
+                    "multi_nouns": true,
+                    "position_change": {
+                        "status": true,
+                        "positionX": 3,
+                        "positionY": 3
                     }
                 }
             },
@@ -1619,15 +1587,7 @@
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": 0,
-                        "positionY": 0
-                    }
-                },
-                "by": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 0,
+                        "positionX": 3,
                         "positionY": 0
                     }
                 }

@@ -839,12 +839,30 @@ WORDCRAFT.build = (function(){
 		defJson["body"]["size"] = "normal";
 		defJson["body"]["width"] = body_dim["width"];
 		defJson["body"]["height"] = body_dim["height"];
+<<<<<<< HEAD
+<<<<<<< HEAD
+		if(nounPos === 0)
+		{
+			plane = canvas_pos["plane"];
+
+		}
+		else
+		{
+			plane = "right_middle";
+			//posOffset = [0,1];
+=======
+=======
+>>>>>>> e667e92431ad3e96895d6673a394580445aad023
 
 			plane = canvas_pos["plane"];
 
 		if(nounPos >0 )
 		{
 			plane_pos = "right_middle";
+<<<<<<< HEAD
+>>>>>>> dev
+=======
+>>>>>>> e667e92431ad3e96895d6673a394580445aad023
 			
 		}
 		defJson["pos"] = { "plane":plane,
@@ -956,6 +974,16 @@ WORDCRAFT.build = (function(){
 			newNoun2Json["body"] = noun2Json["body"];
 			newNoun2Json["animation"] = noun2Json["animation"];
 			//newNoun2Json["pos"]["plane_pos"] = "right_middle";
+<<<<<<< HEAD
+<<<<<<< HEAD
+			if(newDefJson["pos"]["plane_matrix"][0] === 0 && newDefJson["pos"]["plane_matrix"][1] ===0)
+			{
+				newDefJson["pos"]["plane_matrix"] = [1,0];
+			}
+			
+=======
+=======
+>>>>>>> e667e92431ad3e96895d6673a394580445aad023
 			//alert("1aa. "+newDefJson["pos"]["plane_matrix"] );
 			if(newDefJson["pos"]["plane_matrix"][0] === 0 && newDefJson["pos"]["plane_matrix"][1] ===0)
 			{
@@ -964,6 +992,10 @@ WORDCRAFT.build = (function(){
 			}
 			
 			//alert("1ab. Inside plural noun");
+<<<<<<< HEAD
+>>>>>>> dev
+=======
+>>>>>>> e667e92431ad3e96895d6673a394580445aad023
 			finalJson.push(newNoun2Json);
 
 		}
