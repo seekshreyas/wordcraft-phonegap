@@ -144,6 +144,7 @@ WORDCRAFT.build = (function(){
 		var parentId = $(obj).parent().attr("id");
 		var objClass = $(obj).attr("class").split(" ");			
 		var pos = objClass[1].substr(3,objClass[1].length);
+		console.log("Inside trash words");
 		var nounType = "";
 		word =  word.split("_")[1];
 		//alert("1. Just before if statement");
@@ -151,6 +152,7 @@ WORDCRAFT.build = (function(){
 		{
 			//alert("2.inside trash words");
 			var prep = $(".prep_"+word).attr("id");
+			console.log("Prep");
 			if(prep !== 'undefined')
 			{
 				//alert("This is prep:"+prep);
@@ -531,6 +533,9 @@ WORDCRAFT.build = (function(){
 	};
 
 	var populateOnDrop = function(obj,type,form){
+		//elem caching change this else where var elem = $(obj);
+		// Also try chaging the name of obj to something 
+
 		var listItem = $(obj).text();
 		var wordId = $(obj).attr("id").split("_")[1]
 		var divid = "#sent-"+type.toString()+"-"+form.toString();
