@@ -112,7 +112,7 @@ WORDCRAFT = (function(){
 		console.log("let the crafting begin!");
 		
 
-		initCanvas();
+		// initCanvas();
 		evtHandler(); //all events handler
 	};
 
@@ -127,7 +127,7 @@ WORDCRAFT = (function(){
 
 		// console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
