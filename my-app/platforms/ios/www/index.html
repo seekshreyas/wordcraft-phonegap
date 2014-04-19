@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <!-- removing boilerplate css -->
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> 
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <audio id="sound">
+        </audio>
+        <audio id="winning">
+        </audio>
+        <!-- Add your site or application content here -->
+        <header class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="build-sentence.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h3 class="text-muted">wordcraft</h3>
+        </header>
+
+
+        <section class="wrapper-main">
+            <div class="wrapper-canvas">
+                <canvas id="elem-frame-svg" width="700" height="518"></canvas>
+            </div>
+
+
+
+
+
+            <!-- sonali's buttons -->
+
+			<div class="level">
+				Build a 3 word sentence
+			</div>
+			
+            <!-- sonali's code -->
+            <div data-role="content" class="content">
+                <div class="top-content">
+                    <div class="btn-back">
+                        <span id="btn_back" class="icon-entypo back" style="font-size: 7em; float:left;margin:0.2em 0.2em;"></span>
+                    </div>
+                    <div class="build-sentence" data-outer-parent="true">
+                        <div id="sent-det-1" data-role="det1">
+                        </div>
+                        <div id="sent-adj-1"  data-role="adj1">
+                        </div>
+                        <div id="sent-noun-1" class="active"  data-role="noun1">
+                        </div>
+                        <div id="sent-helpverb-1" class="active"  data-role="helpverb1">
+                        </div>
+                        <div id="sent-verb-1" class="active"  data-role="verb1">
+                        </div>
+                        <div id="sent-prep-1"  data-role="prep1">
+                        </div>
+                        <div id="sent-noun-2"  data-role="noun2">
+                        </div>    
+                    </div>
+                    <div class="btn-forward">
+                        <span id="btn_forward" class="icon-entypo forward" style="font-size: 7em; float:left;margin:0.2em 0.2em;"></span>
+                    </div>
+                </div>
+                <div class="middle-content">   
+                    <div class="words-list" data-outer-parent="true">
+                        <ul id="init-det" data-role="listview"></ul>
+                        <ul id="init-noun" data-role="listview"></ul>
+                        <ul id="init-helpverb" data-role="listview"></ul> 
+                        <ul id="init-verb" class="active" data-role="listview"></ul> 
+                        <ul id="init-prep" data-role="listview"></ul> 
+                        <ul id="init-adj" data-role="listview"></ul>
+                        <ul id="init-nounlvl3" data-role="listview"></ul>  
+                    </div>
+                </div>
+                    
+
+                </div>  
+                <div class="bottom-content">
+                    <div id="content">
+                        <div class="btn-refresh">
+                            <span id="btn_refresh" class="icon-entypo refresh" style="font-size: 9em; float:left;margin-left:-1.0em;margin-top:0.2em;"></span>
+                        </div>
+
+                        <div class="add-words">
+                                <span id="btn_add_words" class="icon-entypo squared-plus" style="font-size: 9em; cursor: pointer;margin-top:0.1em;">
+                                </span>
+                        </div>
+                        <div class="trash" id="word_trash">
+                            <span id="trash" class="icon-entypo trash" style="font-size: 8.5em; float:left;">
+                            </span>
+                        </div>
+
+
+                    </div>
+                    <div id="btn-replay" class="icon-entypo">&#10226;</div> 
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/fabric/dist/fabric.js"></script>
+
+        <!-- for debugging -->
+        <!-- <script src="js/vendor/firebug-lite.js"></script> -->
+        <!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script> -->
+
+        <script src="js/vendor/jquery.mobile.custom.js"></script>
+        <script src="js/vendor/webkitdragdrop.js"></script>
+        <!-- <script src="js/plugins.js"></script> -->
+        
+
+        <script src="js/main.js"></script>
+        <script src="js/sentence.js"></script>
+        
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+        <!-- <script>
+
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+
+        </script>-->
+    </body>
+</html>
+
