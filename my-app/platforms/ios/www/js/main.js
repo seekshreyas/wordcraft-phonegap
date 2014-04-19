@@ -21,9 +21,9 @@ WORDCRAFT = (function(){
 
 	var newDefaultSceneObj = [{
 		"body" : {
-			"eyes" : "res/img/animals/cat/cat_part_eyes_happy.svg",
-			"skin" : "res/img/animals/cat/cat_part_skin_positive.svg",
-			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
+			"eyes" : "res/img/animals/horse/horse_part_eyes_happy.svg",
+			"skin" : "res/img/animals/horse/horse_part_skin_positive.svg",
+			"mouth" : "res/img/animals/horse/horse_part_mouth_happy.svg",
 			"color" : "", //there will be a default color for every animal
 			"size" : "normal", //"normal is default.
 			"width" : 200,
@@ -112,7 +112,7 @@ WORDCRAFT = (function(){
 		console.log("let the crafting begin!");
 		
 
-		// initCanvas();
+		initCanvas();
 		evtHandler(); //all events handler
 	};
 
@@ -123,11 +123,11 @@ WORDCRAFT = (function(){
 		// canvas = new fabric.Canvas('elem-frame-svg');
 		// canvas.selection = false;
 
-		// var perspDim = getCanvasPerspDim(canvas);
+		var perspDim = getCanvasPerspDim(canvas);
 
 		// console.log("canvas perspective: ", perspDim);
 
-		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 

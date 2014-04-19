@@ -3,9 +3,6 @@
 
         "cat",
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         "cow",
         "pig",
         "dog",
@@ -14,7 +11,6 @@
         "barn",
         "sun",
         "fence"
-<<<<<<< HEAD
 =======
 		"cow",
 		"pig",
@@ -25,16 +21,11 @@
 		"sun",
 		"fence"
 >>>>>>> e667e92431ad3e96895d6673a394580445aad023
-=======
->>>>>>> dev
     ],
     "verb": [
 
         "amused",
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         "annoyed",
         "awake",
         "cheering",
@@ -53,7 +44,6 @@
         "wailing",
         "walking",
         "weeping"
-<<<<<<< HEAD
 =======
 		"annoyed",
 		"awake",
@@ -74,8 +64,6 @@
 		"walking",
 		"weeping"
 >>>>>>> e667e92431ad3e96895d6673a394580445aad023
-=======
->>>>>>> dev
  
     ],
      "helpverb": [
@@ -87,9 +75,6 @@
     "adj": [
         "chubby",
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         "depressed",
         "excited",
         "extra-large",
@@ -145,9 +130,6 @@
     "prep": [
         "above",
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dev
         "at",
         "behind",
         "below",
