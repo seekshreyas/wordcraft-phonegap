@@ -69,12 +69,14 @@ WORDCRAFT.build = (function(){
 			if( gameLevel === 0 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0)
 			{
 				gameLevel++;
+				$(".btn-back").toggle();
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
 			}
 			else if (gameLevel === 1 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0 && currWord[3].length > 0 &&  currWord[4].length > 0)
 			{
 				gameLevel++;
+				$(".btn-forward").toggle();
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
 			}	
@@ -83,10 +85,17 @@ WORDCRAFT.build = (function(){
 		$("#btn_back").bind("vclick",function(event) {
 
 
+			if(gameLevel === 1)
+			{
+				$(".btn-back").toggle();
+				$(".btn-forward").toggle();
+			}
 			if(gameLevel > 0)
 			{
 				gameLevel--;
+				$(".btn-forward").toggle();
 			}
+			
 			$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 			$('.build-sentence').children().each(function (id,obj) {
 				$(obj).children().each(function (id,subObj) {
@@ -135,17 +144,38 @@ WORDCRAFT.build = (function(){
 		var parentId = $(obj).parent().attr("id");
 		var objClass = $(obj).attr("class").split(" ");			
 		var pos = objClass[1].substr(3,objClass[1].length);
+		console.log("Inside trash words");
 		var nounType = "";
 		word =  word.split("_")[1];
-	
-		//alert("2. Just before if statement");
+		//alert("1. Just before if statement");
 		if(pos === 'verb' && sentWordList["prep"].length>0)
 		{
-			var prep = $(".prep_"+word).attr("id").split("_")[1];
-			currWordList["prep"].remove(prep);
-			sentWordList["prep"].remove(prep);
-			$(".prep_"+word).remove();
+			//alert("2.inside trash words");
+			var prep = $(".prep_"+word).attr("id");
+			console.log("Prep");
+			if(prep !== 'undefined')
+			{
+				//alert("This is prep:"+prep);
+				prep = prep.split("_")[1];
+				//alert("3.inside trash words:"+prep);
+				if(currWordList["prep"]!== 'undefined')
+				{
+					//alert("5a.inside trash words:");
+					currWordList["prep"].remove(prep);
+				}
+				if(sentWordList["prep"]!== 'undefined')
+				{
+					//alert("5b.inside trash words:");
+					sentWordList["prep"].remove(prep);
+				}
+
+				//alert("6a.inside trash words:");
+				$(".prep_"+word).remove();
+			}
+			//alert("6.inside trash words:");
+			
 		}
+		//alert("7.inside trash words:");
 		currWordList[pos].remove(word);
 		sentWordList[pos].remove(word);
 		$(obj).remove();
@@ -334,8 +364,28 @@ WORDCRAFT.build = (function(){
 				currWordList[pos].push(val.text());
 			}
 		});
+
+		var sentData = $("sent-"+pos+"-1 li").children().get();
+		$.each(sentData, function(i,val) {
+			if(jQuery.inArray(val.text(), currWordList[pos])==-1)
+			{
+				currWordList[pos].push(val.text());
+			}
+		});
+
+		if(pos === 'noun')
+		{
+			var sentData = $("sent-"+pos+"-2 li").children().get();
+			$.each(sentData, function(i,val) {
+				if(jQuery.inArray(val.text(), currWordList[pos])==-1)
+				{
+					currWordList[pos].push(val.text());
+				}
+			});
+		}
+
 		var divId = "#init-"+pos;
-		var currData = $(divId).contents();
+		//var currData = $(divId).contents();
 		if(currWordList[pos].length < levelPOSCnt[level][pos])
 		{
 			while(currWordList[pos].length < levelPOSCnt[level][pos])
@@ -483,6 +533,9 @@ WORDCRAFT.build = (function(){
 	};
 
 	var populateOnDrop = function(obj,type,form){
+		//elem caching change this else where var elem = $(obj);
+		// Also try chaging the name of obj to something 
+
 		var listItem = $(obj).text();
 		var wordId = $(obj).attr("id").split("_")[1]
 		var divid = "#sent-"+type.toString()+"-"+form.toString();
@@ -762,7 +815,7 @@ WORDCRAFT.build = (function(){
 		//alert("1a.");
 		//alert(noun.length,helpverb.length,verb.length,prep.length,gameLevel);
 
-		if(noun1.length > 0 && noun.length<2 && gameLevel <1)
+		if(noun1.length > 0 && noun.length<2)
 		{
 			/*
 			getJson method creates the actual Json. Following values
@@ -839,14 +892,7 @@ WORDCRAFT.build = (function(){
 		defJson["body"]["size"] = "normal";
 		defJson["body"]["width"] = body_dim["width"];
 		defJson["body"]["height"] = body_dim["height"];
-
-			plane = canvas_pos["plane"];
-
-		if(nounPos >0 )
-		{
-			plane_pos = "right_middle";
-			
-		}
+		plane = canvas_pos["plane"];
 		defJson["pos"] = { "plane":plane,
 								"plane_pos": plane_pos,
 								"plane_matrix":posOffset};
@@ -913,7 +959,24 @@ WORDCRAFT.build = (function(){
 			//alert("prep"+ preposition);
 			plane_matrixX = preposition["position_change"]["positionX"];
 			plane_matrixY = preposition["position_change"]["positionY"];
+			//alert(plane_matrixX);
+			//alert(plane_matrixY);
+			if(plane_matrixX === 999 && plane_matrixY === 999 )
+			{
+				//alert(defJson["pos"]["plane_pos"]);
+				noun1_pos = defJson["pos"]["plane_pos"].split("_")[1];
+				//alert("position of noun1"+noun1_pos);
+				noun2Json["pos"]["plane_pos"] = "right_"+noun1_pos;
+				defJson["pos"]["plane_pos"] = "right_"+noun1_pos;
+				//noun2Json["pos"]["plane_pos"] = "right_middle";
+			}
+			else
+			{
+				noun2Json["pos"]["plane_pos"] = defJson["pos"]["plane_pos"];
+			}
+
 			defJson["pos"]["plane_matrix"] = [plane_matrixX,plane_matrixY];
+
 			if(preposition["multi_nouns"])
 			{
 				noun2Json["animation"] = defJson["animation"];
@@ -956,12 +1019,12 @@ WORDCRAFT.build = (function(){
 			newNoun2Json["body"] = noun2Json["body"];
 			newNoun2Json["animation"] = noun2Json["animation"];
 			//newNoun2Json["pos"]["plane_pos"] = "right_middle";
-			//alert("1aa. "+newDefJson["pos"]["plane_matrix"] );
-			if(newDefJson["pos"]["plane_matrix"][0] === 0 && newDefJson["pos"]["plane_matrix"][1] ===0)
-			{
-				//alert("1a. Inside plural noun");
-				newDefJson["pos"]["plane_matrix"] = [1,0];
-			}
+			//alert("1aa. "+newNoun2Json["pos"]["plane_matrix"] );
+			//alert(JSON.stringify(newDefJson["pos"]["plane_matrix"]));
+
+			//alert("1a. Inside plural noun");
+			newNoun2Json["pos"]["plane_matrix"] = [1,0];
+
 			
 			//alert("1ab. Inside plural noun");
 			finalJson.push(newNoun2Json);
