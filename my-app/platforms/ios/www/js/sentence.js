@@ -934,7 +934,7 @@ WORDCRAFT.build = (function(){
 
 		if(status >= 2)
 		{
-			alert("Inside status >=2:"+status);
+			//alert("Inside status >=2:"+status);
 			body_url = fullJsonData["verb"][verb]["bodypart"];
 			defJson["body"]["eyes"] = prefixUrl+noun+"/"+formUrl(noun,"eyes",body_url["eyes"]);
 			defJson["body"]["skin"] = prefixUrl+noun+"/"+formUrl(noun,"skin",body_url["skin"]);
@@ -944,20 +944,20 @@ WORDCRAFT.build = (function(){
 		}
 		if(status >= 3)
 		{
-			alert("Inside 3:"+status);
+			//alert("Inside 3:"+status);
 			noun2Json = defaultJson(1);
 			
 			var preposition = fullJsonData["verb"][verb]["preposition"][sentWordList["prep"][0].replace(/-/g,' ')];
-			alert("prep"+ preposition);
+			//alert("prep"+ preposition);
 			plane_matrixX = preposition["position_change"]["positionX"];
 			plane_matrixY = preposition["position_change"]["positionY"];
-			alert(plane_matrixX);
-			alert(plane_matrixY);
+			//alert(plane_matrixX);
+			//alert(plane_matrixY);
 			if(plane_matrixX === 999 && plane_matrixY === 999 )
 			{
-				alert(defJson["pos"]["plane_pos"]);
+				//alert(defJson["pos"]["plane_pos"]);
 				noun1_pos = defJson["pos"]["plane_pos"].split("_")[1];
-				alert("position of noun1"+noun1_pos);
+				//alert("position of noun1"+noun1_pos);
 				noun2Json["pos"]["plane_pos"] = "right_"+noun1_pos;
 				//noun2Json["pos"]["plane_pos"] = "right_middle";
 			}
@@ -1004,20 +1004,20 @@ WORDCRAFT.build = (function(){
 		}
 		if(noun2Type === 'plural')
 		{
-			alert("1. getJson Noun2 plral");
+			//alert("1. getJson Noun2 plral");
 
 			var newNoun2Json = defaultJson(1);
 			newNoun2Json["body"] = noun2Json["body"];
 			newNoun2Json["animation"] = noun2Json["animation"];
 			//newNoun2Json["pos"]["plane_pos"] = "right_middle";
-			alert("1aa. "+newNoun2Json["pos"]["plane_matrix"] );
+			//alert("1aa. "+newNoun2Json["pos"]["plane_matrix"] );
 			//alert(JSON.stringify(newDefJson["pos"]["plane_matrix"]));
 
-			alert("1a. Inside plural noun");
+			//alert("1a. Inside plural noun");
 			newNoun2Json["pos"]["plane_matrix"] = [1,0];
 
 			
-			alert("1ab. Inside plural noun");
+			//alert("1ab. Inside plural noun");
 			finalJson.push(newNoun2Json);
 
 		}
