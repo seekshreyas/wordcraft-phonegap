@@ -1043,7 +1043,7 @@ WORDCRAFT.build = (function(){
 			}
 
 			defJson["pos"]["plane_matrix"] = [plane_matrixX,plane_matrixY];
-			noun2Json["pos"]["plane_matrix"] = defJson["pos"]["plane_matrix"];//[plane_matrixX,plane_matrixY];
+			//noun2Json["pos"]["plane_matrix"] = defJson["pos"]["plane_matrix"];//[plane_matrixX,plane_matrixY];
 
 			if(preposition["multi_nouns"])
 			{
