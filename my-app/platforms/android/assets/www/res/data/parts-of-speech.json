@@ -39,31 +39,11 @@
  
     ],
     "adj": [
-        "chubby",
         "depressed",
         "excited",
-        "extra-large",
-        "extra-small",
-        "fat",
         "fierce",
-        "giant",
         "happy",
-        "huge",
-        "large",
-        "lean",
-        "little",
-        "obese",
-        "pink",
-        "purple",
-        "red",
-        "sad",
-        "skinny",
-        "slim",
-        "small",
-        "tall",
-        "thin",
-        "tiny"
-
+        "sad"
     ],
     "prep": [
         "above",
