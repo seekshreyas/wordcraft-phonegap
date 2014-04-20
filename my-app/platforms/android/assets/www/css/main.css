@@ -231,9 +231,17 @@ body{
 }
 
 
+<<<<<<< HEAD
 header{
   display:none;
 }
+=======
+
+header{
+  display:none;
+}
+
+>>>>>>> c9b69bd9f2b8217438ecaf4d20a5bf446cf41bd8
 
 
 /*button*/
