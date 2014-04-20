@@ -8,7 +8,6 @@
         "horse",
         "goat",
         "barn",
-        "sun",
         "fence"
     ],
     "verb": [
@@ -16,7 +15,6 @@
         "amused",
         "annoyed",
         "awake",
-        "cheering",
         "crying",
         "dancing",
         "fighting",
@@ -49,7 +47,6 @@
         "fat",
         "fierce",
         "giant",
-        "half",
         "happy",
         "huge",
         "large",
