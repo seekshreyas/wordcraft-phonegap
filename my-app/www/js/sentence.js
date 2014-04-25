@@ -7,7 +7,7 @@ WORDCRAFT.build = (function(){
 	var fullJsonData = {};
 	var gameLevelSentWord = {0:3,1:5,2:7};
 	var pluralSuffix = ["","s"];
-	var nounSuffix = {"The":"s","A":"","An":""}
+	var nounSuffix = {"the":"s","a":"","an":""}
 	var vowels=['a','e','i','o','u'];
 	var pluralWords = ['sheep'];
 	var helpVerbType = {"is":"singular","are":"plural"};
@@ -288,11 +288,11 @@ WORDCRAFT.build = (function(){
 		{
 			if(jQuery.inArray(nounText[0], currWordList["det"]) == -1)
 			{
-				currWordList["det"].push(nounText[0]);
+				currWordList["det"].push(nounText[0].toLowerCase());
 			}
 			if(jQuery.inArray(nounText[0], sentWordList["det"]) == -1)
 			{
-				sentWordList["det"].push(nounText[0]);
+				sentWordList["det"].push(nounText[0].toLowerCase());
 			}
 
 			if(nounText[0] === 'The')
@@ -309,7 +309,7 @@ WORDCRAFT.build = (function(){
 				posClass = 'det_singular det_vowel';
 			}
 						
-		 	var html = '<li class="draggable li-det '+posClass+'" id="det_'+nounText[0]+'">'+nounText[0];
+		 	var html = '<li class="draggable li-det '+posClass+'" id="det_'+nounText[0].toLowerCase()+'">'+nounText[0];
 		 	html += '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
 			$("#sent-det-1").append(html);
 			var nounId = $("#sent-noun-1 li").attr("id").split("_")[1];
@@ -387,16 +387,16 @@ WORDCRAFT.build = (function(){
 					}
 					if(pos === 'det')
 					{
-						if(wordText === 'The')
+						if(wordText === 'the')
 						{
 							posClass = 'det_singularplural det_consonant';
 						}	
-						else if(wordText === 'A')
+						else if(wordText === 'a')
 						{
 
 							posClass = 'det_singular det_consonant';
 						}
-						else if(wordText === 'An')
+						else if(wordText === 'an')
 						{
 							posClass = 'det_singular det_vowel';
 						}
@@ -580,6 +580,12 @@ WORDCRAFT.build = (function(){
 		 	sentWordList[type.toString()].push(wordId);
 		}
 		elem.remove();
+		console.log("DIVID IS",divid);
+		if(divid === '#sent-noun-1' && gameLevel<2)
+		{
+			listItem = listItem.substring(0,1).toUpperCase()+listItem.substring(1,listItem.length);
+			console.log("The noun is:",listItem);
+		}
 		var html = '<li class="'+elem.attr("class")+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '</li>';
 		$(divid).append(html);
 
@@ -707,7 +713,7 @@ WORDCRAFT.build = (function(){
 
 	var dropDetRule = function()
 	{
-		if(sentWordList["det"][0] == 'An')
+		if(sentWordList["det"][0] == 'an')
 		{
 			webkit_drop.add('sent-adj-1', 
 			{	
@@ -723,7 +729,7 @@ WORDCRAFT.build = (function(){
 			});
 		}
 
-		if(sentWordList["det"][0] == 'A')
+		if(sentWordList["det"][0] == 'a')
 		{
 			webkit_drop.add('sent-adj-1', 
 			{		
@@ -739,7 +745,7 @@ WORDCRAFT.build = (function(){
 			});
 		}
 
-		if(sentWordList["det"][0] == 'The')
+		if(sentWordList["det"][0] == 'the')
 		{
 			webkit_drop.add('sent-adj-1', 
 			{	
@@ -1145,15 +1151,15 @@ WORDCRAFT.build = (function(){
 			{
 				
 
-				if(det == 'An')
+				if(det == 'an')
 				{
 					makeDroppable('sent-adj-1','adj_vowel','adj','1');
 				}
-				else if (det == 'The')
+				else if (det == 'the')
 				{
 					makeDroppable('sent-adj-1','li-adj','adj','1');
 				}
-				else if(det == 'A')
+				else if(det == 'a')
 				{
 					makeDroppable('sent-adj-1','adj_consonant','adj','1');
 				}
@@ -1172,16 +1178,16 @@ WORDCRAFT.build = (function(){
 				//console.log("2.det pos");
 				posType = getPosType($("#sent-det-1 li"));
 
-				if(det == 'An')
+				if(det == 'an')
 				{
 
 					makeDroppable('sent-adj-1','adj_vowel','adj','1');
 				}
-				else if (det == 'The')
+				else if (det == 'the')
 				{
 					makeDroppable('sent-adj-1','li-adj','adj','1');
 				}
-				else if(det == 'A')
+				else if(det == 'a')
 				{
 					makeDroppable('sent-adj-1','adj_consonant','adj','1');
 				}

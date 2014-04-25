@@ -132,6 +132,7 @@
 #sent-noun-2{
   text-transform: lowercase;
 }
+
 .build-sentence li{
   display: inline-block;
 }
