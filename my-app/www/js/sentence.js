@@ -69,14 +69,14 @@ WORDCRAFT.build = (function(){
 			if( gameLevel === 0 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0)
 			{
 				gameLevel++;
-				$(".btn-back").toggle();
+				$("#btn_back").toggle();
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
 			}
 			else if (gameLevel === 1 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0 && currWord[3].length > 0 &&  currWord[4].length > 0)
 			{
 				gameLevel++;
-				$(".btn-forward").toggle();
+				$("#btn_forward").toggle();
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
 			}	
@@ -87,13 +87,13 @@ WORDCRAFT.build = (function(){
 
 			if(gameLevel === 1)
 			{
-				$(".btn-back").toggle();
-				$(".btn-forward").toggle();
+				$("#btn_back").toggle();
+				$("#btn_forward").toggle();
 			}
 			if(gameLevel > 0)
 			{
 				gameLevel--;
-				$(".btn-forward").toggle();
+				$("#btn_forward").toggle();
 			}
 			
 			$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
