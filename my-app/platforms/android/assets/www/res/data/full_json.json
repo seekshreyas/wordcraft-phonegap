@@ -500,7 +500,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "behind": {
@@ -566,7 +566,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "near": {
@@ -628,7 +628,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "behind": {
@@ -694,7 +694,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "near": {
@@ -782,7 +782,7 @@
                     "multi_nouns": true,
                     "position_change": {
                         "status": true,
-                        "positionX": 3,
+                        "positionX": 5,
                         "positionY": 0
                     }
                 },
@@ -829,7 +829,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "near": {
@@ -899,7 +899,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "near": {
@@ -1021,7 +1021,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "behind": {
@@ -1087,7 +1087,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "behind": {
@@ -1165,7 +1165,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "behind": {
@@ -1219,7 +1219,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "near": {
@@ -1289,7 +1289,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "near": {
@@ -1339,7 +1339,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "behind": {
@@ -1405,7 +1405,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "from": {
@@ -1526,7 +1526,7 @@
                     "position_change": {
                         "status": true,
                         "positionX": 0,
-                        "positionY": -3
+                        "positionY": 3
                     }
                 },
                 "near": {
@@ -1697,7 +1697,7 @@
             },
             "canvaspos": {
                 "plane": "ground",
-                "defaultY": "front",
+                "defaultY": "middle",
                 "defaultX": "left"
             },
             "pos": "nn",
@@ -2098,7 +2098,7 @@
             "canvaspos": {
                 "plane": "ground",
                 "defaultY": "back",
-                "defaultX": "right"
+                "defaultX": "center"
             },
             "pos": "nn",
             "exec_after": [],
