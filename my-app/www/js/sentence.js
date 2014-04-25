@@ -70,6 +70,13 @@ WORDCRAFT.build = (function(){
 			{
 				gameLevel++;
 				$("#btn_back").toggle();
+				
+				//This code is to refresh everything when going from level 0 to 1
+				$('.build-sentence').children().each(function (id,obj) {
+					$(obj).children().each(function (id,subObj) {
+						trashWords($(subObj));
+						});
+				});
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
 			}
