@@ -77,6 +77,7 @@ WORDCRAFT.build = (function(){
 						trashWords($(subObj));
 						});
 				});
+				WORDCRAFT.canvasReset();
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
 			}
@@ -85,6 +86,7 @@ WORDCRAFT.build = (function(){
 				gameLevel++;
 				$("#btn_forward").toggle();
 				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+				WORDCRAFT.canvasReset();
 				initReadData();
 			}	
 		});
@@ -104,6 +106,9 @@ WORDCRAFT.build = (function(){
 			}
 			
 			$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+			
+			WORDCRAFT.canvasReset();
+
 			$('.build-sentence').children().each(function (id,obj) {
 				$(obj).children().each(function (id,subObj) {
 					trashWords($(subObj));
@@ -125,11 +130,14 @@ WORDCRAFT.build = (function(){
 		$("#btn_refresh").bind("vclick",function(event) {
 
 			$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+			WORDCRAFT.canvasReset();
 			$('.build-sentence').children().each(function (id,obj) {
 				$(obj).children().each(function (id,subObj) {
 					trashWords($(subObj));
 				});
 			});
+
+
 			
 			initReadData();
 
@@ -153,6 +161,10 @@ WORDCRAFT.build = (function(){
 		console.log("Inside trash words");
 		var nounType = "";
 		word =  word.split("_")[1];
+		if(parentId === "sent-noun-1")
+		{
+			WORDCRAFT.canvasReset();
+		}
 		if(pos === 'verb' && sentWordList["prep"]!== 'undefined')
 		{
 			var prep = sentWordList["prep"];
