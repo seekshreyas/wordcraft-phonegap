@@ -160,14 +160,7 @@ WORDCRAFT = (function(){
 	
 
 	var evtHandler = function(){
-		// jQuery(document).on('vclick', 'li.draggable', function(evt){
-		// 	console.log("draggable clicked");
-		// 	jQuery(this).children('.circled-cross').show(100);
-
-		// 	jQuery(document).on('vclick', '.circled-cross', function(evt){
-		// 		jQuery(this).parent().remove();
-		// 	})
-		// });
+		
 
 
 		jQuery('#btn-replay').on('vclick', function(){
@@ -184,9 +177,13 @@ WORDCRAFT = (function(){
 
 		});
 
+<<<<<<< HEAD
 		// jQuery('canvas').on('vclick', function(evt){
 		// 	evt.preventDefault();
 		// });
+=======
+
+>>>>>>> dev
 
 
 
@@ -197,6 +194,8 @@ WORDCRAFT = (function(){
 		// console.log("render canvas dimensions:", cDim);	
 
 		canvas.selection = false;
+
+		replay = []; //reset the animation array, so it doesn't exponentially grow
 
 		replay.push(cObj);
 
@@ -262,14 +261,13 @@ WORDCRAFT = (function(){
 										selectable : false
 									});
 									canvas.add(group);
+<<<<<<< HEAD
+=======
+									// this.__canvases.push(canvas);
+>>>>>>> dev
 									canvas.renderAll();
 
-									// canvas.on({
-									// 	'object:moving': function(e){
-									// 		console.log("moving");
-									// 		e.preventDefault();
-									// 	}
-									// })
+									
 
 									// console.log("animation: ", noun.animation, group.top, group.left);
 									handleObjAnimations(group, noun.animation);
@@ -286,7 +284,11 @@ WORDCRAFT = (function(){
 		// console.log("Object Position: ", anims);
 
 		anims.forEach(function(anim_kind, count){
+<<<<<<< HEAD
 			var defaultDuration = 100;
+=======
+			var defaultDuration = 200;
+>>>>>>> dev
 
 			// console.log("animation duration: ", anim_kind.duration);
 
