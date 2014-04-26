@@ -6,22 +6,6 @@
 
 /*div*/
 
-.bottom-content{
-  width: 75%;
-  float:left;
-  height:60%;
-  background:#E8E8E8;
-  margin: 1em 2.5%;
-}
-
-.bottom-content #content{
-  height:110px; 
-  width:30%;
-  margin:auto;
-
-
-}
-
 
 .words-list{
   background: #E8E8E8 ;
@@ -36,11 +20,6 @@
     display:inline-block;
   }
 
-.btn-back
-{
-  width:10%;
-  display:none;
-}
 
 .build-sentence{
   float:left;
@@ -132,6 +111,7 @@
 #sent-noun-2{
   text-transform: lowercase;
 }
+
 .build-sentence li{
   display: inline-block;
 }
@@ -198,6 +178,51 @@
 Entypo Icons
 ===========================*/
 
+.bottom-content{
+  width: 60%;
+  float:left;
+  height:40%;
+  background:#E8E8E8;
+  margin: 1em 2.5%;
+  padding:1.5em;
+}
+
+/*buttons*/
+
+#btn_add_words
+{
+  float:left;
+  margin-left:0.5em;
+  font-size:10em;
+}
+
+#trash{
+  float:left;
+  margin-left:0.5em;
+  font-size:10em;
+
+}
+#btn_refresh{
+  float:left;
+  margin-left:0.5em;
+  font-size:10em;
+  color:#66CCFF;
+
+}
+
+#btn_back{
+  float:left;
+  font-size:8em;
+  display:none;
+}
+
+#btn_forward{
+  font-size:8em;
+}
+
+
+
+/*
 
 @font-face {
     font-family: 'EntypoRegular';
@@ -234,27 +259,18 @@ Entypo Icons
 .icon-entypo.forward:before{ content:'\E4AE';  color:#008000;}
 .icon-entypo.refresh:before{ content:'\1F504';color:#87CEFA;}
 
-
+*/
 .circled-cross
 {
   display:none;
 }
-
-.add-words{
-  float:left;
-  margin-left:1.5em; 
-}
+/*
 .trash{
   float:left;
   margin-left:1.5em;
   height:80px;
-}
-.btn-refresh
-{
-  clear:both;
-  height:50px;
-  margin-left: 35em;
-}
+}*/
+
 =======
 
 /*Sonali: Right now this is a hack, have to remove this*/

@@ -31,76 +31,44 @@ WORDCRAFT = (function(){
 		},
 		"pos" : {
 			"plane" : "ground",
-			"plane_pos" : "center_middle",
+			"plane_pos" : "right_middle",
 			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
 				"duration" : "",
 				"animation_params" : {
-					"start" : "0",
-					"end" : "2",
-					"mid" : "-5"
-				},
-				"speed" : "normal",
-				"scale" : "",
-				"animation_type" : "rotate"
-			}, {
-				"duration" : "",
-				"animation_params" : {
-					"start" : "0",
-					"end" : "2",
-					"mid" : "3"
-				},
-				"speed" : "normal",
-				"scale" : "",
-				"animation_type" : "translateX"
-			}, {
-				"duration" : "none",
-				"animation_params" : {
-					"start" : "res/img/animals/sheep/sheep_part_eyes_awake.svg",
-					"end" : "res/img/animals/sheep/sheep_part_eyes_asleep.svg",
-					"mid" : ""
+					"start" : "-0.25",
+					"end" : "0.25",
+					"mid" : "0"
 				},
 				"speed" : "fast",
 				"scale" : "",
-				"animation_part" : "eyes",
-				"animation_type" : "swap"
-				
+				"animation_type" : "translateX"
 			}
 		]
 	}, {
 		"body" : {
-			"eyes" : "res/img/animals/cat/cat_part_eyes_happy.svg",
-			"skin" : "res/img/animals/cat/cat_part_skin_positive.svg",
-			"mouth" : "res/img/animals/cat/cat_part_mouth_happy.svg",
-			"color" : "",
-			"size" : "large",
+			"eyes" : "res/img/animals/sun/sun_part_eyes_happy.svg",
+			"skin" : "res/img/animals/sun/sun_part_skin_positive.svg",
+			"mouth" : "res/img/animals/sun/sun_part_mouth_happy.svg",
+			"color" : "", //there will be a default color for every animal
+			"size" : "normal", //"normal is default.
 			"width" : 200,
 			"height" : 255
 		},
 		"pos" : {
-			"plane" : "ground",
-			"plane_pos" : "center_middle",
-			"plane_matrix" : [1, 0]
+			"plane" : "sky",
+			"plane_pos" : "right_middle",
+			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
 				"duration" : "",
 				"animation_params" : {
-					"start" : "0",
-					"end" : "2",
-					"mid" : ""
+					"start" : "-0.25",
+					"end" : "0.25",
+					"mid" : "0"
 				},
-				"speed" : "normal",
-				"scale" : "",
-				"animation_type" : "rotate"
-			}, {
-				"duration" : "",
-				"animation_params" : {
-					"start" : "0",
-					"end" : "2",
-					"mid" : "-1"
-				},
-				"speed" : "normal",
+				"speed" : "fast",
 				"scale" : "",
 				"animation_type" : "translateX"
 			}
@@ -112,7 +80,7 @@ WORDCRAFT = (function(){
 		console.log("let the crafting begin!");
 		
 
-		// initCanvas();
+		initCanvas();
 		evtHandler(); //all events handler
 	};
 
@@ -127,7 +95,7 @@ WORDCRAFT = (function(){
 
 		// console.log("canvas perspective: ", perspDim);
 
-		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
@@ -152,8 +120,8 @@ WORDCRAFT = (function(){
 		
 		var scale = {
 			'front': 1.0, //5/5
-			'middle': 0.6, //3/5
-			'back' : 0.2 //1/5
+			'middle': 0.8, //3/5
+			'back' : 0.4 //1/5
 		};
 		
 		var persp = {
@@ -173,17 +141,17 @@ WORDCRAFT = (function(){
 				"right_back"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(theta)), Math.floor(5*y_unit), scale.back]
 			},
 			"sky" : {
-				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(pi - theta)), Math.floor(11*y_unit), scale.front],
-				"center_front" 	: [Math.floor(c_width/2), Math.floor(11*y_unit), scale.front],
-				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(11*y_unit), scale.front],
+				"left_front" 	: [Math.floor(x_unit + y_unit / Math.tan(pi - theta)), Math.floor(13*y_unit), scale.front],
+				"center_front" 	: [Math.floor(c_width/2), Math.floor(13*y_unit), scale.front],
+				"right_front"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(13*y_unit), scale.front],
 				
-				"left_middle" 	: [Math.floor(x_unit + 3*y_unit / Math.tan(pi - theta)), Math.floor(9*y_unit), scale.middle],
-				"center_middle" : [Math.floor(c_width/2), Math.floor(9*y_unit), scale.middle],
-				"right_middle"	: [Math.floor((c_width - x_unit) + 3*y_unit/Math.tan(pi - theta)), Math.floor(9*y_unit), scale.middle],
+				"left_middle" 	: [Math.floor(x_unit - Math.abs(y_unit / Math.tan(pi - theta))), Math.floor(11*y_unit), scale.middle],
+				"center_middle" : [Math.floor(c_width/2), Math.floor(11*y_unit), scale.middle],
+				"right_middle"	: [Math.floor((c_width - x_unit) + Math.abs(y_unit/Math.tan(pi - theta))), Math.floor(11*y_unit), scale.middle],
 
-				"left_back" 	: [Math.floor(x_unit + 5*y_unit / Math.tan(pi - theta)), Math.floor(7*y_unit), scale.back],
+				"left_back" 	: [Math.floor(x_unit + 5*Math.abs(y_unit / Math.tan(pi - theta))), Math.floor(7*y_unit), scale.back],
 				"center_back" 	: [Math.floor(c_width/2), Math.floor(7*y_unit), scale.back],
-				"right_back"	: [Math.floor((c_width - x_unit) + y_unit/Math.tan(pi - theta)), Math.floor(7*y_unit), scale.back]
+				"right_back"	: [Math.floor((c_width - x_unit) + Math.abs(y_unit/Math.tan(pi - theta))), Math.floor(7*y_unit), scale.back]
 			}
 		};
 
@@ -192,14 +160,7 @@ WORDCRAFT = (function(){
 	
 
 	var evtHandler = function(){
-		// jQuery(document).on('vclick', 'li.draggable', function(evt){
-		// 	console.log("draggable clicked");
-		// 	jQuery(this).children('.circled-cross').show(100);
-
-		// 	jQuery(document).on('vclick', '.circled-cross', function(evt){
-		// 		jQuery(this).parent().remove();
-		// 	})
-		// });
+		
 
 
 		jQuery('#btn-replay').on('vclick', function(){
@@ -216,9 +177,7 @@ WORDCRAFT = (function(){
 
 		});
 
-		jQuery('canvas').on('vclick', function(evt){
-			evt.preventDefault();
-		});
+
 
 
 
@@ -229,6 +188,8 @@ WORDCRAFT = (function(){
 		// console.log("render canvas dimensions:", cDim);	
 
 		canvas.selection = false;
+
+		replay = []; //reset the animation array, so it doesn't exponentially grow
 
 		replay.push(cObj);
 
@@ -241,7 +202,7 @@ WORDCRAFT = (function(){
 
 				var imgwidth = noun.body.width; //default image width
 				var imgheight = noun.body.height; //default image height
-				var imgInitScale = 0.8;
+				var imgInitScale = 1.0;
 				var imgOffsetX = Math.floor(imgwidth*imgInitScale/2);
 				var imgOffsetY = Math.floor(imgheight*imgInitScale/2);
 
@@ -270,7 +231,7 @@ WORDCRAFT = (function(){
 
 					// console.log("Noun: ", noun, "Position: ", pos);
 
-					// renderObject = (function(noun){
+					
 						fabric.Image.fromURL(noun.body.skin, function(img){
 
 							var skin = img.scale(imgInitScale*pos[2]);
@@ -294,20 +255,17 @@ WORDCRAFT = (function(){
 										selectable : false
 									});
 									canvas.add(group);
+									this.__canvases.push(canvas);
+									canvas.renderAll();
 
-									// canvas.on({
-									// 	'object:moving': function(e){
-									// 		console.log("moving");
-									// 		e.preventDefault();
-									// 	}
-									// })
+									
 
 									// console.log("animation: ", noun.animation, group.top, group.left);
 									handleObjAnimations(group, noun.animation);
 								});
 							});
 						});
-					// })(noun);
+					
 				}
 			});	
 		}
@@ -317,7 +275,9 @@ WORDCRAFT = (function(){
 		// console.log("Object Position: ", anims);
 
 		anims.forEach(function(anim_kind, count){
-			var defaultDuration = 1000;
+			var defaultDuration = 200;
+
+			// console.log("animation duration: ", anim_kind.duration);
 
 			canvasState = 'animating';
 
@@ -330,34 +290,34 @@ WORDCRAFT = (function(){
 					var amplitude = 50; // in pixels
 					var states = [anim_kind.animation_params.start, anim_kind.animation_params.mid, anim_kind.animation_params.end]
 
-					var movement = states[0] === '' ? 0 : parseInt(states[0]) * amplitude;
+					var movement = states[0] === '' ? 0 : parseFloat(states[0]) * amplitude;
 					// console.log("Displacement: ", displacement);
 
 					var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
 					obj.animate('left', displacement, { 
 						onChange: canvas.renderAll.bind(canvas),
-						duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
-						easing: fabric.util.ease.easeInCubic,
+						duration:  anim_kind.duration === ''? defaultDuration : parseFloat(anim_kind.duration),
+						// easing: fabric.util.ease.easeInCubic,
 						onComplete : function(){
-							var movement = states[1] === '' ? 0 : parseInt(states[1]) * amplitude;
+							var movement = states[1] === '' ? 0 : parseFloat(states[1]) * amplitude;
 							var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
 							// console.log("Displacement: ", displacement);
 
 							obj.animate('left', displacement, { 
 								onChange: canvas.renderAll.bind(canvas),
-								duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+								duration:  anim_kind.duration === ''? defaultDuration : parseFloat(anim_kind.duration),
 								easing: fabric.util.ease.easeInCubic,
 								onComplete : function(){
-									var movement = states[2] === '' ? 0 : parseInt(states[2]) * amplitude;
+									var movement = states[2] === '' ? 0 : parseFloat(states[2]) * amplitude;
 									var displacement = movement > 0 ? '+=' + movement.toString() : '-=' + (movement * -1).toString();
 
 									// console.log("Displacement: ", displacement);
 
 									obj.animate('left', displacement, { 
 										onChange: canvas.renderAll.bind(canvas),
-										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
+										duration:  anim_kind.duration === ''? defaultDuration : parseFloat(anim_kind.duration),
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
 											// console.log("completed:", anim_kind.animation_type);
