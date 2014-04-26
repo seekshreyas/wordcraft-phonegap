@@ -274,7 +274,7 @@ WORDCRAFT = (function(){
 		// console.log("Object Position: ", anims);
 
 		anims.forEach(function(anim_kind, count){
-			var defaultDuration = 100;
+			var defaultDuration = 200;
 
 			// console.log("animation duration: ", anim_kind.duration);
 
