@@ -1,2112 +1,2011 @@
 {
-    "adj": {
-        "obese": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "large"
-                }
-            },
-            "pos": "adj"
-        },
-        "slim": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "yellow": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "#ffff00",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "sad": {
-            "svg": {
-                "src": {
-                    "eyes": "sad",
-                    "mouth": "sad",
-                    "skin": "negative"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "pink": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "#ffc5ff",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "chubby": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "large"
-                }
-            },
-            "pos": "adj"
-        },
-        "extra-large": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "large"
-                }
-            },
-            "pos": "adj"
-        },
-        "blue": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "#3399ff",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "huge": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "large"
-                }
-            },
-            "pos": "adj"
-        },
-        "giant": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "large"
-                }
-            },
-            "pos": "adj"
-        },
-        "purple": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "#751975",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "broad": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "angry": {
-            "svg": {
-                "src": {
-                    "eyes": "angry",
-                    "mouth": "angry",
-                    "skin": "negative"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "lean": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "tiny": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "small"
-                }
-            },
-            "pos": "adj"
-        },
-        "extra-small": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "small"
-                }
-            },
-            "pos": "adj"
-        },
-        "black": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "#000000",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "bored": {
-            "svg": {
-                "src": {
-                    "eyes": "sad",
-                    "mouth": "sad",
-                    "skin": "negative"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "excited": {
-            "svg": {
-                "src": {
-                    "eyes": "happier",
-                    "mouth": "happier",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "red": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "#ff3300",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "happy": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "brown": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "#663300",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "big": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "large"
-                }
-            },
-            "pos": "adj"
-        },
-        "little": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "small"
-                }
-            },
-            "pos": "adj"
-        },
-        "fat": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "large"
-                }
-            },
-            "pos": "adj"
-        },
-        "half": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "small"
-                }
-            },
-            "pos": "adj"
-        },
-        "fierce": {
-            "svg": {
-                "src": {
-                    "eyes": "angry",
-                    "mouth": "angry",
-                    "skin": "negative"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "depressed": {
-            "svg": {
-                "src": {
-                    "eyes": "sadder",
-                    "mouth": "sadder",
-                    "skin": "negative"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "large": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "large"
-                }
-            },
-            "pos": "adj"
-        },
-        "thin": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "small"
-                }
-            },
-            "pos": "adj"
-        },
-        "small": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "small"
-                }
-            },
-            "pos": "adj"
-        },
-        "tall": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "large"
-                }
-            },
-            "pos": "adj"
-        },
-        "skinny": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "small"
-                }
-            },
-            "pos": "adj"
-        },
-        "animated": {
-            "svg": {
-                "src": {
-                    "eyes": "happier",
-                    "mouth": "happier",
-                    "skin": "positive"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        },
-        "annoyed": {
-            "svg": {
-                "src": {
-                    "eyes": "angry",
-                    "mouth": "angry",
-                    "skin": "negative"
-                },
-                "properties": {
-                    "color": "",
-                    "size": "normal"
-                }
-            },
-            "pos": "adj"
-        }
-    },
-    "verb": {
-        "standing": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                },
-                "below": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "on top of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": -2
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "shivering": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "start": "-1",
-                        "end": "-1",
-                        "mid": "1"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateX"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "negative"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "weeping": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "next to": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "below": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "sadder",
-                "mouth": "sadder",
-                "skin": "negative"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "hopping": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "below": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "next to": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "none",
-                    "animation_params": {
-                        "start": "-2",
-                        "end": "2",
-                        "mid": "0"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateX"
-                },
-                {
-                    "duration": "none",
-                    "animation_params": {
-                        "start": "-2",
-                        "end": "2",
-                        "mid": "0"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateY"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "dancing": {
-            "sound": "",
-            "preposition": {
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "below": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "none",
-                    "animation_params": {
-                        "start": "1",
-                        "end": "1",
-                        "mid": "-1"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "rotate"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "hurrying": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "next to": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "start": "-2",
-                        "end": "2",
-                        "mid": "0"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateX"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "walking": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                },
-                "next to": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "start": "0",
-                        "end": "2",
-                        "mid": "1"
-                    },
-                    "speed": "slow",
-                    "scale": "",
-                    "animation_type": "translateX"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "fighting": {
-            "sound": "",
-            "preposition": {
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "angry",
-                "mouth": "angry",
-                "skin": "negative"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "amused": {
-            "sound": "url",
-            "preposition": {
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happier",
-                "mouth": "happier",
-                "skin": "positive"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "wailing": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "next to": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "below": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "sadder",
-                "mouth": "sadder",
-                "skin": "negative"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "cheering": {
-            "sound": "url",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "next to": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "below": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "none",
-                    "animation_params": {
-                        "start": "0",
-                        "end": "0",
-                        "mid": "5"
-                    },
-                    "speed": "normal",
-                    "scale": "",
-                    "animation_type": "translateY"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happier",
-                "mouth": "happier",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "running": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "start": "-2",
-                        "end": "2",
-                        "mid": "0"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateX"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "jumping": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "next to": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "above": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": -5
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "start": "-2",
-                        "end": "2",
-                        "mid": "0"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateY"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "awake": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "below": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "state",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "crying": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "next to": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "below": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "sadder",
-                "mouth": "sadder",
-                "skin": "negative"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "rolling": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "from": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 999,
-                        "positionY": 999
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "revolve": true
-                    },
-                    "speed": "normal",
-                    "scale": "",
-                    "animation_type": "revolve"
-                },
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "start": "0",
-                        "end": "2",
-                        "mid": ""
-                    },
-                    "speed": "normal",
-                    "scale": "",
-                    "animation_type": "translateX"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "smiling": {
-            "sound": "",
-            "preposition": {
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "at": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 999,
-                        "positionY": 999
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "shaking": {
-            "sound": "",
-            "preposition": {
-                "in front of": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 0,
-                        "positionY": 3
-                    }
-                },
-                "near": {
-                    "multi_nouns": false,
-                    "position_change": {
-                        "status": false,
-                        "positionX": 5,
-                        "positionY": 0
-                    }
-                },
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                },
-                "behind": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 3
-                    }
-                }
-            },
-            "animation": [
-                {
-                    "duration": "",
-                    "animation_params": {
-                        "start": "-1",
-                        "end": "-1",
-                        "mid": "1"
-                    },
-                    "speed": "fast",
-                    "scale": "",
-                    "animation_type": "translateX"
-                }
-            ],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "happy",
-                "mouth": "happy",
-                "skin": "positive"
-            },
-            "type": "action",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        },
-        "annoyed": {
-            "sound": "",
-            "preposition": {
-                "with": {
-                    "multi_nouns": true,
-                    "position_change": {
-                        "status": true,
-                        "positionX": 3,
-                        "positionY": 0
-                    }
-                }
-            },
-            "animation": [],
-            "bubble": false,
-            "bodypart": {
-                "eyes": "angry",
-                "mouth": "angry",
-                "skin": "negative"
-            },
-            "type": "emotion",
-            "pos": "vb",
-            "before": [
-                "is",
-                "are"
-            ]
-        }
-    },
-    "noun": {
-        "sheep": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "horse": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "grass": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 350,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "front",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "fence": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 530,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "left"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "cow": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "pond": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "front",
-                "defaultX": "right "
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "sun": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 350,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "sky",
-                "defaultY": "back",
-                "defaultX": "left"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "bucket": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 350,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "right"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "dog": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "moon": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 350,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "sky",
-                "defaultY": "back",
-                "defaultX": "right"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "pig": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "cat": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "rabbit": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "duck": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "chick": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "hen": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "rooster": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "goat": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 200,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "middle",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "cloud": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 350,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "sky",
-                "defaultY": "back",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        },
-        "barn": {
-            "svg": {
-                "src": {
-                    "eyes": "happy",
-                    "mouth": "happy",
-                    "skin": "positive"
-                },
-                "dimension": {
-                    "width": 350,
-                    "height": 235
-                }
-            },
-            "canvaspos": {
-                "plane": "ground",
-                "defaultY": "back",
-                "defaultX": "center"
-            },
-            "pos": "nn",
-            "exec_after": [],
-            "type": "object",
-            "before": [
-                "the",
-                "a"
-            ]
-        }
-    }
+	"adj" : {
+		"obese" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "large"
+				}
+			},
+			"pos" : "adj"
+		},
+		"slim" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"yellow" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "#ffff00",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"sad" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "sad",
+					"mouth" : "sad",
+					"skin" : "negative"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"pink" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "#ffc5ff",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"chubby" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "large"
+				}
+			},
+			"pos" : "adj"
+		},
+		"extra-large" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "large"
+				}
+			},
+			"pos" : "adj"
+		},
+		"blue" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "#3399ff",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"huge" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "large"
+				}
+			},
+			"pos" : "adj"
+		},
+		"giant" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "large"
+				}
+			},
+			"pos" : "adj"
+		},
+		"purple" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "#751975",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"broad" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"angry" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "angry",
+					"mouth" : "angry",
+					"skin" : "negative"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"lean" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"tiny" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "small"
+				}
+			},
+			"pos" : "adj"
+		},
+		"extra-small" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "small"
+				}
+			},
+			"pos" : "adj"
+		},
+		"black" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "#000000",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"bored" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "sad",
+					"mouth" : "sad",
+					"skin" : "negative"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"excited" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happier",
+					"mouth" : "happier",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"red" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "#ff3300",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"happy" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"brown" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "#663300",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"big" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "large"
+				}
+			},
+			"pos" : "adj"
+		},
+		"little" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "small"
+				}
+			},
+			"pos" : "adj"
+		},
+		"fat" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "large"
+				}
+			},
+			"pos" : "adj"
+		},
+		"half" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "small"
+				}
+			},
+			"pos" : "adj"
+		},
+		"fierce" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "angry",
+					"mouth" : "angry",
+					"skin" : "negative"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"depressed" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "sadder",
+					"mouth" : "sadder",
+					"skin" : "negative"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"large" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "large"
+				}
+			},
+			"pos" : "adj"
+		},
+		"thin" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "small"
+				}
+			},
+			"pos" : "adj"
+		},
+		"small" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "small"
+				}
+			},
+			"pos" : "adj"
+		},
+		"tall" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "large"
+				}
+			},
+			"pos" : "adj"
+		},
+		"skinny" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "small"
+				}
+			},
+			"pos" : "adj"
+		},
+		"animated" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happier",
+					"mouth" : "happier",
+					"skin" : "positive"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		},
+		"annoyed" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "angry",
+					"mouth" : "angry",
+					"skin" : "negative"
+				},
+				"properties" : {
+					"color" : "",
+					"size" : "normal"
+				}
+			},
+			"pos" : "adj"
+		}
+	},
+	"verb" : {
+		"standing" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				},
+				"below" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : 3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"on top of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -2
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"shivering" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "",
+					"animation_params" : {
+						"start" : "-0.25",
+						"end" : "0.25",
+						"mid" : "0"
+					},
+					"speed" : "fast",
+					"scale" : "",
+					"animation_type" : "translateX"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "negative"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"weeping" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"next to" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"below" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : 3
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "sadder",
+				"mouth" : "sadder",
+				"skin" : "negative"
+			},
+			"type" : "emotion",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"hopping" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"below" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : 3
+					}
+				},
+				"next to" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "none",
+					"animation_params" : {
+						"start" : "0",
+						"end" : "1",
+						"mid" : "2"
+					},
+					"speed" : "fast",
+					"scale" : "",
+					"animation_type" : "translateX"
+				}, {
+					"duration" : "none",
+					"animation_params" : {
+						"start" : "-2",
+						"end" : "0",
+						"mid" : "2"
+					},
+					"speed" : "fast",
+					"scale" : "",
+					"animation_type" : "translateY"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"dancing" : {
+			"sound" : "",
+			"preposition" : {
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"below" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : 3
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "none",
+					"animation_params" : {
+						"start" : "0",
+						"end" : "3",
+						"mid" : "-3"
+					},
+					"speed" : "fast",
+					"scale" : "",
+					"animation_type" : "rotate"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "emotion",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"hurrying" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"next to" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "",
+					"animation_params" : {
+						"start" : "-2",
+						"end" : "0",
+						"mid" : "0"
+					},
+					"speed" : "fast",
+					"scale" : "",
+					"animation_type" : "translateX"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"walking" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				},
+				"next to" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "",
+					"animation_params" : {
+						"start" : "0",
+						"end" : "2",
+						"mid" : "1"
+					},
+					"speed" : "slow",
+					"scale" : "",
+					"animation_type" : "translateX"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"fighting" : {
+			"sound" : "",
+			"preposition" : {
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "angry",
+				"mouth" : "angry",
+				"skin" : "negative"
+			},
+			"type" : "emotion",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"amused" : {
+			"sound" : "url",
+			"preposition" : {
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happier",
+				"mouth" : "happier",
+				"skin" : "positive"
+			},
+			"type" : "emotion",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"wailing" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"next to" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"below" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : 3
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "sadder",
+				"mouth" : "sadder",
+				"skin" : "negative"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"cheering" : {
+			"sound" : "url",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"next to" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"below" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : 3
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "none",
+					"animation_params" : {
+						"start" : "0",
+						"end" : "2",
+						"mid" : "-3"
+					},
+					"speed" : "normal",
+					"scale" : "",
+					"animation_type" : "rotate"
+				}, {
+					"duration" : "none",
+					"animation_params" : {
+						"start" : "0",
+						"end" : "3",
+						"mid" : "-3"
+					},
+					"speed" : "normal",
+					"scale" : "",
+					"animation_type" : "translateY"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happier",
+				"mouth" : "happier",
+				"skin" : "positive"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"running" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "",
+					"animation_params" : {
+						"start" : "-2",
+						"end" : "0",
+						"mid" : "0"
+					},
+					"speed" : "fast",
+					"scale" : "",
+					"animation_type" : "translateX"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"jumping" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"next to" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"above" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -5
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "",
+					"animation_params" : {
+						"start" : "-2",
+						"end" : "2",
+						"mid" : "0"
+					},
+					"speed" : "fast",
+					"scale" : "",
+					"animation_type" : "translateY"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"awake" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"below" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : 3
+					}
+				}
+			},
+			"animation" : [],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "state",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"crying" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"next to" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"below" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : 3
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "sadder",
+				"mouth" : "sadder",
+				"skin" : "negative"
+			},
+			"type" : "emotion",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"rolling" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"from" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 999,
+						"positionY" : 999
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "",
+					"animation_params" : {
+						"start" : "0",
+						"end" : "24",
+						"mid" : "12"
+					},
+					"speed" : "normal",
+					"scale" : "",
+					"animation_type" : "rotate"
+				}, {
+					"duration" : "",
+					"animation_params" : {
+						"revolve" : true
+					},
+					"speed" : "normal",
+					"scale" : "",
+					"animation_type" : "revolve"
+				}, {
+					"duration" : "",
+					"animation_params" : {
+						"start" : "0",
+						"end" : "3",
+						"mid" : ""
+					},
+					"speed" : "normal",
+					"scale" : "",
+					"animation_type" : "translateX"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"smiling" : {
+			"sound" : "",
+			"preposition" : {
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"at" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 999,
+						"positionY" : 999
+					}
+				}
+			},
+			"animation" : [],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "emotion",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"shaking" : {
+			"sound" : "",
+			"preposition" : {
+				"in front of" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 0,
+						"positionY" : -3
+					}
+				},
+				"near" : {
+					"multi_nouns" : false,
+					"position_change" : {
+						"status" : false,
+						"positionX" : 5,
+						"positionY" : 0
+					}
+				},
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				},
+				"behind" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 3
+					}
+				}
+			},
+			"animation" : [{
+					"duration" : "",
+					"animation_params" : {
+						"start" : "-0.25",
+						"end" : "0.25",
+						"mid" : "0"
+					},
+					"speed" : "fast",
+					"scale" : "",
+					"animation_type" : "translateX"
+				}
+			],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "happy",
+				"mouth" : "happy",
+				"skin" : "positive"
+			},
+			"type" : "action",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		},
+		"annoyed" : {
+			"sound" : "",
+			"preposition" : {
+				"with" : {
+					"multi_nouns" : true,
+					"position_change" : {
+						"status" : true,
+						"positionX" : 3,
+						"positionY" : 0
+					}
+				}
+			},
+			"animation" : [],
+			"bubble" : false,
+			"bodypart" : {
+				"eyes" : "angry",
+				"mouth" : "angry",
+				"skin" : "negative"
+			},
+			"type" : "emotion",
+			"pos" : "vb",
+			"before" : ["is", "are"]
+		}
+	},
+	"noun" : {
+		"sheep" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"horse" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"grass" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 350,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "front",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"fence" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 530,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "front",
+				"defaultX" : "left"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"cow" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"pond" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "front",
+				"defaultX" : "right "
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"sun" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 350,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "sky",
+				"defaultY" : "back",
+				"defaultX" : "left"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"bucket" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 350,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "right"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"dog" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"moon" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 350,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "sky",
+				"defaultY" : "back",
+				"defaultX" : "right"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"pig" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"cat" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"rabbit" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"duck" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"chick" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"hen" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"rooster" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"goat" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 200,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "middle",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"cloud" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 350,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "sky",
+				"defaultY" : "back",
+				"defaultX" : "center"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		},
+		"barn" : {
+			"svg" : {
+				"src" : {
+					"eyes" : "happy",
+					"mouth" : "happy",
+					"skin" : "positive"
+				},
+				"dimension" : {
+					"width" : 350,
+					"height" : 235
+				}
+			},
+			"canvaspos" : {
+				"plane" : "ground",
+				"defaultY" : "back",
+				"defaultX" : "right"
+			},
+			"pos" : "nn",
+			"exec_after" : [],
+			"type" : "object",
+			"before" : ["the", "a"]
+		}
+	}
 }
