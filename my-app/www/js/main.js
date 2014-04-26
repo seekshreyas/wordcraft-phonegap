@@ -184,9 +184,9 @@ WORDCRAFT = (function(){
 
 		});
 
-		jQuery('canvas').on('vclick', function(evt){
-			evt.preventDefault();
-		});
+		// jQuery('canvas').on('vclick', function(evt){
+		// 	evt.preventDefault();
+		// });
 
 
 
@@ -238,7 +238,7 @@ WORDCRAFT = (function(){
 
 					// console.log("Noun: ", noun, "Position: ", pos);
 
-					// renderObject = (function(noun){
+					
 						fabric.Image.fromURL(noun.body.skin, function(img){
 
 							var skin = img.scale(imgInitScale*pos[2]);
@@ -262,6 +262,7 @@ WORDCRAFT = (function(){
 										selectable : false
 									});
 									canvas.add(group);
+									canvas.renderAll();
 
 									// canvas.on({
 									// 	'object:moving': function(e){
@@ -275,7 +276,7 @@ WORDCRAFT = (function(){
 								});
 							});
 						});
-					// })(noun);
+					
 				}
 			});	
 		}
