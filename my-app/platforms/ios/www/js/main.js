@@ -255,7 +255,7 @@ WORDCRAFT = (function(){
 										selectable : false
 									});
 									canvas.add(group);
-									this.__canvases.push(canvas);
+									// this.__canvases.push(canvas);
 									canvas.renderAll();
 
 									
