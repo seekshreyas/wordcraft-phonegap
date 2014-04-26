@@ -178,9 +178,9 @@ WORDCRAFT = (function(){
 		});
 
 
-		jQuery('.level').on('vclick', function(){
-			canvasReset();
-		});
+		// jQuery('.level').on('vclick', function(){
+		// 	canvasReset();
+		// });
 
 
 
