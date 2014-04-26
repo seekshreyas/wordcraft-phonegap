@@ -21,9 +21,9 @@ WORDCRAFT = (function(){
 
 	var newDefaultSceneObj = [{
 		"body" : {
-			"eyes" : "res/img/animals/horse/horse_part_eyes_happy.svg",
-			"skin" : "res/img/animals/horse/horse_part_skin_positive.svg",
-			"mouth" : "res/img/animals/horse/horse_part_mouth_happy.svg",
+			"eyes" : "res/img/animals/fence/fence_part_eyes_happy.svg",
+			"skin" : "res/img/animals/fence/fence_part_skin_positive.svg",
+			"mouth" : "res/img/animals/fence/fence_part_mouth_happy.svg",
 			"color" : "", //there will be a default color for every animal
 			"size" : "normal", //"normal is default.
 			"width" : 200,
@@ -31,7 +31,7 @@ WORDCRAFT = (function(){
 		},
 		"pos" : {
 			"plane" : "ground",
-			"plane_pos" : "right_middle",
+			"plane_pos" : "center_middle",
 			"plane_matrix" : [0, 0]
 		},
 		"animation" : [{
