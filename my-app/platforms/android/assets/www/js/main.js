@@ -178,6 +178,10 @@ WORDCRAFT = (function(){
 		});
 
 
+		// jQuery('.level').on('vclick', function(){
+		// 	canvasReset();
+		// });
+
 
 
 
@@ -495,11 +499,19 @@ WORDCRAFT = (function(){
 		renderObjOnCanvas(obj, cDim);
 	};
 
+
+	var canvasReset = function(){
+
+		//reset canvas
+		canvas.clear();
+	};
+
 	return {
 		'init' : init,
 		'handleSentChanges' : handleSentChanges,
 		'animationSpeed' : animationSpeed,
-		'canvasState' : canvasState
+		'canvasState' : canvasState,
+		'canvasReset': canvasReset
 	};
 
 })();
