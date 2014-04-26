@@ -177,13 +177,7 @@ WORDCRAFT = (function(){
 
 		});
 
-<<<<<<< HEAD
-		// jQuery('canvas').on('vclick', function(evt){
-		// 	evt.preventDefault();
-		// });
-=======
 
->>>>>>> dev
 
 
 
@@ -261,10 +255,7 @@ WORDCRAFT = (function(){
 										selectable : false
 									});
 									canvas.add(group);
-<<<<<<< HEAD
-=======
 									// this.__canvases.push(canvas);
->>>>>>> dev
 									canvas.renderAll();
 
 									
@@ -284,11 +275,7 @@ WORDCRAFT = (function(){
 		// console.log("Object Position: ", anims);
 
 		anims.forEach(function(anim_kind, count){
-<<<<<<< HEAD
-			var defaultDuration = 100;
-=======
 			var defaultDuration = 200;
->>>>>>> dev
 
 			// console.log("animation duration: ", anim_kind.duration);
 
