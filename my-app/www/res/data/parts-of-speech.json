@@ -2,7 +2,6 @@
     "noun": [
 
         "cat",
-<<<<<<< HEAD
         "cow",
         "pig",
         "dog",
@@ -10,21 +9,10 @@
         "goat",
         "barn",
         "fence"
-=======
-		"cow",
-		"pig",
-		"dog",
-		"horse",
-		"goat",
-		"barn",
-		"sun",
-		"fence"
->>>>>>> e667e92431ad3e96895d6673a394580445aad023
     ],
     "verb": [
 
         "amused",
-<<<<<<< HEAD
         "annoyed",
         "awake",
         "crying",
@@ -42,26 +30,6 @@
         "wailing",
         "walking",
         "weeping"
-=======
-		"annoyed",
-		"awake",
-		"cheering",
-		"crying",
-		"dancing",
-		"fighting",
-		"hopping",
-		"hurrying",
-		"running",
-		"jumping",
-		"rolling",
-		"shaking",
-		"shivering",
-		"smiling",
-		"standing",
-		"wailing",
-		"walking",
-		"weeping"
->>>>>>> e667e92431ad3e96895d6673a394580445aad023
  
     ],
      "helpverb": [
@@ -71,62 +39,14 @@
  
     ],
     "adj": [
-        "chubby",
-<<<<<<< HEAD
         "depressed",
         "excited",
-        "extra-large",
-        "extra-small",
-        "fat",
         "fierce",
-        "giant",
         "happy",
-        "huge",
-        "large",
-        "lean",
-        "little",
-        "obese",
-        "pink",
-        "purple",
-        "red",
-        "sad",
-        "skinny",
-        "slim",
-        "small",
-        "tall",
-        "thin",
-        "tiny"
-=======
-		"depressed",
-		"excited",
-		"extra-large",
-		"extra-small",
-		"fat",
-		"fierce",
-		"giant",
-		"half",
-		"happy",
-		"huge",
-		"large",
-		"lean",
-		"little",
-		"obese",
-		"pink",
-		"purple",
-		"red",
-		"sad",
-		"skinny",
-		"slim",
-		"small",
-		"tall",
-		"thin",
-		"tiny"
->>>>>>> e667e92431ad3e96895d6673a394580445aad023
-
+        "sad"
     ],
     "prep": [
         "above",
-<<<<<<< HEAD
         "at",
         "behind",
         "below",
@@ -138,23 +58,10 @@
         "on top of",
         "towards",
         "with"
-=======
-		"at",
-		"behind",
-		"below",
-		"for",
-		"from",
-		"in front of",
-		"near",
-		"next to",
-		"on top of",
-		"towards",
-		"with"
->>>>>>> e667e92431ad3e96895d6673a394580445aad023
     ],
     "adverb": [],
     "det":
-        ["The",
-        "A",
-        "An"]
+        ["the",
+        "a",
+        "an"]
 }
