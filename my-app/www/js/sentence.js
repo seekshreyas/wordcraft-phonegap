@@ -13,9 +13,9 @@ WORDCRAFT.build = (function(){
 	var helpVerbType = {"is":"singular","are":"plural"};
 	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
-	var levelPOSCnt = {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
+	var levelPOSCnt =  {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
 					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
-					   2:{"noun":4,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}};
+					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}};
 	var jsonForImage = {"body":{},"pos":{},"animation":[]};
 
 
@@ -386,62 +386,57 @@ WORDCRAFT.build = (function(){
 		}
 
 		var divId = "#init-"+pos;
-		//var currData = $(divId).contents();
-		if(currWordList[pos].length < levelPOSCnt[level][pos])
+		while(currWordList[pos].length < levelPOSCnt[level][pos])
 		{
-			while(currWordList[pos].length < levelPOSCnt[level][pos])
+			var posClass="";
+			var randIndex  = 1 + Math.floor(Math.random() * data[pos].length-1);
+			var word = data[pos][randIndex];
+			if(jQuery.inArray(word, currWordList[pos])==-1)
 			{
-				var posClass="";
-				var randIndex  = 1 + Math.floor(Math.random() * data[pos].length-1);
-				var word = data[pos][randIndex];
-				if(jQuery.inArray(word, currWordList[pos])==-1)
+				wordText = word;
+				currWordList[pos].push(word);
+				if(pos === 'noun')
 				{
-					wordText = word;
-					currWordList[pos].push(word);
-					if(pos === 'noun')
+					tmpNoun = getNounPrefixSufix(pos,word);
+					posClass = tmpNoun[1];
+					wordText = tmpNoun[0];
+				}
+				if(pos === 'det')
+				{
+					if(wordText === 'the')
 					{
-						tmpNoun = getNounPrefixSufix(pos,word);
-						posClass = tmpNoun[1];
-						wordText = tmpNoun[0];
-					}
-					if(pos === 'det')
-					{
-						if(wordText === 'the')
-						{
-							posClass = 'det_singularplural det_consonant';
-						}	
-						else if(wordText === 'a')
-						{
-
-							posClass = 'det_singular det_consonant';
-						}
-						else if(wordText === 'an')
-						{
-							posClass = 'det_singular det_vowel';
-						}
-					}
-					if(pos === 'helpverb')
-					{
-
-						posClass = "helpverb_"+ helpVerbType[word];
+						posClass = 'det_singularplural det_consonant';
 					}	
-					if(pos === 'adj')
+					else if(wordText === 'a')
 					{
-						if(jQuery.inArray(wordText.substr(0,1),vowels) !== -1)
-						{
-							posClass = posClass + ' ' + pos + '_vowel';
-						}
-						else
-						{
-							posClass = posClass + ' ' + pos + '_consonant';
-						}
+
+						posClass = 'det_singular det_consonant';
 					}
-					var htmlLi = '<li class="draggable li-'+pos+' '+posClass.trim()+'" id="'+pos+'_'+word.replace(/\s/g,"_")+'">'+ wordText;
-					htmlLi = htmlLi + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
-					$(divId).append(htmlLi);						
-				}		
-			}
-			
+					else if(wordText === 'an')
+					{
+						posClass = 'det_singular det_vowel';
+					}
+				}
+				if(pos === 'helpverb')
+				{
+
+					posClass = "helpverb_"+ helpVerbType[word];
+				}	
+				if(pos === 'adj')
+				{
+					if(jQuery.inArray(wordText.substr(0,1),vowels) !== -1)
+					{
+						posClass = posClass + ' ' + pos + '_vowel';
+					}
+					else
+					{
+						posClass = posClass + ' ' + pos + '_consonant';
+					}
+				}
+				var htmlLi = '<li class="draggable li-'+pos+' '+posClass.trim()+'" id="'+pos+'_'+word.replace(/\s/g,"_")+'">'+ wordText;
+				htmlLi = htmlLi + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
+				$(divId).append(htmlLi);						
+			}		
 		}
 		if(currWordList[pos].length === levelPOSCnt[level][pos])
 		{
@@ -1051,7 +1046,7 @@ WORDCRAFT.build = (function(){
 		}
 
 		console.log("THE FINAL JSON");
-		console.log(finalJson);
+		console.log(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return true;	
