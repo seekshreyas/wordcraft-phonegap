@@ -192,14 +192,7 @@ WORDCRAFT = (function(){
 	
 
 	var evtHandler = function(){
-		// jQuery(document).on('vclick', 'li.draggable', function(evt){
-		// 	console.log("draggable clicked");
-		// 	jQuery(this).children('.circled-cross').show(100);
-
-		// 	jQuery(document).on('vclick', '.circled-cross', function(evt){
-		// 		jQuery(this).parent().remove();
-		// 	})
-		// });
+		
 
 
 		jQuery('#btn-replay').on('vclick', function(){
@@ -216,9 +209,7 @@ WORDCRAFT = (function(){
 
 		});
 
-		jQuery('canvas').on('vclick', function(evt){
-			evt.preventDefault();
-		});
+		
 
 
 
@@ -297,12 +288,7 @@ WORDCRAFT = (function(){
 									});
 									canvas.add(group);
 
-									// canvas.on({
-									// 	'object:moving': function(e){
-									// 		console.log("moving");
-									// 		e.preventDefault();
-									// 	}
-									// })
+									
 
 									// console.log("animation: ", noun.animation, group.top, group.left);
 									handleObjAnimations(group, noun.animation);
