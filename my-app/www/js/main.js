@@ -230,6 +230,8 @@ WORDCRAFT = (function(){
 
 		canvas.selection = false;
 
+		replay = []; //reset the animation array, so it doesn't exponentially grow
+
 		replay.push(cObj);
 
 		if (cObj.length > 0){
