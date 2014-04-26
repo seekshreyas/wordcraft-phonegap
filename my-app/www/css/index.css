@@ -6,33 +6,6 @@
 
 /*div*/
 
-.bottom-content{
-  width: 75%;
-  float:left;
-  height:30%;
-  background:#E8E8E8;
-  margin: 1em 2.5%;
-}
-
-.bottom-content #content{
-  height:110px; 
-  width:30%;
-  margin:auto;
-
-
-}
-.add-words{
-  float:left;
-  text-align:center;
-  margin:0.5em 1em;
-   
-}
-.trash{
-  clear:both;
-  float:left;
-  margin-left:2em;
-  height:80px;
-}
 
 .words-list{
   background: #E8E8E8 ;
@@ -47,10 +20,6 @@
     display:inline-block;
   }
 
-.btn-back
-{
-  width:10%;
-}
 
 .build-sentence{
   float:left;
@@ -142,6 +111,7 @@
 #sent-noun-2{
   text-transform: lowercase;
 }
+
 .build-sentence li{
   display: inline-block;
 }
@@ -208,6 +178,51 @@
 Entypo Icons
 ===========================*/
 
+.bottom-content{
+  width: 60%;
+  float:left;
+  height:40%;
+  background:#E8E8E8;
+  margin: 1em 2.5%;
+  padding:1.5em;
+}
+
+/*buttons*/
+
+#btn_add_words
+{
+  float:left;
+  margin-left:0.5em;
+  font-size:10em;
+}
+
+#trash{
+  float:left;
+  margin-left:0.5em;
+  font-size:10em;
+
+}
+#btn_refresh{
+  float:left;
+  margin-left:0.5em;
+  font-size:10em;
+  color:#66CCFF;
+
+}
+
+#btn_back{
+  float:left;
+  font-size:8em;
+  display:none;
+}
+
+#btn_forward{
+  font-size:8em;
+}
+
+
+
+/*
 
 @font-face {
     font-family: 'EntypoRegular';
@@ -231,6 +246,7 @@ Entypo Icons
 }
 
 
+
 .icon-entypo.hair-cross:before{ content:'\1F3AF'; }
 .icon-entypo.thumbs-up:before{ content:'\1F44D'; }
 .icon-entypo.thumbs-down:before{ content:'\1F44E'; }
@@ -239,15 +255,22 @@ Entypo Icons
 .icon-entypo.squared-plus:before{ content:'\229E'; }
 .icon-entypo.check:before{ content:'\2713';}
 .icon-entypo.trash:before{ content:'\E729'; }
-.icon-entypo.back:before{ content:'\E4AD';  color:green;}
-.icon-entypo.forward:before{ content:'\E4AE';  color:green;}
-.icon-entypo.refresh:before{ content:'\1F504';}
+.icon-entypo.back:before{ content:'\E4AD';  color:#008000;}
+.icon-entypo.forward:before{ content:'\E4AE';  color:#008000;}
+.icon-entypo.refresh:before{ content:'\1F504';color:#87CEFA;}
 
-
+*/
 .circled-cross
 {
   display:none;
 }
+/*
+.trash{
+  float:left;
+  margin-left:1.5em;
+  height:80px;
+}*/
+
 =======
 
 /*Sonali: Right now this is a hack, have to remove this*/
