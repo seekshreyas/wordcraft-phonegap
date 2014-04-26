@@ -244,21 +244,9 @@ WORDCRAFT = (function(){
 
 									var eyes = img.scale(imgInitScale*pos[2]);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * 20;
-									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * 20;
-=======
 									
 									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * adjacencyAmplitude;
 									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * adjacencyAmplitude;
->>>>>>> dev
-=======
-									
-									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * adjacencyAmplitude;
-									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * adjacencyAmplitude;
->>>>>>> e667e92431ad3e96895d6673a394580445aad023
 									// console.log("Shreyas:",pos, part_top, part_left, imgScale);
 
 									var group = new fabric.Group([skin, mouth, eyes],{
@@ -385,18 +373,8 @@ WORDCRAFT = (function(){
 										duration:  anim_kind.duration === ''? defaultDuration : parseInt(anim_kind.duration),
 										easing: fabric.util.ease.easeOutCubic,
 										onComplete : function(){
-<<<<<<< HEAD
-<<<<<<< HEAD
-											console.log("completed:", anim_kind.animation_type);
-
-=======
 											// console.log("completed:", anim_kind.animation_type);
 											
->>>>>>> dev
-=======
-											// console.log("completed:", anim_kind.animation_type);
-											
->>>>>>> e667e92431ad3e96895d6673a394580445aad023
 											canvasState = 'inactive';
 										}
 									});
