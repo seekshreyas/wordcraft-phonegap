@@ -1,0 +1,67 @@
+{
+    "noun": [
+
+        "cat",
+        "cow",
+        "pig",
+        "dog",
+        "horse",
+        "goat",
+        "barn",
+        "fence"
+    ],
+    "verb": [
+
+        "amused",
+        "annoyed",
+        "awake",
+        "crying",
+        "dancing",
+        "fighting",
+        "hopping",
+        "hurrying",
+        "running",
+        "jumping",
+        "rolling",
+        "shaking",
+        "shivering",
+        "smiling",
+        "standing",
+        "wailing",
+        "walking",
+        "weeping"
+ 
+    ],
+     "helpverb": [
+
+        "is",
+        "are"
+ 
+    ],
+    "adj": [
+        "depressed",
+        "excited",
+        "fierce",
+        "happy",
+        "sad"
+    ],
+    "prep": [
+        "above",
+        "at",
+        "behind",
+        "below",
+        "for",
+        "from",
+        "in front of",
+        "near",
+        "next to",
+        "on top of",
+        "towards",
+        "with"
+    ],
+    "adverb": [],
+    "det":
+        ["the",
+        "a",
+        "an"]
+}
