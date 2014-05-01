@@ -3,6 +3,7 @@ var WORDCRAFT = WORDCRAFT || {}
 WORDCRAFT.build = (function(){
 
 	var gameLevel = 0;
+	var currDiv = 0;
 	var partsofSpeech = {};
 	var fullJsonData = {};
 	var gameLevelSentWord = {0:3,1:5,2:7};
@@ -11,11 +12,18 @@ WORDCRAFT.build = (function(){
 	var vowels=['a','e','i','o','u'];
 	var pluralWords = ['sheep'];
 	var helpVerbType = {"is":"singular","are":"plural"};
-	var currWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
+	var currAllWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
+	var currWordList = {0:{"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]},
+						1:{"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]},
+						2:{"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]},
+						3:{"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]}
+						};
 	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
-	var levelPOSCnt =  {0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
-					   1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
-					   2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}};
+	var levelPOSCnt =  {
+		0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
+		1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
+		2:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}
+		};
 	var jsonForImage = {"body":{},"pos":{},"animation":[]};
 
 
@@ -62,6 +70,68 @@ WORDCRAFT.build = (function(){
 			event.stopPropagation();
 			initReadData();
 		});
+
+		$("#btn_divForward").bind("vclick",function(event) {
+			event.stopPropagation();
+			console.log("Reached div forward");
+			if(currDiv<=2)
+			{
+				currDiv++;
+				console.log("CURR DIV VALUE IS:",currDiv);
+				var prevDiv = currDiv - 1;
+
+				console.log("PREV DIV VALUE IS:",prevDiv);
+
+
+				$(".words-list-"+prevDiv).hide();
+				$(".words-list-"+currDiv).show();
+
+				//$(".words-list-"+currDiv).addClass('active');
+				//$(".words-list-"+prevDiv).removeClass('active');
+				//$(".words-list-"+prevDiv).addClass('inactive');
+
+				initReadData();
+
+			}
+
+			else
+			{
+				//currDiv = 0;
+			}
+			
+
+
+		});
+
+		$("#btn_divBackward").bind("vclick",function(event) {
+			event.stopPropagation();
+			console.log("Reached div backwards");
+			if(currDiv>0)
+			{
+				currDiv--;
+				console.log("CURR DIV VALUE IS:",currDiv);
+				var nextDiv = currDiv + 1;
+
+				console.log("NEXT DIV VALUE IS:",nextDiv);
+
+				console.log("THE CLASS OF THE DIV IS:",".words-list-"+currDiv);
+
+
+				$(".words-list-"+nextDiv).hide();
+				$(".words-list-"+currDiv).show();
+
+				//$(".words-list-"+nextDiv).removeClass('active');
+				//$(".words-list-"+nextDiv).addClass('inactive');
+				//$(".words-list-"+currDiv).addClass('active');
+				
+
+				//initReadData();
+			}
+			
+
+
+		});
+
 
 		$("#btn_forward").bind("vclick",function(event) {
 			event.stopPropagation();
@@ -171,9 +241,11 @@ WORDCRAFT.build = (function(){
 			var prepElem = $("#prep_"+prep);
 			sentWordList["prep"].remove(prep);
 			$("#sent-prep-1").remove("#prep_"+prep);
-			$("#init-prep").append(prepElem);			
+			var wordListDiv = ".words-list-"+currDiv; 
+			$(wordListDiv+" #init-prep").append(prepElem);			
 		}
-		currWordList[pos].remove(word);
+		currWordList[currDiv][pos].remove(word);
+		currAllWordList[pos].remove(word);
 		if(sentWordList[pos]!== 'undefined')
 		{
 			sentWordList[pos].remove(word);
@@ -265,6 +337,7 @@ WORDCRAFT.build = (function(){
 	
 	var initReadData = function()
 	{	
+		console.log("Reached iniRead Data");
 		if(gameLevel === 0)
 		{
 			$("#sent-det-1").removeClass("active");
@@ -305,9 +378,10 @@ WORDCRAFT.build = (function(){
 		var posClass = "";
 		if(nounText.length>1)
 		{
-			if(jQuery.inArray(nounText[0], currWordList["det"]) == -1)
+			if(jQuery.inArray(nounText[0], currWordList[currDiv]["det"]) == -1)
 			{
-				currWordList["det"].push(nounText[0].toLowerCase());
+				currWordList[currDiv]["det"].push(nounText[0].toLowerCase());
+				currAllWordList["det"].push(nounText[0].toLowerCase());
 			}
 			if(jQuery.inArray(nounText[0], sentWordList["det"]) == -1)
 			{
@@ -356,21 +430,27 @@ WORDCRAFT.build = (function(){
 
 	var getPOSToDisplay = function(data,level,pos)
 	{
+		console.log("Reached getPOSToDisplay");
+		
+
 		var posClass="";
 		var wordText = "";
 		var currData = $(divId).children().get();
 		$.each(currData, function(i,val) {
-			if(jQuery.inArray(val.text(), currWordList[pos])==-1)
+			if(jQuery.inArray(val.text(), currAllWordList[pos])==-1)
 			{
-				currWordList[pos].push(val.text());
+				currWordList[currDiv][pos].push(val.text());
+				currAllWordList[pos].push(val.text());
 			}
 		});
 
 		var sentData = $("sent-"+pos+"-1 li").children().get();
 		$.each(sentData, function(i,val) {
-			if(jQuery.inArray(val.text(), currWordList[pos])==-1)
+			if(jQuery.inArray(val.text(), currAllWordList[pos])==-1)
 			{
-				currWordList[pos].push(val.text());
+				currWordList[currDiv][pos].push(val.text());
+				currAllWordList[pos].push(val.text());
+
 			}
 		});
 
@@ -378,23 +458,41 @@ WORDCRAFT.build = (function(){
 		{
 			var sentData = $("sent-"+pos+"-2 li").children().get();
 			$.each(sentData, function(i,val) {
-				if(jQuery.inArray(val.text(), currWordList[pos])==-1)
+				if(jQuery.inArray(val.text(), currAllWordList[pos])==-1)
 				{
-					currWordList[pos].push(val.text());
+					currWordList[currDiv][pos].push(val.text());
+					currAllWordList[pos].push(val.text());
 				}
 			});
 		}
 
 		var divId = "#init-"+pos;
-		while(currWordList[pos].length < levelPOSCnt[level][pos])
+		console.log("VALUE OF CURRDIV:",currDiv);
+		console.log("VALUE OF POS:",pos);
+		console.log("CURRDIV values:",currWordList[currDiv][pos]);
+		///console.log("DATA POS LENGTH IS",data[pos].length);
+	if(currDiv > 0 && (pos === 'helpverb' || pos === 'det') )
+	{
+		console.log("REACHED IF CONDITION");
+	}
+	else
+	{
+
+		while(currWordList[currDiv][pos].length < levelPOSCnt[level][pos])
 		{
 			var posClass="";
 			var randIndex  = 1 + Math.floor(Math.random() * data[pos].length-1);
 			var word = data[pos][randIndex];
-			if(jQuery.inArray(word, currWordList[pos])==-1)
+			console.log("WORD POS IS:",pos);
+			console.log("WORD SELECTED IS:",word);
+
+
+			if(jQuery.inArray(word, currAllWordList[pos])==-1)
 			{
 				wordText = word;
-				currWordList[pos].push(word);
+				currWordList[currDiv][pos].push(word);
+				currAllWordList[pos].push(word);
+
 				if(pos === 'noun')
 				{
 					tmpNoun = getNounPrefixSufix(pos,word);
@@ -435,10 +533,18 @@ WORDCRAFT.build = (function(){
 				}
 				var htmlLi = '<li class="draggable li-'+pos+' '+posClass.trim()+'" id="'+pos+'_'+word.replace(/\s/g,"_")+'">'+ wordText;
 				htmlLi = htmlLi + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
-				$(divId).append(htmlLi);						
-			}		
+				//divId = ".words-list-" + currDiv + " "+divId;
+				//console.log("WORDLIST DIV ID",divId);
+				
+				$(".words-list-" + currDiv +" "+divId).append(htmlLi);						
+			}
+
+				
 		}
-		if(currWordList[pos].length === levelPOSCnt[level][pos])
+
+	}
+
+		if(pos === "verb" && currWordList[currDiv][pos].length === levelPOSCnt[level][pos])
 		{
 			getPrepToDisplay(pos,divId,gameLevel);
 		}
@@ -451,7 +557,7 @@ WORDCRAFT.build = (function(){
 		var prefixDet = partsofSpeech["det"][randIndex];
 		var currDet = $("#sent-det-1 li").text();
 		var suffix = nounSuffix[prefixDet];
-		var tmpIndex = currWordList[pos].length;
+		var tmpIndex = currWordList[currDiv][pos].length;
 		var type = "";  // can be singular or plural
 
 		if(jQuery.inArray(word,pluralWords) !== -1)
@@ -494,22 +600,28 @@ WORDCRAFT.build = (function(){
 			var currData = $(divId).children().get();
 			//Need to out a fix here to pick children of verbs also
 			var counter = 0;
-			$.each(currWordList["verb"], function(i,val) {
+			$.each(currWordList[currDiv]["verb"], function(i,val) {
+
 				prepositions = Object.keys(fullJsonData.verb[val].preposition);
-				if(currWordList["prep"].length < levelPOSCnt[level]["prep"])
+
+				if(currWordList[currDiv]["prep"].length < levelPOSCnt[level]["prep"])
 				{
 					var randIndex  = 1 + Math.floor(Math.random() * prepositions.length-1);
 					var word = prepositions[randIndex];
-					console.log("The preosition is:",word);
-					if(jQuery.inArray(word, currWordList["prep"])==-1)
+					console.log("The preposition is:",word);
+					if(jQuery.inArray(word, currAllWordList["prep"])==-1)
 					{
-						currWordList["prep"].push(word);
-						var htmlLi = '<li class="draggable li-prep prep_'+val+'" id="prep_'+word.replace(/\s/g,"-")+'">'+ word + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
-						$("#init-prep").append(htmlLi);	
+						currWordList[currDiv]["prep"].push(word);
+						currAllWordList["prep"].push(word);
+
+						var htmlLi = '<li class="draggable li-prep prep_'+val+'" id="prep_'+word.replace(/\s/g,"-")+'">'+ word + '</li>' ;
+
+						$(".words-list-" + currDiv +" "+"#init-prep").append(htmlLi);	
 					}
 					else
 					{
 						console.log("Inside prep add class");
+
 						$("#prep_"+word.replace(" ","_")).addClass("prep_"+val);
 					}
 				}
@@ -522,9 +634,9 @@ WORDCRAFT.build = (function(){
 	var prepVerbMapping = function()
 	{
 
-		$.each(currWordList["prep"], function(i,prepVal)
+		$.each(currWordList[currDiv]["prep"], function(i,prepVal)
 		{
-			$.each(currWordList["verb"], function(i,verbVal)
+			$.each(currWordList[currDiv]["verb"], function(i,verbVal)
 			{
 				prepositions = Object.keys(fullJsonData.verb[verbVal].preposition);
 
@@ -542,11 +654,15 @@ WORDCRAFT.build = (function(){
 
 	var parseData = function(d){
 	
+		console.log("Reached parse data");
 		getPOSToDisplay(d,gameLevel,"det");
 		getPOSToDisplay(d,gameLevel,"noun");
 		getPOSToDisplay(d,gameLevel,"helpverb");
 		getPOSToDisplay(d,gameLevel,"verb");
 		getPOSToDisplay(d,gameLevel,"adj");
+
+		console.log(currAllWordList);
+		console.log(currWordList);
 
 		makeDragabble();
 
@@ -568,7 +684,8 @@ WORDCRAFT.build = (function(){
 		if(currId)
 		{
 			word = currId.split("_")[1];
-			currWordList[type.toString()].remove(word);
+			currWordList[currDiv][type.toString()].remove(word);
+			currAllWordList[type.toString()].remove(word);
 			sentWordList[type.toString()].remove(word);
 			$(divid).find('li').remove();
 
@@ -585,14 +702,23 @@ WORDCRAFT.build = (function(){
 
 
 
-		if(jQuery.inArray(wordId, currWordList[type.toString()])==-1)
+		if(jQuery.inArray(wordId, currWordList[currDiv][type.toString()])==-1)
 		{
-		 	currWordList[type.toString()].push(wordId);
+		 	currWordList[currDiv][type.toString()].push(wordId);
+		 	
 		}
+
+		if(jQuery.inArray(wordId, currAllWordList[type.toString()])==-1)
+		{
+		 
+		 	currAllWordList[type.toString()].push(wordId);
+		}
+
 		if(jQuery.inArray(wordId, sentWordList[type.toString()])==-1)
 		{
 		 	sentWordList[type.toString()].push(wordId);
 		}
+
 		elem.remove();
 		console.log("DIVID IS",divid);
 		if(divid === '#sent-noun-1' && gameLevel<2)
@@ -624,26 +750,26 @@ WORDCRAFT.build = (function(){
 
 	var makeDragabble = function(){
 
-		$('#init-noun').children().each(function(index,value) {
+		$('.words-list-'+currDiv+' #init-noun').children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
-		$('#init-helpverb').children().each(function(index,value) {
-			new webkit_draggable(value.id, {revert : true, scroll : true});
-		});
-
-		$('#init-verb').children().each(function(index,value) {
+		$('.words-list-'+currDiv+' #init-helpverb').children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
 
-		$('#init-prep').children().each(function(index,value) {
+		$('.words-list-'+currDiv+' #init-verb').children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
 
-		$('#init-det').children().each(function(index,value) {
+		$('.words-list-'+currDiv+' #init-prep').children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
 
-		$('#init-adj').children().each(function(index,value) {
+		$('.words-list-'+currDiv+' #init-det').children().each(function(index,value) {
+			new webkit_draggable(value.id, {revert : true, scroll : true});
+		});
+
+		$('.words-list-'+currDiv+' #init-adj').children().each(function(index,value) {
 			new webkit_draggable(value.id, {revert : true, scroll : true});
 		});
 

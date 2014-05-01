@@ -7,19 +7,28 @@
 /*div*/
 
 
-.words-list{
+.words-list-0 {
   background: #E8E8E8 ;
   float:left;
-  width:85%;
-  word-wrap: break-word;*/
-  /*overflow-x: scroll; */
-  overflow-x: scroll;
-  
+  width:65%; 
   margin:1em 2.5%;
+  white-space: nowrap;
 }
 
-  .words-list ul>li{
-    word-wrap: break-word;
+
+.words-list-1,.words-list-2,.words-list-3 {
+  background: #E8E8E8 ;
+  float:left;
+  width:65%; 
+  margin:1em 2.5%;
+  white-space: nowrap;
+  display:none;
+}
+
+
+
+  .words-list-0 ul>li{
+    
     display:inline-block;
   }
 
@@ -111,6 +120,13 @@
   background-color:#CCCC33;
 }
 */
+.active{
+  display:block;
+}
+
+.inactive{
+  display:none;
+}
 #sent-noun-1,#sent-helpverb-1,#sent-verb-1,#sent-prep-1,#sent-noun-2,#sent-adj-1
 {
   margin-bottom:0.5em;
@@ -202,6 +218,16 @@ Entypo Icons
   float:left;
   margin-left:0.5em;
   font-size:10em;
+}
+
+#btn_divForward
+{
+    font-size:8em;
+}
+#btn_divBackward
+{
+    font-size:8em;
+    float:left;
 }
 
 #trash{
