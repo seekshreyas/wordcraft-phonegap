@@ -77,23 +77,23 @@
 
 .li-noun
 {
-    background-color:#FFCCFF  
+    background-color:#EF4714  
 }
 
 .li-prep
 {
 
-    background-color:#00FA9A;
+    background-color:#4BA9EE;
 }
 
 .li-helpverb
 {
-  background-color: #FFFFCC;
+  background-color: #FFC002;
 }
 
 .li-verb
 {
-    background-color:#CCCCFF;
+    background-color:#9E49F3;
 }
 
 .li-adj
@@ -103,7 +103,7 @@
 
 .li-det
 {
-    background-color:#CCCC33;
+    background-color:#83B70D;
 }
 
 /*
@@ -231,6 +231,19 @@ Entypo Icons
 }
 #btn_divBackward
 {
+    font-size:8em;
+    float:left;
+}
+
+#btn_divForward .active
+{
+    color:#336633;
+    font-size:8em;
+}
+
+#btn_divBackward .active
+{
+    color:#336633;
     font-size:8em;
     float:left;
 }

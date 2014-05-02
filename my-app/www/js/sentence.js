@@ -92,7 +92,7 @@ WORDCRAFT.build = (function(){
 
 			else
 			{
-				//currDiv = 0;
+				$("#btn_divForward").css("color","gray");//currDiv = 0;
 			}
 			
 
