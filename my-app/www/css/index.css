@@ -7,6 +7,11 @@
 /*div*/
 
 
+.middle-content{
+  width:85%; 
+  height:auto;
+
+}
 .words-list-0 {
   background: #E8E8E8 ;
   float:left;

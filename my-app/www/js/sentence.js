@@ -244,7 +244,14 @@ WORDCRAFT.build = (function(){
 			var wordListDiv = ".words-list-"+currDiv; 
 			$(wordListDiv+" #init-prep").append(prepElem);			
 		}
-		currWordList[currDiv][pos].remove(word);
+		if(pos === "helpverb" || pos ==="det")
+		{
+			currWordList[0][pos].remove(word);
+		}
+		else
+		{
+			currWordList[currDiv][pos].remove(word);
+		}
 		currAllWordList[pos].remove(word);
 		if(sentWordList[pos]!== 'undefined')
 		{
@@ -633,10 +640,10 @@ WORDCRAFT.build = (function(){
 
 	var prepVerbMapping = function()
 	{
-
-		$.each(currWordList[currDiv]["prep"], function(i,prepVal)
+		currAllWordList
+		$.each(currAllWordList["prep"], function(i,prepVal)
 		{
-			$.each(currWordList[currDiv]["verb"], function(i,verbVal)
+			$.each(currAllWordList["verb"], function(i,verbVal)
 			{
 				prepositions = Object.keys(fullJsonData.verb[verbVal].preposition);
 
@@ -1067,11 +1074,19 @@ WORDCRAFT.build = (function(){
 
 		var defJson = defaultJson(0);
 	
-		var tmpNounId = $("#sent-noun-1 li").attr("id");
-		if(typeof tmpNounId != 'undefined')
+		var tmpNoun1Id = $("#sent-noun-1 li").attr("id");
+		if(typeof tmpNoun1Id != 'undefined')
 		{
-			noun = tmpNounId.split("_")[1]; 
+			noun = tmpNoun1Id.split("_")[1]; 
 			noun1Type = getPosType($("#sent-noun-1 li"));
+		}
+
+		var tmpNoun2Id = $("#sent-noun-2 li").attr("id");
+
+		if(typeof tmpNoun2Id != 'undefined')
+		{
+			noun2 = tmpNoun2Id.split("_")[1]; 
+			noun2Type = getPosType($("#sent-noun-2 li"));
 		}
 
 		var verb = sentWordList["verb"];
@@ -1112,22 +1127,28 @@ WORDCRAFT.build = (function(){
 			if(plane_matrixX === 999 && plane_matrixY === 999 )
 			{
 				
-				noun1_pos = defJson["pos"]["plane_pos"].split("_")[1];
-				noun2Json["pos"]["plane_pos"] = "right_"+noun1_pos;
-				defJson["pos"]["plane_pos"] = "right_"+noun1_pos;
+				defJson["pos"]["plane_pos"] = preposition["grid"]["grid_obj1"];
+				noun2Json["pos"]["plane_pos"] = preposition["grid"]["grid_obj2"];
+				defJson["pos"]["plane_matrix"] = [0,0];
+				//defJson["pos"]["plane_pos"] = "right_"+noun1_pos;
 				
 			}
 			else
 			{
+				defJson["pos"]["plane_matrix"] = [plane_matrixX,plane_matrixY];
 				noun2Json["pos"]["plane_pos"] = defJson["pos"]["plane_pos"];
 			}
 
-			defJson["pos"]["plane_matrix"] = [plane_matrixX,plane_matrixY];
+			
 			//noun2Json["pos"]["plane_matrix"] = defJson["pos"]["plane_matrix"];//[plane_matrixX,plane_matrixY];
 
 			if(preposition["multi_nouns"])
 			{
 				noun2Json["animation"] = defJson["animation"];
+
+				noun2Json["body"]["eyes"] = prefixUrl+noun2+"/"+formUrl(noun2,"eyes",body_url["eyes"]);
+				noun2Json["body"]["skin"] = prefixUrl+noun2+"/"+formUrl(noun2,"skin",body_url["skin"]);
+				noun2Json["body"]["mouth"] = prefixUrl+noun2+"/"+formUrl(noun2,"mouth",body_url["mouth"]);
 			}
 		}
 		if(status >=4 )
@@ -1148,7 +1169,10 @@ WORDCRAFT.build = (function(){
 			var newDefJson = defaultJson(0);
 			newDefJson["body"] = defJson["body"];
 			newDefJson["animation"] = defJson["animation"];
-			newDefJson["pos"]["plane_matrix"] = [1,0];
+			var plane_matrix_x = defJson["pos"]["plane_matrix"][0] + 1;
+			var plane_matrix_y = defJson["pos"]["plane_matrix"][1];
+
+			newDefJson["pos"]["plane_matrix"] = [plane_matrix_x,plane_matrix_y];
 			finalJson.push(newDefJson);
 		}
 
