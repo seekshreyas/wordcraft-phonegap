@@ -77,7 +77,6 @@ WORDCRAFT.build = (function(){
 			var btnBackwardDiv = $("#btn_divBackward");
 			if(currDiv<=2)
 			{
-				//$("#btn_divBackward").toggleClass("mute");
 				if(btnBackwardDiv.hasClass("mute"))
 				{
 					btnBackwardDiv.toggleClass("mute");
@@ -87,7 +86,6 @@ WORDCRAFT.build = (function(){
 				var prevDiv = currDiv - 1;
 
 				console.log("PREV DIV VALUE IS:",prevDiv);
-
 
 				$(".words-list-"+prevDiv).hide();
 				$(".words-list-"+currDiv).show();
@@ -100,8 +98,6 @@ WORDCRAFT.build = (function(){
 				btnBackwardDiv.toggleClass("mute");
 			}
 			
-
-
 		});
 
 		$("#btn_divBackward").bind("vclick",function(event) {
@@ -167,7 +163,7 @@ WORDCRAFT.build = (function(){
 		});
 
 		$("#btn_back").bind("vclick",function(event) {
-
+			event.stopPropagation();
 
 			if(gameLevel === 1)
 			{
@@ -203,7 +199,7 @@ WORDCRAFT.build = (function(){
 		});
 
 		$("#btn_refresh").bind("vclick",function(event) {
-
+			event.stopPropagation();
 			$(".level").replaceWith('<div class="level">Make a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 			WORDCRAFT.canvasReset();
 			$('.build-sentence').children().each(function (id,obj) {
@@ -212,12 +208,7 @@ WORDCRAFT.build = (function(){
 				});
 			});
 
-
-			
-			initReadData();
-
-			//event.preventDefault();
-			
+			initReadData();			
 		});
 
 		$('document').on('vclick', function(evt){
@@ -1129,6 +1120,7 @@ WORDCRAFT.build = (function(){
 			var preposition = fullJsonData["verb"][verb]["preposition"][sentWordList["prep"][0].replace(/-/g,' ')];
 			plane_matrixX = preposition["position_change"]["positionX"];
 			plane_matrixY = preposition["position_change"]["positionY"];
+			console.log("PLANE MATRIX VALUES ARE:",plane_matrixX,plane_matrixY);
 			if(plane_matrixX === 999 && plane_matrixY === 999 )
 			{
 				
@@ -1174,6 +1166,7 @@ WORDCRAFT.build = (function(){
 			var newDefJson = defaultJson(0);
 			newDefJson["body"] = defJson["body"];
 			newDefJson["animation"] = defJson["animation"];
+			newDefJson["pos"]["plane_pos"] = defJson["pos"]["plane_pos"]
 			var plane_matrix_x = defJson["pos"]["plane_matrix"][0] + 1;
 			var plane_matrix_y = defJson["pos"]["plane_matrix"][1];
 
