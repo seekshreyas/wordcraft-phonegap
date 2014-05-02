@@ -484,7 +484,7 @@ WORDCRAFT.build = (function(){
 	else
 	{
 
-		while(currWordList[currDiv][pos].length < levelPOSCnt[level][pos])
+		while(currWordList[currDiv][pos].length < levelPOSCnt[level][pos] && currAllWordList[pos].length<data[pos].length)
 		{
 			var posClass="";
 			var randIndex  = 1 + Math.floor(Math.random() * data[pos].length-1);
