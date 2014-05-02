@@ -86,10 +86,6 @@ WORDCRAFT.build = (function(){
 				$(".words-list-"+prevDiv).hide();
 				$(".words-list-"+currDiv).show();
 
-				//$(".words-list-"+currDiv).addClass('active');
-				//$(".words-list-"+prevDiv).removeClass('active');
-				//$(".words-list-"+prevDiv).addClass('inactive');
-
 				initReadData();
 
 			}
@@ -120,15 +116,9 @@ WORDCRAFT.build = (function(){
 				$(".words-list-"+nextDiv).hide();
 				$(".words-list-"+currDiv).show();
 
-				//$(".words-list-"+nextDiv).removeClass('active');
-				//$(".words-list-"+nextDiv).addClass('inactive');
-				//$(".words-list-"+currDiv).addClass('active');
-				
-
-				//initReadData();
+				initReadData();
 			}
-			
-
+		
 
 		});
 
@@ -228,6 +218,7 @@ WORDCRAFT.build = (function(){
 		var parentId = elem.parent().attr("id");
 		var objClass = elem.attr("class").split(" ");			
 		var pos = objClass[1].substr(3,objClass[1].length);
+		var wordListDiv = ".words-list-"+currDiv; 
 		console.log("Inside trash words");
 		var nounType = "";
 		word =  word.split("_")[1];
@@ -241,17 +232,21 @@ WORDCRAFT.build = (function(){
 			var prepElem = $("#prep_"+prep);
 			sentWordList["prep"].remove(prep);
 			$("#sent-prep-1").remove("#prep_"+prep);
-			var wordListDiv = ".words-list-"+currDiv; 
+			
 			$(wordListDiv+" #init-prep").append(prepElem);			
 		}
+
 		if(pos === "helpverb" || pos ==="det")
 		{
+			//$(".words-list-0 #init-"+pos).append(word);	
 			currWordList[0][pos].remove(word);
 		}
 		else
 		{
+
 			currWordList[currDiv][pos].remove(word);
 		}
+
 		currAllWordList[pos].remove(word);
 		if(sentWordList[pos]!== 'undefined')
 		{

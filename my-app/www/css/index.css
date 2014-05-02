@@ -15,7 +15,7 @@
 .words-list-0 {
   background: #E8E8E8 ;
   float:left;
-  width:65%; 
+  width:75%; 
   margin:1em 2.5%;
   white-space: nowrap;
 }
@@ -24,7 +24,7 @@
 .words-list-1,.words-list-2,.words-list-3 {
   background: #E8E8E8 ;
   float:left;
-  width:65%; 
+  width:75%; 
   margin:1em 2.5%;
   white-space: nowrap;
   display:none;
