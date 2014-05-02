@@ -74,8 +74,14 @@ WORDCRAFT.build = (function(){
 		$("#btn_divForward").bind("vclick",function(event) {
 			event.stopPropagation();
 			console.log("Reached div forward");
+			var btnBackwardDiv = $("#btn_divBackward");
 			if(currDiv<=2)
 			{
+				//$("#btn_divBackward").toggleClass("mute");
+				if(btnBackwardDiv.hasClass("mute"))
+				{
+					btnBackwardDiv.toggleClass("mute");
+				}
 				currDiv++;
 				console.log("CURR DIV VALUE IS:",currDiv);
 				var prevDiv = currDiv - 1;
@@ -89,10 +95,9 @@ WORDCRAFT.build = (function(){
 				initReadData();
 
 			}
-
 			else
 			{
-				$("#btn_divForward").css("color","gray");//currDiv = 0;
+				btnBackwardDiv.toggleClass("mute");
 			}
 			
 
@@ -102,8 +107,14 @@ WORDCRAFT.build = (function(){
 		$("#btn_divBackward").bind("vclick",function(event) {
 			event.stopPropagation();
 			console.log("Reached div backwards");
+			var btnForwardDiv = $("#btn_divForward");
 			if(currDiv>0)
 			{
+				if(btnForwardDiv.hasClass("mute"))
+				{
+					btnForwardDiv.toggleClass("mute");
+				}
+				
 				currDiv--;
 				console.log("CURR DIV VALUE IS:",currDiv);
 				var nextDiv = currDiv + 1;
@@ -118,6 +129,10 @@ WORDCRAFT.build = (function(){
 
 				initReadData();
 			}
+			else
+			{
+				btnForwardDiv.toggleClass("mute");
+			}
 		
 
 		});
@@ -129,7 +144,7 @@ WORDCRAFT.build = (function(){
 			if( gameLevel === 0 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0)
 			{
 				gameLevel++;
-				$("#btn_back").toggle();
+				$("#btn_back").toggleClass("mute");
 				
 				//This code is to refresh everything when going from level 0 to 1
 				$('.build-sentence').children().each(function (id,obj) {
@@ -138,14 +153,14 @@ WORDCRAFT.build = (function(){
 						});
 				});
 				WORDCRAFT.canvasReset();
-				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+				$(".level").replaceWith('<div class="level">Make a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				initReadData();
 			}
 			else if (gameLevel === 1 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0 && currWord[3].length > 0 &&  currWord[4].length > 0)
 			{
 				gameLevel++;
-				$("#btn_forward").toggle();
-				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+				$("#btn_forward").toggleClass("mute");
+				$(".level").replaceWith('<div class="level">Make a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 				WORDCRAFT.canvasReset();
 				initReadData();
 			}	
@@ -156,16 +171,16 @@ WORDCRAFT.build = (function(){
 
 			if(gameLevel === 1)
 			{
-				$("#btn_back").toggle();
-				$("#btn_forward").toggle();
+				$("#btn_back").toggleClass("mute");
+				$("#btn_forward").toggleClass("mute");
 			}
 			if(gameLevel > 0)
 			{
 				gameLevel--;
-				$("#btn_forward").toggle();
+				$("#btn_forward").toggleClass("mute");
 			}
 			
-			$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+			$(".level").replaceWith('<div class="level">Make a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 			
 			WORDCRAFT.canvasReset();
 
@@ -189,7 +204,7 @@ WORDCRAFT.build = (function(){
 
 		$("#btn_refresh").bind("vclick",function(event) {
 
-			$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+			$(".level").replaceWith('<div class="level">Make a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
 			WORDCRAFT.canvasReset();
 			$('.build-sentence').children().each(function (id,obj) {
 				$(obj).children().each(function (id,subObj) {
@@ -404,13 +419,11 @@ WORDCRAFT.build = (function(){
 				posClass = 'det_singular det_vowel';
 			}
 						
-		 	var html = '<li class="draggable li-det '+posClass+'" id="det_'+nounText[0].toLowerCase()+'">'+nounText[0];
-		 	html += '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+		 	var html = '<li class="draggable li-det '+posClass+'" id="det_'+nounText[0].toLowerCase()+'">'+nounText[0]+'</li>';
 			$("#sent-det-1").append(html);
 			var nounId = $("#sent-noun-1 li").attr("id").split("_")[1];
 			var nounClass = $("#sent-noun-1 li").attr("class");
-			var nounhtml = '<li class="'+nounClass+'" id="noun_'+nounId+'">'+nounText[1] 
-			nounhtml += '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>';
+			var nounhtml = '<li class="'+nounClass+'" id="noun_'+nounId+'">'+nounText[1]+'</li>' ;
 			
 			$('#sent-noun-1').find('li').remove();
 			$("#sent-noun-1").append(nounhtml);
@@ -533,10 +546,7 @@ WORDCRAFT.build = (function(){
 						posClass = posClass + ' ' + pos + '_consonant';
 					}
 				}
-				var htmlLi = '<li class="draggable li-'+pos+' '+posClass.trim()+'" id="'+pos+'_'+word.replace(/\s/g,"_")+'">'+ wordText;
-				htmlLi = htmlLi + '<span class="icon-entypo circled-cross" style="cursor: pointer;"></span></li>' ;
-				//divId = ".words-list-" + currDiv + " "+divId;
-				//console.log("WORDLIST DIV ID",divId);
+				var htmlLi = '<li class="draggable li-'+pos+' '+posClass.trim()+'" id="'+pos+'_'+word.replace(/\s/g,"_")+'">'+ wordText+'</li>';
 				
 				$(".words-list-" + currDiv +" "+divId).append(htmlLi);						
 			}
