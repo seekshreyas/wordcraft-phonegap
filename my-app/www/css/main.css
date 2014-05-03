@@ -228,13 +228,19 @@ body{
 
 .icon-entypo{
   font-family: 'Entypo', sans-serif;
+
 }
 
 
 
-header{
-  display:none;
-}
+header h1{
+  font-family: 'QuickSand Bold', sans-serif;
+  text-align: center;
+  color: #c1272d;
+  font-size:4em;
+  margin:0;
+  padding:0}
+  
 
 
 
