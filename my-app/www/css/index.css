@@ -5,6 +5,20 @@
 
 
 /*div*/
+
+.content {
+  width:100%;
+  height:auto;
+}
+
+.bar{
+  position:relative;
+  height:3em;
+  width:100%;
+  background-color: #EEDC82;
+  margin-top:25px;
+
+}
 .mute{
   color:#C0C0C0 ;
 }
@@ -14,6 +28,7 @@
   width:75%; 
   height:auto;
   padding:0em 3.7em;
+  background-color:#CDC5BF;
 
 }
 .words-list-0 {
@@ -21,9 +36,10 @@
   padding:0.5em;
   float:left;
   margin:auto;
-  width:70%; 
+  width:75%; 
   white-space: nowrap;
   min-height: 110px;
+  background-color:#CDC5BF;
 }
 
 
@@ -32,10 +48,11 @@
   padding:0.5em;
   float:left;
   margin:auto;
-  width:70%; 
+  width:75%; 
   white-space: nowrap;
   display:none;
   min-height: 110px;
+  background-color:#CDC5BF;
 }
 
 
@@ -270,6 +287,16 @@ Entypo Icons
   height:80px;
 }*/
 
+
+#footer{
+    position:fixed;
+    height:50px;
+    background-color:red;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}
 =======
 
 /*Sonali: Right now this is a hack, have to remove this*/

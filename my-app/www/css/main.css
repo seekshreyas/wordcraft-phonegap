@@ -270,7 +270,7 @@ header{
 
     /*canvas*/
     #elem-frame-svg{
-        border:1px solid #bfbfbf;
+        border:10px solid #C0C0C0  ;
         margin:1em 4%;
         background: url('../res/img/bg/bg_green.png') top left no-repeat ;
     }
