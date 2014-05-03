@@ -21,9 +21,9 @@ WORDCRAFT = (function(){
 
 	var newDefaultSceneObj = [{
 		"body" : {
-			"eyes" : "res/img/animals/fence/fence_part_eyes_happy.svg",
-			"skin" : "res/img/animals/fence/fence_part_skin_positive.svg",
-			"mouth" : "res/img/animals/fence/fence_part_mouth_happy.svg",
+			"eyes" : "res/img/animals/horse/horse_part_eyes_happy.svg",
+			"skin" : "res/img/animals/horse/horse_part_skin_positive.svg",
+			"mouth" : "res/img/animals/horse/horse_part_mouth_happy.svg",
 			"color" : "", //there will be a default color for every animal
 			"size" : "normal", //"normal is default.
 			"width" : 200,
@@ -76,6 +76,62 @@ WORDCRAFT = (function(){
 	}
 ];
 
+// sentence : goats are standing behind the horses
+var prepObject = [
+    {
+        "animation": [
+            {
+                "animation_params": {
+                    "end": "0.25",
+                    "mid": "0",
+                    "start": "-0.25"
+                },
+                "animation_type": "translateX",
+                "duration": "",
+                "scale": "",
+                "speed": "fast"
+            }
+        ],
+        "body": {
+            "color": "",
+            "eyes": "res/img/animals/dog/dog_part_eyes_happy.svg",
+            "height": 235,
+            "mouth": "res/img/animals/dog/dog_part_mouth_happy.svg",
+            "size": "normal",
+            "skin": "res/img/animals/dog/dog_part_skin_positive.svg",
+            "width": 200
+        },
+        "pos": {
+            "plane": "ground",
+            "plane_matrix": [
+                0,
+                0
+            ],
+            "plane_pos": "center_front"
+        }
+    },
+    {
+        "animation": [],
+        "body": {
+            "color": "",
+            "eyes": "res/img/animals/cow/cow_part_eyes_happy.svg",
+            "height": 235,
+            "mouth": "res/img/animals/cow/cow_part_mouth_happy.svg",
+            "size": "normal",
+            "skin": "res/img/animals/cow/cow_part_skin_positive.svg",
+            "width": 200
+        },
+        "pos": {
+            "plane": "ground",
+            "plane_matrix": [
+                0,
+                0
+            ],
+            "plane_pos": "center_back"
+        }
+    }
+];
+
 	var init = function(){
 		console.log("let the crafting begin!");
 		
@@ -95,7 +151,7 @@ WORDCRAFT = (function(){
 
 		// console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		renderObjOnCanvas(prepObject, perspDim);
 
 	};
 
@@ -249,7 +305,10 @@ WORDCRAFT = (function(){
 									var eyes = img.scale(imgInitScale*pos[2]);
 
 									
+									
 									var part_left = pos[0] - imgOffsetX + adjacencyOffset[0] * adjacencyAmplitude;
+									
+									
 									var part_top = canvasheight - (pos[1] + imgOffsetY) + adjacencyOffset[1] * adjacencyAmplitude;
 									// console.log("Shreyas:",pos, part_top, part_left, imgScale);
 
