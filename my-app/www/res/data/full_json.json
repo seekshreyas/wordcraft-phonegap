@@ -523,12 +523,12 @@
 					"multi_nouns" : false,
 					"position_change" : {
 						"status" : true,
-						"positionX" : 0,
-						"positionY" : 3
+						"positionX" : 999,
+						"positionY" : 999
 					},
 					"grid" : {
-						"grid_obj2" : "",
-						"grid_obj1" : ""
+						"grid_obj2" : "center_middle",
+						"grid_obj1" : "center_front"
 					}
 				},
 				"near" : {
@@ -708,12 +708,12 @@
 					"multi_nouns" : false,
 					"position_change" : {
 						"status" : true,
-						"positionX" : 0,
-						"positionY" : 3
+						"positionX" : 999,
+						"positionY" : 999
 					},
 					"grid" : {
-						"grid_obj2" : "",
-						"grid_obj1" : ""
+						"grid_obj2" : "center_middle",
+						"grid_obj1" : "center_front"
 					}
 				},
 				"with" : {
@@ -783,12 +783,12 @@
 					"multi_nouns" : false,
 					"position_change" : {
 						"status" : true,
-						"positionX" : 0,
-						"positionY" : 3
+						"positionX" : 999,
+						"positionY" : 999
 					},
 					"grid" : {
-						"grid_obj2" : "",
-						"grid_obj1" : ""
+						"grid_obj2" : "center_middle",
+						"grid_obj1" : "center_front"
 					}
 				},
 				"next to" : {
@@ -867,12 +867,12 @@
 					"multi_nouns" : false,
 					"position_change" : {
 						"status" : true,
-						"positionX" : 0,
-						"positionY" : 3
+						"positionX" : 999,
+						"positionY" : 999
 					},
 					"grid" : {
-						"grid_obj2" : "",
-						"grid_obj1" : ""
+						"grid_obj2" : "center_middle",
+						"grid_obj1" : "center_front"
 					}
 				},
 				"behind" : {
@@ -1191,12 +1191,12 @@
 					"multi_nouns" : false,
 					"position_change" : {
 						"status" : true,
-						"positionX" : 0,
-						"positionY" : 3
+						"positionX" : 999,
+						"positionY" : 999
 					},
 					"grid" : {
-						"grid_obj2" : "",
-						"grid_obj1" : ""
+						"grid_obj2" : "center_middle",
+						"grid_obj1" : "center_front"
 					}
 				},
 				"with" : {
@@ -1278,12 +1278,12 @@
 					"multi_nouns" : false,
 					"position_change" : {
 						"status" : true,
-						"positionX" : 0,
-						"positionY" : 3
+						"positionX" : 999,
+						"positionY" : 999
 					},
 					"grid" : {
-						"grid_obj2" : "",
-						"grid_obj1" : ""
+						"grid_obj2" : "center_middle",
+						"grid_obj1" : "center_front"
 					}
 				},
 				"with" : {
@@ -1522,12 +1522,12 @@
 					"multi_nouns" : false,
 					"position_change" : {
 						"status" : true,
-						"positionX" : 0,
-						"positionY" : 3
+						"positionX" : 999,
+						"positionY" : 999
 					},
 					"grid" : {
-						"grid_obj2" : "",
-						"grid_obj1" : ""
+						"grid_obj2" : "center_middle",
+						"grid_obj1" : "center_front"
 					}
 				}
 			},
@@ -1597,12 +1597,12 @@
 					"multi_nouns" : false,
 					"position_change" : {
 						"status" : true,
-						"positionX" : 0,
-						"positionY" : 3
+						"positionX" : 999,
+						"positionY" : 999
 					},
 					"grid" : {
-						"grid_obj2" : "",
-						"grid_obj1" : ""
+						"grid_obj2" : "center_middle",
+						"grid_obj1" : "center_front"
 					}
 				},
 				"with" : {
