@@ -176,33 +176,33 @@ textarea {
 }
 
 
-/*QuickSans*/
+/*QuickSand*/
 @font-face{    
-  font-family: 'QuickSans';
+  font-family: 'QuickSand';
   src: url('../res/font/quicksand/quicksand_regular.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Italic';
+  font-family: 'QuickSand Italic';
   src: url('../res/font/quicksand/quicksand_italic.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Bold';
+  font-family: 'QuickSand Bold';
   src: url('../res/font/quicksand/quicksand_bold.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans BoldItalic';
+  font-family: 'QuickSand BoldItalic';
   src: url('../res/font/quicksand/quicksand_bolditalic.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Light';
+  font-family: 'QuickSand Light';
   src: url('../res/font/quicksand/quicksand_light.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans LightItalic';
+  font-family: 'QuickSand LightItalic';
   src: url('../res/font/quicksand/quicksand_lightitalic.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Dashed';
+  font-family: 'QuickSand Dashed';
   src: url('../res/font/quicksand/quicksand_dash.otf') format('truetype'); 
 }
 
@@ -228,20 +228,21 @@ body{
 
 .icon-entypo{
   font-family: 'Entypo', sans-serif;
+
 }
 
 
 
-header{
-  display:none;
+header h1{
+  font-family: 'QuickSand Bold', sans-serif;
+  text-align: center;
+  color: #c1272d;
+  font-size:4em;
+  margin:0.5em 0 0 0;
+  padding:0
 }
 
 
-/*button*/
-#btn-replay{
-  float:left;
-  font-size:10em;
-}
 
 
 
@@ -282,11 +283,6 @@ header{
     }
 
 
-.level{
-	margin: 1.0em 4em;
-	font-family: 'QuickSans Bold';
-	font-size: 2.0em;
-}
 
 
 

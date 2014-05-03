@@ -176,33 +176,33 @@ textarea {
 }
 
 
-/*QuickSans*/
+/*QuickSand*/
 @font-face{    
-  font-family: 'QuickSans';
+  font-family: 'QuickSand';
   src: url('../res/font/quicksand/quicksand_regular.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Italic';
+  font-family: 'QuickSand Italic';
   src: url('../res/font/quicksand/quicksand_italic.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Bold';
+  font-family: 'QuickSand Bold';
   src: url('../res/font/quicksand/quicksand_bold.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans BoldItalic';
+  font-family: 'QuickSand BoldItalic';
   src: url('../res/font/quicksand/quicksand_bolditalic.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Light';
+  font-family: 'QuickSand Light';
   src: url('../res/font/quicksand/quicksand_light.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans LightItalic';
+  font-family: 'QuickSand LightItalic';
   src: url('../res/font/quicksand/quicksand_lightitalic.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Dashed';
+  font-family: 'QuickSand Dashed';
   src: url('../res/font/quicksand/quicksand_dash.otf') format('truetype'); 
 }
 
@@ -228,13 +228,20 @@ body{
 
 .icon-entypo{
   font-family: 'Entypo', sans-serif;
+
 }
 
 
 
-header{
-  display:none;
+header h1{
+  font-family: 'QuickSand Bold', sans-serif;
+  text-align: center;
+  color: #c1272d;
+  font-size:4em;
+  margin:0.5em 0 0 0;
+  padding:0
 }
+
 
 
 
@@ -261,11 +268,26 @@ header{
     float:left;
     width:100%; 
     margin:1em 0;
-    padding: 2em 0;
+    padding: 0.5em 0;
     background:#fff;
 }
 
 
+  /*div*/
+  .wrapper-canvas{
+    position: relative;
+    padding: 2px;
+    background: -webkit-radial-gradient(90px 0, circle cover, #e4f5fc 40%, #69BCE0 100%);
+    background: radial-gradient(90px 0, circle cover, #e4f5fc 40%, #69BCE0 100%);
+    background: -moz-radial-gradient(90px 0, circle cover, #e4f5fc 40%, #69BCE0 100%);
+    border-radius: 40% / 5%;
+    border-bottom:1px solid #27798F;
+    border-top: 1px solid #105464;
+    color: white;
+    text-align: center;
+    text-indent: 0.1em;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  }
   
 
     /*canvas*/

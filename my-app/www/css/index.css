@@ -26,11 +26,29 @@
 .middle-content{
   float:left;
   width:75%; 
-  height:auto;
   padding:0em 3.7em;
   background-color:#CDC5BF;
 
 }
+
+
+/* table perspective */
+.middle-content{
+  /*transform: rotateX(60deg);*/
+
+  -webkit-transform: rotateX(60deg); 
+      -ms-transform: rotateX(60deg); 
+          transform: rotateX(60deg); 
+
+  position: relative;
+  background: url(../img/texture_woodgrain.jpg); 
+  background-size: cover;
+  height:400px;
+  padding:100px 0 0 0;
+
+}
+
+
 .words-list-0 {
   background: #E8E8E8 ;
   padding:0.5em;
@@ -41,6 +59,7 @@
   min-height: 110px;
   background-color:#CDC5BF;
 }
+
 
 
 .words-list-1,.words-list-2,.words-list-3 {
@@ -297,7 +316,6 @@ Entypo Icons
     right:0px;
     margin-bottom:0px;
 }
-=======
 
 /*Sonali: Right now this is a hack, have to remove this*/
 .ui-loader{
