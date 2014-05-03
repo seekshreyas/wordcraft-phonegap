@@ -237,12 +237,6 @@ header{
 }
 
 
-/*button*/
-#btn-replay{
-  float:left;
-  font-size:10em;
-}
-
 
 
 /*div*/
@@ -282,11 +276,6 @@ header{
     }
 
 
-.level{
-	margin: 1.0em 4em;
-	font-family: 'QuickSans Bold';
-	font-size: 2.0em;
-}
 
 
 
