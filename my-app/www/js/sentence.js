@@ -75,28 +75,26 @@ WORDCRAFT.build = (function(){
 			event.stopPropagation();
 			console.log("Reached div forward");
 			var btnBackwardDiv = $("#btn_divBackward");
+			var prevDiv = 0;
 			if(currDiv<=2)
 			{
-				if(btnBackwardDiv.hasClass("mute"))
-				{
-					btnBackwardDiv.toggleClass("mute");
-				}
+
 				currDiv++;
 				console.log("CURR DIV VALUE IS:",currDiv);
-				var prevDiv = currDiv - 1;
-
-				console.log("PREV DIV VALUE IS:",prevDiv);
-
-				$(".words-list-"+prevDiv).hide();
-				$(".words-list-"+currDiv).show();
-
-				initReadData();
-
+				prevDiv = currDiv - 1;
 			}
 			else
 			{
-				btnBackwardDiv.toggleClass("mute");
+				prevDiv = 3;
+				currDiv = 0;
 			}
+
+			console.log("PREV DIV VALUE IS:",prevDiv);
+
+			$(".words-list-"+prevDiv).hide();
+			$(".words-list-"+currDiv).show();
+
+			initReadData();
 			
 		});
 
@@ -104,33 +102,29 @@ WORDCRAFT.build = (function(){
 			event.stopPropagation();
 			console.log("Reached div backwards");
 			var btnForwardDiv = $("#btn_divForward");
+			var nextDiv = "";
 			if(currDiv>0)
 			{
-				if(btnForwardDiv.hasClass("mute"))
-				{
-					btnForwardDiv.toggleClass("mute");
-				}
-				
 				currDiv--;
 				console.log("CURR DIV VALUE IS:",currDiv);
-				var nextDiv = currDiv + 1;
+				nextDiv = currDiv + 1;
 
-				console.log("NEXT DIV VALUE IS:",nextDiv);
-
-				console.log("THE CLASS OF THE DIV IS:",".words-list-"+currDiv);
-
-
-				$(".words-list-"+nextDiv).hide();
-				$(".words-list-"+currDiv).show();
-
-				initReadData();
+				
 			}
 			else
 			{
-				btnForwardDiv.toggleClass("mute");
+				nextDiv = 0 ;
+				currDiv = 3;
+				//btnForwardDiv.toggleClass("mute");
 			}
 		
+			console.log("NEXT DIV VALUE IS:",nextDiv);
+			console.log("THE CLASS OF THE DIV IS:",".words-list-"+currDiv);
 
+			$(".words-list-"+nextDiv).hide();
+			$(".words-list-"+currDiv).show();
+
+			initReadData();
 		});
 
 

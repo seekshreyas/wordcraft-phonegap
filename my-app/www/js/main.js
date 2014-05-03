@@ -19,61 +19,67 @@ WORDCRAFT = (function(){
 	var replay = []; // for caching animations
 
 
-	var newDefaultSceneObj = [{
-		"body" : {
-			"eyes" : "res/img/animals/fence/fence_part_eyes_happy.svg",
-			"skin" : "res/img/animals/fence/fence_part_skin_positive.svg",
-			"mouth" : "res/img/animals/fence/fence_part_mouth_happy.svg",
-			"color" : "", //there will be a default color for every animal
-			"size" : "normal", //"normal is default.
-			"width" : 200,
-			"height" : 255
-		},
-		"pos" : {
-			"plane" : "ground",
-			"plane_pos" : "center_middle",
-			"plane_matrix" : [0, 0]
-		},
-		"animation" : [{
-				"duration" : "",
-				"animation_params" : {
-					"start" : "-0.25",
-					"end" : "0.25",
-					"mid" : "0"
-				},
-				"speed" : "fast",
-				"scale" : "",
-				"animation_type" : "translateX"
-			}
-		]
-	}, {
-		"body" : {
-			"eyes" : "res/img/animals/sun/sun_part_eyes_happy.svg",
-			"skin" : "res/img/animals/sun/sun_part_skin_positive.svg",
-			"mouth" : "res/img/animals/sun/sun_part_mouth_happy.svg",
-			"color" : "", //there will be a default color for every animal
-			"size" : "normal", //"normal is default.
-			"width" : 200,
-			"height" : 255
-		},
-		"pos" : {
-			"plane" : "sky",
-			"plane_pos" : "right_middle",
-			"plane_matrix" : [0, 0]
-		},
-		"animation" : [{
-				"duration" : "",
-				"animation_params" : {
-					"start" : "-0.25",
-					"end" : "0.25",
-					"mid" : "0"
-				},
-				"speed" : "fast",
-				"scale" : "",
-				"animation_type" : "translateX"
-			}
-		]
-	}
+	var newDefaultSceneObj = [
+    {
+        "body": {
+            "eyes": "res/img/animals/goat/goat_part_eyes_sadder.svg",
+            "skin": "res/img/animals/goat/goat_part_skin_negative.svg",
+            "mouth": "res/img/animals/goat/goat_part_mouth_sadder.svg",
+            "color": "",
+            "size": "normal",
+            "width": 200,
+            "height": 235
+        },
+        "pos": {
+            "plane": "ground",
+            "plane_pos": "center_front",
+            "plane_matrix": [
+                0,
+                0
+            ]
+        },
+        "animation": []
+    },
+    {
+        "body": {
+            "eyes": "res/img/animals/goat/goat_part_eyes_sadder.svg",
+            "skin": "res/img/animals/goat/goat_part_skin_negative.svg",
+            "mouth": "res/img/animals/goat/goat_part_mouth_sadder.svg",
+            "color": "",
+            "size": "normal",
+            "width": 200,
+            "height": 235
+        },
+        "pos": {
+            "plane": "ground",
+            "plane_pos": "center_front",
+            "plane_matrix": [
+                1,
+                0
+            ]
+        },
+        "animation": []
+    },
+    {
+        "body": {
+            "eyes": "res/img/animals/cow/cow_part_eyes_happy.svg",
+            "skin": "res/img/animals/cow/cow_part_skin_positive.svg",
+            "mouth": "res/img/animals/cow/cow_part_mouth_happy.svg",
+            "color": "",
+            "size": "normal",
+            "width": 200,
+            "height": 235
+        },
+        "pos": {
+            "plane": "ground",
+            "plane_pos": "center_middle",
+            "plane_matrix": [
+                0,
+                0
+            ]
+        },
+        "animation": []
+    }
 ];
 
 	var init = function(){
