@@ -178,31 +178,31 @@ textarea {
 
 /*QuickSand*/
 @font-face{    
-  font-family: 'QuickSans';
+  font-family: 'QuickSand';
   src: url('../res/font/quicksand/quicksand_regular.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Italic';
+  font-family: 'QuickSand Italic';
   src: url('../res/font/quicksand/quicksand_italic.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Bold';
+  font-family: 'QuickSand Bold';
   src: url('../res/font/quicksand/quicksand_bold.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans BoldItalic';
+  font-family: 'QuickSand BoldItalic';
   src: url('../res/font/quicksand/quicksand_bolditalic.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Light';
+  font-family: 'QuickSand Light';
   src: url('../res/font/quicksand/quicksand_light.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans LightItalic';
+  font-family: 'QuickSand LightItalic';
   src: url('../res/font/quicksand/quicksand_lightitalic.otf') format('truetype'); 
 }
 @font-face{    
-  font-family: 'QuickSans Dashed';
+  font-family: 'QuickSand Dashed';
   src: url('../res/font/quicksand/quicksand_dash.otf') format('truetype'); 
 }
 

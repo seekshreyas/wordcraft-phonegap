@@ -234,9 +234,6 @@ var prepObject = [
 		});
 
 
-		// jQuery('.level').on('vclick', function(){
-		// 	canvasReset();
-		// });
 
 
 
