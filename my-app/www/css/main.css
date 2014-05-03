@@ -238,9 +238,10 @@ header h1{
   text-align: center;
   color: #c1272d;
   font-size:4em;
-  margin:0;
-  padding:0}
-  
+  margin:0.5em 0 0 0;
+  padding:0
+}
+
 
 
 
@@ -267,11 +268,26 @@ header h1{
     float:left;
     width:100%; 
     margin:1em 0;
-    padding: 2em 0;
+    padding: 0.5em 0;
     background:#fff;
 }
 
 
+  /*div*/
+  .wrapper-canvas{
+    position: relative;
+    padding: 2px;
+    background: -webkit-radial-gradient(90px 0, circle cover, #e4f5fc 40%, #69BCE0 100%);
+    background: radial-gradient(90px 0, circle cover, #e4f5fc 40%, #69BCE0 100%);
+    background: -moz-radial-gradient(90px 0, circle cover, #e4f5fc 40%, #69BCE0 100%);
+    border-radius: 40% / 5%;
+    border-bottom:1px solid #27798F;
+    border-top: 1px solid #105464;
+    color: white;
+    text-align: center;
+    text-indent: 0.1em;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  }
   
 
     /*canvas*/

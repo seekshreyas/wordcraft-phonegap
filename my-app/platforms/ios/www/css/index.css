@@ -12,19 +12,40 @@
 .middle-content{
   float:left;
   width:75%; 
-  height:auto;
   padding:0em 3.7em;
 
 }
+
+
+/* table perspective */
+.middle-content{
+  /*transform: rotateX(60deg);*/
+
+  -webkit-transform: rotateX(60deg); 
+      -ms-transform: rotateX(60deg); 
+          transform: rotateX(60deg); 
+
+  position: relative;
+  background: url(../img/texture_woodgrain.jpg); 
+  background-size: cover;
+  height:400px;
+  padding:100px 0 0 0;
+
+}
+
+
+
+
+
 .words-list-0 {
   background: #E8E8E8 ;
   padding:0.5em;
   float:left;
-  margin:auto;
   width:70%; 
   white-space: nowrap;
   min-height: 110px;
 }
+
 
 
 .words-list-1,.words-list-2,.words-list-3 {
