@@ -292,12 +292,12 @@ header h1{
    ========================================================================== */
 
 #wrapper-table{
-  background: url(../img/texture_wood.png);
-  width:765px;
+  background: url(../img/texture_wood2.png);
+  width:770px;
   margin:0;
-  height:250px;
+  height:245px;
   float:left;
-  border-bottom:10px solid #efd395;
+  border-bottom:15px solid #cb8a59;
 }
 
 
