@@ -128,7 +128,7 @@
     float:left;
     min-width:4em;
     margin:0.2em;
-    border:1px solid black;
+    border:1px solid;
     margin-left:5px;
     /*padding:5px;*/
     display: inline;
@@ -154,33 +154,39 @@
 
 .li-noun
 {
-    background-color:#EF4714  
+    background-color:#EF4714;
+    border-color:#e74b13;  
 }
 
 .li-prep
 {
 
     background-color:#4BA9EE;
+    border-color:#4cabf6; 
 }
 
 .li-helpverb
 {
   background-color: #FFC002;
+  border-color:#f0bd14; 
 }
 
 .li-verb
 {
     background-color:#9E49F3;
+    border-color:#7a42bb;
 }
 
 .li-adj
 {
-    background-color:#FF7F50;
+    background-color:#fc6d08;
+    border-color:#c14e00;
 }
 
 .li-det
 {
     background-color:#83B70D;
+    border-color:#7da600;
 }
 
 /*
@@ -263,13 +269,15 @@ Entypo Icons
   width: 100%;
   float:left;
 
+  margin:10px 0 0 0;
+
   /*position:fixed;
   bottom:0;
   left:0;*/
 
-  background-color: #9496a1;
-  background-image: -webkit-linear-gradient(top, #9496a1, #807d89);
-  background-image:         linear-gradient(to bottom, #9496a1, #807d89);
+  background-color: #fff200;
+  background-image: -webkit-linear-gradient(top, #fff200, #e5d405);
+  background-image:         linear-gradient(to bottom, #fff200, #e5d405);
 
 }
 

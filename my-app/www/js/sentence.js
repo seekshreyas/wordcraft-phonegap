@@ -135,6 +135,7 @@ WORDCRAFT.build = (function(){
 			{
 				gameLevel++;
 				$("#btn_back").toggleClass("mute");
+
 				
 				//This code is to refresh everything when going from level 0 to 1
 				$('.build-sentence').children().each(function (id,obj) {
@@ -144,6 +145,9 @@ WORDCRAFT.build = (function(){
 				});
 				WORDCRAFT.canvasReset();
 				$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
+
+				// jQuery('#btn_back .btn_text').text((gameLevelSentWord[gameLevel]-2));
+				// jQuery('#btn_back .btn_text').text((gameLevelSentWord[gameLevel]+2));
 				initReadData();
 			}
 			else if (gameLevel === 1 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0 && currWord[3].length > 0 &&  currWord[4].length > 0)
