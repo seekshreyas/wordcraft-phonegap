@@ -34,7 +34,12 @@
         <section class="wrapper-main">
             <div class="wrapper-canvas">
                 <canvas id="elem-frame-svg" width="700" height="518"></canvas>
+
+
             </div>
+
+
+
 
 
 
@@ -46,82 +51,91 @@
 			
             <!-- sonali's code -->
             <div data-role="content" class="content">
-                <div class="top-content">
+
+
+                <div class="wrapper-btn-level">
+                    <div id="btn_back" class="mute"><span class="icon-entypo">&#11013;</span> 3 words</div> 
                     <div class="level">
-                    <p>Make a 3 word sentence</p>
+                        <p>Make a 3 word sentence</p>
                     </div>
-                    <div id="btn_back" class="mute icon-entypo">&#11013;</div> 
 
-                    <div class="build-sentence" data-outer-parent="true">
-                        <div id="sent-det-1" data-role="det1">
+                    <div id="btn_forward">7 words<span class="icon-entypo">&#10145;</span> </div> 
+                </div>
+                <div id="wrapper-table">
+                    <div class="top-content">
+
+
+                        <div class="build-sentence" data-outer-parent="true">
+                            <div id="sent-det-1" data-role="det1">
+                            </div>
+                            <div id="sent-adj-1"  data-role="adj1">
+                            </div>
+                            <div id="sent-noun-1" class="active"  data-role="noun1">
+                            </div>
+                            <div id="sent-helpverb-1" class="active"  data-role="helpverb1">
+                            </div>
+                            <div id="sent-verb-1" class="active"  data-role="verb1">
+                            </div>
+                            <div id="sent-prep-1"  data-role="prep1">
+                            </div>
+                            <div id="sent-noun-2"  data-role="noun2">
+                            </div>    
                         </div>
-                        <div id="sent-adj-1"  data-role="adj1">
-                        </div>
-                        <div id="sent-noun-1" class="active"  data-role="noun1">
-                        </div>
-                        <div id="sent-helpverb-1" class="active"  data-role="helpverb1">
-                        </div>
-                        <div id="sent-verb-1" class="active"  data-role="verb1">
-                        </div>
-                        <div id="sent-prep-1"  data-role="prep1">
-                        </div>
-                        <div id="sent-noun-2"  data-role="noun2">
-                        </div>    
+
                     </div>
-                    <div id="btn_forward" class="icon-entypo">&#10145;</div> 
+                
 
+               <!-- <div class="middle-content-texture"></div> -->
+                    <div class="middle-content">  
+                            <div id="btn_divBackward" class="icon-entypo">&#59237;</div>  
+                            <div class="words-list-0" data-outer-parent="true" class="active">
+                                <ul id="init-det" data-role="listview"></ul>
+                                <ul id="init-noun" data-role="listview"></ul>
+                                <ul id="init-helpverb" data-role="listview"></ul> 
+                                <ul id="init-verb" class="active" data-role="listview"></ul> 
+                                <ul id="init-prep" data-role="listview"></ul> 
+                                <ul id="init-adj" data-role="listview"></ul>
+                                <ul id="init-nounlvl3" data-role="listview"></ul>  
+                            </div>
+                            <div class="words-list-1" data-outer-parent="true">
+                                <ul id="init-det" data-role="listview"></ul>
+                                <ul id="init-noun" data-role="listview"></ul>
+                                <ul id="init-helpverb" data-role="listview"></ul> 
+                                <ul id="init-verb" class="active" data-role="listview"></ul> 
+                                <ul id="init-prep" data-role="listview"></ul> 
+                                <ul id="init-adj" data-role="listview"></ul>
+                                <ul id="init-nounlvl3" data-role="listview"></ul>  
+                            </div>
+                            <div class="words-list-2" data-outer-parent="true" >
+                                <ul id="init-det" data-role="listview"></ul>
+                                <ul id="init-noun" data-role="listview"></ul>
+                                <ul id="init-helpverb" data-role="listview"></ul> 
+                                <ul id="init-verb" class="active" data-role="listview"></ul> 
+                                <ul id="init-prep" data-role="listview"></ul> 
+                                <ul id="init-adj" data-role="listview"></ul>
+                                <ul id="init-nounlvl3" data-role="listview"></ul>  
+                            </div>
+                            <div class="words-list-3" data-outer-parent="true">
+                                <ul id="init-det" data-role="listview"></ul>
+                                <ul id="init-noun" data-role="listview"></ul>
+                                <ul id="init-helpverb" data-role="listview"></ul> 
+                                <ul id="init-verb" class="active" data-role="listview"></ul> 
+                                <ul id="init-prep" data-role="listview"></ul> 
+                                <ul id="init-adj" data-role="listview"></ul>
+                                <ul id="init-nounlvl3" data-role="listview"></ul>  
+                            </div>
+                            
+                            <div id="btn_divForward" class="icon-entypo active">&#59238;</div> 
+                    </div>
                 </div>
-                <div class="bar"></div>
-
-               
-                <div class="middle-content">  
-                        <div id="btn_divBackward" class="icon-entypo">&#59237;</div>  
-                        <div class="words-list-0" data-outer-parent="true" class="active">
-                            <ul id="init-det" data-role="listview"></ul>
-                            <ul id="init-noun" data-role="listview"></ul>
-                            <ul id="init-helpverb" data-role="listview"></ul> 
-                            <ul id="init-verb" class="active" data-role="listview"></ul> 
-                            <ul id="init-prep" data-role="listview"></ul> 
-                            <ul id="init-adj" data-role="listview"></ul>
-                            <ul id="init-nounlvl3" data-role="listview"></ul>  
-                        </div>
-                        <div class="words-list-1" data-outer-parent="true">
-                            <ul id="init-det" data-role="listview"></ul>
-                            <ul id="init-noun" data-role="listview"></ul>
-                            <ul id="init-helpverb" data-role="listview"></ul> 
-                            <ul id="init-verb" class="active" data-role="listview"></ul> 
-                            <ul id="init-prep" data-role="listview"></ul> 
-                            <ul id="init-adj" data-role="listview"></ul>
-                            <ul id="init-nounlvl3" data-role="listview"></ul>  
-                        </div>
-                        <div class="words-list-2" data-outer-parent="true" >
-                            <ul id="init-det" data-role="listview"></ul>
-                            <ul id="init-noun" data-role="listview"></ul>
-                            <ul id="init-helpverb" data-role="listview"></ul> 
-                            <ul id="init-verb" class="active" data-role="listview"></ul> 
-                            <ul id="init-prep" data-role="listview"></ul> 
-                            <ul id="init-adj" data-role="listview"></ul>
-                            <ul id="init-nounlvl3" data-role="listview"></ul>  
-                        </div>
-                        <div class="words-list-3" data-outer-parent="true">
-                            <ul id="init-det" data-role="listview"></ul>
-                            <ul id="init-noun" data-role="listview"></ul>
-                            <ul id="init-helpverb" data-role="listview"></ul> 
-                            <ul id="init-verb" class="active" data-role="listview"></ul> 
-                            <ul id="init-prep" data-role="listview"></ul> 
-                            <ul id="init-adj" data-role="listview"></ul>
-                            <ul id="init-nounlvl3" data-role="listview"></ul>  
-                        </div>
-                        
-                        <div id="btn_divForward" class="icon-entypo active">&#59238;</div> 
-                </div>
-                <div class="middle-content-texture"></div>
+                
                 
                 <div class="bottom-content">
-                        <div id="btn-replay" class="icon-entypo">&#9656;</div> 
+
+                        <div class="btn-wrapper" id="btn-wrapper-replay"><div id="btn-replay" class="icon-entypo">&#9656;</div></div>
                         <!--<div id="btn_add_words" class="icon-entypo">&#10133;</div> -->
-                        <div id="trash" class="icon-entypo trash">&#59177;</div> 
-                        <div id="btn_refresh" class="icon-entypo">&#128260;</div>                  
+                        <div class="btn-wrapper" id="btn-wrapper-trash"><div id="trash" class="icon-entypo trash">&#59177;</div></div>
+                        <div class="btn-wrapper" id="btn-wrapper-refresh"><div id="btn_refresh" class="icon-entypo">&#10227;</div></div>           
                 </div>
 
             </div>

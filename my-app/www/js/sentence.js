@@ -143,14 +143,14 @@ WORDCRAFT.build = (function(){
 						});
 				});
 				WORDCRAFT.canvasReset();
-				$(".level").replaceWith('<div class="level">Make a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+				$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
 				initReadData();
 			}
 			else if (gameLevel === 1 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0 && currWord[3].length > 0 &&  currWord[4].length > 0)
 			{
 				gameLevel++;
 				$("#btn_forward").toggleClass("mute");
-				$(".level").replaceWith('<div class="level">Make a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+				$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
 				WORDCRAFT.canvasReset();
 				initReadData();
 			}	
@@ -170,7 +170,7 @@ WORDCRAFT.build = (function(){
 				$("#btn_forward").toggleClass("mute");
 			}
 			
-			$(".level").replaceWith('<div class="level">Make a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+			$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
 			
 			WORDCRAFT.canvasReset();
 
@@ -194,7 +194,7 @@ WORDCRAFT.build = (function(){
 
 		$("#btn_refresh").bind("vclick",function(event) {
 			event.stopPropagation();
-			$(".level").replaceWith('<div class="level">Make a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
+			$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
 			WORDCRAFT.canvasReset();
 			$('.build-sentence').children().each(function (id,obj) {
 				$(obj).children().each(function (id,subObj) {

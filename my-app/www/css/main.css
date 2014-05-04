@@ -262,6 +262,7 @@ header h1{
 
 
 
+
 /*section*/
 .wrapper-main{
     width:80%;
@@ -273,29 +274,33 @@ header h1{
 }
 
 
-  /*div*/
-  .wrapper-canvas{
-    position: relative;
-    padding: 2px;
-    background: -webkit-radial-gradient(90px 0, circle cover, #e4f5fc 40%, #69BCE0 100%);
-    background: radial-gradient(90px 0, circle cover, #e4f5fc 40%, #69BCE0 100%);
-    background: -moz-radial-gradient(90px 0, circle cover, #e4f5fc 40%, #69BCE0 100%);
-    border-radius: 40% / 5%;
-    border-bottom:1px solid #27798F;
-    border-top: 1px solid #105464;
-    color: white;
-    text-align: center;
-    text-indent: 0.1em;
-    box-shadow: 0 0 30px rgba(0,0,0,0.4);
-  }
   
 
     /*canvas*/
     #elem-frame-svg{
-        border:10px solid #C0C0C0  ;
+        border:10px solid #c0c0c0;
         margin:1em 4%;
         background: url('../res/img/bg/bg_green.png') top left no-repeat ;
     }
+
+
+
+
+
+/* ==========================================================================
+   Table Styling
+   ========================================================================== */
+
+#wrapper-table{
+  background: url(../img/texture_wood.png);
+  width:765px;
+  margin:0;
+  height:250px;
+  float:left;
+  border-bottom:10px solid #efd395;
+}
+
+
 
 
 
@@ -312,10 +317,10 @@ header h1{
 
 .container-canvas{
 
-height:200px;
-width:300px;
-background-color:white;
-margin-bottom:10px;
+  height:200px;
+  width:300px;
+  background-color:white;
+  margin-bottom:10px;
 
 }
 
