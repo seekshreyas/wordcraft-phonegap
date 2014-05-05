@@ -222,7 +222,11 @@ var webkit_droppables = function()
 			r = d[i].r;			
 			if(r.style.display != 'none')
 			{
-				dR.push({i : i, size : webkit_tools.getDimensions(r), offset : webkit_tools.cumulativeOffset(r)})			
+				dR.push({
+					i : i, 
+					size : webkit_tools.getDimensions(r), 
+					offset : webkit_tools.cumulativeOffset(r)
+				});			
 			}
 		}
 		
@@ -234,8 +238,11 @@ var webkit_droppables = function()
 		var indices = this.isOver(x,y);
 		var index = this.maxZIndex(indices);
 		var over = this.process(index,r);
+
+		
 		if(over)
 		{
+			// console.log("finalize:", indices, index, over);
 			this.drop(index, r,e);
 		}
 		this.process(-1,r);
@@ -246,6 +253,9 @@ var webkit_droppables = function()
 	{
 		var indices = this.isOver(x,y);
 		var index = this.maxZIndex(indices);
+
+		// console.log("check: ", r, this.droppableRegions);
+
 		return this.process(index,r);		
 	}
 	
@@ -259,6 +269,8 @@ var webkit_droppables = function()
 		var minX = 0;
 		var maxY = 0;
 		var minY = 0;
+
+		// console.log("isOver: ", this.droppables);
 		
 		while(i--)
 		{
@@ -274,13 +286,12 @@ var webkit_droppables = function()
 				
 				if((x > minX) && (x < maxX))
 				{
-					console.log("Shreyas: dragover");
-
 					active.push(r.i);
 				}			
 			}		
 		}
 		
+		// console.log("Shreyas: dragover", x, y);
 		return active;	
 	}
 	
@@ -308,6 +319,8 @@ var webkit_droppables = function()
 	
 	this.process = function(index, draggableRoot)
 	{
+		// console.log("process: ", index, draggableRoot);
+
 		//only perform update if a change has occured
 		if(this.lastIndex != index)
 		{
@@ -317,6 +330,8 @@ var webkit_droppables = function()
 				var d = this.droppables[this.lastIndex]
 				var p = d.p;
 				var r = d.r;
+
+
 				
 				if(p.hoverClass)
 				{
@@ -334,15 +349,26 @@ var webkit_droppables = function()
 				var p = d.p;
 				var r = d.r;
 				
+				
 				if(this.hasClassNames(draggableRoot, p.accept))
+				// if(this.hasClassNames(draggableRoot, []))
 				{
 					if(p.hoverClass)
 					{
+
 						webkit_tools.addClassName(r,p.hoverClass);
 					}
+
 					p.onOver();				
 					this.lastIndex = index;
 					this.lastOutput = true;	
+				}
+				else
+				{
+					console.log("onOver hoverClass:", r);
+
+					// this.addClassName('incorrect');
+					jQuery(r).addClass('incorrect');
 				}
 			}	
 		}
@@ -359,7 +385,10 @@ var webkit_droppables = function()
 	
 	this.hasClassNames = function(r, names)
 	{
+
 		var l = names.length;
+
+		// console.log("hasClassnames: ", r, names);
 		if(l == 0){return true}
 		while(l--)
 		{

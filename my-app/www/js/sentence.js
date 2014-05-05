@@ -42,7 +42,7 @@ WORDCRAFT.build = (function(){
 		//Reading properties file 
 		var full_json = $.getJSON( "res/data/full_json.json") 
 			.done(function(data) {
-				console.log("Read full json");
+				// console.log("Read full json");
 				fullJsonData = data; 
 				initReadData();
 			})
@@ -1118,7 +1118,7 @@ WORDCRAFT.build = (function(){
 			var preposition = fullJsonData["verb"][verb]["preposition"][sentWordList["prep"][0].replace(/-/g,' ')];
 			plane_matrixX = preposition["position_change"]["positionX"];
 			plane_matrixY = preposition["position_change"]["positionY"];
-			console.log("PLANE MATRIX VALUES ARE:",plane_matrixX,plane_matrixY);
+			// console.log("PLANE MATRIX VALUES ARE:",plane_matrixX,plane_matrixY);
 			if(plane_matrixX === 999 && plane_matrixY === 999 )
 			{
 				
@@ -1192,7 +1192,7 @@ WORDCRAFT.build = (function(){
 		}
 
 		// console.log("THE FINAL JSON");
-		console.log(JSON.stringify(finalJson));
+		// console.log(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return true;	
