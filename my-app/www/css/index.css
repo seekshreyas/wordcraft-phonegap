@@ -270,7 +270,7 @@
 
 
 .incorrect{
-  border:1px solid red;
+  /*border:1px solid red;*/
 
   -webkit-animation: shake 0.3s infinite;
           animation: shake 0.3s infinite;

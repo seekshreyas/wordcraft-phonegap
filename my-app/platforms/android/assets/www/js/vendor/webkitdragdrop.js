@@ -180,7 +180,13 @@ var webkit_droppables = function()
 	this.add = function(root, instance_props)
 	{
 		root = webkit_tools.$(root);
-		var default_props = {accept : [], hoverClass : null, onDrop : webkit_tools.empty, onOver : webkit_tools.empty, onOut : webkit_tools.empty};
+		var default_props = {
+			accept : [], 
+			hoverClass : null, 
+			onDrop : webkit_tools.empty, 
+			onOver : webkit_tools.empty, 
+			onOut : webkit_tools.empty
+		};
 		default_props = webkit_tools.extend(default_props, instance_props || {});
 		this.droppables.push({r : root, p : default_props}); 		
 	}
@@ -216,7 +222,11 @@ var webkit_droppables = function()
 			r = d[i].r;			
 			if(r.style.display != 'none')
 			{
-				dR.push({i : i, size : webkit_tools.getDimensions(r), offset : webkit_tools.cumulativeOffset(r)})			
+				dR.push({
+					i : i, 
+					size : webkit_tools.getDimensions(r), 
+					offset : webkit_tools.cumulativeOffset(r)
+				});			
 			}
 		}
 		
@@ -228,8 +238,11 @@ var webkit_droppables = function()
 		var indices = this.isOver(x,y);
 		var index = this.maxZIndex(indices);
 		var over = this.process(index,r);
+
+		
 		if(over)
 		{
+			// console.log("finalize:", indices, index, over);
 			this.drop(index, r,e);
 		}
 		this.process(-1,r);
@@ -240,6 +253,9 @@ var webkit_droppables = function()
 	{
 		var indices = this.isOver(x,y);
 		var index = this.maxZIndex(indices);
+
+		// console.log("check: ", r, this.droppableRegions);
+
 		return this.process(index,r);		
 	}
 	
@@ -253,6 +269,8 @@ var webkit_droppables = function()
 		var minX = 0;
 		var maxY = 0;
 		var minY = 0;
+
+		// console.log("isOver: ", this.droppables);
 		
 		while(i--)
 		{
@@ -273,6 +291,7 @@ var webkit_droppables = function()
 			}		
 		}
 		
+		// console.log("Shreyas: dragover", x, y);
 		return active;	
 	}
 	
@@ -300,6 +319,8 @@ var webkit_droppables = function()
 	
 	this.process = function(index, draggableRoot)
 	{
+		// console.log("process: ", index, draggableRoot);
+
 		//only perform update if a change has occured
 		if(this.lastIndex != index)
 		{
@@ -309,6 +330,8 @@ var webkit_droppables = function()
 				var d = this.droppables[this.lastIndex]
 				var p = d.p;
 				var r = d.r;
+
+
 				
 				if(p.hoverClass)
 				{
@@ -326,15 +349,35 @@ var webkit_droppables = function()
 				var p = d.p;
 				var r = d.r;
 				
+				
 				if(this.hasClassNames(draggableRoot, p.accept))
+				// if(this.hasClassNames(draggableRoot, []))
 				{
 					if(p.hoverClass)
 					{
+
 						webkit_tools.addClassName(r,p.hoverClass);
 					}
+
 					p.onOver();				
 					this.lastIndex = index;
 					this.lastOutput = true;	
+				}
+				else
+				{
+					console.log("onOver hoverClass:", r);
+
+					// this.addClassName('incorrect');
+					elem = jQuery(r);
+
+					// if elem.hasClass('incorrect'){
+					// 	elem.removeClass('incorrect');
+					// }
+					
+					elem.addClass('incorrect');
+					setTimeout(function(){
+						elem.removeClass('incorrect');
+					}, 1000);
 				}
 			}	
 		}
@@ -351,7 +394,10 @@ var webkit_droppables = function()
 	
 	this.hasClassNames = function(r, names)
 	{
+
 		var l = names.length;
+
+		// console.log("hasClassnames: ", r, names);
 		if(l == 0){return true}
 		while(l--)
 		{

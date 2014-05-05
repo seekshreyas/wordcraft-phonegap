@@ -369,6 +369,11 @@ var webkit_droppables = function()
 
 					// this.addClassName('incorrect');
 					elem = jQuery(r);
+
+					// if elem.hasClass('incorrect'){
+					// 	elem.removeClass('incorrect');
+					// }
+					
 					elem.addClass('incorrect');
 					setTimeout(function(){
 						elem.removeClass('incorrect');
