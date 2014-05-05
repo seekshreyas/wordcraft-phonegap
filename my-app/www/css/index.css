@@ -37,7 +37,7 @@
   /*padding:0.5em;*/
   float:left;
   /*margin:auto;*/
-  width:90%; 
+  width:88%; 
   white-space: nowrap;
   min-height: 90px;
   color:#ffffff;
@@ -79,7 +79,8 @@
 .words-list-3 ul > li{
   float:left;
   margin:0 0 0 10px;
-  padding:0 3px;
+  padding:0.8em 3px;
+  line-height:0;
 }
 
 
@@ -100,8 +101,8 @@
 
 .build-sentence{
   float:left;
-  margin:1.5em 4%;
-  width:90%;
+  margin:1.5em 5.9%;
+  width:85%;
   /*background:#808080;*/
   /*border:1px solid #d29869;
   background-color: #f2af7c;
@@ -155,14 +156,13 @@
 .li-noun
 {
     background-color:#EF4714;
-    border-color:#e74b13;  
+    border-color:#ea3106;  
 }
 
 .li-prep
 {
-
-    background-color:#4BA9EE;
-    border-color:#4cabf6; 
+    background-color:#9E49F3;
+    border-color:#7a42bb;
 }
 
 .li-helpverb
@@ -173,8 +173,10 @@
 
 .li-verb
 {
-    background-color:#9E49F3;
-    border-color:#7a42bb;
+
+    background-color:#4BA9EE;
+    border-color:#0094f9;
+    
 }
 
 .li-adj
@@ -353,20 +355,32 @@ Entypo Icons
   font-size:10em;
 }
 
-#btn_divForward
+#btn_divForward, #btn_divBackward
 {
     font-size:8em;
-    float:right;
-    width:5%;
-}
-
-#btn_divBackward
-{
     float:left;
     width:5%;
-    font-size:8em;
-
+   /* background:rgba(200, 200, 200, 0.5);
+    border-radius: 12px;
+    background-clip: padding-box;  */  
 }
+
+
+#btn_divBackward{
+    margin:0 0 0 5px;
+    /*-webkit-transform: rotate(7.5deg); 
+        -ms-transform: rotate(7.5deg); 
+            transform: rotate(7.5deg); */
+}
+
+#btn_divForward{
+  float:right;
+  /*margin:0 0.5% 0 0;*/
+/*    -webkit-transform: rotate(-7.5deg); 
+        -ms-transform: rotate(-7.5deg); 
+            transform: rotate(-7.5deg); */
+}
+
 
 
 

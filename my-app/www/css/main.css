@@ -224,6 +224,7 @@ textarea {
 
 body{
     font-family: 'OpenSans Regular', sans-serif;
+    background:#f0ece0;
 }
 
 .icon-entypo{
@@ -270,7 +271,6 @@ header h1{
     width:100%; 
     margin:1em 0 0 0;
     padding: 0.5em 0;
-    background:#fff;
 }
 
 
