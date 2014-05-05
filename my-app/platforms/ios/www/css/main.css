@@ -224,6 +224,7 @@ textarea {
 
 body{
     font-family: 'OpenSans Regular', sans-serif;
+    background:#f0ece0;
 }
 
 .icon-entypo{
@@ -232,13 +233,19 @@ body{
 }
 
 
+header{
+  float:left;
+  width:100%;
+  margin:10px 0 0 0;
+}
+
 
 header h1{
   font-family: 'QuickSand Bold', sans-serif;
   text-align: center;
   color: #c1272d;
   font-size:4em;
-  margin:0.5em 0 0 0;
+  margin:0 0 0 0;
   padding:0
 }
 
@@ -268,9 +275,9 @@ header h1{
     width:80%;
     float:left;
     width:100%; 
-    margin:1em 0 0 0;
+    margin:5px 0 0 0;
     padding: 0.5em 0;
-    background:#fff;
+    background:#f0ece0;
 }
 
 
@@ -278,9 +285,15 @@ header h1{
 
     /*canvas*/
     #elem-frame-svg{
-        border:10px solid #c0c0c0;
+        /*border:10px solid #c0c0c0;*/
         margin:1em 4%;
         background: url('../res/img/bg/bg_green.png') top left no-repeat ;
+
+
+        border-top      : 10px solid #bfc4ca;
+        border-right    : 10px solid #acb1bf;
+        border-bottom   : 10px solid #bfc4ca;
+        border-left     : 10px solid #acb1bf;
     }
 
 
@@ -293,9 +306,9 @@ header h1{
 
 #wrapper-table{
   background: url(../img/texture_wood2.png);
-  width:770px;
+  width:769px;
   margin:0;
-  height:245px;
+  height:260px;
   float:left;
   border-bottom:15px solid #cb8a59;
 }
