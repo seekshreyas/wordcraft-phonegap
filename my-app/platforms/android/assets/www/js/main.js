@@ -19,63 +19,6 @@ WORDCRAFT = (function(){
 	var replay = []; // for caching animations
 
 
-<<<<<<< HEAD
-	var newDefaultSceneObj = [{
-		"body" : {
-			"eyes" : "res/img/animals/fence/fence_part_eyes_happy.svg",
-			"skin" : "res/img/animals/fence/fence_part_skin_positive.svg",
-			"mouth" : "res/img/animals/fence/fence_part_mouth_happy.svg",
-			"color" : "", //there will be a default color for every animal
-			"size" : "normal", //"normal is default.
-			"width" : 200,
-			"height" : 255
-		},
-		"pos" : {
-			"plane" : "ground",
-			"plane_pos" : "center_middle",
-			"plane_matrix" : [0, 0]
-		},
-		"animation" : [{
-				"duration" : "",
-				"animation_params" : {
-					"start" : "-0.25",
-					"end" : "0.25",
-					"mid" : "0"
-				},
-				"speed" : "fast",
-				"scale" : "",
-				"animation_type" : "translateX"
-			}
-		]
-	}, {
-		"body" : {
-			"eyes" : "res/img/animals/sun/sun_part_eyes_happy.svg",
-			"skin" : "res/img/animals/sun/sun_part_skin_positive.svg",
-			"mouth" : "res/img/animals/sun/sun_part_mouth_happy.svg",
-			"color" : "", //there will be a default color for every animal
-			"size" : "normal", //"normal is default.
-			"width" : 200,
-			"height" : 255
-		},
-		"pos" : {
-			"plane" : "sky",
-			"plane_pos" : "right_middle",
-			"plane_matrix" : [0, 0]
-		},
-		"animation" : [{
-				"duration" : "",
-				"animation_params" : {
-					"start" : "-0.25",
-					"end" : "0.25",
-					"mid" : "0"
-				},
-				"speed" : "fast",
-				"scale" : "",
-				"animation_type" : "translateX"
-			}
-		]
-	}
-=======
 
 	var newDefaultSceneObj = [
     {
@@ -194,7 +137,6 @@ var prepObject = [
             "plane_pos": "center_back"
         }
     }
->>>>>>> dev
 ];
 
 	var init = function(){

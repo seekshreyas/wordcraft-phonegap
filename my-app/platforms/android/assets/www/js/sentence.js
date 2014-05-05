@@ -144,26 +144,17 @@ WORDCRAFT.build = (function(){
 						});
 				});
 				WORDCRAFT.canvasReset();
-<<<<<<< HEAD
-				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
-=======
 				$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
 
 				// jQuery('#btn_back .btn_text').text((gameLevelSentWord[gameLevel]-2));
 				// jQuery('#btn_back .btn_text').text((gameLevelSentWord[gameLevel]+2));
->>>>>>> dev
 				initReadData();
 			}
 			else if (gameLevel === 1 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0 && currWord[3].length > 0 &&  currWord[4].length > 0)
 			{
 				gameLevel++;
-<<<<<<< HEAD
-				$("#btn_forward").toggle();
-				$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
-=======
 				$("#btn_forward").toggleClass("mute");
 				$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
->>>>>>> dev
 				WORDCRAFT.canvasReset();
 				initReadData();
 			}	
@@ -183,11 +174,7 @@ WORDCRAFT.build = (function(){
 				$("#btn_forward").toggleClass("mute");
 			}
 			
-<<<<<<< HEAD
-			$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
-=======
 			$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
->>>>>>> dev
 			
 			WORDCRAFT.canvasReset();
 
@@ -210,26 +197,14 @@ WORDCRAFT.build = (function(){
 		});
 
 		$("#btn_refresh").bind("vclick",function(event) {
-<<<<<<< HEAD
-
-			$(".level").replaceWith('<div class="level">Build a '+gameLevelSentWord[gameLevel]+' word sentence</div>');
-=======
 			event.stopPropagation();
 			$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
->>>>>>> dev
 			WORDCRAFT.canvasReset();
 			$('.build-sentence').children().each(function (id,obj) {
 				$(obj).children().each(function (id,subObj) {
 					trashWords($(subObj));
 				});
 			});
-<<<<<<< HEAD
-
-
-			
-			initReadData();
-=======
->>>>>>> dev
 
 			initReadData();			
 		});
