@@ -180,7 +180,13 @@ var webkit_droppables = function()
 	this.add = function(root, instance_props)
 	{
 		root = webkit_tools.$(root);
-		var default_props = {accept : [], hoverClass : null, onDrop : webkit_tools.empty, onOver : webkit_tools.empty, onOut : webkit_tools.empty};
+		var default_props = {
+			accept : [], 
+			hoverClass : null, 
+			onDrop : webkit_tools.empty, 
+			onOver : webkit_tools.empty, 
+			onOut : webkit_tools.empty
+		};
 		default_props = webkit_tools.extend(default_props, instance_props || {});
 		this.droppables.push({r : root, p : default_props}); 		
 	}
@@ -268,6 +274,8 @@ var webkit_droppables = function()
 				
 				if((x > minX) && (x < maxX))
 				{
+					console.log("Shreyas: dragover");
+
 					active.push(r.i);
 				}			
 			}		
