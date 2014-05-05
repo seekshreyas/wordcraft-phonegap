@@ -368,7 +368,11 @@ var webkit_droppables = function()
 					console.log("onOver hoverClass:", r);
 
 					// this.addClassName('incorrect');
-					jQuery(r).addClass('incorrect');
+					elem = jQuery(r);
+					elem.addClass('incorrect');
+					setTimeout(function(){
+						elem.removeClass('incorrect');
+					}, 1000);
 				}
 			}	
 		}

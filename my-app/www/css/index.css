@@ -272,8 +272,8 @@
 .incorrect{
   border:1px solid red;
 
-  -webkit-animation: shake 3s infinite;
-          animation: shake 3s infinite;
+  -webkit-animation: shake 0.3s infinite;
+          animation: shake 0.3s infinite;
 }
 
 
