@@ -131,6 +131,7 @@ WORDCRAFT.build = (function(){
 		$("#btn_forward").bind("vclick",function(event) {
 			event.stopPropagation();
 			var currWord = getCurrWordsList(event);
+
 			if( gameLevel === 0 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0)
 			{
 				gameLevel++;
@@ -145,9 +146,10 @@ WORDCRAFT.build = (function(){
 				});
 				WORDCRAFT.canvasReset();
 				$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
+				hideDisplayWords();
 
-				// jQuery('#btn_back .btn_text').text((gameLevelSentWord[gameLevel]-2));
-				// jQuery('#btn_back .btn_text').text((gameLevelSentWord[gameLevel]+2));
+				jQuery('#btn_back .btn_text').text(3);
+				jQuery('#btn_forward .btn_text').text((gameLevelSentWord[gameLevel]+2));
 				initReadData();
 			}
 			else if (gameLevel === 1 && currWord[0].length>0 && currWord[1].length>0 && currWord[2].length>0 && currWord[3].length > 0 &&  currWord[4].length > 0)
@@ -155,9 +157,20 @@ WORDCRAFT.build = (function(){
 				gameLevel++;
 				$("#btn_forward").toggleClass("mute");
 				$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
+
+				jQuery('#btn_back .btn_text').text(3);
+				//jQuery('#btn_forward .btn_text').text((gameLevelSentWord[gameLevel]+2));
+
+
 				WORDCRAFT.canvasReset();
+				hideDisplayWords();
+
 				initReadData();
 			}	
+
+
+
+
 		});
 
 		$("#btn_back").bind("vclick",function(event) {
@@ -177,6 +190,7 @@ WORDCRAFT.build = (function(){
 			$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
 			
 			WORDCRAFT.canvasReset();
+			hideDisplayWords();
 
 			$('.build-sentence').children().each(function (id,obj) {
 				$(obj).children().each(function (id,subObj) {
@@ -286,7 +300,6 @@ WORDCRAFT.build = (function(){
 		return true;
 	}
 
-
 		//This is to get whether a given word is singular or plural
 	var getPosType = function(obj)
 	{
@@ -338,6 +351,35 @@ WORDCRAFT.build = (function(){
 		}
 		return [noun1,helpverb,verb,prep,noun2,adj];
 
+	}
+
+
+	var hideDisplayWords = function()
+	{
+
+		if(gameLevel === 0)
+		{
+			$(".li-prep").hide();
+		}
+
+		if(gameLevel === 1)
+		{
+			$(".li-prep").show();
+
+		}
+
+		if(gameLevel === 2)
+		{
+			$(".words-list-0 #init-noun li").remove();
+		}
+
+		if(gameLevel < 2 )
+		{
+			$(".li-det").hide();
+			$(".noun_pos1").remove();
+		}
+
+		return;
 	}
 
 	
