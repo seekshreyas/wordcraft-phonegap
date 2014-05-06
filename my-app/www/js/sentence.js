@@ -28,7 +28,7 @@ WORDCRAFT.build = (function(){
 
 
 	var init = function(){
-		console.log("let the crafting begin!");
+		// console.log("let the crafting begin!");
 
 		//Reading data from source file to get a master list of nouns/verbs
 		var pos_json = $.getJSON( "res/data/parts-of-speech.json") 
@@ -42,7 +42,7 @@ WORDCRAFT.build = (function(){
 		//Reading properties file 
 		var full_json = $.getJSON( "res/data/full_json.json") 
 			.done(function(data) {
-				console.log("Read full json");
+				// console.log("Read full json");
 				fullJsonData = data; 
 				initReadData();
 			})
@@ -385,7 +385,7 @@ WORDCRAFT.build = (function(){
 	
 	var initReadData = function()
 	{	
-		console.log("Reached iniRead Data");
+		// console.log("Reached iniRead Data");
 		if(gameLevel === 0)
 		{
 			$("#sent-det-1").removeClass("active");
@@ -397,7 +397,7 @@ WORDCRAFT.build = (function(){
 		
 		if (gameLevel === 1)
 		{
-			console.log()
+			// console.log()
 			$("#sent-prep-1").addClass("active");
 			$("#sent-noun-2").addClass("active");
 			$("#sent-det-1").removeClass("active");
@@ -407,7 +407,7 @@ WORDCRAFT.build = (function(){
 		}
 		if (gameLevel === 2)
 		{
-			console.log("Inside level 2");
+			// console.log("Inside level 2");
 			$("#sent-det-1").addClass("active");
 			$("#sent-adj-1").addClass("active");
 			$("#sent-prep-1").addClass("active");
@@ -476,7 +476,7 @@ WORDCRAFT.build = (function(){
 
 	var getPOSToDisplay = function(data,level,pos)
 	{
-		console.log("Reached getPOSToDisplay");
+		// console.log("Reached getPOSToDisplay");
 		
 
 		var posClass="";
@@ -513,13 +513,13 @@ WORDCRAFT.build = (function(){
 		}
 
 		var divId = "#init-"+pos;
-		console.log("VALUE OF CURRDIV:",currDiv);
-		console.log("VALUE OF POS:",pos);
-		console.log("CURRDIV values:",currWordList[currDiv][pos]);
+		// console.log("VALUE OF CURRDIV:",currDiv);
+		// console.log("VALUE OF POS:",pos);
+		// console.log("CURRDIV values:",currWordList[currDiv][pos]);
 		///console.log("DATA POS LENGTH IS",data[pos].length);
 	if(currDiv > 0 && (pos === 'helpverb' || pos === 'det') )
 	{
-		console.log("REACHED IF CONDITION");
+		// console.log("REACHED IF CONDITION");
 	}
 	else
 	{
@@ -529,8 +529,8 @@ WORDCRAFT.build = (function(){
 			var posClass="";
 			var randIndex  = 1 + Math.floor(Math.random() * data[pos].length-1);
 			var word = data[pos][randIndex];
-			console.log("WORD POS IS:",pos);
-			console.log("WORD SELECTED IS:",word);
+			// console.log("WORD POS IS:",pos);
+			// console.log("WORD SELECTED IS:",word);
 
 
 			if(jQuery.inArray(word, currAllWordList[pos])==-1)
@@ -651,7 +651,7 @@ WORDCRAFT.build = (function(){
 				{
 					var randIndex  = 1 + Math.floor(Math.random() * prepositions.length-1);
 					var word = prepositions[randIndex];
-					console.log("The preposition is:",word);
+					// console.log("The preposition is:",word);
 					if(jQuery.inArray(word, currAllWordList["prep"])==-1)
 					{
 						currWordList[currDiv]["prep"].push(word);
@@ -663,7 +663,7 @@ WORDCRAFT.build = (function(){
 					}
 					else
 					{
-						console.log("Inside prep add class");
+						// console.log("Inside prep add class");
 
 						$("#prep_"+word.replace(" ","_")).addClass("prep_"+val);
 					}
@@ -697,15 +697,15 @@ WORDCRAFT.build = (function(){
 
 	var parseData = function(d){
 	
-		console.log("Reached parse data");
+		// console.log("Reached parse data");
 		getPOSToDisplay(d,gameLevel,"det");
 		getPOSToDisplay(d,gameLevel,"noun");
 		getPOSToDisplay(d,gameLevel,"helpverb");
 		getPOSToDisplay(d,gameLevel,"verb");
 		getPOSToDisplay(d,gameLevel,"adj");
 
-		console.log(currAllWordList);
-		console.log(currWordList);
+		// console.log(currAllWordList);
+		// console.log(currWordList);
 
 		makeDragabble();
 
@@ -763,11 +763,11 @@ WORDCRAFT.build = (function(){
 		}
 
 		elem.remove();
-		console.log("DIVID IS",divid);
+		// console.log("DIVID IS",divid);
 		if(divid === '#sent-noun-1' && gameLevel<2)
 		{
 			listItem = listItem.substring(0,1).toUpperCase()+listItem.substring(1,listItem.length);
-			console.log("The noun is:",listItem);
+			// console.log("The noun is:",listItem);
 		}
 		var html = '<li class="'+elem.attr("class")+'" id="'+type.toString()+'_'+ wordId+'">'+ listItem + '</li>';
 		$(divid).append(html);
@@ -1051,7 +1051,7 @@ WORDCRAFT.build = (function(){
 
 	var playSound = function()
 	{
-		console.log("Clicked remove");
+		// console.log("Clicked remove");
 		/*$("#sound").append('<source src="res/sound/Cat.wav"></source><source src="res/sound/Cat.ogg"></source>');
 		var audio = $("#sound")[0];
 		audio.play();
@@ -1160,7 +1160,7 @@ WORDCRAFT.build = (function(){
 			var preposition = fullJsonData["verb"][verb]["preposition"][sentWordList["prep"][0].replace(/-/g,' ')];
 			plane_matrixX = preposition["position_change"]["positionX"];
 			plane_matrixY = preposition["position_change"]["positionY"];
-			console.log("PLANE MATRIX VALUES ARE:",plane_matrixX,plane_matrixY);
+			// console.log("PLANE MATRIX VALUES ARE:",plane_matrixX,plane_matrixY);
 			if(plane_matrixX === 999 && plane_matrixY === 999 )
 			{
 				
@@ -1233,8 +1233,8 @@ WORDCRAFT.build = (function(){
 
 		}
 
-		console.log("THE FINAL JSON");
-		console.log(JSON.stringify(finalJson));
+		// console.log("THE FINAL JSON");
+		// console.log(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return true;	

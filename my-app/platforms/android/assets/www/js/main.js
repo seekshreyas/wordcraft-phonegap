@@ -140,7 +140,7 @@ var prepObject = [
 ];
 
 	var init = function(){
-		console.log("let the crafting begin!");
+		// console.log("let the crafting begin!");
 		
 
 		initCanvas();
@@ -176,7 +176,7 @@ var prepObject = [
 		y_unit = Math.floor(c_height/16);
 		pi = Math.PI; 
 
-		console.log("x,y :", x_unit, y_unit );
+		// console.log("x,y :", x_unit, y_unit );
 
 		// for perspective scaling, take the ratio of the y_units
 		// Therefore:
@@ -288,7 +288,7 @@ var prepObject = [
 				
 				if (noun.body.skin !== 'undefined'){
 					// var animalParts = ['skin', 'mouth', 'eyes'];
-					console.log("noun: ", noun, cDim);
+					// console.log("noun: ", noun, cDim);
 
 
 					pos = cDim[noun.pos.plane][noun.pos.plane_pos];
@@ -543,7 +543,7 @@ var prepObject = [
 					break;
 
 				default:
-					console.log("no animation");
+					// console.log("no animation");
 
 					WORDCRAFT.build.init(); //to signal animation finished
 			}
@@ -558,7 +558,7 @@ var prepObject = [
 		canvas = new fabric.StaticCanvas('elem-frame-svg');
 		var cDim = getCanvasPerspDim(canvas);
 
-		console.log("Object passed: ", obj);
+		// console.log("Object passed: ", obj);
 		renderObjOnCanvas(obj, cDim);
 	};
 
