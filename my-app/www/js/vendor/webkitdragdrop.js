@@ -365,19 +365,19 @@ var webkit_droppables = function()
 				}
 				else
 				{
-					console.log("onOver hoverClass:", r);
+					// console.log("onOver hoverClass:", r);
 
-					// this.addClassName('incorrect');
-					elem = jQuery(r);
+					// // this.addClassName('incorrect');
+					// elem = jQuery(r);
 
-					// if elem.hasClass('incorrect'){
-					// 	elem.removeClass('incorrect');
-					// }
+					// // if elem.hasClass('incorrect'){
+					// // 	elem.removeClass('incorrect');
+					// // }
 					
-					elem.addClass('incorrect');
-					setTimeout(function(){
-						elem.removeClass('incorrect');
-					}, 1000);
+					// elem.addClass('incorrect');
+					// setTimeout(function(){
+					// 	elem.removeClass('incorrect');
+					// }, 1000);
 				}
 			}	
 		}
