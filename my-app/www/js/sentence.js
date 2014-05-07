@@ -353,7 +353,7 @@ WORDCRAFT.build = (function(){
 
 		var tmpNounId = $("#sent-noun-1 li").attr("id");
 		var noun1 = "";
-		if(tmpNounId.length > 0)
+		if(tmpNounId != undefined)
 		{
 			noun1 = tmpNounId.split("_")[1]; 
 		}
@@ -378,23 +378,32 @@ WORDCRAFT.build = (function(){
 		if(gameLevel === 0)
 		{
 			$(".li-prep").hide();
+			$(".li-adj").hide();
+			$(".li-det").hide();
 		}
 
 		if(gameLevel === 1)
 		{
 			$(".li-prep").show();
+			$(".li-adj").hide();
+			$(".li-det").hide();
 
 		}
 
 		if(gameLevel === 2)
 		{
 			$(".words-list-0 #init-noun li").remove();
+			$(".li-adj").show();
+			$(".li-det").show();
 		}
 
 		if(gameLevel < 2 )
 		{
 			$(".li-det").hide();
-			$(".noun_pos1").remove();
+			$(".noun_pos1").children().each(function (id,subObj) {
+					trashWords($(subObj));
+			});
+			//$(".noun_pos1").remove();
 		}
 
 		return;
