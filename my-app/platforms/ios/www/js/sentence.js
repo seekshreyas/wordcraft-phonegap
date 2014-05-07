@@ -158,8 +158,8 @@ WORDCRAFT.build = (function(){
 				$("#btn_forward").toggleClass("mute");
 				$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
 
-				jQuery('#btn_back .btn_text').text(3);
-				//jQuery('#btn_forward .btn_text').text((gameLevelSentWord[gameLevel]+2));
+				jQuery('#btn_back .btn_text').text(gameLevelSentWord[gameLevel]-2);
+				jQuery('#btn_forward .btn_text').text((gameLevelSentWord[gameLevel]));
 
 
 				WORDCRAFT.canvasReset();
@@ -180,14 +180,32 @@ WORDCRAFT.build = (function(){
 			{
 				$("#btn_back").toggleClass("mute");
 				$("#btn_forward").toggleClass("mute");
+				jQuery('#btn_back .btn_text').text(gameLevelSentWord[gameLevel]-2);
+
 			}
 			if(gameLevel > 0)
 			{
 				gameLevel--;
 				$("#btn_forward").toggleClass("mute");
+				
 			}
+			else
+			{
+				jQuery('#btn_back .btn_text').text(3);
+			}
+
+
 			
 			$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
+
+			jQuery('#btn_back .btn_text').text(gameLevelSentWord[gameLevel]-2);
+
+			jQuery('#btn_forward .btn_text').text(gameLevelSentWord[gameLevel]+2);
+
+			if(gameLevel === 0)
+			{
+				jQuery('#btn_back .btn_text').text(3);
+			}
 			
 			WORDCRAFT.canvasReset();
 			hideDisplayWords();
