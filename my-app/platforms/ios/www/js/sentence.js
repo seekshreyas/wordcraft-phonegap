@@ -180,8 +180,76 @@ WORDCRAFT.build = (function(){
 
 		});
 
-		$("#btn_back").bind("vclick",function(event) {
+		// jQuery(document).on('vclick', '#navbtn', function(e){
+		// 	e.preventDefault();
+
+		// 	jQuery(document).off('vclick', '#btn_back').on('click', '#btn_back',function(e) {
+		        
+
+
+
+
+		// 			if(gameLevel === 1)
+		// 			{
+		// 				$("#btn_back").toggleClass("mute");
+		// 				$("#btn_forward").toggleClass("mute");
+		// 				jQuery('#btn_back .btn_text').text(gameLevelSentWord[gameLevel]-2);
+
+		// 			}
+		// 			if(gameLevel > 0)
+		// 			{
+		// 				gameLevel--;
+		// 				$("#btn_forward").toggleClass("mute");
+						
+		// 			}
+		// 			else
+		// 			{
+		// 				jQuery('#btn_back .btn_text').text(3);
+		// 			}
+
+
+					
+		// 			$(".level p").text('Make a '+gameLevelSentWord[gameLevel]+' word sentence');
+
+		// 			jQuery('#btn_back .btn_text').text(gameLevelSentWord[gameLevel]-2);
+
+		// 			jQuery('#btn_forward .btn_text').text(gameLevelSentWord[gameLevel]+2);
+
+		// 			if(gameLevel === 0)
+		// 			{
+		// 				jQuery('#btn_back .btn_text').text(3);
+		// 			}
+					
+		// 			WORDCRAFT.canvasReset();
+		// 			hideDisplayWords();
+
+		// 			$('.build-sentence').children().each(function (id,obj) {
+		// 				$(obj).children().each(function (id,subObj) {
+		// 					trashWords($(subObj));
+		// 				});
+		// 			});
+
+		// 			for (var i = 0; i < 4; i++ ) 
+		// 			{
+		// 				$('.words-list-'+i).children().each(function (id,obj) {
+		// 					$(obj).children().each(function (id,subObj) {
+		// 						trashWords($(subObj));
+		// 					});
+		// 				});
+		// 			}
+
+		// 			initReadData();
+
+
+		//     }); 
+		// });
+
+		$("#btn_back").on("vclick",function(event) {
 			event.stopPropagation();
+
+			// jQuery(this).off('vclick');
+
+
 
 			if(gameLevel === 1)
 			{
