@@ -20,9 +20,9 @@ WORDCRAFT.build = (function(){
 						};
 	var sentWordList = {"noun":[],"helpverb":[],"verb":[],"prep":[],"adj":[],"det":[]};
 	var levelPOSCnt =  {
-		0:{"noun":2,"helpverb":2,"verb":3,"prep":0,"adj":0,"adv":0,"det":0},
-		1:{"noun":2,"helpverb":2,"verb":3,"prep":3,"adj":0,"adv":0,"det":0},
-		2:{"noun":3,"helpverb":2,"verb":3,"prep":3,"adj":3,"adv":0,"det":3}
+		0:{"noun":2,"helpverb":2,"verb":4,"prep":0,"adj":0,"adv":0,"det":0},
+		1:{"noun":2,"helpverb":2,"verb":4,"prep":3,"adj":0,"adv":0,"det":0},
+		2:{"noun":3,"helpverb":2,"verb":4,"prep":3,"adj":3,"adv":0,"det":3}
 		};
 	var jsonForImage = {"body":{},"pos":{},"animation":[]};
 
