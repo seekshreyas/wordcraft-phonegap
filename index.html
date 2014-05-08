@@ -1,79 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Wordcraft-phonegap : wordcraft repository for phonegap" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Wordcraft-phonegap</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/seekshreyas/wordcraft-phonegap">View on GitHub</a>
-
-          <h1 id="project_title">Wordcraft-phonegap</h1>
-          <h2 id="project_tagline">wordcraft repository for phonegap</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/seekshreyas/wordcraft-phonegap/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/seekshreyas/wordcraft-phonegap/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Wordcraft-phonegap maintained by <a href="https://github.com/seekshreyas">seekshreyas</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<head>
     
+    <title>WordCraft</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="fav-icon" href="images/favicon.png" title="Wordcraft" />
+    			
+    <!--[if IE]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if IE 7]>
+    	<link rel="stylesheet" href="ie7.css" type="text/css" media="screen" />
+    <![endif]-->
 
-  </body>
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+	<!-- Include js plugin -->
+	<script src="owl-carousel/owl.carousel.js"></script>
+	
+	<script src="js/jquery.anchor.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox-1.2.6.pack.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#reviewed_items").owlCarousel({
+			  autoPlay: 5000, //Set AutoPlay to 5 seconds
+			  items : 1,
+			  stopOnHover: true,
+			  itemsDesktop : false,//[1199,3],
+			  itemsDesktopSmall : false//[979,3]
+			});
+		});
+	</script>
+    
+</head>
+
+<body>
+
+    <header> <!-- HTML5 header tag -->
+    
+    	<div id="headercontainer">
+    
+			<div id="logobox">
+				<img id="logo" src="images/wordcraft_logo.png"/>
+			</div>
+				
+			
+    		
+    		<nav> <!-- HTML5 navigation tag -->
+    			<ul>
+    				<li><a class="introlink anchorLink" href="#home">Home</a></li>
+    				<li><a class="portfoliolink anchorLink" href="#howitworks">How It Works</a></li>
+    				<li><a class="aboutlink anchorLink" href="#reviews">Feedback</a></li>
+    				<li><a class="contactlink anchorLink" href="#">Report</a></li>
+    			</ul>				
+    		</nav>
+    	
+    	</div>
+    
+    </header>
+
+    <section id="contentcontainer"> <!-- HTML5 section tag for the content 'section' -->
+    
+    	<section id="home">
+    	
+    		<h2 class="home"><span class="sub">Build a world with words</span></h2>
+                <iframe src="//player.vimeo.com/video/94493014" width="920" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <!--</section> -->
+			<p>Wordcraft is an interactive iPad application where children (ages 4 - 8) can build sentences and get immediate visual feedback.</p>
+    				
+    	</section>
+ 
+    	<section id="howitworks"> 
+    	
+    		<h2 class="howitworks"><span class="sub">How It Works</span></h2>
+				<div class="app_capture">
+    				<img src="images/app_capture_1.jpg" alt="Capture 1" />
+					<h5>Step 1</h5>
+				</div>
+				<div class="app_capture">
+					<img src="images/app_capture_2.jpg" alt="Capture 2" />
+					<h5>Step 2</h5>
+				</div>
+				<div class="app_capture">
+    				<img src="images/app_capture_3.jpg" alt="Capture 3" />
+					<h5>Step 3</h5>
+				</div>
+    	</section>
+    			
+    	<section id="reviews"> <!-- HTML5 section tag for the about 'section' -->
+    	
+    		<h2 class="reviews"><span class="sub">Feedback</span></h2>
+   			<div id="reviewed_items" class="owl-carousel">
+				  <div class="item" style="font-size: 28px;">"I can make TEN sentences"<p>- AR, 5 year old learner</p></div>
+				  <div class="item" style="font-size: 28px;">"I haven't seen an app like this, it's great"<p>- NS, parent</p></div>
+				  <div class="item" style="font-size: 28px;">"I learnt a new word, amused"<p>- N, 6 year old learner</p></div>
+				  <div class="item" style="font-size: 28px;">"I like that I can make funny sentences"<p>- AM, 7 year old learner</p></div>
+			</div>
+			
+    	</section>
+
+    			
+    	<!--<section id="video"> <!-- HTML5 section tag for the contact 'section' -->
+    	
+    		<!--<h2 class="video"><span class="sub">Video</span></h2>-->
+    		
+    		<!--<iframe src="https://vimeo.com/94493014" width="920" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<iframe src="//player.vimeo.com/video/94493014" width="920" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    		
+    	</section>-->
+    </section>
+	
+	<footer> <!-- HTML5 footer tag -->
+		<div class="main_row">
+			<div class="row_header">
+				<h3> Who We Are</h3>
+			</div>
+			<div class="row_content">
+				<p>
+					A team of graduate students at the UC Berkeley School of Information. We have backgrounds in design, product management, frontend and backend development, analytics and project management.
+				</p>
+				<div class="row_people">
+					<img src="images/ashley.png" alt="Ashley" />
+					<h5>Ashley <br />DeSouza</h5>
+				</div>
+				<div class="row_people">
+					<img src="images/divya.png" alt="Divya" />
+					<h5>Divya <br />Anand</h5>
+				</div>
+				<div class="row_people">
+					<img src="images/victor.png" alt="Victor" />
+					<h5>Victor <br />Starostenko</h5>
+				</div>				
+				<div class="row_people">
+					<img src="images/shreyas.png" alt="Shreyas" />
+					<h5>Shreyas</h5>
+				</div>
+				<div class="row_people">
+					<img src="images/sonali.png" alt="Sonali" />
+					<h5>Sonali <br />Sharma</h5>
+				</div>				
+			</div>
+			<div class="row_header">
+				<h3> Thanks To</h3>
+			</div>
+			<div class="row_content">
+				<p>
+					We are very grateful to our project advisors, Prof. Marti Hearst and Prof. Kimiko Ryokai for all their guidance and feedback.
+					We are also especially grateful to all the Bay Area parents and children who tested the app and gave us their valuable feedback.
+				</p>
+			</div>
+		</div>
+
+	</footer>	
+    
+</body>
+
 </html>

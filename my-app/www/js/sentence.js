@@ -26,7 +26,14 @@ WORDCRAFT.build = (function(){
 		};
 	var jsonForImage = {"body":{},"pos":{},"animation":[]};
 
-
+	webkit_drop.add("sent-det-1-outer", { hoverClass : "notZoom" });
+	webkit_drop.add("sent-adj-1-outer", { hoverClass : "notZoom" });
+	webkit_drop.add("sent-noun-1-outer", { hoverClass : "notZoom" });
+	webkit_drop.add("sent-helpverb-1-outer", { hoverClass : "notZoom" });
+	webkit_drop.add("sent-verb-1-outer", { hoverClass : "notZoom" });	
+	webkit_drop.add("sent-prep-1-outer", { hoverClass : "notZoom" });	
+	webkit_drop.add("sent-noun-2-outer", { hoverClass : "notZoom" });	
+	
 	var init = function(){
 		console.log("let the crafting begin!");
 
@@ -347,9 +354,13 @@ WORDCRAFT.build = (function(){
 		if(gameLevel === 0)
 		{
 			$("#sent-det-1").removeClass("active");
+			$("#sent-det-1-outer").removeClass("active");
 			$("#sent-adj-1").removeClass("active");
+			$("#sent-adj-1-outer").removeClass("active");
 			$("#sent-prep-1").removeClass("active");
+			$("#sent-prep-1-outer").removeClass("active");
 			$("#sent-noun-2").removeClass("active");
+			$("#sent-noun-2-outer").removeClass("active");
 
 		}
 		
@@ -357,9 +368,13 @@ WORDCRAFT.build = (function(){
 		{
 			console.log()
 			$("#sent-prep-1").addClass("active");
+			$("#sent-prep-1-outer").addClass("active");
 			$("#sent-noun-2").addClass("active");
+			$("#sent-noun-2-outer").addClass("active");
 			$("#sent-det-1").removeClass("active");
+			$("#sent-det-1-outer").removeClass("active");
 			$("#sent-adj-1").removeClass("active");
+			$("#sent-adj-1-outer").removeClass("active");
 
 
 		}
@@ -367,9 +382,13 @@ WORDCRAFT.build = (function(){
 		{
 			console.log("Inside level 2");
 			$("#sent-det-1").addClass("active");
+			$("#sent-det-1-outer").addClass("active");
 			$("#sent-adj-1").addClass("active");
+			$("#sent-adj-1-outer").addClass("active");
 			$("#sent-prep-1").addClass("active");
+			$("#sent-prep-1-outer").addClass("active");
 			$("#sent-noun-2").addClass("active");
+			$("#sent-noun-2-outer").addClass("active");
 
 			splitNounDet();
 
@@ -918,6 +937,9 @@ WORDCRAFT.build = (function(){
 		webkit_drop.add(containerId, 
 		{	accept : [acceptClass], 
 			hoverClass : "zoom",
+			onOver: function(obj){
+				jQuery(obj).parent().css("border", none);
+			},
 			onDrop : function(obj){
 					if(populateOnDrop($(obj),pos,posCnt))
 					{
@@ -939,8 +961,7 @@ WORDCRAFT.build = (function(){
 							dropAdjRule(obj);
 						}
 					}
-			}
-			
+			}		
 		});
 
 		return true;
