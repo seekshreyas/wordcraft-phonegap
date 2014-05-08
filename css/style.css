@@ -141,7 +141,7 @@ h2.howitworks { padding-top: 10px; padding-bottom: 0px; padding-left: 120px; bac
 h2.reviews { padding-top: 10px; padding-bottom: 0px; padding-left: 120px; background: url(../images/duck_full_color.svg) no-repeat -1px -1px; background-size:80px 80px; }
 h2.video { padding-top: 10px; padding-bottom: 0px; padding-left: 120px; background: url(../images/cat_full.svg) no-repeat -1px -1px; background-size:80px 80px; }
 
-a { color: #FFAE01; text-decoration: none; border-bottom: 1px solid #FFAE01; padding-bottom: 2px; }
+a { color: #E67D00; text-decoration: none; border-bottom: 1px solid #FFAE01; padding-bottom: 2px; }
 a:active { color: #ff5400; text-decoration: none; padding-bottom: 2px; position: relative; top: 1px; }
 
 h3 a { color: #fff; font-size: 40px; background-color: #7ac000; padding: 5px 25px 10px 25px; width: 300px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); border-bottom: 1px solid rgba(0, 0, 0, 0.4); border-top: 1px solid rgba(255, 255, 255, 0.6);
@@ -332,7 +332,7 @@ input[type="submit"]:active { position: relative; top: 1px; }
 
 footer { 
 	float: left; 
-	color: #FFAE01;
+	color: #E67D00;
 	width: 100%; 
 	padding: 25px;
 	border-top: 2px solid #FFF;
