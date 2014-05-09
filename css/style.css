@@ -318,9 +318,9 @@ input[type="submit"]:active { position: relative; top: 1px; }
 }
 
 .app_capture img{
-    width: 236px;
+    width: 246px;
     float: left;
-    margin: 0px 20px 10px 20px;
+    margin: 0px 4px 10px 26px;
 }
 
 .app_capture h5{
