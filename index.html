@@ -49,6 +49,10 @@
 			  //itemsDesktop : false,//[1199,3],
 			  //itemsDesktopSmall : false,//[979,3],
 			});
+			
+			$("a").on("click", function(e){
+				e.preventDefault();
+			});
 		});
 	</script>
     
@@ -70,7 +74,7 @@
     			<ul>
     				<li><a class="introlink anchorLink" href="#home">Home</a></li>
     				<li><a class="portfoliolink anchorLink" href="#howitworks">How It Works</a></li>
-    				<li><a class="aboutlink anchorLink" href="#reviews">Feedback</a></li>
+    				<li><a class="aboutlink anchorLink" href="#reviews">Reviews</a></li>
     				<li><a class="contactlink anchorLink" href="#">Report</a></li>
     			</ul>				
     		</nav>
@@ -95,21 +99,21 @@
     		<h2 class="howitworks"><span class="sub">How It Works</span></h2>
 				<div class="app_capture">
     				<img src="images/app_capture_1.png" alt="Capture 1" />
-					<h5>Step 1</h5>
+					<h5>Step 1: <br />Select Text</h5>
 				</div>
 				<div class="app_capture">
 					<img src="images/app_capture_2.png" alt="Capture 2" />
-					<h5>Step 2</h5>
+					<h5>Step 2: <br />Make a Sentence</h5>
 				</div>
 				<div class="app_capture">
     				<img src="images/app_capture_3.png" alt="Capture 3" />
-					<h5>Step 3</h5>
+					<h5>Step 3: <br />See your Sentence in Pictures</h5>
 				</div>
     	</section>
     			
     	<section id="reviews"> <!-- HTML5 section tag for the about 'section' -->
     	
-    		<h2 class="reviews"><span class="sub">Feedback</span></h2>
+    		<h2 class="reviews"><span class="sub">Reviews</span></h2>
    			<div id="reviewed_items" class="owl-carousel">
 				  <div class="item" style="font-size: 28px;">"I can make TEN sentences"<p>- AR, 5 year old learner</p></div>
 				  <div class="item" style="font-size: 28px;">"I haven't seen an app like this, it's great"<p>- NS, parent</p></div>

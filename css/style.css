@@ -201,14 +201,14 @@ section { margin-bottom: 1000px; padding-top: 150px; float: left; }
 #home{
 	background-color:#1AE9CF;
 	padding: 20px;
-	margin-top: 150px;
+	margin: 150px 0px 150px 0px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 	border-top: 1px solid rgba(255, 255, 255, 0.6);
 	border-radius: 10px;
 	border: 2px solid #FFF;
-	margin-bottom: 150px;
+	/*margin-bottom: 150px;*/
 }
 #home h2 a { padding-bottom: 0px; }
 #home h3 { text-align: center; }
@@ -249,22 +249,6 @@ section { margin-bottom: 1000px; padding-top: 150px; float: left; }
 	margin-bottom: 150px;
     font-size: 22px;
 }
-
-#video{
-	font-style: normal;
-	background-color:#A1BDC9;
-	padding: 20px;
-	margin-top: 30px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-	border-top: 1px solid rgba(255, 255, 255, 0.6);
-	border-radius: 10px;
-	margin-bottom: 150px;
-}
-
 
 input[type="text"] { width: 400px; }
 textarea { width: 750px; height: 275px; }
@@ -325,9 +309,10 @@ input[type="submit"]:active { position: relative; top: 1px; }
 
 .app_capture h5{
 	font-style: normal;
-	font-size: 18px;
+	font-size: 16px;
 	margin: 10px 0px 0px 0px;
 	text-align: center;
+	vertical-align: middle;
 }
 
 footer { 
