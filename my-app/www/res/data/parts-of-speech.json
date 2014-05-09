@@ -1,19 +1,35 @@
 {
     "noun": [
 
-        "cow",
-        "fence",
         "cat",
-        "sheep",
-        "pig"
+        "cow",
+        "pig",
+        "dog",
+        "horse",
+        "goat",
+        "barn",
+        "fence"
     ],
     "verb": [
 
-        "walking",
-        "standing",
+        "amused",
+        "annoyed",
+        "awake",
+        "crying",
+        "dancing",
+        "fighting",
+        "hopping",
+        "hurrying",
         "running",
-        "dreaming",
-        "crying"
+        "jumping",
+        "rolling",
+        "shaking",
+        "shivering",
+        "smiling",
+        "standing",
+        "wailing",
+        "walking",
+        "weeping"
  
     ],
      "helpverb": [
@@ -23,32 +39,39 @@
  
     ],
     "adj": [
-        "angry",
-        "fat",
+        "depressed",
+        "excited",
+        "fierce",
+        "happy",
         "sad",
+        "chubby",
+        "obese",
+        "angry",
+        "slim",
+        "tiny",
         "big",
-        "tiny"
-
+        "huge",
+        "lean",
+        "little",
+        "small"
     ],
     "prep": [
-        "about ",
+        "above",
         "at",
         "behind",
-        "beneath",
-        "beside",
-        "by",
-        "down",
+        "below",
         "for",
-        "in",
+        "from",
         "in front of",
         "near",
-        "on",
-        "to",
+        "next to",
+        "on top of",
+        "towards",
         "with"
     ],
     "adverb": [],
     "det":
-        ["The",
-        "A",
-        "An"]
+        ["the",
+        "a",
+        "an"]
 }
