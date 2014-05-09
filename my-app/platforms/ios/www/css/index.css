@@ -267,6 +267,55 @@
   -o-transform: scale(1);
   transform: scale(1);    
 }
+
+
+.incorrect{
+  /*border:1px solid red;*/
+
+  -webkit-animation: shake 0.3s infinite;
+          animation: shake 0.3s infinite;
+}
+
+
+@-webkit-keyframes shake {
+  0%   { 
+  -webkit-transform: rotate(-7.5deg); 
+      -ms-transform: rotate(-7.5deg); 
+          transform: rotate(-7.5deg); 
+ }
+  50%  { 
+  -webkit-transform: rotate(0deg); 
+      -ms-transform: rotate(0deg); 
+          transform: rotate(0deg); 
+ }
+  100% { 
+  -webkit-transform: rotate(7.5deg); 
+      -ms-transform: rotate(7.5deg); 
+          transform: rotate(7.5deg); 
+ }
+}
+
+
+@keyframes shake {
+  0%   { 
+  -webkit-transform: rotate(-7.5deg); 
+      -ms-transform: rotate(-7.5deg); 
+          transform: rotate(-7.5deg); 
+ }
+  50%  { 
+  -webkit-transform: rotate(0deg); 
+      -ms-transform: rotate(0deg); 
+          transform: rotate(0deg); 
+ }
+  100% { 
+  -webkit-transform: rotate(7.5deg); 
+      -ms-transform: rotate(7.5deg); 
+          transform: rotate(7.5deg); 
+ }
+}
+
+
+
 /*==============================
 Entypo Icons
 ===========================*/

@@ -33,7 +33,7 @@ WORDCRAFT = (function(){
         },
         "pos": {
             "plane": "ground",
-            "plane_pos": "center_front",
+            "plane_pos": "left_middle",
             "plane_matrix": [
                 0,
                 0
@@ -47,13 +47,13 @@ WORDCRAFT = (function(){
             "skin": "res/img/animals/goat/goat_part_skin_negative.svg",
             "mouth": "res/img/animals/goat/goat_part_mouth_sadder.svg",
             "color": "",
-            "size": "normal",
+            "size": "large",
             "width": 200,
             "height": 235
         },
         "pos": {
             "plane": "ground",
-            "plane_pos": "center_front",
+            "plane_pos": "center_middle",
             "plane_matrix": [
                 1,
                 0
@@ -67,13 +67,13 @@ WORDCRAFT = (function(){
             "skin": "res/img/animals/cow/cow_part_skin_positive.svg",
             "mouth": "res/img/animals/cow/cow_part_mouth_happy.svg",
             "color": "",
-            "size": "normal",
+            "size": "small",
             "width": 200,
             "height": 235
         },
         "pos": {
             "plane": "ground",
-            "plane_pos": "center_middle",
+            "plane_pos": "right_middle",
             "plane_matrix": [
                 0,
                 0
@@ -140,7 +140,7 @@ var prepObject = [
 ];
 
 	var init = function(){
-		console.log("let the crafting begin!");
+		// console.log("let the crafting begin!");
 		
 
 		initCanvas();
@@ -158,7 +158,7 @@ var prepObject = [
 
 		// console.log("canvas perspective: ", perspDim);
 
-		renderObjOnCanvas(prepObject, perspDim);
+		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
@@ -176,7 +176,7 @@ var prepObject = [
 		y_unit = Math.floor(c_height/16);
 		pi = Math.PI; 
 
-		console.log("x,y :", x_unit, y_unit );
+		// console.log("x,y :", x_unit, y_unit );
 
 		// for perspective scaling, take the ratio of the y_units
 		// Therefore:
@@ -288,7 +288,32 @@ var prepObject = [
 				
 				if (noun.body.skin !== 'undefined'){
 					// var animalParts = ['skin', 'mouth', 'eyes'];
-					console.log("noun: ", noun, cDim);
+					// console.log("noun: ", noun, cDim);
+
+                    switch(noun.body.size){
+
+                        case "normal":
+                            console.log("normal");
+
+                            imgInitScale *= 1.0;
+
+                            break;
+                        case "large":
+                            console.log("large");
+
+                            imgInitScale *= 1.3;
+
+                            break;
+
+                        case "small":
+                            console.log("small");
+                            imgInitScale *= 0.7;
+
+                            break;
+                        default:
+                            console.log("unresolved case");
+
+                    }
 
 
 					pos = cDim[noun.pos.plane][noun.pos.plane_pos];
@@ -543,7 +568,7 @@ var prepObject = [
 					break;
 
 				default:
-					console.log("no animation");
+					// console.log("no animation");
 
 					WORDCRAFT.build.init(); //to signal animation finished
 			}
@@ -558,7 +583,7 @@ var prepObject = [
 		canvas = new fabric.StaticCanvas('elem-frame-svg');
 		var cDim = getCanvasPerspDim(canvas);
 
-		console.log("Object passed: ", obj);
+		// console.log("Object passed: ", obj);
 		renderObjOnCanvas(obj, cDim);
 	};
 
