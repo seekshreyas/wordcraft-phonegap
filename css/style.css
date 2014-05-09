@@ -208,7 +208,7 @@ section { margin-bottom: 1000px; padding-top: 150px; float: left; }
 	border-top: 1px solid rgba(255, 255, 255, 0.6);
 	border-radius: 10px;
 	border: 2px solid #FFF;
-	margin-bottom: 300px;
+	margin-bottom: 150px;
 }
 #home h2 a { padding-bottom: 0px; }
 #home h3 { text-align: center; }
@@ -228,7 +228,7 @@ section { margin-bottom: 1000px; padding-top: 150px; float: left; }
 	border-top: 1px solid rgba(255, 255, 255, 0.6);
 	border-radius: 10px;
 	border: 2px solid #FFF;
-	margin-bottom: 300px;
+	margin-bottom: 150px;
 }
 
 #howitworks ul.work a { border-bottom: none; }
@@ -246,7 +246,7 @@ section { margin-bottom: 1000px; padding-top: 150px; float: left; }
 	border-top: 1px solid rgba(255, 255, 255, 0.6);
 	border-radius: 10px;
 	border: 2px solid #FFF;
-	margin-bottom: 300px;
+	margin-bottom: 150px;
     font-size: 22px;
 }
 
@@ -262,7 +262,7 @@ section { margin-bottom: 1000px; padding-top: 150px; float: left; }
 	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 	border-top: 1px solid rgba(255, 255, 255, 0.6);
 	border-radius: 10px;
-	margin-bottom: 300px;
+	margin-bottom: 150px;
 }
 
 
@@ -356,16 +356,15 @@ footer {
 }
 
 .row_content{
-	font-style: normal;
 	float: left;
 	width: 75%;
 	margin: 0px 0px 10px 0px;
 }
 
 .row_content p{
-	font-style: normal;
 	font-size:14px;
 	line-height: 18px;
+	padding: 10px 0px 0px 0px;
 }
 
 .row_people{
