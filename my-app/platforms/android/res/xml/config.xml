@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.wordcraft" version="0.3.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
-    <name>HelloWorld</name>
+    <name>WordCraft</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        WordCraft is an interactive iPad application where children (ages 4 - 8) can build sentences and get immediate visual feedback.
+        WordCraft comes from a team of graduate students at the UC Berkeley School of Information. We have backgrounds in design, product management, frontend and backend development, analytics and project management.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="seekshreyas@gmail.com" href="http://www.getwordcraft.com/">
+        WordCraft
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
