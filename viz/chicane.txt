@@ -1,0 +1,2293 @@
+1382344943|Shreyas|A|/.gitignore
+1382344943|Shreyas|A|/LICENSE
+1382344943|Shreyas|A|/README.md
+1385095259|Sonali|A|/Project_proposal_Kimiko.pdf
+1385095323|Sonali|A|/CPHSChecklist.xlsx
+1385095370|Sonali|A|/naacl12_visual.pdf
+1385095417|Sonali|A|/Project_proposal_Marti.pdf
+1385109710|Shreyas|D|/Project_proposal_Kimiko.pdf
+1385109710|Shreyas|D|/Project_proposal_Marti.pdf
+1385109710|Shreyas|A|/docs/proposal/Project_proposal_Kimiko.pdf
+1385109710|Shreyas|A|/docs/proposal/Project_proposal_Marti.pdf
+1385109710|Shreyas|A|/docs/research/naacl12_visual.pdf
+1385109710|Shreyas|D|/naacl12_visual.pdf
+1385109778|Shreyas|D|/CPHSChecklist.xlsx
+1385109778|Shreyas|A|/docs/CPHS/CPHSChecklist.xlsx
+1385109966|Shreyas|A|/.gitmodules
+1385109966|Shreyas|A|/docs/wiki
+1385112923|Shreyas|M|/README.md
+1385112923|Shreyas|M|/docs/wiki
+1385112987|Shreyas|M|/docs/wiki
+1385113291|Shreyas|M|/README.md
+1385113370|Shreyas|M|/README.md
+1385113416|Shreyas|M|/README.md
+1385113457|Shreyas|M|/README.md
+1385113496|Shreyas|M|/README.md
+1385114050|Shreyas|M|/LICENSE
+1385114151|Shreyas|M|/README.md
+1385114540|Shreyas|M|/README.md
+1385114812|Shreyas|M|/README.md
+1385139853|U-Ashley-PC\Ashley|M|/README.md
+1385145824|Victor Starostenko|A|/FinalProject_v1.docx
+1385145824|Victor Starostenko|A|/UCB_IRBSBE_2012-02-4056.pdf
+1385157171|Shreyas|D|/FinalProject_v1.docx
+1385157171|Shreyas|D|/UCB_IRBSBE_2012-02-4056.pdf
+1385157171|Shreyas|A|/docs/CPHS/UCB_IRBSBE_2012-02-4056.pdf
+1385157171|Shreyas|A|/docs/proposal/FinalProject_v1.docx
+1387417494|Shreyas|A|/docs/CPHS/CPHS_Application.md
+1387417494|Shreyas|M|/docs/wiki
+1387417834|Shreyas|M|/docs/CPHS/CPHS_Application.md
+1387418484|Shreyas|M|/docs/CPHS/CPHS_Application.md
+1387419010|Shreyas|M|/docs/CPHS/CPHS_Application.md
+1387424531|Shreyas|M|/docs/CPHS/CPHS_Application.md
+1387424531|Shreyas|A|/docs/CPHS/Form_Assent.md
+1387424598|Shreyas|A|/docs/CPHS/Form_Assent.pdf
+1387424755|Shreyas|M|/docs/CPHS/Form_Assent.md
+1387424755|Shreyas|M|/docs/CPHS/Form_Assent.pdf
+1387428475|Shreyas|A|/docs/CPHS/Form_Assent_Parent.md
+1387428610|Shreyas|A|/docs/CPHS/Form_Assent_Parent.pdf
+1387430213|Shreyas|A|/docs/CPHS/Certificates/shreyas_citiCompletionReport3880294.pdf
+1387430317|Victor Starostenko|A|/docs/CPHS/Certificates/VictorStarostenko_CITI_SBRCR.pdf
+1387430317|Victor Starostenko|A|/docs/CPHS/Certificates/VictorStarostenko_CITI_SBRI.pdf
+1387430418|Shreyas|A|/docs/CPHS/Certificates/divya_citiCompletionReport_module1.pdf
+1387430418|Shreyas|A|/docs/CPHS/Certificates/divya_citiCompletionReport_module2.pdf
+1387444156|Sonali|A|/docs/CPHS/Certificates/Sonali-citiCompletionReport.pdf
+1387444156|Sonali|A|/docs/CPHS/FinalProject_UCB_IRBSBE_2013-12-5877.pdf
+1387444156|Sonali|A|/docs/CPHS/Missing_Items.md
+1387444156|Sonali|A|/docs/research/Learning.pdf
+1387444989|Sonali|A|/docs/CPHS/Certificates/victor_starostenko_CITI_SBRI.pdf
+1387444989|Sonali|A|/docs/CPHS/FinalPoject-UCB_IRBSBE_2013-12-5877.pdf
+1387445495|Sonali|M|/docs/CPHS/FinalProject_UCB_IRBSBE_2013-12-5877.pdf
+1387445547|Sonali|A|/docs/CPHS/Form_Assent_Child.md
+1387445547|Sonali|A|/docs/CPHS/Form_Assent_Child.pdf
+1387445547|Sonali|A|/docs/CPHS/Form_Consent_Parent.md
+1387445547|Sonali|A|/docs/CPHS/Form_Consent_Parent.pdf
+1387446072|Ashley DeSouza|A|/docs/CPHS/Certificates/Ashley_DeSouza_citiCompletionReport_module1.pdf
+1387446072|Ashley DeSouza|A|/docs/CPHS/Certificates/Ashley_DeSouza_citiCompletionReport_module2.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/design/ios7.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Devices/outline_devices.ai
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Devices/outline_devices.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/Android4_Landscape_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/Android4_x10.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/Android4_x3_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/Android_Landscape_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/Android_x10.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/Android_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/BlackBerry_Landscape_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/BlackBerry_x10.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/BlackBerry_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/MeeGo_Landscape_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/MeeGo_x10.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/MeeGo_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/Symbian_Landscape_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/Symbian_x10.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/Symbian_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/WindowsPhone7_Landscape_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/WindowsPhone7_RealSize_Panorama.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/WindowsPhone7_x10.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/WindowsPhone7_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/iPad_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/iPad_x2_Landscape.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/iPad_x2_Portrait.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/iPhone_Landscape_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/iPhone_x10.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/iPhone_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/webOS_Landscape_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/webOS_x10.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/Outline Templates/webOS_x4_RealSize.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/TapSize/10.1_1280x800.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/TapSize/3.5_640x960.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/TapSize/4.65_1280x720.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/TapSize/5.3_1280x800.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/TapSize/7.7_1280x800.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/TapSize/7_1024x600.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/TapSize/7_1280x800.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/TapSize/8.9_1280x800.pdf
+1387500266|Shreyas|A|/_design/templates/mobile/wireframes/TapSize/9.7_1024x768_2048x1536.pdf
+1387565079|Victor Starostenko|A|/docs/UC Berkeley Letterhead/UC Berkeley Letterhead.docx
+1387565079|Victor Starostenko|A|/docs/UC Berkeley Letterhead/~$ Berkeley Letterhead.docx
+1387565953|Victor Starostenko|M|/docs/UC Berkeley Letterhead/UC Berkeley Letterhead.docx
+1387566141|ashley-desouza|D|/docs/UC Berkeley Letterhead/~$ Berkeley Letterhead.docx
+1387575756|Victor Starostenko|M|/docs/CPHS/CPHS_Application.md
+1387577498|Shreyas|M|/docs/CPHS/Form_Consent_Parent.md
+1387577498|Shreyas|M|/docs/wiki
+1387585189|Shreyas|M|/docs/CPHS/CPHS_Application.md
+1387585189|Shreyas|M|/docs/CPHS/Form_Consent_Parent.md
+1387586708|Shreyas|M|/docs/CPHS/Form_Assent_Child.md
+1387586825|Shreyas|M|/docs/CPHS/Form_Assent_Child.pdf
+1387586825|Shreyas|M|/docs/CPHS/Form_Consent_Parent.pdf
+1387781125|Sonali|M|/docs/CPHS/CPHS_Application.md
+1387781125|Sonali|A|/docs/CPHS/CPHS_Application_draft.docx
+1387781125|Sonali|M|/docs/CPHS/FinalProject_UCB_IRBSBE_2013-12-5877.pdf
+1389228223|Sonali|A|/docs/research/2_Beschorner_Hutchison_.pdf
+1389228223|Sonali|A|/docs/research/AppleClassroomsforTomorrow.pdf
+1389228223|Sonali|A|/docs/research/Important_links.md
+1389229103|Sonali|A|/docs/research/prek_interactive_learning_2007.pdf
+1389233808|Sonali|A|/docs/research/A_tablet_computer_for_young_children.pdf
+1389699140|Shreyas|M|/docs/wiki
+1389936591|Sonali|A|/docs/Presentation/ProposalPPT_V1.key
+1389936591|Sonali|A|/docs/Presentation/ProposalPPT_V1.ppt
+1390356505|Victor Starostenko|M|/docs/Presentation/ProposalPPT_V1.ppt
+1390356505|Victor Starostenko|A|/docs/Presentation/ProposalPPT_V2.pptx
+1390358706|Sonali|M|/docs/Presentation/ProposalPPT_V1.key
+1390358706|Sonali|M|/docs/Presentation/ProposalPPT_V1.ppt
+1390358706|Sonali|A|/docs/research/Art_as_a_Tool-for_Teachers.pdf
+1390358706|Sonali|A|/docs/research/How_do_pictures_help.md
+1390358706|Sonali|A|/docs/research/Teaching Writing through Non-Literary _Formats in the Departments of English __Language and Literature _ IOLC Conference - Academia.pdf
+1390358706|Sonali|A|/docs/research/pictures_writing
+1390365528|Sonali|M|/docs/Presentation/ProposalPPT_V1.key
+1390365528|Sonali|M|/docs/Presentation/ProposalPPT_V1.ppt
+1390380937|Victor Starostenko|A|/Images/Scene01/11949855741697952186small_house_01.svg.med.png
+1390380937|Victor Starostenko|A|/Images/Scene01/Scene01.psd
+1390380937|Victor Starostenko|A|/Images/Scene01/grass_strands.png
+1390380937|Victor Starostenko|A|/Images/Scene01/img01.jpg
+1390380937|Victor Starostenko|A|/Images/Scene01/img02.jpg
+1390380937|Victor Starostenko|A|/Images/Scene01/img03.jpg
+1390380937|Victor Starostenko|A|/Images/Scene01/img03.psd
+1390380937|Victor Starostenko|A|/Images/Scene01/img04.jpg
+1390380937|Victor Starostenko|A|/Images/Scene01/img04.psd
+1390380937|Victor Starostenko|A|/Images/Scene01/tree_tiny_green_simple.png
+1390380937|Victor Starostenko|M|/docs/Presentation/ProposalPPT_V1.ppt
+1390380937|Victor Starostenko|A|/docs/Presentation/ProposalPPT_V3.pptx
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Assent.pdf
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Assent_Child.md
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Assent_Child.pdf
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Assent_Child__UC_Berkeley_Letterhead.docx
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Assent_Child__UC_Berkeley_Letterhead.pdf
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Assent_Parent.md
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Assent_Parent.pdf
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Assent_Parent__UC_Berkeley_Letterhead.docx
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Assent_Parent__UC_Berkeley_Letterhead.pdf
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Consent_Parent.md
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Consent_Parent.pdf
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Consent_Parent__UC_Berkeley_Letterhead.docx
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/Form_Consent_Parent__UC_Berkeley_Letterhead.pdf
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/~$rm_Assent_Child__UC_Berkeley_Letterhead.docx
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/~$rm_Assent_Parent__UC_Berkeley_Letterhead.docx
+1390429779|Victor Starostenko|A|/docs/CPHS/Forms/~$rm_Consent_Parent__UC_Berkeley_Letterhead.docx
+1390430263|Victor Starostenko|D|/docs/CPHS/Form_Assent.pdf
+1390430263|Victor Starostenko|D|/docs/CPHS/Form_Assent_Child.md
+1390430263|Victor Starostenko|D|/docs/CPHS/Form_Assent_Child.pdf
+1390430263|Victor Starostenko|D|/docs/CPHS/Form_Assent_Parent.md
+1390430263|Victor Starostenko|D|/docs/CPHS/Form_Assent_Parent.pdf
+1390430263|Victor Starostenko|D|/docs/CPHS/Form_Consent_Parent.md
+1390430263|Victor Starostenko|D|/docs/CPHS/Form_Consent_Parent.pdf
+1390430313|vstarostenko|D|/docs/CPHS/Forms/~$rm_Assent_Child__UC_Berkeley_Letterhead.docx
+1390430323|vstarostenko|D|/docs/CPHS/Forms/~$rm_Consent_Parent__UC_Berkeley_Letterhead.docx
+1390430331|vstarostenko|D|/docs/CPHS/Forms/~$rm_Assent_Parent__UC_Berkeley_Letterhead.docx
+1390526316|Sonali|M|/docs/Presentation/ProposalPPT_V3.pptx
+1390868645|Victor Starostenko|A|/Images/Scene01/img05.jpg
+1390868645|Victor Starostenko|M|/docs/Presentation/ProposalPPT_V3.pptx
+1391030624|Divya Anand|A|/docs/CPHS/Updates.docx
+1391102791|Divya Anand|M|/docs/CPHS/Updates.docx
+1391122975|Ashley DeSouza|A|/docs/proposal/Abstract.md
+1391123043|ashley-desouza|M|/docs/proposal/Abstract.md
+1391123063|ashley-desouza|M|/docs/proposal/Abstract.md
+1391133277|Ashley DeSouza|A|/docs/CPHS/Updates.md
+1391217636|vstarostenko|M|/docs/proposal/Abstract.md
+1391221996|Victor Starostenko|A|/_design/interface/012714/marti_diagram.jpg
+1391221996|Victor Starostenko|A|/_design/interface/012714/scene1.jpg
+1391221996|Victor Starostenko|A|/_design/interface/012714/scene1.psd
+1391221996|Victor Starostenko|M|/docs/Presentation/ProposalPPT_V3.pptx
+1391221996|Victor Starostenko|A|/docs/Presentation/WORDCRAFT.png
+1391221996|Victor Starostenko|A|/docs/Presentation/Wordcraft_Presentation_012714.pdf
+1391223250|Shreyas|A|/tasklist.md
+1391223490|Shreyas|M|/tasklist.md
+1391223735|Shreyas|M|/tasklist.md
+1391476861|Sonali|A|/docs/research/Generating_text_from_images.pdf
+1391476861|Sonali|A|/docs/research/entity_recognition.pdf
+1391476861|Sonali|A|/docs/research/text_analysis_annotating_images.pdf
+1391644480|Divya Anand|D|/Images/Scene01/grass_strands.png
+1391910212|Shreyas|M|/.gitmodules
+1391910212|Shreyas|A|/wordcraft
+1391910399|Shreyas|M|/docs/wiki
+1392019283|Divya Anand|A|/docs/InterviewSchedule.xlsx
+1392070420|Shreyas|A|/_design/interface/canvas.pdf
+1392070420|Shreyas|M|/wordcraft
+1392070761|Shreyas|M|/docs/wiki
+1392070761|Shreyas|M|/wordcraft
+1392072074|Shreyas|M|/wordcraft
+1392357789|Sonali|M|/docs/CPHS/FinalProject_UCB_IRBSBE_2013-12-5877.pdf
+1392357789|Sonali|M|/docs/CPHS/Forms/Form_Assent_Child__UC_Berkeley_Letterhead.docx
+1392357789|Sonali|M|/docs/CPHS/Forms/Form_Assent_Child__UC_Berkeley_Letterhead.pdf
+1392357789|Sonali|A|/docs/CPHS/Forms/Form_Parent_Permission__UC_Berkeley_Letterhead.docx
+1392357789|Sonali|A|/docs/CPHS/Forms/Form_Parent_Permission__UC_Berkeley_Letterhead.pdf
+1392357789|Sonali|A|/docs/CPHS/Forms/Interview_Questions__UC_Berkeley_Letterhead.docx
+1392357789|Sonali|A|/docs/CPHS/Forms/Interview_Questions__UC_Berkeley_Letterhead.pdf
+1392357789|Sonali|A|/docs/CPHS/Forms/Recruitment_Material_UC_Berkeley_Letterhead.docx
+1392357789|Sonali|A|/docs/CPHS/Forms/Recruitment_Material_UC_Berkeley_Letterhead.pdf
+1392357789|Sonali|A|/docs/CPHS/Forms/Research_Media_Records_Release_Form__UC_Berkeley_Letterhead.docx
+1392357789|Sonali|A|/docs/CPHS/Forms/Research_Media_Records_Release_Form__UC_Berkeley_Letterhead.pdf
+1392357789|Sonali|M|/docs/Presentation/ProposalPPT_V1.ppt
+1392357789|Sonali|A|/docs/Presentation/ProposalPPT_V3.pdf
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu.html
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/1-3e97b5bee6.jpg
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/121604843
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/1618667077-postmessagerelay.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/2-2d29f392dd.jpg
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/3-ca6d16a435.jpg
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/4-9107306ddf.jpg
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/4gen.css
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/4gen.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/4gen_non_ie.css
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/5-48cfa21f69.jpg
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/6-efc36c98d5.jpg
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/7-4fcc6c45d0.jsonp
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/academia-logo.gif
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/academia_sharing.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/all.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/backbone.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/c6fd0f9ac5
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/cb=gapi.loaded_0
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/client.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/core-rpc-shindig.random-shindig.sha1.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/core.css
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/core.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/documents.css
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/download.pdf.gif
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/easyXDM.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/ga.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/icons.css
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/jquery.min.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/loading.gif
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/notifications-arrow.png
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/nr-288.min.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/paper-load.gif
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/postmessageRelay.html
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/require-underscore.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/scribd.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/scribd_api.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/seamless
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/seamless.css
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/seamless.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/search-spinner.gif
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/single_work.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/tooltip.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/tpo8fgy.js
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/ttfs.css
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/xd_arbiter.html
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary _Formats in the Departments of English __Language and Literature _ IOLC Conference - Academia.pdf
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/2_Beschorner_Hutchison_.pdf
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/A_tablet_computer_for_young_children.pdf
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/AppleClassroomsforTomorrow.pdf
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/Art_as_a_Tool-for_Teachers.pdf
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/Learning.pdf
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/Teaching Writing through Non-Literary _Formats in the Departments of English __Language and Literature _ IOLC Conference - Academia.pdf
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/naacl12_visual.pdf
+1392357789|Sonali|A|/docs/research/ChildrenLearning_Papers/prek_interactive_learning_2007.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/Generating_text_from_images.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/Marti_text_tiling.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/Read/Finding_best_picture.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/Read/Moens-ThematicProgressionTextTable.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/Read/learning_visual_entities.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/Text_hierarchical_classifciation.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/classify_sentence_speech_tags.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/enhanced_word_clustering.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/entity_recognition.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/lexical_cohesion.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/not relevant/automatic_image_annotation.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/text_analysis_annotating_images.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/words_power_picture.pdf
+1392357789|Sonali|A|/docs/research/NLP_Papers/words_with_attitude.pdf
+1392357789|Sonali|M|/docs/research/pictures_writing
+1392378188|Shreyas|M|/wordcraft
+1392378370|Shreyas|D|/wordcraft
+1392634991|Divya Anand|A|/docs/adj_list.xlsx
+1392634991|Divya Anand|A|/docs/~$adj_list.xlsx
+1392634991|Divya Anand|A|/upaposter_85x11.pdf
+1392676405|Shreyas|A|/_design/_inspiration/FullSize.png
+1392676405|Shreyas|A|/_design/_inspiration/decks-full.png
+1392676405|Shreyas|A|/_design/_inspiration/png_1x.png
+1392676405|Shreyas|A|/_design/_inspiration/real_pixels.png
+1392676405|Shreyas|A|/_design/_inspiration/stationary.jpg
+1392676405|Shreyas|A|/_design/interface/app_master.pdf
+1392676405|Shreyas|M|/docs/wiki
+1392677347|Shreyas|M|/_design/interface/app_master.pdf
+1392677689|Shreyas|M|/_design/interface/app_master.pdf
+1392678095|Divya Anand|D|/docs/~$adj_list.xlsx
+1392678132|Divya Anand|M|/docs/wiki
+1392678132|Divya Anand|M|/wordcraft
+1392869185|Sonali|A|/NLPCode/data/Notes.txt
+1392869185|Sonali|A|/NLPCode/data/adj_list.csv
+1392869185|Sonali|A|/NLPCode/data/adj_list.xlsx
+1392869185|Sonali|A|/NLPCode/data/farm_sentences.txt
+1392869185|Sonali|A|/NLPCode/data/farmwordlist.csv
+1392869293|Sonali|A|/NLPCode/Wordcraft1.ipynb
+1392869536|Sonali|A|/NLPCode/pattern-2.6/.gitignore
+1392869536|Sonali|A|/NLPCode/pattern-2.6/.pylintrc
+1392869536|Sonali|A|/NLPCode/pattern-2.6/LICENSE.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/README.md
+1392869536|Sonali|A|/NLPCode/pattern-2.6/README.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/clips.css
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/desmedt12a.pdf
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/download.gif
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/download3.gif
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/external.png
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/gradient.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/header.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/more.png
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-editor.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-editor2.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-filter1.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-filter2.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-filter3.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-filter4.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-origin1.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-origin2.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-particle1.png
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-particle2.png
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-particle3.png
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-path1.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-primitives1.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-primitives2.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-primitives3.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-primitives4.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-primitives5.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-primitives6.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-supershape1.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-supershape2.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-canvas-supershape3.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-metrics-bell.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-metrics-boxplot.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-search-taxonomy.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-vector-cluster1.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-vector-cluster2.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-vector-lsa1.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-vector-svm1.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern-vector-svm2.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_example_100days.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_example_elections.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_example_italian.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_example_semantic_network.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_example_spanish.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_graph1.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_graph2.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_graph3.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_graph4.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_graph5.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_schema.gif
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_schema_de.gif
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_schema_es.gif
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_schema_fr.gif
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_schema_it.gif
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/pattern_schema_nl.gif
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/paypal-donate.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/scanner.jpg
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/g/shadow.png
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/mbsp-tags.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-canvas.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-db.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-de.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-dev.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-en.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-es.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-fr.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-graph.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-it.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-metrics.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-nl.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-search.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-shell.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-vector.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern-web.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/pattern.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/html/stop-words.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/index.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/js/shBrushJScript.js
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/js/shBrushPython.js
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/js/shBrushXml.js
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/js/shCore.css
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/js/shCore.js
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/js/shThemeDefault.css
+1392869536|Sonali|A|/NLPCode/pattern-2.6/docs/update.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/01-google.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/02-google-translate.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/03-bing.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/04-twitter.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/05-twitter-stream.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/06-feed.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/07-wikipedia.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/08-wiktionary.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/09-wikia.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/10-dbpedia.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/11-facebook.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/12-dom.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/13-crawler.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/14-flickr.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/01-web/15-sort.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/02-db/01-database.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/02-db/02-datasheet.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/02-db/03-date.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/03-en/01-inflect.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/03-en/02-quantify.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/03-en/03-parse.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/03-en/04-tree.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/03-en/05-tagset.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/03-en/06-wordnet.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/03-en/07-sentiment.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/04-search/01-search.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/04-search/02-constraint.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/04-search/03-lemmata.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/04-search/04-taxonomy.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/04-search/05-multiple.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/04-search/06-optional.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/04-search/07-exclude.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/04-search/08-web.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/04-search/09-groups.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/01-document.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/02-model.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/03-lsa.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/04-knn.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/05-nb.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/06-svm.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/07-slp.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/badger.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/bear.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/dog.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/dolphin.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/lion.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/parakeet.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/rabbit.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/shark.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/sparrow.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/tiger.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/05-vector/corpus/wolf.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/06-graph/01-graph.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/06-graph/02-export.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/06-graph/03-template.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/06-graph/04-canvas.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/06-graph/05-trends.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/06-graph/06-commonsense.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/01-basic.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/02-basic.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/03-transformation.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/04-path.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/05-points.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/06-image.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/08-widget.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/09-class.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/10-pack.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/11-graph.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/examples/07-canvas/data-url.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/canvas.js
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/db/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/graph/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/graph/commonsense.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/graph/commonsense.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/graph/graph.js
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/metrics.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/de/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/de/__main__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/de/de-context.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/de/de-lexicon.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/de/de-morphology.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/de/de-verbs.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/de/inflect.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/__main__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/en-context.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/en-entities.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/en-lexicon.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/en-model.slp
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/en-morphology.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/en-sentiment.xml
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/en-spelling.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/en-verbs.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/inflect.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/inflect_quantify.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/modality.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordlist/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordlist/academic.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordlist/basic.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordlist/profanity.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordlist/stopwords.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordlist/time.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/LICENSE.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/data.adj
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/data.adv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/data.noun1
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/data.noun2
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/data.verb
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/index.32
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/index.adj
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/index.adv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/index.noun
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/index.sense
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/index.verb
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/dict/lexnames
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/pywordnet/LICENSE.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/pywordnet/PKG-INFO
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/pywordnet/README.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/pywordnet/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/pywordnet/concordance.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/pywordnet/setup.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/pywordnet/wntools.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/pywordnet/wordnet.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/resnik-ic2.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/en/wordnet/resnik-ic3.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/es/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/es/__main__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/es/es-context.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/es/es-lexicon.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/es/es-morphology.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/es/es-verbs.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/es/inflect.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/fr/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/fr/__main__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/fr/fr-context.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/fr/fr-lexicon.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/fr/fr-morphology.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/fr/fr-sentiment.xml
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/fr/fr-verbs.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/fr/inflect.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/it/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/it/__main__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/it/inflect.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/it/it-context.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/it/it-lexicon.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/it/it-morphology.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/it/it-verbs.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/nl/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/nl/__main__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/nl/inflect.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/nl/nl-context.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/nl/nl-lexicon.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/nl/nl-morphology.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/nl/nl-sentiment.xml
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/nl/nl-verbs.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/search.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/tree.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/xx/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/xx/__main__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/xx/inflect.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/xx/xx-context.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/xx/xx-lexicon.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/xx/xx-morphology.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/xx/xx-sentiment.xml
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/text/xx/xx-verbs.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/stemmer.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/stopwords-de.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/stopwords-en.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/stopwords-es.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/stopwords-fr.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/stopwords-nl.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/INSTALL.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/README.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/liblinear-1.93/COPYRIGHT
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/liblinear-1.93/liblinear-win32.dll
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/liblinear-1.93/liblinear-win64.dll
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/liblinear.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/liblinearutil.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/libsvm-3.11/COPYRIGHT
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/libsvm-3.11/libsvm-win32.dll
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/libsvm-3.17/COPYRIGHT
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/libsvm-3.17/libsvm-win32.dll
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/libsvm-3.17/libsvm-win64.dll
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/libsvm.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/vector/svm/libsvmutil.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/api.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/cache/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/docx/LICENSE
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/docx/README.rst
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/docx/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/docx/docx.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/feed/LICENSE
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/feed/README
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/feed/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/feed/feedparser.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/feed/setup.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/imap/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/json/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/json/_speedups.c
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/json/decoder.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/json/encoder.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/json/ordered_dict.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/json/scanner.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/json/tool.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/locale/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/oauth/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/README.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/arcfour.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/ascii85.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/cmap/Makefile
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/cmap/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/cmapdb.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/converter.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/encodingdb.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/fontmetrics.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/glyphlist.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/latin_enc.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/layout.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/lzw.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/pdfcolor.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/pdfdevice.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/pdffont.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/pdfinterp.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/pdfparser.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/pdftypes.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/psparser.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/runlength.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/pdf/utils.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/soup/BeautifulSoup.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/soup/BeautifulSoupTests.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/soup/PKG-INFO
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/soup/__init__.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/pattern/web/soup/setup.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/setup.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/README.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/carroll-lookingglass.docx
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/carroll-wonderland.pdf
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/plagiarism-clough&stevenson.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/polarity-de-amazon.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/polarity-en-pang&lee1.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/polarity-en-pang&lee2.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/polarity-fr-amazon.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/polarity-nl-bol.com.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/spam-apache.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/spelling-birkbeck.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/tagged-de-tiger.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/tagged-en-oanc.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/tagged-en-wsj.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/tagged-es-wikicorpus.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/tagged-it-wacky.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/tagged-nl-twnc.txt
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/uncertainty-conll2010.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/wordforms-de-celex.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/wordforms-en-celex.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/wordforms-es-davies.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/wordforms-fr-lexique.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/wordforms-it-wiktionary.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/corpora/wordforms-nl-celex.csv
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test.html
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test.js
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_canvas.js
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_db.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_de.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_en.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_es.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_fr.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_graph.js
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_graph.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_it.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_metrics.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_nl.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_search.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_text.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_vector.py
+1392869536|Sonali|A|/NLPCode/pattern-2.6/test/test_web.py
+1392869594|Sonali|A|/NLPCode/en/LICENSE.txt
+1392869594|Sonali|A|/NLPCode/en/__init__.py
+1392869594|Sonali|A|/NLPCode/en/_en-test.py
+1392869594|Sonali|A|/NLPCode/en/article.py
+1392869594|Sonali|A|/NLPCode/en/commonsense.py
+1392869594|Sonali|A|/NLPCode/en/numeral.py
+1392869594|Sonali|A|/NLPCode/en/ogden/__init__.py
+1392869594|Sonali|A|/NLPCode/en/ogden/ogden_2000.txt
+1392869594|Sonali|A|/NLPCode/en/ordinal.py
+1392869594|Sonali|A|/NLPCode/en/parser/Brill_lexicon
+1392869594|Sonali|A|/NLPCode/en/parser/Brill_license.txt
+1392869594|Sonali|A|/NLPCode/en/parser/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/INSTALL.TXT
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/LICENSE.TXT
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/PKG-INFO
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/README.txt
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/chat/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/chat/eliza.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/chat/iesha.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/chat/rude.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/chat/zen.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/cluster/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/cluster/em.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/cluster/gaac.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/cluster/kmeans.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/combined.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/concord.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/featuredemo.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/featurelite.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/fsa.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/hole.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/kimmo.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/lambda.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/marshal.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/marshalbrill.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/paradigm.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/paradigmquery.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/toolbox/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/toolbox/data.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/toolbox/errors.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/toolbox/lexicon.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/toolbox/settings.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/toolbox/text.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/contrib/toolbox/utilities.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/brown.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/cmudict.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/conll2000.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/genesis.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/gutenberg.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/ieer.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/inaugural.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/names.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/ppattach.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/senseval.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/sinica_treebank.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/state_union.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/stopwords.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/timit.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/toolbox.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/treebank.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/words.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/corpora/ycoe.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/draw/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/draw/cfg.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/draw/chart.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/draw/dispersion.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/draw/plot.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/draw/rdparser.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/draw/srparser.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/draw/tree.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/etree/ElementInclude.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/etree/ElementPath.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/etree/ElementTree.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/etree/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/evaluate.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/misc/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/misc/sort.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/misc/wordfinder.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/model/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/category.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/cfg.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/chart.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/chunk.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/featurechart.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/featurestructure.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/generate.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/grammarfile.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/pcfg.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/pchart.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/rd.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/sr.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/tree.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/treetransforms.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/parse/viterbi.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/probability.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/semantics/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/semantics/evaluate.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/semantics/logic.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/semantics/utilities.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/setup.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/stem/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/stem/porter.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/stem/regexp.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/tag/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/tag/brill.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/tag/hmm.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/tag/ngram.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/tag/unigram.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/test/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/test/doctest_driver.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/tokenize/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/tokenize/regexp.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/tokenize/simple.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/utilities.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/wordnet/__init__.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/wordnet/concordance.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/wordnet/wntools.py
+1392869594|Sonali|A|/NLPCode/en/parser/nltk_lite/wordnet/wordnet.py
+1392869594|Sonali|A|/NLPCode/en/plural.py
+1392869594|Sonali|A|/NLPCode/en/quantify.py
+1392869594|Sonali|A|/NLPCode/en/rid.py
+1392869594|Sonali|A|/NLPCode/en/singular.py
+1392869594|Sonali|A|/NLPCode/en/spelling/__init__.py
+1392869594|Sonali|A|/NLPCode/en/spelling/spelling.txt
+1392869594|Sonali|A|/NLPCode/en/tags.py
+1392869594|Sonali|A|/NLPCode/en/verb/__init__.py
+1392869594|Sonali|A|/NLPCode/en/verb/verb.txt
+1392869594|Sonali|A|/NLPCode/en/wordnet/LICENSE.txt
+1392869594|Sonali|A|/NLPCode/en/wordnet/PKG-INFO
+1392869594|Sonali|A|/NLPCode/en/wordnet/README.txt
+1392869594|Sonali|A|/NLPCode/en/wordnet/__init__.py
+1392869594|Sonali|A|/NLPCode/en/wordnet/concordance.py
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/contents.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/contributors.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/download.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/examples.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/index.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/installation.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/license.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/nav.html.inc
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/release-notes.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/styles.css
+1392869594|Sonali|A|/NLPCode/en/wordnet/docs/styles.css.prefix
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/build.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/contributors-src.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/contributors.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/download.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/examples.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/format-contributors.xsl
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/index.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/install.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/license.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/make-css-prefix.xsl
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/make-navigation.xsl
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/publish.xsl
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/release-notes.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/requirements.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/schemas.xml
+1392869594|Sonali|A|/NLPCode/en/wordnet/docsrc/styles.in.css
+1392869594|Sonali|A|/NLPCode/en/wordnet/setup.py
+1392869594|Sonali|A|/NLPCode/en/wordnet/wntools.py
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet.py
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/AUTHORS
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/COPYING
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/ChangeLog
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/INSTALL
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/Makefile.am
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/Makefile.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/NEWS
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/README
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/acinclude.m4
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/aclocal.m4
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/compile
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/config.h.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/configure
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/configure.ac
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/depcomp
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/Makefile
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/Makefile.am
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/Makefile.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/adj.exc
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/adv.exc
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/cntlist
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/cntlist.rev
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/data.adj
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/data.adv
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/data.noun
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/data.verb
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/frames.vrb
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/index.adj
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/index.adv
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/index.noun
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/index.sense
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/index.verb
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/lexnames
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/log.grind.2.1
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/noun.exc
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/sentidx.vrb
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/sents.vrb
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/verb.Framestext
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/dict/verb.exc
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/Makefile
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/Makefile.am
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/Makefile.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/Makefile
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/Makefile.am
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/Makefile.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/binsrch.3WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/cntlist.5WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/grind.1WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/lexnames.5WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/morph.3WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/morphy.7WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/senseidx.5WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/uniqbeg.7WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wn.1WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnb.1WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wndb.5WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wngloss.7WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wngroups.7WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wninput.5WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnintro.1WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnintro.3WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnintro.5WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnintro.7WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnlicens.7WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnpkgs.7WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnsearch.3WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnstats.7WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/html/wnutil.3WN.html
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/Makefile
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/Makefile.am
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/Makefile.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/binsrch.3
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/cntlist.5
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/grind.1
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/lexnames.5
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/morph.3
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/morphy.7
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/senseidx.5
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/uniqbeg.7
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wn.1
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnb.1
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wndb.5
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wngloss.7
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wngroups.7
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wninput.5
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnintro.1
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnintro.3
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnintro.5
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnintro.7
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnlicens.7
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnpkgs.7
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnsearch.3
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnstats.7
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/man/wnutil.3
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/Makefile
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/Makefile.am
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/Makefile.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/binsrch.3.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/cntlist.5.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/grind.1.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/lexnames.5.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/morph.3.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/morphy.7.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/senseidx.5.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/uniqbeg.7.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wn.1.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnb.1.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wndb.5.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wngloss.7.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wngroups.7.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wninput.5.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnintro.1.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnintro.3.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnintro.5.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnintro.7.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnlicens.7.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnpkgs.7.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnsearch.3.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnstats.7.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/pdf/wnutil.3.pdf
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/Makefile
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/Makefile.am
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/Makefile.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/binsrch.3.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/cntlist.5.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/grind.1.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/lexnames.5.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/morph.3.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/morphy.7.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/senseidx.5.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/uniqbeg.7.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wn.1.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnb.1.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wndb.5.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wngloss.7.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wngroups.7.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wninput.5.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnintro.1.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnintro.3.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnintro.5.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnintro.7.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnlicens.7.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnpkgs.7.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnsearch.3.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnstats.7.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/doc/ps/wnutil.3.ps
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/include/Makefile
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/include/Makefile.am
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/include/Makefile.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/include/wn.h
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/include/wngrind.h
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/install-sh
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/missing
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/src/Makefile.am
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/src/Makefile.in
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/src/stubs.c
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/src/tkAppInit.c
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/src/wn.c
+1392869594|Sonali|A|/NLPCode/en/wordnet/wordnet2/src/wnb
+1393266398|Sonali|M|/docs/InterviewSchedule.xlsx
+1393448934|Divya Anand|A|/docs/adverbs_list.xlsx
+1393448934|Divya Anand|A|/docs/pronoun_list.xlsx
+1393448934|Divya Anand|A|/docs/verb_list.xlsx
+1393448935|Divya Anand|A|/docs/framework.xlsx
+1393461237|Divya Anand|M|/docs/framework.xlsx
+1393461237|Divya Anand|A|/docs/~$adverbs_list.xlsx
+1393461237|Divya Anand|A|/docs/~$framework.xlsx
+1393463347|Divya Anand|M|/docs/framework.xlsx
+1393463347|Divya Anand|D|/docs/~$adverbs_list.xlsx
+1393463347|Divya Anand|D|/docs/~$framework.xlsx
+1393572583|Sonali|M|/NLPCode/data/adj_list.csv
+1393572583|Sonali|A|/NLPCode/data/nouns_list.csv
+1393572583|Sonali|A|/NLPCode/data/verbs_list.csv
+1393572583|Sonali|A|/NLPCode/sentences_list.txt
+1393572583|Sonali|A|/NLPCode/wordcraft_sentence_permutation.ipynb
+1393573052|Sonali|A|/NLPCode/sentences_adj_list.txt
+1393575005|Sonali|A|/sounds/Bassett hound barking.wav
+1393575005|Sonali|A|/sounds/Canary.wav
+1393575005|Sonali|A|/sounds/Cat meow 1.wav
+1393575005|Sonali|A|/sounds/Cattle.wav
+1393575005|Sonali|A|/sounds/Chicken coop.wav
+1393575005|Sonali|A|/sounds/Cow, moo, cow moo.wav
+1393575005|Sonali|A|/sounds/Dog bark.wav
+1393575005|Sonali|A|/sounds/Duck quacking.wav
+1393575005|Sonali|A|/sounds/Geese Canadian flock.wav
+1393575005|Sonali|A|/sounds/Goat.wav
+1393575005|Sonali|A|/sounds/Hawk.wav
+1393575005|Sonali|A|/sounds/Herd of cattle.wav
+1393575005|Sonali|A|/sounds/Herd sheep.wav
+1393575005|Sonali|A|/sounds/Hog grunts.wav
+1393575005|Sonali|A|/sounds/Horse whinny 16.wav
+1393575005|Sonali|A|/sounds/Horse whinnying 1.wav
+1393575005|Sonali|A|/sounds/Horse, walking by.wav
+1393575005|Sonali|A|/sounds/Horses walking on dirt.wav
+1393575005|Sonali|A|/sounds/Lamb, Baaa, Lamb noise, sheep.wav
+1393575005|Sonali|A|/sounds/Owl.wav
+1393575005|Sonali|A|/sounds/Peacock 1.wav
+1393575005|Sonali|A|/sounds/Pig squeal 2.wav
+1393575005|Sonali|A|/sounds/Rooster.wav
+1393575005|Sonali|A|/sounds/Sheep 2.wav
+1393575005|Sonali|A|/sounds/Swam of mosquitoes.wav
+1393575005|Sonali|A|/sounds/Tropical jungle birds.wav
+1393653403|Divya Anand|A|/_design/Layout_2.bmml
+1393653403|Divya Anand|A|/_design/Layout_3.bmml
+1393653403|Divya Anand|A|/_design/interface/Mockups/Layout_1.bmml
+1393653403|Divya Anand|A|/_design/interface/Mockups/Layout_2.bmml
+1393653403|Divya Anand|A|/_design/interface/Mockups/Layout_3.bmml
+1393653403|Divya Anand|A|/_design/interface/Mockups/myBalsamiqProject.pdf
+1393793464|Divya Anand|D|/_design/Layout_2.bmml
+1393793464|Divya Anand|D|/_design/Layout_3.bmml
+1393793464|Divya Anand|M|/_design/interface/app_master.pdf
+1393793464|Divya Anand|A|/_design/interface/option_1.pdf
+1393808179|Divya Anand|A|/_design/interface/app_master.pdf.ai
+1393808179|Divya Anand|A|/_design/interface/background.pdf
+1393813267|Sonali|A|/app/css/wordcraft.css
+1393813267|Sonali|A|/app/data/noun_verb_adj.json
+1393813267|Sonali|A|/app/index.html
+1393813267|Sonali|A|/app/js/wordcraft.js
+1393813267|Sonali|A|/app/sample.txt
+1393813267|Sonali|A|/app/wordcraft.css
+1393814252|Divya Anand|A|/_design/interface/Assets/Cat.pdf
+1393814252|Divya Anand|M|/_design/interface/app_master.pdf.ai
+1393898536|Divya Anand|M|/_design/interface/app_master.pdf.ai
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu.html
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/1-3e97b5bee6.jpg
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/121604843
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/1618667077-postmessagerelay.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/2-2d29f392dd.jpg
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/3-ca6d16a435.jpg
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/4-9107306ddf.jpg
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/4gen.css
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/4gen.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/4gen_non_ie.css
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/5-48cfa21f69.jpg
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/6-efc36c98d5.jpg
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/7-4fcc6c45d0.jsonp
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/academia-logo.gif
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/academia_sharing.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/all.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/backbone.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/c6fd0f9ac5
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/cb=gapi.loaded_0
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/client.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/core-rpc-shindig.random-shindig.sha1.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/core.css
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/core.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/documents.css
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/download.pdf.gif
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/easyXDM.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/ga.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/icons.css
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/jquery.min.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/loading.gif
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/notifications-arrow.png
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/nr-288.min.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/paper-load.gif
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/postmessageRelay.html
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/require-underscore.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/scribd.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/scribd_api.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/seamless
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/seamless.css
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/seamless.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/search-spinner.gif
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/single_work.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/tooltip.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/tpo8fgy.js
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/ttfs.css
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary  Formats in the Departments of English   Language and Literature   IOLC Conference - Academia.edu_files/xd_arbiter.html
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/(2) Teaching Writing through Non-Literary _Formats in the Departments of English __Language and Literature _ IOLC Conference - Academia.pdf
+1393901341|Shreyas|D|/docs/research/ChildrenLearning_Papers/Teaching Writing through Non-Literary _Formats in the Departments of English __Language and Literature _ IOLC Conference - Academia.pdf
+1393901341|Shreyas|A|/docs/research/ChildrenLearning_Papers/TeachingWritingThrNonLiterary.pdf
+1393901341|Shreyas|D|/docs/research/Teaching Writing through Non-Literary _Formats in the Departments of English __Language and Literature _ IOLC Conference - Academia.pdf
+1393901341|Shreyas|A|/docs/research/TeachingWritingNonLiterary.pdf
+1393901429|Shreyas|M|/docs/wiki
+1393901946|Victor Starostenko|A|/NLPCode/data/JSON Maker/JSON_maker.py
+1393901946|Victor Starostenko|A|/NLPCode/data/JSON Maker/default_JSON_maker.py
+1393901946|Victor Starostenko|A|/NLPCode/data/JSON Maker/full_JSON.json
+1393901946|Victor Starostenko|A|/NLPCode/data/JSON Maker/new_json.txt
+1393902625|Shreyas|A|/_design/interface/app_master.ai
+1393902625|Shreyas|D|/_design/interface/app_master.pdf.ai
+1393905323|Divya Anand|M|/_design/interface/app_master.ai
+1393909097|Divya Anand|A|/_design/interface/Assets/card.pdf
+1394055242|Divya Anand|M|/_design/interface/app_master.ai
+1394059632|Shreyas|M|/_design/interface/Assets/Cat.pdf
+1394062924|Divya Anand|M|/_design/interface/Assets/Cat.pdf
+1394062924|Divya Anand|A|/_design/interface/Assets/cat_Cat-08.svg
+1394062924|Divya Anand|A|/_design/interface/Assets/cat_ears_Cat_Ears.svg
+1394062924|Divya Anand|A|/_design/interface/Assets/cat_eye_closed_Cat_Eye_Closed.svg
+1394062924|Divya Anand|A|/_design/interface/Assets/cat_eye_half_Cat_Eye_Half.svg
+1394062924|Divya Anand|A|/_design/interface/Assets/cat_eye_open_Cat_Eye_Open.svg
+1394062924|Divya Anand|A|/_design/interface/Assets/cat_mouth_happy_Cat_Mouth_Happy.svg
+1394062924|Divya Anand|A|/_design/interface/Assets/cat_mouth_sad_Cat_Mouth_Sad.svg
+1394062924|Divya Anand|A|/_design/interface/Assets/cat_skin_Cat_Skin.svg
+1394349739|Divya Anand|M|/docs/framework.xlsx
+1394359815|Shreyas|M|/_design/interface/Assets/cat_Cat-08.svg
+1394359815|Shreyas|M|/_design/interface/Assets/cat_ears_Cat_Ears.svg
+1394359815|Shreyas|M|/_design/interface/Assets/cat_eye_closed_Cat_Eye_Closed.svg
+1394359815|Shreyas|M|/_design/interface/Assets/cat_eye_half_Cat_Eye_Half.svg
+1394359815|Shreyas|M|/_design/interface/Assets/cat_eye_open_Cat_Eye_Open.svg
+1394359815|Shreyas|M|/_design/interface/Assets/cat_mouth_happy_Cat_Mouth_Happy.svg
+1394359815|Shreyas|M|/_design/interface/Assets/cat_mouth_sad_Cat_Mouth_Sad.svg
+1394359815|Shreyas|M|/_design/interface/Assets/cat_skin_Cat_Skin.svg
+1394360402|Shreyas|D|/_design/interface/Assets/cat_Cat-08.svg
+1394360402|Shreyas|D|/_design/interface/Assets/cat_ears_Cat_Ears.svg
+1394360402|Shreyas|D|/_design/interface/Assets/cat_eye_closed_Cat_Eye_Closed.svg
+1394360402|Shreyas|D|/_design/interface/Assets/cat_eye_half_Cat_Eye_Half.svg
+1394360402|Shreyas|D|/_design/interface/Assets/cat_eye_open_Cat_Eye_Open.svg
+1394360402|Shreyas|D|/_design/interface/Assets/cat_mouth_happy_Cat_Mouth_Happy.svg
+1394360402|Shreyas|D|/_design/interface/Assets/cat_mouth_sad_Cat_Mouth_Sad.svg
+1394360402|Shreyas|D|/_design/interface/Assets/cat_skin_Cat_Skin.svg
+1394360504|Shreyas|D|/_design/interface/Assets/Cat.pdf
+1394360504|Shreyas|D|/_design/interface/Assets/card.pdf
+1394360504|Shreyas|A|/_design/interface/Assets/cat/cat_master.pdf
+1394360504|Shreyas|A|/_design/interface/Assets/cat/svg/cat_full.svg
+1394360504|Shreyas|A|/_design/interface/Assets/cat/svg/cat_part_ears.svg
+1394360504|Shreyas|A|/_design/interface/Assets/cat/svg/cat_part_eye_closed.svg
+1394360504|Shreyas|A|/_design/interface/Assets/cat/svg/cat_part_eye_half.svg
+1394360504|Shreyas|A|/_design/interface/Assets/cat/svg/cat_part_eyemouth.svg
+1394360504|Shreyas|A|/_design/interface/Assets/cat/svg/cat_part_moth_sad.svg
+1394360504|Shreyas|A|/_design/interface/Assets/cat/svg/cat_part_mouth.svg
+1394360504|Shreyas|A|/_design/interface/Assets/cat/svg/cat_skin.svg
+1394360504|Shreyas|A|/_design/interface/card.pdf
+1394360618|Shreyas|D|/_design/interface/Assets/cat/svg/cat_part_moth_sad.svg
+1394360618|Shreyas|A|/_design/interface/Assets/cat/svg/cat_part_mouth_sad.svg
+1394360900|Shreyas|A|/_design/interface/Assets/cat/svg/cat_part_eye.svg
+1394360900|Shreyas|D|/_design/interface/Assets/cat/svg/cat_part_eyemouth.svg
+1394646824|Divya Anand|A|/_design/interface/Mockups/1. Launch.bmml
+1394646824|Divya Anand|A|/_design/interface/Mockups/2. L1.bmml
+1394646824|Divya Anand|A|/_design/interface/Mockups/3. L2.bmml
+1394646824|Divya Anand|A|/_design/interface/Mockups/4. L3.bmml
+1394646824|Divya Anand|A|/_design/interface/Mockups/Flow.pdf
+1394646824|Divya Anand|A|/_design/interface/Mockups/Layout_Combo.bmml
+1394837057|Divya Anand|A|/_design/interface/Assets/app_master.ai
+1394837057|Divya Anand|A|/_design/interface/Assets/chick/chick_full.svg
+1394837057|Divya Anand|A|/_design/interface/Assets/pig/pig_full.svg
+1394837057|Divya Anand|A|/_design/interface/Assets/rooster/rooster_full.svg
+1394837057|Divya Anand|M|/_design/interface/app_master.ai
+1394837057|Divya Anand|M|/_design/interface/app_master.pdf
+1394943107|Divya Anand|D|/_design/interface/Assets/app_master.ai
+1394943107|Divya Anand|A|/_design/interface/Assets/cow/cow.svg
+1394943107|Divya Anand|A|/_design/interface/Assets/sheep/sheep.svg
+1394943107|Divya Anand|M|/_design/interface/app_master.ai
+1395010272|Sonali|M|/NLPCode/data/JSON Maker/JSON_maker.py
+1395011804|Sonali|M|/NLPCode/data/adj_list.csv
+1395034060|Victor Starostenko|A|/NLPCode/data/JSON_maker2.py
+1395034060|Victor Starostenko|A|/NLPCode/data/csv/Notes.txt
+1395034060|Victor Starostenko|A|/NLPCode/data/csv/adj_list.csv
+1395034060|Victor Starostenko|A|/NLPCode/data/csv/adj_list.xlsx
+1395034060|Victor Starostenko|A|/NLPCode/data/csv/farm_sentences.txt
+1395034060|Victor Starostenko|A|/NLPCode/data/csv/farmwordlist.csv
+1395034060|Victor Starostenko|A|/NLPCode/data/csv/nouns_list.csv
+1395034060|Victor Starostenko|A|/NLPCode/data/csv/verbs_list.csv
+1395034060|Victor Starostenko|A|/NLPCode/data/full_json.json
+1395034060|Victor Starostenko|A|/NLPCode/data/old/JSON_maker.py
+1395034060|Victor Starostenko|A|/NLPCode/data/old/default_JSON_maker.py
+1395034060|Victor Starostenko|A|/NLPCode/data/old/full_JSON.old.json
+1395034060|Victor Starostenko|A|/NLPCode/data/old/new_json.txt
+1395077901|Divya Anand|A|/_design/interface/Assets/duck/duck.svg
+1395077901|Divya Anand|A|/_design/interface/Assets/horse/horse.svg
+1395077901|Divya Anand|M|/_design/interface/Assets/pig/pig_full.svg
+1395077901|Divya Anand|M|/_design/interface/app_master.ai
+1395078487|Victor Starostenko|M|/NLPCode/data/JSON_maker2.py
+1395081061|Sonali|M|/NLPCode/data/JSON_maker2.py
+1395082948|Victor Starostenko|M|/NLPCode/data/JSON_maker2.py
+1395082948|Victor Starostenko|M|/NLPCode/data/full_json.json
+1395209745|Divya Anand|M|/NLPCode/data/adj_list.csv
+1395209745|Divya Anand|M|/NLPCode/data/nouns_list.csv
+1395209745|Divya Anand|M|/NLPCode/data/verbs_list.csv
+1395209745|Divya Anand|A|/NLPCode/data/verbs_list_final.csv
+1395273431|Divya Anand|M|/NLPCode/data/adj_list.csv
+1395273431|Divya Anand|M|/NLPCode/data/verbs_list_final.csv
+1395273716|Divya Anand|M|/NLPCode/data/nouns_list.csv
+1395273894|Victor Starostenko|M|/NLPCode/data/JSON_maker2.py
+1395273894|Victor Starostenko|A|/NLPCode/data/old/csv/Notes.txt
+1395273894|Victor Starostenko|A|/NLPCode/data/old/csv/adj_list.csv
+1395273894|Victor Starostenko|A|/NLPCode/data/old/csv/adj_list.xlsx
+1395273894|Victor Starostenko|A|/NLPCode/data/old/csv/farm_sentences.txt
+1395273894|Victor Starostenko|A|/NLPCode/data/old/csv/farmwordlist.csv
+1395273894|Victor Starostenko|A|/NLPCode/data/old/csv/nouns_list.csv
+1395273894|Victor Starostenko|A|/NLPCode/data/old/csv/verbs_list.csv
+1395273894|Victor Starostenko|M|/NLPCode/data/verbs_list_final.csv
+1395274555|Victor Starostenko|M|/NLPCode/data/old/csv/verbs_list.csv
+1395274555|Victor Starostenko|M|/NLPCode/data/verbs_list.csv
+1395274555|Victor Starostenko|D|/NLPCode/data/verbs_list_final.csv
+1395275877|vstarostenko|M|/NLPCode/data/verbs_list.csv
+1395275969|vstarostenko|M|/NLPCode/data/verbs_list.csv
+1395297033|vstarostenko|A|/NLPCode/data/JSON_example.js
+1395297033|vstarostenko|M|/NLPCode/data/JSON_maker2.py
+1395297033|vstarostenko|M|/NLPCode/data/full_json.json
+1395297033|vstarostenko|M|/NLPCode/data/nouns_list.csv
+1395297033|vstarostenko|M|/NLPCode/data/verbs_list.csv
+1395702418|Divya Anand|A|/_design/Assets/cat/cat_full_color.svg
+1395702418|Divya Anand|A|/_design/Assets/cat/cat_master.pdf
+1395702418|Divya Anand|A|/_design/Assets/cat/svg/cat_full.svg
+1395702418|Divya Anand|A|/_design/Assets/cat/svg/cat_part_ears.svg
+1395702418|Divya Anand|A|/_design/Assets/cat/svg/cat_part_eye.svg
+1395702418|Divya Anand|A|/_design/Assets/cat/svg/cat_part_eye_closed.svg
+1395702418|Divya Anand|A|/_design/Assets/cat/svg/cat_part_eye_half.svg
+1395702418|Divya Anand|A|/_design/Assets/cat/svg/cat_part_mouth.svg
+1395702418|Divya Anand|A|/_design/Assets/cat/svg/cat_part_mouth_sad.svg
+1395702418|Divya Anand|A|/_design/Assets/cat/svg/cat_skin.svg
+1395702418|Divya Anand|A|/_design/Assets/chick/chick_full.svg
+1395702418|Divya Anand|A|/_design/Assets/chick/chick_full_color.svg
+1395702418|Divya Anand|A|/_design/Assets/cow/cow.svg
+1395702418|Divya Anand|A|/_design/Assets/cow/cow_full_color.svg
+1395702418|Divya Anand|A|/_design/Assets/dog/dog_full_color.svg
+1395702418|Divya Anand|A|/_design/Assets/duck/duck.svg
+1395702418|Divya Anand|A|/_design/Assets/duck/duck_full_color.svg
+1395702418|Divya Anand|A|/_design/Assets/goat/goat_full_color.svg
+1395702418|Divya Anand|A|/_design/Assets/horse/horse.svg
+1395702418|Divya Anand|A|/_design/Assets/horse/horse_full_color.svg
+1395702418|Divya Anand|A|/_design/Assets/pig/pig_full.svg
+1395702418|Divya Anand|A|/_design/Assets/pig/pig_full_color.svg
+1395702418|Divya Anand|A|/_design/Assets/rooster/rooster_full.svg
+1395702418|Divya Anand|A|/_design/Assets/rooster/rooster_full_color.svg
+1395702418|Divya Anand|A|/_design/Assets/sheep/sheep.svg
+1395702418|Divya Anand|A|/_design/Assets/sheep/sheep_full_color.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/cat/cat_master.pdf
+1395702418|Divya Anand|D|/_design/interface/Assets/cat/svg/cat_full.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/cat/svg/cat_part_ears.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/cat/svg/cat_part_eye.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/cat/svg/cat_part_eye_closed.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/cat/svg/cat_part_eye_half.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/cat/svg/cat_part_mouth.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/cat/svg/cat_part_mouth_sad.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/cat/svg/cat_skin.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/chick/chick_full.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/cow/cow.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/duck/duck.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/horse/horse.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/pig/pig_full.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/rooster/rooster_full.svg
+1395702418|Divya Anand|D|/_design/interface/Assets/sheep/sheep.svg
+1395702418|Divya Anand|M|/_design/interface/app_master.ai
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_eye_angry.svg
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_eye_happier.svg
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_eye_happy.svg
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_eye_sad.svg
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_eye_sadder.svg
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_mouth_angry.svg
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_mouth_happier.svg
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_mouth_happy.svg
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_mouth_sad.svg
+1395865488|Divya Anand|A|/_design/Assets/cat/cat_part_mouth_sadder.svg
+1395865488|Divya Anand|M|/_design/interface/app_master.ai
+1395880261|Divya Anand|A|/_design/Assets/cat/cat_part_ears.svg
+1395880261|Divya Anand|A|/_design/Assets/cat/cat_part_eye_asleep.svg
+1395880261|Divya Anand|A|/_design/Assets/cat/cat_part_eye_awake.svg
+1395880261|Divya Anand|A|/_design/Assets/cat/cat_skin.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_ears.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_eye_angry.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_eye_asleep.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_eye_awake.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_eye_happier.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_eye_happy.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_eye_sad.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_eye_sadder.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_mouth_angry.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_mouth_happier.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_mouth_happy.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_mouth_sad.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_part_mouth_sadder.svg
+1395880261|Divya Anand|A|/_design/Assets/sheep/sheep_skin.svg
+1395880261|Divya Anand|M|/_design/interface/app_master.ai
+1395892148|Divya Anand|M|/NLPCode/data/verbs_list.csv
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_ears.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_eye_angry.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_eye_asleep.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_eye_awake.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_eye_happier.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_eye_happy.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_eye_sad.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_eye_sadder.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_mouth_angry.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_mouth_happier.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_mouth_happy.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_mouth_sad.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_part_mouth_sadder.svg
+1395892148|Divya Anand|A|/_design/Assets/goat/goat_skin.svg
+1396041778|Shreyas|M|/NLPCode/data/verbs_list.csv
+1396041778|Shreyas|M|/_design/Assets/cat/cat_full_color.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_eye_angry.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_eye_happier.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_eye_happy.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_eye_sad.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_eye_sadder.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_mouth_angry.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_mouth_happier.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_mouth_happy.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_mouth_sad.svg
+1396041778|Shreyas|M|/_design/Assets/cat/cat_part_mouth_sadder.svg
+1396041778|Shreyas|M|/_design/Assets/chick/chick_full.svg
+1396041778|Shreyas|M|/_design/Assets/chick/chick_full_color.svg
+1396041778|Shreyas|M|/_design/Assets/cow/cow.svg
+1396041778|Shreyas|M|/_design/Assets/cow/cow_full_color.svg
+1396041778|Shreyas|M|/_design/Assets/dog/dog_full_color.svg
+1396041778|Shreyas|M|/_design/Assets/duck/duck.svg
+1396041778|Shreyas|M|/_design/Assets/duck/duck_full_color.svg
+1396041778|Shreyas|M|/_design/Assets/goat/goat_full_color.svg
+1396041778|Shreyas|M|/_design/Assets/horse/horse.svg
+1396041778|Shreyas|M|/_design/Assets/horse/horse_full_color.svg
+1396041778|Shreyas|M|/_design/Assets/pig/pig_full.svg
+1396041778|Shreyas|M|/_design/Assets/pig/pig_full_color.svg
+1396041778|Shreyas|M|/_design/Assets/rooster/rooster_full.svg
+1396041778|Shreyas|M|/_design/Assets/rooster/rooster_full_color.svg
+1396041778|Shreyas|M|/_design/Assets/sheep/sheep.svg
+1396041778|Shreyas|M|/_design/Assets/sheep/sheep_full_color.svg
+1396044603|Divya Anand|M|/_design/Assets/cat/cat_skin.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_ears.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_eye_angry.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_eye_asleep.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_eye_awake.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_eye_happier.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_eye_happy.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_eye_sad.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_eye_sadder.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_mouth_angry.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_mouth_happier.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_mouth_happy.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_mouth_sad.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_part_mouth_sadder.svg
+1396044603|Divya Anand|A|/_design/Assets/cow/cow_skin.svg
+1396044603|Divya Anand|M|/_design/Assets/goat/goat_skin.svg
+1396044603|Divya Anand|M|/_design/Assets/sheep/sheep_skin.svg
+1396044603|Divya Anand|M|/_design/interface/app_master.ai
+1396044603|Divya Anand|A|/_design/interface/bg_scene_green.png
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_full.svg
+1396047877|Divya Anand|D|/_design/Assets/horse/horse_full_color.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_eye_angry.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_eye_asleep.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_eye_awake.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_eye_happier.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_eye_sadder.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_mouth_angry.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_mouth_happier.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_mouth_happy.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_mouth_sad.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_part_mouth_sadder.svg
+1396047877|Divya Anand|A|/_design/Assets/horse/horse_skin.svg
+1396047877|Divya Anand|M|/_design/interface/app_master.ai
+1396047877|Divya Anand|A|/_design/interface/horse_part_eye_happy_horse part eye happy.svg
+1396047877|Divya Anand|A|/_design/interface/horse_part_eye_sad_horse part eye sad.svg
+1396048165|Sonali|A|/NLPCode/data/verbs.csv
+1396051098|Divya Anand|A|/_design/Assets/pig/pig color.svg
+1396051098|Divya Anand|D|/_design/Assets/pig/pig_full.svg
+1396051098|Divya Anand|D|/_design/Assets/pig/pig_full_color.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_eye_angry.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_eye_asleep.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_eye_awake.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_eye_happier.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_eye_happy.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_eye_sad.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_eye_sadder.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_mouth_angry.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_mouth_happier.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_mouth_happy.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_mouth_sad.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_part_mouth_sadder.svg
+1396051098|Divya Anand|A|/_design/Assets/pig/pig_skin.svg
+1396051098|Divya Anand|A|/_design/interface/3F6839ADF72A52A1.png
+1396051098|Divya Anand|A|/_design/interface/3F6839ADF72A52A2.png
+1396051098|Divya Anand|A|/_design/interface/3F6839ADF72A52A6.png
+1396051098|Divya Anand|A|/_design/interface/FACB772E371CD1CA.png
+1396051098|Divya Anand|A|/_design/interface/FACB772E371CD1CB.png
+1396051098|Divya Anand|A|/_design/interface/FACB772E371CD1CD.png
+1396051098|Divya Anand|A|/_design/interface/FACB772E371CD1CF.png
+1396051098|Divya Anand|A|/_design/interface/FACB772E371CD1D5.png
+1396051098|Divya Anand|A|/_design/interface/FACB772E371CD1D7.png
+1396051098|Divya Anand|A|/_design/interface/FACB772E371CD1DA.png
+1396051098|Divya Anand|A|/_design/interface/FACB772E371CD1DB.png
+1396051098|Divya Anand|A|/_design/interface/FACB772E371CD1DD.png
+1396051098|Divya Anand|A|/_design/interface/app_master1.ai
+1396051098|Divya Anand|A|/_design/interface/app_master1.svg
+1396058621|Divya Anand|A|/_design/Assets/cat/cat_full.svg
+1396058621|Divya Anand|D|/_design/Assets/cat/cat_full_color.svg
+1396058621|Divya Anand|M|/_design/Assets/cat/cat_part_eye_asleep.svg
+1396058621|Divya Anand|M|/_design/Assets/cat/cat_part_eye_sadder.svg
+1396058621|Divya Anand|A|/_design/Assets/cow/cow_full.svg
+1396058621|Divya Anand|D|/_design/Assets/cow/cow_full_color.svg
+1396058621|Divya Anand|M|/_design/Assets/cow/cow_part_eye_asleep.svg
+1396058621|Divya Anand|M|/_design/Assets/cow/cow_part_eye_sadder.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_full.svg
+1396058621|Divya Anand|D|/_design/Assets/dog/dog_full_color.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_eye_angry.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_eye_asleep.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_eye_awake.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_eye_happier.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_eye_happy.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_eye_sad.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_eye_sadder.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_mouth_angry.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_mouth_happier.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_mouth_happy.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_mouth_sad_dog part mouth sad.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_part_mouth_sadder.svg
+1396058621|Divya Anand|A|/_design/Assets/dog/dog_skin.svg
+1396058621|Divya Anand|A|/_design/Assets/goat/goat_full.svg
+1396058621|Divya Anand|D|/_design/Assets/goat/goat_full_color.svg
+1396058621|Divya Anand|M|/_design/Assets/goat/goat_part_eye_asleep.svg
+1396058621|Divya Anand|M|/_design/Assets/goat/goat_part_eye_sadder.svg
+1396058621|Divya Anand|M|/_design/Assets/goat/goat_skin.svg
+1396058621|Divya Anand|M|/_design/Assets/horse/horse_part_eye_asleep.svg
+1396058621|Divya Anand|A|/_design/Assets/horse/horse_part_eye_happy.svg
+1396058621|Divya Anand|A|/_design/Assets/horse/horse_part_eye_sad.svg
+1396058621|Divya Anand|M|/_design/Assets/horse/horse_part_eye_sadder.svg
+1396058621|Divya Anand|M|/_design/Assets/pig/pig_part_eye_asleep.svg
+1396058621|Divya Anand|M|/_design/Assets/pig/pig_part_eye_sadder.svg
+1396058621|Divya Anand|A|/_design/Assets/sheep/sheep_full.svg
+1396058621|Divya Anand|D|/_design/Assets/sheep/sheep_full_color.svg
+1396058621|Divya Anand|M|/_design/Assets/sheep/sheep_part_eye_asleep.svg
+1396058621|Divya Anand|M|/_design/Assets/sheep/sheep_part_eye_sadder.svg
+1396058621|Divya Anand|D|/_design/interface/3F6839ADF72A52A1.png
+1396058621|Divya Anand|D|/_design/interface/3F6839ADF72A52A2.png
+1396058621|Divya Anand|D|/_design/interface/3F6839ADF72A52A6.png
+1396058621|Divya Anand|D|/_design/interface/FACB772E371CD1CA.png
+1396058621|Divya Anand|D|/_design/interface/FACB772E371CD1CB.png
+1396058621|Divya Anand|D|/_design/interface/FACB772E371CD1CD.png
+1396058621|Divya Anand|D|/_design/interface/FACB772E371CD1CF.png
+1396058621|Divya Anand|D|/_design/interface/FACB772E371CD1D5.png
+1396058621|Divya Anand|D|/_design/interface/FACB772E371CD1D7.png
+1396058621|Divya Anand|D|/_design/interface/FACB772E371CD1DA.png
+1396058621|Divya Anand|D|/_design/interface/FACB772E371CD1DB.png
+1396058621|Divya Anand|D|/_design/interface/FACB772E371CD1DD.png
+1396058621|Divya Anand|M|/_design/interface/app_master1.svg
+1396058621|Divya Anand|D|/_design/interface/horse_part_eye_happy_horse part eye happy.svg
+1396058621|Divya Anand|D|/_design/interface/horse_part_eye_sad_horse part eye sad.svg
+1396061024|vstarostenko|M|/NLPCode/data/JSON_maker2.py
+1396061024|vstarostenko|A|/NLPCode/data/adj_list_test.csv
+1396061024|vstarostenko|M|/NLPCode/data/full_json.json
+1396061024|vstarostenko|A|/NLPCode/data/nouns_list_test.csv
+1396061024|vstarostenko|M|/NLPCode/data/verbs_list.csv
+1396061024|vstarostenko|A|/NLPCode/data/verbs_list_test.csv
+1396061495|vstarostenko|D|/NLPCode/data/adj_list_test.csv
+1396061495|vstarostenko|D|/NLPCode/data/nouns_list_test.csv
+1396061495|vstarostenko|D|/NLPCode/data/verbs.csv
+1396061495|vstarostenko|D|/NLPCode/data/verbs_list_test.csv
+1396063455|Divya Anand|M|/NLPCode/data/verbs_list.csv
+1396063455|Divya Anand|M|/_design/Assets/cat/cat_skin.svg
+1396063455|Divya Anand|A|/_design/interface/3F6839ADF72A52A1.png
+1396063455|Divya Anand|A|/_design/interface/3F6839ADF72A52A2.png
+1396063455|Divya Anand|A|/_design/interface/3F6839ADF72A52A6.png
+1396063455|Divya Anand|A|/_design/interface/FACB772E371CD1CA.png
+1396063455|Divya Anand|A|/_design/interface/FACB772E371CD1CB.png
+1396063455|Divya Anand|A|/_design/interface/FACB772E371CD1CD.png
+1396063455|Divya Anand|A|/_design/interface/FACB772E371CD1CF.png
+1396063455|Divya Anand|A|/_design/interface/FACB772E371CD1D5.png
+1396063455|Divya Anand|A|/_design/interface/FACB772E371CD1D7.png
+1396063455|Divya Anand|A|/_design/interface/FACB772E371CD1DA.png
+1396063455|Divya Anand|A|/_design/interface/FACB772E371CD1DB.png
+1396063455|Divya Anand|A|/_design/interface/FACB772E371CD1DD.png
+1396063455|Divya Anand|M|/_design/interface/app_master.ai
+1396063455|Divya Anand|M|/_design/interface/app_master1.svg
+1396063573|vstarostenko|M|/NLPCode/data/JSON_maker2.py
+1396063573|vstarostenko|M|/NLPCode/data/adj_list.csv
+1396063573|vstarostenko|M|/NLPCode/data/full_json.json
+1396063634|Divya Anand|M|/NLPCode/data/verbs_list.csv
+1396064364|vstarostenko|M|/NLPCode/data/JSON_maker2.py
+1396064364|vstarostenko|M|/NLPCode/data/full_json.json
+1396383421|ashley-desouza|M|/NLPCode/data/verbs_list.csv
+1396384315|vstarostenko|M|/NLPCode/data/verbs_list.csv
+1396469793|vstarostenko|M|/NLPCode/data/JSON_example.js
+1396469793|vstarostenko|A|/NLPCode/data/prep_list.csv
+1396469793|vstarostenko|M|/NLPCode/data/verbs_list.csv
+1396495587|vstarostenko|A|/NLPCode/data/JSON_maker3.py
+1396495587|vstarostenko|A|/NLPCode/data/adj_source.csv
+1396495587|vstarostenko|M|/NLPCode/data/full_json.json
+1396495587|vstarostenko|A|/NLPCode/data/nouns_source.csv
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/JSON_maker.py
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/csv/Notes.txt
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/csv/adj_list.csv
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/csv/adj_list.xlsx
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/csv/farm_sentences.txt
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/csv/farmwordlist.csv
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/csv/nouns_list.csv
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/csv/verbs_list.csv
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/default_JSON_maker.py
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/full_JSON.old.json
+1396495587|vstarostenko|A|/NLPCode/data/old/version1/new_json.txt
+1396495587|vstarostenko|A|/NLPCode/data/old/version2/JSON_example.js
+1396495587|vstarostenko|A|/NLPCode/data/old/version2/JSON_maker2.py
+1396495587|vstarostenko|A|/NLPCode/data/old/version2/adj_list.csv
+1396495587|vstarostenko|A|/NLPCode/data/old/version2/full_json.json
+1396495587|vstarostenko|A|/NLPCode/data/old/version2/nouns_list.csv
+1396495587|vstarostenko|A|/NLPCode/data/old/version2/prep_list.csv
+1396495587|vstarostenko|A|/NLPCode/data/old/version2/verbs_list.csv
+1396495587|vstarostenko|A|/NLPCode/data/verbs_source.csv
+1396495676|vstarostenko|D|/NLPCode/data/JSON_maker2.py
+1396495693|vstarostenko|D|/NLPCode/data/JSON_example.js
+1396495709|vstarostenko|D|/NLPCode/data/adj_list.csv
+1396495722|vstarostenko|D|/NLPCode/data/nouns_list.csv
+1396495762|vstarostenko|D|/NLPCode/data/verbs_list.csv
+1396891099|vstarostenko|M|/NLPCode/data/JSON_maker3.py
+1396891099|vstarostenko|M|/NLPCode/data/adj_source.csv
+1396891099|vstarostenko|M|/NLPCode/data/full_json.json
+1396891099|vstarostenko|A|/NLPCode/data/prep_source.csv
+1396891099|vstarostenko|M|/NLPCode/data/verbs_source.csv
+1396909572|vstarostenko|M|/NLPCode/data/JSON_maker3.py
+1396909572|vstarostenko|M|/NLPCode/data/full_json.json
+1396909572|vstarostenko|M|/NLPCode/data/verbs_source.csv
+1396921503|Divya Anand|M|/NLPCode/data/adj_source.csv
+1396925513|vstarostenko|M|/NLPCode/data/JSON_maker3.py
+1396925513|vstarostenko|A|/NLPCode/data/default_obj.json
+1396925513|vstarostenko|M|/NLPCode/data/full_json.json
+1396925513|vstarostenko|M|/NLPCode/data/nouns_source.csv
+1396925513|vstarostenko|M|/NLPCode/data/prep_source.csv
+1396925846|Sonali|M|/NLPCode/data/default_obj.json
+1396936121|Shreyas|M|/_design/Assets/cat/cat_part_eye_asleep.svg
+1396936121|Shreyas|M|/_design/Assets/cat/cat_part_eye_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/cat/cat_skin.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_ears.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_eye_angry.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_eye_asleep.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_eye_awake.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_eye_happier.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_eye_happy.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_eye_sad.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_eye_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_mouth_angry.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_mouth_happier.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_mouth_happy.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_mouth_sad.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_part_mouth_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/cow/cow_skin.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_eye_angry.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_eye_asleep.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_eye_awake.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_eye_happier.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_eye_happy.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_eye_sad.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_eye_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_mouth_angry.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_mouth_happier.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_mouth_happy.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_mouth_sad_dog part mouth sad.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_part_mouth_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/dog/dog_skin.svg
+1396936121|Shreyas|M|/_design/Assets/goat/goat_part_eye_asleep.svg
+1396936121|Shreyas|M|/_design/Assets/goat/goat_part_eye_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/goat/goat_skin.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_eye_angry.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_eye_asleep.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_eye_awake.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_eye_happier.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_eye_happy.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_eye_sad.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_eye_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_mouth_angry.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_mouth_happier.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_mouth_happy.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_mouth_sad.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_part_mouth_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/horse/horse_skin.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig color.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_eye_angry.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_eye_asleep.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_eye_awake.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_eye_happier.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_eye_happy.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_eye_sad.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_eye_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_mouth_angry.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_mouth_happier.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_mouth_happy.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_mouth_sad.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_part_mouth_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/pig/pig_skin.svg
+1396936121|Shreyas|M|/_design/Assets/sheep/sheep_part_eye_asleep.svg
+1396936121|Shreyas|M|/_design/Assets/sheep/sheep_part_eye_sadder.svg
+1396936121|Shreyas|M|/_design/Assets/sheep/sheep_skin.svg
+1396936121|Shreyas|M|/_design/interface/app_master1.svg
+1396994819|Divya Anand|A|/_design/Assets/barn/barn_skin.svg
+1396994819|Divya Anand|A|/_design/Assets/fence/fence_skin.svg
+1396994819|Divya Anand|A|/_design/Assets/sun/sun_skin.svg
+1396994819|Divya Anand|D|/_design/interface/3F6839ADF72A52A1.png
+1396994819|Divya Anand|D|/_design/interface/3F6839ADF72A52A2.png
+1396994819|Divya Anand|D|/_design/interface/3F6839ADF72A52A6.png
+1396994819|Divya Anand|D|/_design/interface/FACB772E371CD1CA.png
+1396994819|Divya Anand|D|/_design/interface/FACB772E371CD1CB.png
+1396994819|Divya Anand|D|/_design/interface/FACB772E371CD1CD.png
+1396994819|Divya Anand|D|/_design/interface/FACB772E371CD1CF.png
+1396994819|Divya Anand|D|/_design/interface/FACB772E371CD1D5.png
+1396994819|Divya Anand|D|/_design/interface/FACB772E371CD1D7.png
+1396994819|Divya Anand|D|/_design/interface/FACB772E371CD1DA.png
+1396994819|Divya Anand|D|/_design/interface/FACB772E371CD1DB.png
+1396994819|Divya Anand|D|/_design/interface/FACB772E371CD1DD.png
+1396994819|Divya Anand|M|/_design/interface/app_master.ai
+1396994819|Divya Anand|D|/_design/interface/app_master1.svg
+1396994819|Divya Anand|A|/_design/interface/app_master_objects.ai
+1396994819|Divya Anand|A|/_design/interface/start_screen.pdf
+1396995798|Divya Anand|M|/_design/Assets/cat/cat_part_eye_sadder.svg
+1396996216|Divya Anand|M|/_design/Assets/sheep/sheep_part_eye_sadder.svg
+1396996216|Divya Anand|M|/_design/interface/app_master.ai
+1396996354|Divya Anand|M|/_design/Assets/horse/horse_part_eye_sadder.svg
+1396996354|Divya Anand|M|/_design/interface/app_master.ai
+1397066174|Divya Anand|M|/_design/Assets/cow/cow_part_eye_sadder.svg
+1397066174|Divya Anand|M|/_design/Assets/dog/dog_part_eye_sadder.svg
+1397066174|Divya Anand|M|/_design/Assets/goat/goat_part_eye_sadder.svg
+1397066174|Divya Anand|M|/_design/Assets/pig/pig_part_eye_sadder.svg
+1397066174|Divya Anand|M|/_design/interface/app_master.ai
+1397066174|Divya Anand|M|/_design/interface/app_master1.ai
+1397066174|Divya Anand|M|/_design/interface/app_master_objects.ai
+1397066810|Divya Anand|A|/_design/interface/bg_scene_green.pdf
+1397070865|Divya Anand|M|/_design/Assets/cat/cat_part_eye_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/cat/cat_part_mouth_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/cat/cat_part_mouth_happier.svg
+1397070865|Divya Anand|M|/_design/Assets/cat/cat_skin.svg
+1397070865|Divya Anand|M|/_design/Assets/cow/cow_part_eye_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/cow/cow_part_mouth_happier.svg
+1397070865|Divya Anand|M|/_design/Assets/cow/cow_part_mouth_sadder.svg
+1397070865|Divya Anand|M|/_design/Assets/dog/dog_part_eye_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/dog/dog_part_eye_awake.svg
+1397070865|Divya Anand|M|/_design/Assets/dog/dog_part_mouth_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/dog/dog_part_mouth_happier.svg
+1397070865|Divya Anand|M|/_design/Assets/dog/dog_part_mouth_happy.svg
+1397070865|Divya Anand|M|/_design/Assets/dog/dog_part_mouth_sadder.svg
+1397070865|Divya Anand|M|/_design/Assets/goat/goat_part_eye_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/goat/goat_part_mouth_happier.svg
+1397070865|Divya Anand|M|/_design/Assets/horse/horse_part_eye_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/horse/horse_part_mouth_happier.svg
+1397070865|Divya Anand|M|/_design/Assets/horse/horse_part_mouth_sadder.svg
+1397070865|Divya Anand|M|/_design/Assets/pig/pig_part_eye_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/pig/pig_part_mouth_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/pig/pig_part_mouth_happier.svg
+1397070865|Divya Anand|M|/_design/Assets/sheep/sheep_part_eye_angry.svg
+1397070865|Divya Anand|M|/_design/Assets/sheep/sheep_part_mouth_happier.svg
+1397070865|Divya Anand|M|/_design/interface/app_master.ai
+1397072292|Divya Anand|M|/_design/Assets/sheep/sheep_skin.svg
+1397072417|Shreyas|M|/docs/wiki
+1397072513|Shreyas|M|/_design/Assets/barn/barn_skin.svg
+1397072513|Shreyas|M|/_design/Assets/cat/cat_part_eye_angry.svg
+1397072513|Shreyas|M|/_design/Assets/cat/cat_part_eye_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/cat/cat_part_mouth_angry.svg
+1397072513|Shreyas|M|/_design/Assets/cat/cat_part_mouth_happier.svg
+1397072513|Shreyas|M|/_design/Assets/cat/cat_skin.svg
+1397072513|Shreyas|M|/_design/Assets/cow/cow_part_eye_angry.svg
+1397072513|Shreyas|M|/_design/Assets/cow/cow_part_eye_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/cow/cow_part_mouth_happier.svg
+1397072513|Shreyas|M|/_design/Assets/cow/cow_part_mouth_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/dog/dog_part_eye_angry.svg
+1397072513|Shreyas|M|/_design/Assets/dog/dog_part_eye_awake.svg
+1397072513|Shreyas|M|/_design/Assets/dog/dog_part_eye_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/dog/dog_part_mouth_angry.svg
+1397072513|Shreyas|M|/_design/Assets/dog/dog_part_mouth_happier.svg
+1397072513|Shreyas|M|/_design/Assets/dog/dog_part_mouth_happy.svg
+1397072513|Shreyas|M|/_design/Assets/dog/dog_part_mouth_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/fence/fence_skin.svg
+1397072513|Shreyas|M|/_design/Assets/goat/goat_part_eye_angry.svg
+1397072513|Shreyas|M|/_design/Assets/goat/goat_part_eye_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/goat/goat_part_mouth_happier.svg
+1397072513|Shreyas|M|/_design/Assets/horse/horse_part_eye_angry.svg
+1397072513|Shreyas|M|/_design/Assets/horse/horse_part_eye_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/horse/horse_part_mouth_happier.svg
+1397072513|Shreyas|M|/_design/Assets/horse/horse_part_mouth_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/pig/pig_part_eye_angry.svg
+1397072513|Shreyas|M|/_design/Assets/pig/pig_part_eye_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/pig/pig_part_mouth_angry.svg
+1397072513|Shreyas|M|/_design/Assets/pig/pig_part_mouth_happier.svg
+1397072513|Shreyas|M|/_design/Assets/sheep/sheep_part_eye_angry.svg
+1397072513|Shreyas|M|/_design/Assets/sheep/sheep_part_eye_sadder.svg
+1397072513|Shreyas|M|/_design/Assets/sheep/sheep_part_mouth_happier.svg
+1397072513|Shreyas|M|/_design/Assets/sheep/sheep_skin.svg
+1397072513|Shreyas|M|/_design/Assets/sun/sun_skin.svg
+1397084618|Divya Anand|M|/_design/interface/app_master.ai
+1397084618|Divya Anand|M|/_design/interface/app_master1.ai
+1397084618|Divya Anand|M|/_design/interface/app_master_objects.ai
+1397084618|Divya Anand|A|/_design/interface/start_screen_v2.pdf
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_eye_angry.svg
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_eye_happier.svg
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_eye_happy.svg
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_eye_sad.svg
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_eye_sadder.svg
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_mouth_angry.svg
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_mouth_happier.svg
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_mouth_happy.svg
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_mouth_sad.svg
+1397085836|Divya Anand|A|/_design/Assets/sun/sun_part_mouth_sadder.svg
+1397328125|Divya Anand|D|/_design/Assets/cat/cat_part_eye_angry.svg
+1397328125|Divya Anand|D|/_design/Assets/cat/cat_part_eye_asleep.svg
+1397328125|Divya Anand|D|/_design/Assets/cat/cat_part_eye_awake.svg
+1397328125|Divya Anand|D|/_design/Assets/cat/cat_part_eye_happier.svg
+1397328125|Divya Anand|D|/_design/Assets/cat/cat_part_eye_happy.svg
+1397328125|Divya Anand|D|/_design/Assets/cat/cat_part_eye_sad.svg
+1397328125|Divya Anand|D|/_design/Assets/cat/cat_part_eye_sadder.svg
+1397328125|Divya Anand|A|/_design/Assets/cat/cat_part_eyes_angry.svg
+1397328125|Divya Anand|A|/_design/Assets/cat/cat_part_eyes_asleep.svg
+1397328125|Divya Anand|A|/_design/Assets/cat/cat_part_eyes_awake.svg
+1397328125|Divya Anand|A|/_design/Assets/cat/cat_part_eyes_happier.svg
+1397328125|Divya Anand|A|/_design/Assets/cat/cat_part_eyes_happy.svg
+1397328125|Divya Anand|A|/_design/Assets/cat/cat_part_eyes_sad.svg
+1397328125|Divya Anand|A|/_design/Assets/cat/cat_part_eyes_sadder.svg
+1397328125|Divya Anand|D|/_design/Assets/cow/cow_part_eye_angry.svg
+1397328125|Divya Anand|D|/_design/Assets/cow/cow_part_eye_asleep.svg
+1397328125|Divya Anand|D|/_design/Assets/cow/cow_part_eye_awake.svg
+1397328125|Divya Anand|D|/_design/Assets/cow/cow_part_eye_happier.svg
+1397328125|Divya Anand|D|/_design/Assets/cow/cow_part_eye_happy.svg
+1397328125|Divya Anand|D|/_design/Assets/cow/cow_part_eye_sad.svg
+1397328125|Divya Anand|D|/_design/Assets/cow/cow_part_eye_sadder.svg
+1397328125|Divya Anand|A|/_design/Assets/cow/cow_part_eyes_angry.svg
+1397328125|Divya Anand|A|/_design/Assets/cow/cow_part_eyes_asleep.svg
+1397328125|Divya Anand|A|/_design/Assets/cow/cow_part_eyes_awake.svg
+1397328125|Divya Anand|A|/_design/Assets/cow/cow_part_eyes_happier.svg
+1397328125|Divya Anand|A|/_design/Assets/cow/cow_part_eyes_happy.svg
+1397328125|Divya Anand|A|/_design/Assets/cow/cow_part_eyes_sad.svg
+1397328125|Divya Anand|A|/_design/Assets/cow/cow_part_eyes_sadder.svg
+1397328125|Divya Anand|D|/_design/Assets/dog/dog_part_eye_angry.svg
+1397328125|Divya Anand|D|/_design/Assets/dog/dog_part_eye_asleep.svg
+1397328125|Divya Anand|D|/_design/Assets/dog/dog_part_eye_awake.svg
+1397328125|Divya Anand|D|/_design/Assets/dog/dog_part_eye_happier.svg
+1397328125|Divya Anand|D|/_design/Assets/dog/dog_part_eye_happy.svg
+1397328125|Divya Anand|D|/_design/Assets/dog/dog_part_eye_sad.svg
+1397328125|Divya Anand|D|/_design/Assets/dog/dog_part_eye_sadder.svg
+1397328125|Divya Anand|A|/_design/Assets/dog/dog_part_eyes_angry.svg
+1397328125|Divya Anand|A|/_design/Assets/dog/dog_part_eyes_asleep.svg
+1397328125|Divya Anand|A|/_design/Assets/dog/dog_part_eyes_awake.svg
+1397328125|Divya Anand|A|/_design/Assets/dog/dog_part_eyes_happier.svg
+1397328125|Divya Anand|A|/_design/Assets/dog/dog_part_eyes_happy.svg
+1397328125|Divya Anand|A|/_design/Assets/dog/dog_part_eyes_sad.svg
+1397328125|Divya Anand|A|/_design/Assets/dog/dog_part_eyes_sadder.svg
+1397328125|Divya Anand|D|/_design/Assets/goat/goat_part_eye_angry.svg
+1397328125|Divya Anand|D|/_design/Assets/goat/goat_part_eye_asleep.svg
+1397328125|Divya Anand|D|/_design/Assets/goat/goat_part_eye_awake.svg
+1397328125|Divya Anand|D|/_design/Assets/goat/goat_part_eye_happier.svg
+1397328125|Divya Anand|D|/_design/Assets/goat/goat_part_eye_happy.svg
+1397328125|Divya Anand|D|/_design/Assets/goat/goat_part_eye_sad.svg
+1397328125|Divya Anand|D|/_design/Assets/goat/goat_part_eye_sadder.svg
+1397328125|Divya Anand|A|/_design/Assets/goat/goat_part_eyes_angry.svg
+1397328125|Divya Anand|A|/_design/Assets/goat/goat_part_eyes_asleep.svg
+1397328125|Divya Anand|A|/_design/Assets/goat/goat_part_eyes_awake.svg
+1397328125|Divya Anand|A|/_design/Assets/goat/goat_part_eyes_happier.svg
+1397328125|Divya Anand|A|/_design/Assets/goat/goat_part_eyes_happy.svg
+1397328125|Divya Anand|A|/_design/Assets/goat/goat_part_eyes_sad.svg
+1397328125|Divya Anand|A|/_design/Assets/goat/goat_part_eyes_sadder.svg
+1397328125|Divya Anand|D|/_design/Assets/horse/horse_part_eye_angry.svg
+1397328125|Divya Anand|D|/_design/Assets/horse/horse_part_eye_asleep.svg
+1397328125|Divya Anand|D|/_design/Assets/horse/horse_part_eye_awake.svg
+1397328125|Divya Anand|D|/_design/Assets/horse/horse_part_eye_happier.svg
+1397328125|Divya Anand|D|/_design/Assets/horse/horse_part_eye_happy.svg
+1397328125|Divya Anand|D|/_design/Assets/horse/horse_part_eye_sad.svg
+1397328125|Divya Anand|D|/_design/Assets/horse/horse_part_eye_sadder.svg
+1397328125|Divya Anand|A|/_design/Assets/horse/horse_part_eyes_angry.svg
+1397328125|Divya Anand|A|/_design/Assets/horse/horse_part_eyes_asleep.svg
+1397328125|Divya Anand|A|/_design/Assets/horse/horse_part_eyes_awake.svg
+1397328125|Divya Anand|A|/_design/Assets/horse/horse_part_eyes_happier.svg
+1397328125|Divya Anand|A|/_design/Assets/horse/horse_part_eyes_happy.svg
+1397328125|Divya Anand|A|/_design/Assets/horse/horse_part_eyes_sad.svg
+1397328125|Divya Anand|A|/_design/Assets/horse/horse_part_eyes_sadder.svg
+1397328125|Divya Anand|D|/_design/Assets/pig/pig_part_eye_angry.svg
+1397328125|Divya Anand|D|/_design/Assets/pig/pig_part_eye_asleep.svg
+1397328125|Divya Anand|D|/_design/Assets/pig/pig_part_eye_awake.svg
+1397328125|Divya Anand|D|/_design/Assets/pig/pig_part_eye_happier.svg
+1397328125|Divya Anand|D|/_design/Assets/pig/pig_part_eye_happy.svg
+1397328125|Divya Anand|D|/_design/Assets/pig/pig_part_eye_sad.svg
+1397328125|Divya Anand|D|/_design/Assets/pig/pig_part_eye_sadder.svg
+1397328125|Divya Anand|A|/_design/Assets/pig/pig_part_eyes_angry.svg
+1397328125|Divya Anand|A|/_design/Assets/pig/pig_part_eyes_asleep.svg
+1397328125|Divya Anand|A|/_design/Assets/pig/pig_part_eyes_awake.svg
+1397328125|Divya Anand|A|/_design/Assets/pig/pig_part_eyes_happier.svg
+1397328125|Divya Anand|A|/_design/Assets/pig/pig_part_eyes_happy.svg
+1397328125|Divya Anand|A|/_design/Assets/pig/pig_part_eyes_sad.svg
+1397328125|Divya Anand|A|/_design/Assets/pig/pig_part_eyes_sadder.svg
+1397328125|Divya Anand|D|/_design/Assets/sheep/sheep_part_eye_angry.svg
+1397328125|Divya Anand|D|/_design/Assets/sheep/sheep_part_eye_asleep.svg
+1397328125|Divya Anand|D|/_design/Assets/sheep/sheep_part_eye_awake.svg
+1397328125|Divya Anand|D|/_design/Assets/sheep/sheep_part_eye_happier.svg
+1397328125|Divya Anand|D|/_design/Assets/sheep/sheep_part_eye_happy.svg
+1397328125|Divya Anand|D|/_design/Assets/sheep/sheep_part_eye_sad.svg
+1397328125|Divya Anand|D|/_design/Assets/sheep/sheep_part_eye_sadder.svg
+1397328125|Divya Anand|A|/_design/Assets/sheep/sheep_part_eyes_angry.svg
+1397328125|Divya Anand|A|/_design/Assets/sheep/sheep_part_eyes_asleep.svg
+1397328125|Divya Anand|A|/_design/Assets/sheep/sheep_part_eyes_awake.svg
+1397328125|Divya Anand|A|/_design/Assets/sheep/sheep_part_eyes_happier.svg
+1397328125|Divya Anand|A|/_design/Assets/sheep/sheep_part_eyes_happy.svg
+1397328125|Divya Anand|A|/_design/Assets/sheep/sheep_part_eyes_sad.svg
+1397328125|Divya Anand|A|/_design/Assets/sheep/sheep_part_eyes_sadder.svg
+1397328125|Divya Anand|D|/_design/Assets/sun/sun_part_eye_angry.svg
+1397328125|Divya Anand|D|/_design/Assets/sun/sun_part_eye_happier.svg
+1397328125|Divya Anand|D|/_design/Assets/sun/sun_part_eye_happy.svg
+1397328125|Divya Anand|D|/_design/Assets/sun/sun_part_eye_sad.svg
+1397328125|Divya Anand|D|/_design/Assets/sun/sun_part_eye_sadder.svg
+1397328125|Divya Anand|A|/_design/Assets/sun/sun_part_eyes_angry.svg
+1397328125|Divya Anand|A|/_design/Assets/sun/sun_part_eyes_happier.svg
+1397328125|Divya Anand|A|/_design/Assets/sun/sun_part_eyes_happy.svg
+1397328125|Divya Anand|A|/_design/Assets/sun/sun_part_eyes_sad.svg
+1397328125|Divya Anand|A|/_design/Assets/sun/sun_part_eyes_sadder.svg
+1397328125|Divya Anand|M|/_design/interface/app_master_objects.ai
+1397331230|Divya Anand|M|/_design/Assets/cat/cat_part_eyes_angry.svg
+1397331230|Divya Anand|M|/_design/Assets/cat/cat_part_eyes_asleep.svg
+1397331230|Divya Anand|M|/_design/Assets/cat/cat_part_eyes_sadder.svg
+1397331230|Divya Anand|M|/_design/Assets/cat/cat_part_mouth_angry.svg
+1397331230|Divya Anand|M|/_design/Assets/cat/cat_part_mouth_happier.svg
+1397331230|Divya Anand|M|/_design/Assets/cat/cat_part_mouth_sad.svg
+1397331230|Divya Anand|M|/_design/Assets/cat/cat_part_mouth_sadder.svg
+1397333635|Divya Anand|M|/_design/Assets/cow/cow_part_eyes_angry.svg
+1397333635|Divya Anand|M|/_design/Assets/cow/cow_part_eyes_asleep.svg
+1397333635|Divya Anand|M|/_design/Assets/cow/cow_part_eyes_sadder.svg
+1397333635|Divya Anand|M|/_design/Assets/cow/cow_part_mouth_angry.svg
+1397333635|Divya Anand|M|/_design/Assets/cow/cow_part_mouth_happier.svg
+1397333635|Divya Anand|M|/_design/Assets/cow/cow_part_mouth_happy.svg
+1397334667|Divya Anand|M|/_design/Assets/dog/dog_part_eyes_angry.svg
+1397334667|Divya Anand|M|/_design/Assets/dog/dog_part_eyes_asleep.svg
+1397334667|Divya Anand|M|/_design/Assets/dog/dog_part_eyes_sadder.svg
+1397334667|Divya Anand|M|/_design/Assets/dog/dog_part_mouth_angry.svg
+1397334667|Divya Anand|M|/_design/Assets/dog/dog_part_mouth_happier.svg
+1397334887|vstarostenko|M|/NLPCode/data/JSON_maker3.py
+1397334887|vstarostenko|M|/NLPCode/data/adj_source.csv
+1397334887|vstarostenko|M|/NLPCode/data/full_json.json
+1397334887|vstarostenko|M|/NLPCode/data/verbs_source.csv
+1397335613|Divya Anand|M|/_design/Assets/dog/dog_part_mouth_angry.svg
+1397335613|Divya Anand|M|/_design/Assets/goat/goat_part_eyes_angry.svg
+1397335613|Divya Anand|M|/_design/Assets/goat/goat_part_eyes_asleep.svg
+1397335613|Divya Anand|M|/_design/Assets/goat/goat_part_eyes_sadder.svg
+1397335613|Divya Anand|M|/_design/Assets/goat/goat_part_mouth_angry.svg
+1397335613|Divya Anand|M|/_design/Assets/goat/goat_part_mouth_happier.svg
+1397338720|Shreyas|M|/docs/wiki
+1397338752|Shreyas|M|/NLPCode/data/adj_source.csv
+1397338752|Shreyas|M|/_design/Assets/cat/cat_part_eyes_angry.svg
+1397338752|Shreyas|M|/_design/Assets/cat/cat_part_eyes_asleep.svg
+1397338752|Shreyas|M|/_design/Assets/cat/cat_part_eyes_sadder.svg
+1397338752|Shreyas|M|/_design/Assets/cat/cat_part_mouth_angry.svg
+1397338752|Shreyas|M|/_design/Assets/cat/cat_part_mouth_happier.svg
+1397338752|Shreyas|M|/_design/Assets/cat/cat_part_mouth_sad.svg
+1397338752|Shreyas|M|/_design/Assets/cat/cat_part_mouth_sadder.svg
+1397338752|Shreyas|M|/_design/Assets/cow/cow_part_eyes_angry.svg
+1397338752|Shreyas|M|/_design/Assets/cow/cow_part_eyes_asleep.svg
+1397338752|Shreyas|M|/_design/Assets/cow/cow_part_eyes_sadder.svg
+1397338752|Shreyas|M|/_design/Assets/cow/cow_part_mouth_angry.svg
+1397338752|Shreyas|M|/_design/Assets/cow/cow_part_mouth_happier.svg
+1397338752|Shreyas|M|/_design/Assets/cow/cow_part_mouth_happy.svg
+1397338752|Shreyas|M|/_design/Assets/dog/dog_part_eyes_angry.svg
+1397338752|Shreyas|M|/_design/Assets/dog/dog_part_eyes_asleep.svg
+1397338752|Shreyas|M|/_design/Assets/dog/dog_part_eyes_sadder.svg
+1397338752|Shreyas|M|/_design/Assets/dog/dog_part_mouth_angry.svg
+1397338752|Shreyas|M|/_design/Assets/dog/dog_part_mouth_happier.svg
+1397338752|Shreyas|M|/_design/Assets/goat/goat_part_eyes_angry.svg
+1397338752|Shreyas|M|/_design/Assets/goat/goat_part_eyes_asleep.svg
+1397338752|Shreyas|M|/_design/Assets/goat/goat_part_eyes_sadder.svg
+1397338752|Shreyas|M|/_design/Assets/goat/goat_part_mouth_angry.svg
+1397338752|Shreyas|M|/_design/Assets/goat/goat_part_mouth_happier.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_eyes_angry.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_eyes_happier.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_eyes_happy.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_eyes_sad.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_eyes_sadder.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_mouth_angry.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_mouth_happier.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_mouth_happy.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_mouth_sad.svg
+1397338752|Shreyas|M|/_design/Assets/sun/sun_part_mouth_sadder.svg
+1397341451|Divya Anand|M|/_design/Assets/horse/horse_part_eyes_angry.svg
+1397341451|Divya Anand|M|/_design/Assets/horse/horse_part_eyes_asleep.svg
+1397341451|Divya Anand|M|/_design/Assets/horse/horse_part_eyes_sadder.svg
+1397341451|Divya Anand|M|/_design/Assets/horse/horse_part_mouth_angry.svg
+1397341451|Divya Anand|M|/_design/Assets/horse/horse_part_mouth_happier.svg
+1397342230|Divya Anand|M|/_design/Assets/dog/dog_part_mouth_angry.svg
+1397342230|Divya Anand|M|/_design/Assets/pig/pig_part_eyes_angry.svg
+1397342230|Divya Anand|M|/_design/Assets/pig/pig_part_eyes_asleep.svg
+1397342230|Divya Anand|M|/_design/Assets/pig/pig_part_eyes_sadder.svg
+1397342230|Divya Anand|M|/_design/Assets/pig/pig_part_mouth_angry.svg
+1397342230|Divya Anand|M|/_design/Assets/pig/pig_part_mouth_happier.svg
+1397342230|Divya Anand|M|/_design/Assets/pig/pig_part_mouth_happy.svg
+1397343127|Divya Anand|M|/_design/Assets/sheep/sheep_part_eyes_angry.svg
+1397343127|Divya Anand|M|/_design/Assets/sheep/sheep_part_eyes_asleep.svg
+1397343127|Divya Anand|M|/_design/Assets/sheep/sheep_part_eyes_sadder.svg
+1397343127|Divya Anand|M|/_design/Assets/sheep/sheep_part_mouth_angry.svg
+1397343127|Divya Anand|M|/_design/Assets/sheep/sheep_part_mouth_happier.svg
+1397343580|Divya Anand|D|/_design/Assets/cat/cat_skin.svg
+1397343580|Divya Anand|A|/_design/Assets/cat/cat_skin_negative.svg
+1397343580|Divya Anand|A|/_design/Assets/cat/cat_skin_positive.svg
+1397343919|vstarostenko|M|/NLPCode/data/JSON_maker3.py
+1397343919|vstarostenko|M|/NLPCode/data/full_json.json
+1397343919|vstarostenko|M|/NLPCode/data/verbs_source.csv
+1397344029|Divya Anand|D|/_design/Assets/cow/cow_skin.svg
+1397344029|Divya Anand|A|/_design/Assets/cow/cow_skin_negative.svg
+1397344029|Divya Anand|A|/_design/Assets/cow/cow_skin_positive.svg
+1397344030|Divya Anand|D|/_design/Assets/dog/dog_skin.svg
+1397344030|Divya Anand|A|/_design/Assets/dog/dog_skin_negative.svg
+1397344030|Divya Anand|A|/_design/Assets/dog/dog_skin_positive.svg
+1397344490|Divya Anand|D|/_design/Assets/goat/goat_skin.svg
+1397344490|Divya Anand|A|/_design/Assets/goat/goat_skin_negative.svg
+1397344490|Divya Anand|A|/_design/Assets/goat/goat_skin_positive.svg
+1397344883|Divya Anand|D|/_design/Assets/horse/horse_skin.svg
+1397344883|Divya Anand|A|/_design/Assets/horse/horse_skin_negative.svg
+1397344883|Divya Anand|A|/_design/Assets/horse/horse_skin_positive.svg
+1397345037|Divya Anand|D|/_design/Assets/pig/pig_skin.svg
+1397345037|Divya Anand|A|/_design/Assets/pig/pig_skin_negative.svg
+1397345037|Divya Anand|A|/_design/Assets/pig/pig_skin_positive.svg
+1397345137|Divya Anand|D|/_design/Assets/sheep/sheep_skin.svg
+1397345137|Divya Anand|A|/_design/Assets/sheep/sheep_skin_negative.svg
+1397345137|Divya Anand|A|/_design/Assets/sheep/sheep_skin_positive.svg
+1397346176|Divya Anand|M|/_design/Assets/sun/sun_part_eyes_angry.svg
+1397346176|Divya Anand|M|/_design/Assets/sun/sun_part_eyes_sadder.svg
+1397346176|Divya Anand|M|/_design/Assets/sun/sun_part_mouth_angry.svg
+1397346176|Divya Anand|M|/_design/Assets/sun/sun_part_mouth_happier.svg
+1397346176|Divya Anand|D|/_design/Assets/sun/sun_skin.svg
+1397346176|Divya Anand|A|/_design/Assets/sun/sun_skin_negative.svg
+1397346176|Divya Anand|A|/_design/Assets/sun/sun_skin_positive.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_eyes_angry.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_eyes_happier.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_eyes_happy.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_eyes_sad.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_eyes_sadder.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_mouth_angry.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_mouth_happier.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_mouth_happy.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_mouth_sad.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_part_mouth_sadder.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_skin_negative.svg
+1397346888|Divya Anand|A|/_design/Assets/barn/barn_skin_positive.svg
+1397349262|vstarostenko|M|/NLPCode/data/JSON_maker3.py
+1397349262|vstarostenko|M|/NLPCode/data/full_json.json
+1397349262|vstarostenko|M|/NLPCode/data/nouns_source.csv
+1397349262|vstarostenko|M|/NLPCode/data/verbs_source.csv
+1397349289|vstarostenko|M|/NLPCode/data/full_json.json
+1397349406|Divya Anand|M|/_design/Assets/barn/barn_skin.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_eyes_angry.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_eyes_happier.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_eyes_happy.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_eyes_sad.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_eyes_sadder.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_mouth_angry.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_mouth_happier.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_mouth_happy.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_mouth_sad.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_part_mouth_sadder.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_skin_negative.svg
+1397349406|Divya Anand|A|/_design/Assets/fence/fence_skin_positive.svg
+1397522933|Sonali|M|/NLPCode/data/JSON_maker3.py
+1397522933|Sonali|M|/NLPCode/data/full_json.json
+1397690513|vstarostenko|M|/NLPCode/data/verbs_source.csv
+1397793953|vstarostenko|M|/NLPCode/data/full_json.json
+1397793953|vstarostenko|M|/NLPCode/data/prep_source.csv
+1397793953|vstarostenko|M|/NLPCode/data/verbs_source.csv
+1397866839|Divya Anand|A|/_design/interface/Mockups/2. L1.png
+1397866839|Divya Anand|A|/_design/interface/Mockups/3. L2.png
+1397866839|Divya Anand|A|/_design/interface/Mockups/4. L3.png
+1397866839|Divya Anand|A|/_design/interface/Mockups/Layout_1.png
+1397866839|Divya Anand|A|/_design/interface/Mockups/Layout_2.png
+1397866839|Divya Anand|A|/_design/interface/Mockups/Layout_3.png
+1397866839|Divya Anand|A|/_design/interface/Mockups/Layout_Combo.png
+1397866839|Divya Anand|M|/_design/interface/start_screen_v2.pdf
+1397866839|Divya Anand|A|/docs/Wordcraft_Discussion Guide.docx
+1397868666|Divya Anand|A|/_design/Assets/cat/cat_part_skin_negative.svg
+1397868666|Divya Anand|A|/_design/Assets/cat/cat_part_skin_positive.svg
+1397868666|Divya Anand|D|/_design/Assets/cat/cat_skin_negative.svg
+1397868666|Divya Anand|D|/_design/Assets/cat/cat_skin_positive.svg
+1397868666|Divya Anand|A|/_design/Assets/cow/cow_part_skin_negative.svg
+1397868666|Divya Anand|A|/_design/Assets/cow/cow_part_skin_positive.svg
+1397868666|Divya Anand|D|/_design/Assets/cow/cow_skin_negative.svg
+1397868666|Divya Anand|D|/_design/Assets/cow/cow_skin_positive.svg
+1397868666|Divya Anand|A|/_design/Assets/dog/dog_part_skin_negative.svg
+1397868666|Divya Anand|A|/_design/Assets/dog/dog_part_skin_positive.svg
+1397868666|Divya Anand|D|/_design/Assets/dog/dog_skin_negative.svg
+1397868666|Divya Anand|D|/_design/Assets/dog/dog_skin_positive.svg
+1397868666|Divya Anand|A|/_design/Assets/fence/fence_part__skin_negative.svg
+1397868666|Divya Anand|A|/_design/Assets/fence/fence_part_skin_positive.svg
+1397868666|Divya Anand|D|/_design/Assets/fence/fence_skin_negative.svg
+1397868666|Divya Anand|D|/_design/Assets/fence/fence_skin_positive.svg
+1397868666|Divya Anand|A|/_design/Assets/goat/goat_part_skin_negative.svg
+1397868666|Divya Anand|A|/_design/Assets/goat/goat_part_skin_positive.svg
+1397868666|Divya Anand|D|/_design/Assets/goat/goat_skin_negative.svg
+1397868666|Divya Anand|D|/_design/Assets/goat/goat_skin_positive.svg
+1397868666|Divya Anand|A|/_design/Assets/horse/horse_part_skin_negative.svg
+1397868666|Divya Anand|A|/_design/Assets/horse/horse_part_skin_positive.svg
+1397868666|Divya Anand|D|/_design/Assets/horse/horse_skin_negative.svg
+1397868666|Divya Anand|D|/_design/Assets/horse/horse_skin_positive.svg
+1397868666|Divya Anand|A|/_design/Assets/pig/pig_part_skin_negative.svg
+1397868666|Divya Anand|A|/_design/Assets/pig/pig_part_skin_positive.svg
+1397868666|Divya Anand|D|/_design/Assets/pig/pig_skin_negative.svg
+1397868666|Divya Anand|D|/_design/Assets/pig/pig_skin_positive.svg
+1397868666|Divya Anand|A|/_design/Assets/sheep/sheep_part_skin_negative.svg
+1397868666|Divya Anand|A|/_design/Assets/sheep/sheep_part_skin_positive.svg
+1397868666|Divya Anand|D|/_design/Assets/sheep/sheep_skin_negative.svg
+1397868666|Divya Anand|D|/_design/Assets/sheep/sheep_skin_positive.svg
+1397868666|Divya Anand|A|/_design/Assets/sun/sun_part_skin_negative.svg
+1397868666|Divya Anand|A|/_design/Assets/sun/sun_part_skin_positive.svg
+1397868666|Divya Anand|D|/_design/Assets/sun/sun_skin_negative.svg
+1397868666|Divya Anand|D|/_design/Assets/sun/sun_skin_positive.svg
+1397871067|Divya Anand|A|/_design/Assets/barn/barn_part_skin_negative.svg
+1397871067|Divya Anand|A|/_design/Assets/barn/barn_part_skin_positive.svg
+1397871067|Divya Anand|D|/_design/Assets/barn/barn_skin_negative.svg
+1397871067|Divya Anand|D|/_design/Assets/barn/barn_skin_positive.svg
+1398012362|Divya Anand|A|/_design/Website_Wireframe.pdf
+1398012362|Divya Anand|A|/_design/website_wireframe.bmml
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_eyes_angry.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_eyes_happier.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_eyes_happy.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_eyes_sad.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_eyes_sadder.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_mouth_angry.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_mouth_happier.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_mouth_happy.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_mouth_sad.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_part_mouth_sadder.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_skin.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_skin_negative.svg
+1398125263|Shreyas|M|/_design/Assets/barn/barn_skin_positive.svg
+1398125263|Shreyas|M|/_design/Assets/cat/cat_skin_negative.svg
+1398125263|Shreyas|M|/_design/Assets/cow/cow_skin_negative.svg
+1398125263|Shreyas|M|/_design/Assets/dog/dog_part_mouth_angry.svg
+1398125263|Shreyas|M|/_design/Assets/dog/dog_skin_negative.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_eyes_angry.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_eyes_happier.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_eyes_happy.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_eyes_sad.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_eyes_sadder.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_mouth_angry.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_mouth_happier.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_mouth_happy.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_mouth_sad.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_part_mouth_sadder.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_skin_negative.svg
+1398125263|Shreyas|M|/_design/Assets/fence/fence_skin_positive.svg
+1398125263|Shreyas|M|/_design/Assets/goat/goat_skin_negative.svg
+1398125263|Shreyas|M|/_design/Assets/horse/horse_part_eyes_angry.svg
+1398125263|Shreyas|M|/_design/Assets/horse/horse_part_eyes_asleep.svg
+1398125263|Shreyas|M|/_design/Assets/horse/horse_part_eyes_sadder.svg
+1398125263|Shreyas|M|/_design/Assets/horse/horse_part_mouth_angry.svg
+1398125263|Shreyas|M|/_design/Assets/horse/horse_part_mouth_happier.svg
+1398125263|Shreyas|M|/_design/Assets/horse/horse_skin_negative.svg
+1398125263|Shreyas|M|/_design/Assets/pig/pig_part_eyes_angry.svg
+1398125263|Shreyas|M|/_design/Assets/pig/pig_part_eyes_asleep.svg
+1398125263|Shreyas|M|/_design/Assets/pig/pig_part_eyes_sadder.svg
+1398125263|Shreyas|M|/_design/Assets/pig/pig_part_mouth_angry.svg
+1398125263|Shreyas|M|/_design/Assets/pig/pig_part_mouth_happier.svg
+1398125263|Shreyas|M|/_design/Assets/pig/pig_part_mouth_happy.svg
+1398125263|Shreyas|M|/_design/Assets/pig/pig_skin_negative.svg
+1398125263|Shreyas|M|/_design/Assets/sheep/sheep_part_eyes_angry.svg
+1398125263|Shreyas|M|/_design/Assets/sheep/sheep_part_eyes_asleep.svg
+1398125263|Shreyas|M|/_design/Assets/sheep/sheep_part_eyes_sadder.svg
+1398125263|Shreyas|M|/_design/Assets/sheep/sheep_part_mouth_angry.svg
+1398125263|Shreyas|M|/_design/Assets/sheep/sheep_part_mouth_happier.svg
+1398125263|Shreyas|M|/_design/Assets/sheep/sheep_skin_negative.svg
+1398125263|Shreyas|M|/_design/Assets/sun/sun_part_eyes_angry.svg
+1398125263|Shreyas|M|/_design/Assets/sun/sun_part_eyes_sadder.svg
+1398125263|Shreyas|M|/_design/Assets/sun/sun_part_mouth_angry.svg
+1398125263|Shreyas|M|/_design/Assets/sun/sun_part_mouth_happier.svg
+1398125263|Shreyas|M|/_design/Assets/sun/sun_skin_negative.svg
+1398139944|vstarostenko|A|/NLPCode/data/DataStructure_SHREYAS.json
+1398139944|vstarostenko|M|/NLPCode/data/verbs_source.csv
+1398392121|Divya Anand|A|/NLPCode/data/verbs_source_new.csv
+1398392700|vstarostenko|M|/NLPCode/data/full_json.json
+1398392700|vstarostenko|M|/NLPCode/data/verbs_source.csv
+1398536210|vstarostenko|M|/NLPCode/data/JSON_maker3.py
+1398536210|vstarostenko|M|/NLPCode/data/full_json.json
+1398536210|vstarostenko|M|/NLPCode/data/prep_source.csv
+1398536210|vstarostenko|A|/website/ie7.css
+1398536210|vstarostenko|A|/website/images/.DS_Store
+1398536210|vstarostenko|A|/website/images/cat_full.svg
+1398536210|vstarostenko|A|/website/images/cow_full.svg
+1398536210|vstarostenko|A|/website/images/duck_full_color.svg
+1398536210|vstarostenko|A|/website/images/pattern.gif
+1398536210|vstarostenko|A|/website/images/sheep_full.svg
+1398536210|vstarostenko|A|/website/index.html
+1398536210|vstarostenko|A|/website/js/fancyzoom.min.js
+1398536210|vstarostenko|A|/website/js/jquery.anchor.js
+1398536210|vstarostenko|A|/website/js/jquery.fancybox-1.2.6.css
+1398536210|vstarostenko|A|/website/js/jquery.fancybox-1.2.6.pack.js
+1398536210|vstarostenko|A|/website/style.css
+1398650141|Shreyas|A|/_design/_inspiration/2c5c37c403f6834656ed5255d8ca7210.jpg
+1398650141|Shreyas|A|/_design/_inspiration/37532bf9653281314b100c80df945db3.jpg
+1398650141|Shreyas|A|/_design/_inspiration/546767aff26cf2f8c2f8bd8a02aedff7.jpg
+1398650141|Shreyas|A|/_design/_inspiration/6bfd8b768dd37acfbe4458a3adf98b55.jpg
+1398650141|Shreyas|A|/_design/_inspiration/787876ecdb6ed422c3bd6a92c1652f16.jpg
+1398650141|Shreyas|A|/_design/_inspiration/8763f0e156513e497b16916c4187d745.jpg
+1398650141|Shreyas|A|/_design/_inspiration/d77e4ec2e69bb82d1827495dbb48c0e6.jpg
+1398650141|Shreyas|A|/_design/wordcraft.pdf
+1398650141|Shreyas|M|/docs/wiki
+1398650189|Shreyas|M|/NLPCode/data/verbs_source_new.csv
+1398678991|Shreyas|M|/_design/wordcraft.pdf
+1398680646|Shreyas|M|/_design/wordcraft.pdf
+1398680776|Shreyas|M|/_design/wordcraft.pdf
+1398736754|Sonali|M|/NLPCode/data/prep_source.csv
+1398738017|vstarostenko|M|/NLPCode/data/JSON_maker3.py
+1398738017|vstarostenko|M|/NLPCode/data/full_json.json
+1398884520|Shreyas|M|/_design/wordcraft.pdf
+1398890037|Shreyas|M|/_design/wordcraft.pdf
+1399068213|vstarostenko|M|/NLPCode/data/full_json.json
+1399068213|vstarostenko|A|/NLPCode/data/old/DataStructure_SHREYAS.json
+1399068213|vstarostenko|M|/NLPCode/data/prep_source.csv
+1399146988|vstarostenko|M|/NLPCode/data/full_json.json
+1399146988|vstarostenko|M|/NLPCode/data/prep_source.csv
+1399169008|Divya Anand|A|/_design/interface/wood.ai
+1399169008|Divya Anand|A|/_design/wordcraft_D.pdf
+1399260931|Shreyas|M|/NLPCode/data/prep_source.csv
+1399260931|Shreyas|M|/_design/wordcraft.pdf
+1399261010|Divya Anand|M|/_design/interface/start_screen_v2.pdf
+1399261010|Divya Anand|M|/_design/interface/wood.ai
+1399263818|Shreyas|M|/_design/wordcraft_D.pdf
+1399342553|Divya Anand|M|/_design/interface/start_screen_v2.pdf
+1399429864|Divya Anand|M|/_design/interface/start_screen_v2.pdf
+1399430435|Divya Anand|M|/_design/interface/start_screen_v2.pdf
+1399432829|Shreyas|A|/_design/IMG_0006.PNG
+1399432829|Shreyas|A|/_design/wordcraft_poster.pdf
+1399501433|Divya Anand|M|/_design/interface/start_screen_v2.pdf
+1399528944|Ashley DeSouza|A|/website_v2.0/LICENSE
+1399528944|Ashley DeSouza|A|/website_v2.0/README.md
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/._assets
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/assets/._.DS_Store
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/assets/img/._glyphicons-halflings-white.png
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/assets/js/._bootstrap-collapse.js
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/assets/js/._bootstrap-tab.js
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/assets/js/._bootstrap-transition.js
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/assets/js/._google-code-prettify
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/demos/._.DS_Store
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/demos/._.htaccess
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/demos/assets/._fullimage4.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/demos/assets/._fullimage5.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/demos/assets/._fullimage6.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/demos/assets/._fullimage7.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/demos/json/._.DS_Store
+1399528944|Ashley DeSouza|A|/website_v2.0/__MACOSX/owl-carousel/._.DS_Store
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/.DS_Store
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/css/bootstrapTheme.css
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/css/custom.css
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/css/responsive.css
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/ico/apple-touch-icon-114-precomposed.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/ico/apple-touch-icon-144-precomposed.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/ico/apple-touch-icon-57-precomposed.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/ico/apple-touch-icon-72-precomposed.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/ico/favicon.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/AjaxLoader.gif
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/controls.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/css3.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/feather.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/grab.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/modern.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/multi.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/responsive.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/tons.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/touch.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/demo-slides/zombie.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/glyphicons-halflings-green.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/glyphicons-halflings-white.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/glyphicons-halflings.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/img/owl-logo.png
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/js/application.js
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/js/bootstrap-collapse.js
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/js/bootstrap-tab.js
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/js/bootstrap-transition.js
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/js/google-code-prettify/prettify.css
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/js/google-code-prettify/prettify.js
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/js/google-code-prettify/run_prettify.js
+1399528944|Ashley DeSouza|A|/website_v2.0/assets/js/jquery-1.9.1.min.js
+1399528944|Ashley DeSouza|A|/website_v2.0/changelog.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/.DS_Store
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/.htaccess
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/fullimage1.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/fullimage2.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/fullimage3.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/fullimage4.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/fullimage5.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/fullimage6.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/fullimage7.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/owl1.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/owl2.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/owl3.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/owl4.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/owl5.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/owl6.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/owl7.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/assets/owl8.jpg
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/autoHeight.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/click.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/custom.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/customJson.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/full.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/images.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/itemsCustom.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/json.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/json/.DS_Store
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/json/customData.json
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/json/data.json
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/lazyLoad.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/manipulations.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/navOnTop.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/navOnTop2.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/one.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/owlStatus.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/progressBar.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/randomOrder.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/scaleup.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/sync.html
+1399528944|Ashley DeSouza|A|/website_v2.0/demos/transitions.html
+1399528944|Ashley DeSouza|A|/website_v2.0/ie7.css
+1399528944|Ashley DeSouza|A|/website_v2.0/images/ashley.png
+1399528944|Ashley DeSouza|A|/website_v2.0/images/cat_full.svg
+1399528944|Ashley DeSouza|A|/website_v2.0/images/cow_full.svg
+1399528944|Ashley DeSouza|A|/website_v2.0/images/divya.png
+1399528944|Ashley DeSouza|A|/website_v2.0/images/duck_full_color.svg
+1399528944|Ashley DeSouza|A|/website_v2.0/images/pattern.gif
+1399528944|Ashley DeSouza|A|/website_v2.0/images/sheep_full.svg
+1399528944|Ashley DeSouza|A|/website_v2.0/images/shreyas.png
+1399528944|Ashley DeSouza|A|/website_v2.0/images/sonali.png
+1399528944|Ashley DeSouza|A|/website_v2.0/images/victor.png
+1399528944|Ashley DeSouza|A|/website_v2.0/index.html
+1399528944|Ashley DeSouza|A|/website_v2.0/js/fancyzoom.min.js
+1399528944|Ashley DeSouza|A|/website_v2.0/js/jquery.anchor.js
+1399528944|Ashley DeSouza|A|/website_v2.0/js/jquery.fancybox-1.2.6.css
+1399528944|Ashley DeSouza|A|/website_v2.0/js/jquery.fancybox-1.2.6.pack.js
+1399528944|Ashley DeSouza|A|/website_v2.0/owl-carousel/.DS_Store
+1399528944|Ashley DeSouza|A|/website_v2.0/owl-carousel/AjaxLoader.gif
+1399528944|Ashley DeSouza|A|/website_v2.0/owl-carousel/grabbing.png
+1399528944|Ashley DeSouza|A|/website_v2.0/owl-carousel/owl.carousel.css
+1399528944|Ashley DeSouza|A|/website_v2.0/owl-carousel/owl.carousel.js
+1399528944|Ashley DeSouza|A|/website_v2.0/owl-carousel/owl.carousel.min.js
+1399528944|Ashley DeSouza|A|/website_v2.0/owl-carousel/owl.theme.css
+1399528944|Ashley DeSouza|A|/website_v2.0/owl-carousel/owl.transitions.css
+1399528944|Ashley DeSouza|A|/website_v2.0/style.css
+1399530493|Shreyas|A|/_design/obj_deconstruction.pdf
+1399571137|Divya Anand|M|/_design/interface/start_screen_v2.pdf
+1399571137|Divya Anand|M|/_design/wordcraft_poster.pdf
+1399607740|Shreyas|A|/_design/canvas.jpg
+1399607740|Shreyas|A|/_design/canvas.pdf
+1399607740|Shreyas|M|/_design/obj_deconstruction.pdf
+1399607740|Shreyas|A|/appscreens/v0.1.1.PNG
+1399607740|Shreyas|A|/appscreens/v0.1.2.PNG
+1399607740|Shreyas|A|/appscreens/v0.1.3.PNG
+1399607740|Shreyas|A|/appscreens/v0.1.4.PNG
+1399607740|Shreyas|A|/appscreens/v0.1.PNG
+1399607740|Shreyas|A|/appscreens/v0.2.1.PNG
+1399607740|Shreyas|A|/appscreens/v0.2.2.PNG
+1399607740|Shreyas|A|/appscreens/v0.2.3.PNG
+1399607740|Shreyas|A|/appscreens/v0.2.4.PNG
+1399607740|Shreyas|A|/appscreens/v0.2.5.PNG
+1399607740|Shreyas|A|/appscreens/v0.2.PNG
+1399607740|Shreyas|A|/appscreens/v0.3.1.PNG
+1399607740|Shreyas|A|/appscreens/v0.3.2.PNG
+1399607740|Shreyas|A|/appscreens/v0.3.PNG
+1399609625|Shreyas|M|/_design/interface/start_screen_v2.pdf
+1399609625|Shreyas|A|/_design/obj_deconstruction_all.pdf
+1399610014|Shreyas|M|/_design/obj_deconstruction_all.pdf
+1399610067|Shreyas|M|/_design/obj_deconstruction_all.pdf
+1399622970|Divya Anand|M|/_design/interface/start_screen_v2.pdf
+1399624159|Divya Anand|A|/_design/interface/report_cover.pdf
+1399624816|Shreyas|M|/_design/canvas.pdf
+1399624816|Shreyas|A|/_design/report_cover_lettersize.pdf
+1399625107|Divya Anand|A|/Wordcraft.pdf
+1399626165|Divya Anand|A|/Wordcraft_Final.pdf
+1399626459|Divya Anand|D|/Wordcraft.pdf
+1399626459|Divya Anand|M|/Wordcraft_Final.pdf
+1399626925|Divya Anand|M|/Wordcraft_Final.pdf
