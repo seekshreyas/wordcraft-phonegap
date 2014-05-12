@@ -35,9 +35,7 @@
     <script src="js/jquery.fancybox-1.2.6.pack.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$("#reviewed_items").owlCarousel({
-			  //autoPlay: 5000, //Set AutoPlay to 5 seconds
-			  //singleItem : true,
+			jQuery("#reviewed_items").owlCarousel({
 				items: 1,			  
 				loop: true,
 				autoplay: true,
@@ -46,6 +44,7 @@
 				smartSpeed: 250,
 				fluidSpeed: true
 			});
+			jQuery("#howitworks a").slimbox({loop: true});
 		});
 	</script>
     
@@ -82,7 +81,6 @@
     	
     		<h2 class="home"><span class="sub">Build a world with words</span></h2>
                 <iframe src="//player.vimeo.com/video/94493014" width="920" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <!--</section> -->
 			<p>Wordcraft is an interactive iPad application where children (ages 4 - 8) can build sentences and get immediate visual feedback.</p>
     				
     	</section>
@@ -91,19 +89,19 @@
     	
     		<h2 class="howitworks"><span class="sub">How It Works</span></h2>
 				<div class="app_capture">
-    				<a href="images/app_capture_1.png" rel="lightbox" title="Capture 1">
+    				<a href="images/app_capture_1.png" title="Capture 1">
 						<img src="images/app_capture_1.png" alt="Capture 1" />
 					</a>
 					<h5>Step 1: <br />Select Text</h5>
 				</div>
 				<div class="app_capture">
-					<a href="images/app_capture_1.png" rel="lightbox" title="Capture 2">
+					<a href="images/app_capture_1.png" title="Capture 2">
 						<img src="images/app_capture_2.png" alt="Capture 2" />
 					</a>	
 					<h5>Step 2: <br />Make a Sentence</h5>
 				</div>
 				<div class="app_capture">
-					<a href="images/app_capture_1.png" rel="lightbox" title="Capture 3">
+					<a href="images/app_capture_1.png" title="Capture 3">
 						<img src="images/app_capture_3.png" alt="Capture 3" />
 					</a>
 					<h5>Step 3: <br />See your Sentence in Pictures</h5>
