@@ -3,18 +3,18 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.helloworld"
+        id        = "com.wordcraft"
         version   = "0.3.2">
 
-    <name>WordCraft</name>
+    <name>Wordcraft</name>
 
     <description>
-        WordCraft is an interactive iPad application where children (ages 4 - 8) can build sentences and get immediate visual feedback.
-        WordCraft comes from a team of graduate students at the UC Berkeley School of Information. We have backgrounds in design, product management, frontend and backend development, analytics and project management.
+        Wordcraft is an interactive iPad application where children (ages 4 - 8) can build sentences and get immediate visual feedback.
+        Wordcraft comes from a team of graduate students at the UC Berkeley School of Information. We have backgrounds in design, product management, frontend and backend development, analytics and project management.
     </description>
 
     <author href="http://www.getwordcraft.com/" email="seekshreyas@gmail.com">
-        WordCraft
+        Wordcraft
     </author>
 
     <!--
