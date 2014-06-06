@@ -609,5 +609,6 @@ jQuery(document).ready(function(){
 
 	WORDCRAFT.init();
 	WORDCRAFT.build.init();
+	alert("shreyas");
     
 });
