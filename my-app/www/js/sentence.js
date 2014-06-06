@@ -1349,8 +1349,8 @@ WORDCRAFT.build = (function(){
 
 		}
 
-		// console.log("THE FINAL JSON");
-		// console.log(JSON.stringify(finalJson));
+		console.log("THE FINAL JSON");
+		console.log(JSON.stringify(finalJson));
 
 		WORDCRAFT.handleSentChanges(finalJson);
 		return true;	

@@ -23,9 +23,9 @@ WORDCRAFT = (function(){
 	var newDefaultSceneObj = [
     {
         "body": {
-            "eyes": "res/img/animals/goat/goat_part_eyes_sadder.svg",
-            "skin": "res/img/animals/goat/goat_part_skin_negative.svg",
-            "mouth": "res/img/animals/goat/goat_part_mouth_sadder.svg",
+            "eyes": "res/img/animals/cat/cat_part_eyes_happy.svg",
+            "skin": "res/img/animals/cat/cat_part_skin_positive.svg",
+            "mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
             "color": "",
             "size": "normal",
             "width": 200,
@@ -33,47 +33,71 @@ WORDCRAFT = (function(){
         },
         "pos": {
             "plane": "ground",
-            "plane_pos": "left_middle",
+            "plane_pos": "center_front",
             "plane_matrix": [
                 0,
                 0
             ]
         },
-        "animation": []
+        "animation": [
+            {
+                "duration": "",
+                "animation_params": {
+                    "start": "-2",
+                    "end": "2",
+                    "mid": "0"
+                },
+                "speed": "fast",
+                "scale": "",
+                "animation_type": "translateY"
+            }
+        ]
     },
     {
         "body": {
-            "eyes": "res/img/animals/goat/goat_part_eyes_sadder.svg",
-            "skin": "res/img/animals/goat/goat_part_skin_negative.svg",
-            "mouth": "res/img/animals/goat/goat_part_mouth_sadder.svg",
+            "eyes": "res/img/animals/cat/cat_part_eyes_happy.svg",
+            "skin": "res/img/animals/cat/cat_part_skin_positive.svg",
+            "mouth": "res/img/animals/cat/cat_part_mouth_happy.svg",
             "color": "",
-            "size": "large",
+            "size": "normal",
             "width": 200,
             "height": 235
         },
         "pos": {
             "plane": "ground",
-            "plane_pos": "center_middle",
+            "plane_pos": "center_front",
             "plane_matrix": [
                 1,
                 0
             ]
         },
-        "animation": []
+        "animation": [
+            {
+                "duration": "",
+                "animation_params": {
+                    "start": "-2",
+                    "end": "2",
+                    "mid": "0"
+                },
+                "speed": "fast",
+                "scale": "",
+                "animation_type": "translateY"
+            }
+        ]
     },
     {
         "body": {
-            "eyes": "res/img/animals/cow/cow_part_eyes_happy.svg",
-            "skin": "res/img/animals/cow/cow_part_skin_positive.svg",
-            "mouth": "res/img/animals/cow/cow_part_mouth_happy.svg",
+            "eyes": "res/img/animals/dog/dog_part_eyes_happy.svg",
+            "skin": "res/img/animals/dog/dog_part_skin_positive.svg",
+            "mouth": "res/img/animals/dog/dog_part_mouth_happy.svg",
             "color": "",
-            "size": "small",
+            "size": "normal",
             "width": 200,
             "height": 235
         },
         "pos": {
             "plane": "ground",
-            "plane_pos": "right_middle",
+            "plane_pos": "center_back",
             "plane_matrix": [
                 0,
                 0
@@ -158,7 +182,7 @@ var prepObject = [
 
 		// console.log("canvas perspective: ", perspDim);
 
-		// renderObjOnCanvas(newDefaultSceneObj, perspDim);
+		 //renderObjOnCanvas(newDefaultSceneObj, perspDim);
 
 	};
 
@@ -609,6 +633,5 @@ jQuery(document).ready(function(){
 
 	WORDCRAFT.init();
 	WORDCRAFT.build.init();
-	alert("shreyas");
     
 });
